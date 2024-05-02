@@ -1,0 +1,72 @@
+<app-breadcrumbs title="FINAL REVIEW" [breadcrumbItems]="breadCrumbItems"></app-breadcrumbs>
+<div class="card">
+    <div class="card-header">
+        <div class="d-flex align-items-center">
+            <div class="flex-grow-1">
+                <h6 class="card-title mb-0">Final Reviews</h6>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 p-3">
+        <div class="col-md-12 pt-3">
+            <ejs-grid #grid [dataSource]="finalReview" [allowPaging]="true" [pageSettings]='pageSettings'
+                allowFiltering='true' [filterSettings]="filterSettings" (dataBound)="dataBound($event)">
+                <e-columns>
+                    <e-column field='Actions' headerText='Actions'>
+                        <ng-template #template let-data>
+                            <div class="d-flex align-items-center">
+                                <button type="button"
+                                    class="btn btn-light position-relative p-0 avatar-xs rounded-circle"
+                                    (click)="gotoEmployeeReview(data)">
+                                    <span class="avatar-title bg-transparent">
+                                        <i class="bx bxs-info-circle text-info fs-18"></i>
+                                    </span>
+                                </button>
+                                <!-- <button type="button"
+                                    class="btn btn-light position-relative p-0 avatar-xs rounded-circle"
+                                    (click)="gotoEmployeeReview(data)">
+                                    <span class="avatar-title bg-transparent">
+                                        <i class="bx bx-list-plus text-success fs-18"></i>
+                                    </span>
+                                </button>
+                                <button type="button"
+                                    class="btn btn-light position-relative p-0 avatar-xs rounded-circle">
+                                    <span class="avatar-title bg-transparent">
+                                        <i class="bx bx-reply-all fs-18 text-danger"></i>
+                                    </span>
+                                </button> -->
+                            </div>
+                        </ng-template>
+                    </e-column>
+                    <e-column field='EmployeeId' headerText='Employee ID'></e-column>
+                    <e-column field='EmployeeName' headerText='Employee Name'></e-column>
+                    <e-column field='Department' headerText='Department'></e-column>
+                    <e-column field='Designation' headerText='Designation'></e-column>
+                    <e-column field='BranchName' headerText='Brance Name'></e-column>
+                    <e-column field='OfficetypeName' headerText='Officetype Name'></e-column>
+
+                    <e-column field='ReviewNumber' headerText='Review Number'></e-column>
+                    <e-column field='ReviewStartDate' headerText='Review Start Date' type="date"
+                        format="dd-MM-yyyy"></e-column>
+                    <e-column field='ReviewEndDate' headerText='Review End Date' type="date"
+                        format="dd-MM-yyyy"></e-column>
+                    <e-column field='ReviewAssignedDate' headerText='Review Assigned Date' type="date"
+                        format="dd-MM-yyyy"></e-column>
+                    <e-column field='ReviewSubmittedDate' headerText='Review Submitted Date' type="date"
+                        format="dd-MM-yyyy"></e-column>
+                    
+                    <e-column field='EmployeeScore' headerText='Employee Score'></e-column>
+                    <e-column field='EmployeeComments' headerText='Employee Comments'></e-column>
+
+                    <e-column field='AppraiserEmployeeName' headerText='Appraiser Employee Name'></e-column>
+                    <e-column field='AppraiserScore' headerText='Appraiser Score'></e-column>
+                    <e-column field='AppraiserComments' headerText='Appraiser Comments'></e-column>
+
+                    <e-column field='ReviewerEmployeeName' headerText='Reviewer Employee Name'></e-column>
+                    <e-column field='ReviewerScore' headerText='Reviewer Score'></e-column>
+                    <e-column field='ReviewerComments' headerText='Reviewer Comments'></e-column>
+                </e-columns>
+            </ejs-grid>
+        </div>
+    </div>
+</div>

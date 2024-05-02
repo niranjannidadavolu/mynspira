@@ -1,0 +1,160 @@
+<div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="exampleModalgridLabel"> Create Leave Policy Information </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+            (click)="activeModal.dismiss('Cross click')"></button>
+    </div>
+
+    <div class="modal-body">
+        <!-- {{this.leaveForm.value | json}} -->
+        <form [formGroup]="leaveForm" (ngSubmit)="applyPolicyRequest()">
+            <div class="row g-3">
+                <div class="row pt-3">
+                    <div class="col-md-6">
+                        <label for="PolicyName" class="form-label">Policy Name<span class="text-danger">*</span></label>
+                        <input type="text" id="PolicyName" class="form-control" formControlName="PolicyName" />
+                        <div *ngIf="f['PolicyName'].invalid && (f['PolicyName'].dirty || f['PolicyName'].touched) &&  f['PolicyName'].errors"
+                            class="invalid-feedback">
+                            <div *ngIf="f['PolicyName'].errors['required']">Please provide leave type.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="LowerBound" class="form-label">Lower Bound</label>
+                        <input type="number" id="LowerBound" class="form-control" formControlName="LowerBound"
+                            id="LowerBound" />
+                        <div *ngIf="f['LowerBound'].invalid && (f['LowerBound'].dirty || f['LowerBound'].touched) &&  f['LowerBound'].errors"
+                            class="invalid-feedback">
+                            <div *ngIf="f['LowerBound'].errors['required']">Please provide Lower Bound .
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="number" class="form-label">Upper Bound</label>
+                        <input type="text" id="UpperBound" class="form-control" formControlName="UpperBound" />
+                        <div *ngIf="f['UpperBound'].invalid && (f['UpperBound'].dirty || f['UpperBound'].touched) &&  f['UpperBound'].errors"
+                            class="invalid-feedback">
+                            <div *ngIf="f['UpperBound'].errors['required']">Please provide Upper Bound .
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="ApplyBeForeDays" class="form-label">Apply Be Fore Days</label>
+                        <input type="number" id="ApplyBeForeDays" class="form-control"
+                            formControlName="ApplyBeForeDays" />
+                        <div *ngIf="f['ApplyBeForeDays'].invalid && (f['ApplyBeForeDays'].dirty || f['ApplyBeForeDays'].touched) &&  f['ApplyBeForeDays'].errors"
+                            class="invalid-feedback">
+                            <div *ngIf="f['ApplyBeForeDays'].errors['required']">Please provide ApplyBeForeDays .
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="MaxConcecutiveDays" class="form-label">MaxConcecutiveDays</label>
+                        <input type="number" id="MaxConcecutiveDays" class="form-control"
+                            formControlName="MaxConcecutiveDays" />
+                        <div *ngIf="f['MaxConcecutiveDays'].invalid && (f['MaxConcecutiveDays'].dirty || f['MaxConcecutiveDays'].touched) &&  f['MaxConcecutiveDays'].errors"
+                            class="invalid-feedback">
+                            <div *ngIf="f['MaxConcecutiveDays'].errors['required']">Please provide MaxConcecutiveDays .
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="AllowAfter_MaxConcecutive" class="form-label">Allow After Max Concecutive</label>
+                        <input type="number" id="AllowAfter_MaxConcecutive" class="form-control"
+                            formControlName="AllowAfter_MaxConcecutive" />
+                        <div *ngIf="f['AllowAfter_MaxConcecutive'].invalid && (f['AllowAfter_MaxConcecutive'].dirty || f['AllowAfter_MaxConcecutive'].touched) &&  f['AllowAfter_MaxConcecutive'].errors"
+                            class="invalid-feedback">
+                            <div *ngIf="f['AllowAfter_MaxConcecutive'].errors['required']">Please provide
+                                AllowAfter_MaxConcecutive .
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="AccrualRate" class="form-label">AccrualRate</label>
+                        <input type="number" id="AccrualRate" class="form-control"
+                            formControlName="AccrualRate" />
+                        <div *ngIf="f['AccrualRate'].invalid && (f['AccrualRate'].dirty || f['AccrualRate'].touched) &&  f['AccrualRate'].errors"
+                            class="invalid-feedback">
+                            <div *ngIf="f['AccrualRate'].errors['required']">Please provide AllowAfter_MaxConcecutive .
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="NeedCertificate" class="form-label">Need Certificate</label>
+                        <input type="number" id="NeedCertificate" class="form-check" class="form-control"
+                            formControlName="NeedCertificate" />
+                        <div *ngIf="f['NeedCertificate'].invalid && (f['NeedCertificate'].dirty || f['NeedCertificate'].touched) &&  f['NeedCertificate'].errors"
+                            class="invalid-feedback">
+                            <div *ngIf="f['NeedCertificate'].errors['required']">Please provide Need Certificate .
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-check pt-3">
+                            <input class="form-check-input" type="checkbox" formControlName="ConsiderWeekendsHolidays"  id="ConsiderWeekendsHolidays">
+                            <label class="form-check-label" for="ConsiderWeekendsHolidays">Consider Weekend Holidays</label>
+                        </div>
+                        <div *ngIf="f['ConsiderWeekendsHolidays'].invalid && (f['ConsiderWeekendsHolidays'].dirty || f['ConsiderWeekendsHolidays'].touched) &&  f['ConsiderWeekendsHolidays'].errors"
+                            class="invalid-feedback">
+                            <div *ngIf="f['ConsiderWeekendsHolidays'].errors['required']">Please provide
+                                ConsiderWeekendsHolidays .
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                            <div class="form-check pt-3">
+                                <input class="form-check-input" type="checkbox" formControlName="CanBeMergedWithOther"  id="CanBeMergedWithOther">
+                                <label class="form-check-label" for="CanBeMergedWithOther">CanBe Merged With Other</label>
+                            </div>
+                        <div *ngIf="f['CanBeMergedWithOther'].invalid && (f['CanBeMergedWithOther'].dirty || f['CanBeMergedWithOther'].touched) &&  f['CanBeMergedWithOther'].errors"
+                            class="invalid-feedback">
+                            <div *ngIf="f['CanBeMergedWithOther'].errors['required']">Please provide
+                                CanBeMergedWithOther .
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="MaximumUsage" class="form-label">MaximumUsage</label>
+                        <input type="text" class="form-control" id="MaximumUsage"
+                            formControlName="MaximumUsage" />
+                        <div *ngIf="f['MaximumUsage'].invalid && (f['MaximumUsage'].dirty || f['MaximumUsage'].touched) &&  f['MaximumUsage'].errors"
+                            class="invalid-feedback">
+                            <div *ngIf="f['MaximumUsage'].errors['required']">Please provide MaximumUsage .
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-check pt-3">
+                            <input class="form-check-input" type="checkbox" formControlName="CanApplyHalfDay"  id="CanApplyHalfDay">
+                            <label class="form-check-label" for="CanApplyHalfDay">CanApplyHalfDay</label>
+                        </div>
+
+                        <div *ngIf="f['CanApplyHalfDay'].invalid && (f['CanApplyHalfDay'].dirty || f['CanApplyHalfDay'].touched) &&  f['CanApplyHalfDay'].errors"
+                            class="invalid-feedback">
+                            <div *ngIf="f['CanApplyHalfDay'].errors['required']">Please provide CanApplyHalfDay .
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="hstack gap-2 justify-content-end">
+                        <button type="submit" class="btn btn-primary" *ngIf="!isSubmitted"
+                            [disabled]="this.leaveForm.invalid">Submit</button>
+                        <button type="button" class="btn btn-primary btn-label waves-effect waves-light btn-load"
+                            *ngIf="isSubmitted">
+                            <span class="d-flex align-items-center">
+                                <span class="spinner-border flex-shrink-0" role="status">
+                                    <span class="visually-hidden">Submitting...</span>
+                                </span>
+                                <span class="flex-grow-1 ms-2">
+                                    Submitting...
+                                </span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

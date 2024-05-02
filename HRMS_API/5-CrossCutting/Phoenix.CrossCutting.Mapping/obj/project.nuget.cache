@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "0YX9LAHKymXbmKRQLV6uNnVTUx2cr6fCnbsQlY7P66JCBi2Tnk4hbaP9avpWrx22dFIh1uc//wnHX3b6B1r5eQ==",
+  "success": true,
+  "projectFilePath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Mapping\\Phoenix.CrossCutting.Mapping.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\seshu\\.nuget\\packages\\agileobjects.agilemapper\\1.8.0\\agileobjects.agilemapper.1.8.0.nupkg.sha512",
+    "C:\\Users\\seshu\\.nuget\\packages\\agileobjects.netstandardpolyfills\\1.5.0\\agileobjects.netstandardpolyfills.1.5.0.nupkg.sha512",
+    "C:\\Users\\seshu\\.nuget\\packages\\agileobjects.readableexpressions\\2.6.0\\agileobjects.readableexpressions.2.6.0.nupkg.sha512",
+    "C:\\Users\\seshu\\.nuget\\packages\\sonaranalyzer.csharp\\8.35.0.42613\\sonaranalyzer.csharp.8.35.0.42613.nupkg.sha512"
+  ],
+  "logs": []
+}

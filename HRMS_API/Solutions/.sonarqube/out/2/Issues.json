@@ -1,0 +1,346 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "4.6.0.0",
+        "fileVersion": "4.6.0-3.23259.8 (c3cc1d0c)",
+        "semanticVersion": "4.6.0",
+        "language": "en-US"
+      },
+      "results": [
+        {
+          "ruleId": "CS8632",
+          "level": "warning",
+          "message": "The annotation for nullable reference types should only be used in code within a '#nullable' annotations context.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper.Cron/CronJobService.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 36,
+                  "endLine": 12,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2326",
+          "level": "warning",
+          "message": "'T' is not used in the interface.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper.Cron/CronJobService.cs",
+                "region": {
+                  "startLine": 83,
+                  "startColumn": 38,
+                  "endLine": 83,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3928",
+          "level": "warning",
+          "message": "The parameter name 'CronExpression' is not declared in the argument list.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper.Cron/CronJobService.cs",
+                "region": {
+                  "startLine": 107,
+                  "startColumn": 23,
+                  "endLine": 107,
+                  "endColumn": 132
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3776",
+          "level": "warning",
+          "message": "Refactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper.Cron/CronJobService.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 38,
+                  "endLine": 27,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper.Cron/CronJobService.cs",
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 13,
+                  "endLine": 30,
+                  "endColumn": 15
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper.Cron/CronJobService.cs",
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 17,
+                  "endLine": 33,
+                  "endColumn": 19
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper.Cron/CronJobService.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 17,
+                  "endLine": 37,
+                  "endColumn": 19
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper.Cron/CronJobService.cs",
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 25,
+                  "endLine": 42,
+                  "endColumn": 27
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper.Cron/CronJobService.cs",
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 25,
+                  "endLine": 45,
+                  "endColumn": 27
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper.Cron/CronJobService.cs",
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 25,
+                  "endLine": 50,
+                  "endColumn": 27
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper.Cron/CronJobService.cs",
+                "region": {
+                  "startLine": 56,
+                  "startColumn": 17,
+                  "endLine": 56,
+                  "endColumn": 19
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper.Cron/CronJobService.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 38,
+                  "endLine": 27,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "+1",
+              "1": "+2 (incl 1 for nesting)",
+              "2": "+2 (incl 1 for nesting)",
+              "3": "+4 (incl 3 for nesting)",
+              "4": "+4 (incl 3 for nesting)",
+              "5": "+4 (incl 3 for nesting)",
+              "6": "+2 (incl 1 for nesting)",
+              "7": "+1 (recursion)"
+            }
+          }
+        },
+        {
+          "ruleId": "S3881",
+          "level": "warning",
+          "message": "Fix this implementation of 'IDisposable' to conform to the dispose pattern.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper.Cron/CronJobService.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 27,
+                  "endLine": 10,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper.Cron/CronJobService.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 27,
+                  "endLine": 10,
+                  "endColumn": 41
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper.Cron/CronJobService.cs",
+                "region": {
+                  "startLine": 75,
+                  "startColumn": 29,
+                  "endLine": 75,
+                  "endColumn": 36
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper.Cron/CronJobService.cs",
+                "region": {
+                  "startLine": 75,
+                  "startColumn": 16,
+                  "endLine": 75,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "Provide 'protected' overridable implementation of 'Dispose(bool)' on 'CronJobService' or mark the type as 'sealed'.",
+              "1": "'CronJobService.Dispose()' should also call 'Dispose(true)'.",
+              "2": "'CronJobService.Dispose()' should not be 'virtual' or 'abstract'."
+            }
+          }
+        }
+      ],
+      "rules": {
+        "CS8632": {
+          "id": "CS8632",
+          "shortDescription": "The annotation for nullable reference types should only be used in code within a '#nullable' annotations context.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8632)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "S2326": {
+          "id": "S2326",
+          "shortDescription": "Unused type parameters should be removed",
+          "fullDescription": "Type parameters that aren’t used are dead code, which can only distract and possibly confuse developers during maintenance. Therefore, unused type parameters should be removed.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2326",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S3776": {
+          "id": "S3776",
+          "shortDescription": "Cognitive Complexity of methods should not be too high",
+          "fullDescription": "Cognitive Complexity is a measure of how hard the control flow of a method is to understand. Methods with high Cognitive Complexity will be difficult to maintain.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3776",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S3881": {
+          "id": "S3881",
+          "shortDescription": "\"IDisposable\" should be implemented correctly",
+          "fullDescription": "The IDisposable interface is a mechanism to release unmanaged resources, if not implemented correctly this could result in resource leaks or more severe bugs.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3881",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S3928": {
+          "id": "S3928",
+          "shortDescription": "Parameter names used into ArgumentException constructors should match an existing one ",
+          "fullDescription": "Some constructors of the ArgumentException, ArgumentNullException, ArgumentOutOfRangeException and DuplicateWaitObjectException classes must be fed with a valid parameter name. This rule raises an issue in two cases:",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3928",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

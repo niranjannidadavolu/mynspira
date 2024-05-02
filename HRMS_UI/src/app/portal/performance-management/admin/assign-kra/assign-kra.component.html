@@ -1,0 +1,52 @@
+<app-breadcrumbs title="ASSIGN KRA" [breadcrumbItems]="breadCrumbItems"></app-breadcrumbs>
+<div class="row">
+    <div class="card">
+        <div class="card-body table-responsive">
+            <form [formGroup]="filterForm" (ngSubmit)="onSubmit()">
+                <div class="row">
+                    <div class="row mb-4">
+                        <div class="col-md-4">
+                            <label>Select Departments</label>
+                            <ejs-dropdownlist id='games' #sample [dataSource]='departments'
+                                (change)='onDepatmentChange($event)' [fields]='departmentFields'
+                                [placeholder]='departmentWaterMark' [popupHeight]='popHeight'
+                                formControlName="DepartmentSlno" (filtering)='onDepartmentFiltering($event)'
+                                [showClearButton]="true" [allowFiltering]='true'></ejs-dropdownlist>
+                        </div>
+                        <div class="col-md-4">
+                            <label>Select Designation</label>
+                            <ejs-dropdownlist id='games' #sample [dataSource]='designations'
+                                (change)='onDesgnationChange($event)' [fields]='desginationFields'
+                                [placeholder]='designationWaterMark' [popupHeight]='popHeight'
+                                formControlName="DesignationSlno" (filtering)='onDesinationFiltering($event)'
+                                [showClearButton]="true" [allowFiltering]='true'></ejs-dropdownlist>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+            <div class="col-md-12">
+                <div class="control-section">
+                    <ejs-grid #grid id='grid' [dataSource]='keyResultAreas' (rowSelected)="rowSelected($event)" (rowDeselected)="rowDeselect($event)"
+                        (actionComplete)="onActionComplete($event)" [allowFiltering]='true'
+                        [filterSettings]="filterSettings" (rowDataBound)='rowDataBound($event)'
+                        (dataBound)='dataBound()'>
+                        <e-columns>
+                            <e-column type="checkbox" width="50"></e-column>
+                            <e-column field='KraName' headerText='Key Result Area' textAlign="Left"></e-column>
+                            <e-column field='Description' headerText='KRA Description' textAlign="Left"></e-column>
+                            <e-column field='KpiCount' headerText='Mapped KPI Count'></e-column>
+                        </e-columns>
+                    </ejs-grid>
+                </div>
+                <div class="row mt-4 text-end">
+                    <div class="col-md-12">
+                        <button class="btn btn-primary mt-4" (click)="onSubmit()">
+                            Save
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

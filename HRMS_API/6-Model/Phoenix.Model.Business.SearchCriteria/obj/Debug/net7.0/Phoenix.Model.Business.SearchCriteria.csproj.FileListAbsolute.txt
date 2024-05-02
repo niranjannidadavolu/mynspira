@@ -1,0 +1,17 @@
+D:\Projects\Nspira\Portal\HRMS_API\6-Model\Phoenix.Model.Business.SearchCriteria\bin\Debug\net7.0\Phoenix.Model.Business.SearchCriteria.deps.json
+D:\Projects\Nspira\Portal\HRMS_API\6-Model\Phoenix.Model.Business.SearchCriteria\bin\Debug\net7.0\Phoenix.Model.Business.SearchCriteria.dll
+D:\Projects\Nspira\Portal\HRMS_API\6-Model\Phoenix.Model.Business.SearchCriteria\bin\Debug\net7.0\Phoenix.Model.Business.SearchCriteria.pdb
+D:\Projects\Nspira\Portal\HRMS_API\6-Model\Phoenix.Model.Business.SearchCriteria\bin\Debug\net7.0\Phoenix.CrossCutting.Extension.dll
+D:\Projects\Nspira\Portal\HRMS_API\6-Model\Phoenix.Model.Business.SearchCriteria\bin\Debug\net7.0\Phoenix.Infrastructure.BusinessSearchCriteria.dll
+D:\Projects\Nspira\Portal\HRMS_API\6-Model\Phoenix.Model.Business.SearchCriteria\bin\Debug\net7.0\Phoenix.Infrastructure.BusinessSearchCriteria.pdb
+D:\Projects\Nspira\Portal\HRMS_API\6-Model\Phoenix.Model.Business.SearchCriteria\bin\Debug\net7.0\Phoenix.CrossCutting.Extension.pdb
+D:\Projects\Nspira\Portal\HRMS_API\6-Model\Phoenix.Model.Business.SearchCriteria\obj\Debug\net7.0\Phoenix.Model.Business.SearchCriteria.csproj.AssemblyReference.cache
+D:\Projects\Nspira\Portal\HRMS_API\6-Model\Phoenix.Model.Business.SearchCriteria\obj\Debug\net7.0\Phoenix.Model.Business.SearchCriteria.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Nspira\Portal\HRMS_API\6-Model\Phoenix.Model.Business.SearchCriteria\obj\Debug\net7.0\Phoenix.Model.Business.SearchCriteria.AssemblyInfoInputs.cache
+D:\Projects\Nspira\Portal\HRMS_API\6-Model\Phoenix.Model.Business.SearchCriteria\obj\Debug\net7.0\Phoenix.Model.Business.SearchCriteria.AssemblyInfo.cs
+D:\Projects\Nspira\Portal\HRMS_API\6-Model\Phoenix.Model.Business.SearchCriteria\obj\Debug\net7.0\Phoenix.Model.Business.SearchCriteria.csproj.CoreCompileInputs.cache
+D:\Projects\Nspira\Portal\HRMS_API\6-Model\Phoenix.Model.Business.SearchCriteria\obj\Debug\net7.0\Phoenix.Model.Business.SearchCriteria.csproj.CopyComplete
+D:\Projects\Nspira\Portal\HRMS_API\6-Model\Phoenix.Model.Business.SearchCriteria\obj\Debug\net7.0\Phoenix.Model.Business.SearchCriteria.dll
+D:\Projects\Nspira\Portal\HRMS_API\6-Model\Phoenix.Model.Business.SearchCriteria\obj\Debug\net7.0\refint\Phoenix.Model.Business.SearchCriteria.dll
+D:\Projects\Nspira\Portal\HRMS_API\6-Model\Phoenix.Model.Business.SearchCriteria\obj\Debug\net7.0\Phoenix.Model.Business.SearchCriteria.pdb
+D:\Projects\Nspira\Portal\HRMS_API\6-Model\Phoenix.Model.Business.SearchCriteria\obj\Debug\net7.0\ref\Phoenix.Model.Business.SearchCriteria.dll

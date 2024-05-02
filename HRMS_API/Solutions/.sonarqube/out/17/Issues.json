@@ -1,0 +1,108 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "4.6.0.0",
+        "fileVersion": "4.6.0-3.23259.8 (c3cc1d0c)",
+        "semanticVersion": "4.6.0",
+        "language": "en-US"
+      },
+      "results": [
+        {
+          "ruleId": "S2342",
+          "level": "warning",
+          "message": "Rename this enumeration to match the regular expression: '^([A-Z]{1,3}[a-z0-9]+)*([A-Z]{2})?$'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Enumerations/Enumerations.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 21,
+                  "endLine": 9,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1066",
+          "level": "warning",
+          "message": "Merge this if statement with the enclosing one.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Enumerations/EnumDescription.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 21,
+                  "endLine": 18,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Enumerations/EnumDescription.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 17,
+                  "endLine": 16,
+                  "endColumn": 19
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "S1066": {
+          "id": "S1066",
+          "shortDescription": "Collapsible \"if\" statements should be merged",
+          "fullDescription": "Merging collapsible if statements increases the code’s readability.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1066",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2342": {
+          "id": "S2342",
+          "shortDescription": "Enumeration types should comply with a naming convention",
+          "fullDescription": "Shared naming conventions allow teams to collaborate efficiently. This rule checks that all enum names match a provided regular expression.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2342",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

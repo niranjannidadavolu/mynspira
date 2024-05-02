@@ -1,0 +1,15 @@
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Helper\bin\Debug\net7.0\Phoenix.CrossCutting.Helper.deps.json
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Helper\bin\Debug\net7.0\Phoenix.CrossCutting.Helper.dll
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Helper\bin\Debug\net7.0\Phoenix.CrossCutting.Helper.pdb
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Helper\bin\Debug\net7.0\Phoenix.CrossCutting.Extension.dll
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Helper\bin\Debug\net7.0\Phoenix.CrossCutting.Extension.pdb
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Helper\obj\Debug\net7.0\Phoenix.CrossCutting.Helper.csproj.AssemblyReference.cache
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Helper\obj\Debug\net7.0\Phoenix.CrossCutting.Helper.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Helper\obj\Debug\net7.0\Phoenix.CrossCutting.Helper.AssemblyInfoInputs.cache
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Helper\obj\Debug\net7.0\Phoenix.CrossCutting.Helper.AssemblyInfo.cs
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Helper\obj\Debug\net7.0\Phoenix.CrossCutting.Helper.csproj.CoreCompileInputs.cache
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Helper\obj\Debug\net7.0\Phoenix.CrossCutting.Helper.csproj.CopyComplete
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Helper\obj\Debug\net7.0\Phoenix.CrossCutting.Helper.dll
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Helper\obj\Debug\net7.0\refint\Phoenix.CrossCutting.Helper.dll
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Helper\obj\Debug\net7.0\Phoenix.CrossCutting.Helper.pdb
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Helper\obj\Debug\net7.0\ref\Phoenix.CrossCutting.Helper.dll

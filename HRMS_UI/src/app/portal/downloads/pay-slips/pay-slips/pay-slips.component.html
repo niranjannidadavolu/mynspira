@@ -1,0 +1,207 @@
+<!-- BreadCrumb add for Pay Slips & Form-16-->
+<app-breadcrumbs title="Pay Slips & Form-16" [breadcrumbItems]="breadCrumbItems"></app-breadcrumbs>
+<div>
+    <div class="position-relative mx-n4 mt-n4">
+        <div class="profile-wid-bg profile-setting-img">
+            <img src="assets/images/profile-bg.jpg" class="profile-wid-img" alt="">
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Displaying Employee Information in left side card -->
+        <div class="col-lg-4 col-md-4 col-xl-4 col-xxl-3">
+            <app-employee-card [showTaxCalculations]="false"></app-employee-card>
+        </div>
+
+        <!-- Displaying Pay Slips & Form-16 in Tabs -->
+        <div class="col-lg-8 col-md-8 col-xl-8 col-xxl-9">
+            <div class="card mt-xxl-n5 mt-lg-n5 mt-md-n5 mt-xl-n5">
+                <div class="card-header">
+                    <ul ngbNav #customNav="ngbNav" [activeId]="1"
+                        class="nav nav-tabs-custom rounded card-header-tabs border-bottom-0" role="tablist">
+                        <!-- My Payslips Tab-1 -->
+                        <li [ngbNavItem]="1" class="nav-item">
+                            <a ngbNavLink class="nav-link" data-bs-toggle="tab" role="tab">
+                                <i class="fas fa-home"></i>
+                                My Payslips
+                            </a>
+                            <ng-template ngbNavContent>
+                                <div class="row">
+                                    <div class="card">
+                                        <div class="card-body">
+
+                                            <div class="row">
+                                                <div class="col-lg-4 mt-3"
+                                                    *ngFor="let item of myPaySlips;  let k = index ">
+                                                    <div
+                                                        class="card border card-border-primary ribbon-box border shadow-none mb-lg-0">
+                                                        <div class="card card-body p-3 mb-1">
+                                                            <div [ngClass]="{'ribbon-two-primary':k%2 == 0, 'ribbon-two-info': k%2 > 0}"
+                                                                class="ribbon-two">
+                                                                <span>{{item.DisplayMonthName}} - {{item?.Year}}</span>
+                                                            </div>
+                                                            <div class="d-flex mb-2 align-items-center">
+                                                                <div class="flex-grow-1 ms-2 text-center">
+                                                                    <img src="assets\images\svg\crypto-icons\pdf.svg"
+                                                                        alt="PDF file" width="75" height="75">
+                                                                    <p class="text-muted mb-0">
+                                                                        {{item.FILENO}}
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <a href="javascript:void(0);"
+                                                                (click)="downloadPayslip(item)"
+                                                                class="btn btn-primary btn-sm text-white">Download
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ng-template>
+                        </li>
+
+                        <!-- Form 16/16A Tab-2 -->
+                        <li [ngbNavItem]="2" class="nav-item">
+                            <a ngbNavLink class="nav-link" data-bs-toggle="tab" role="tab">
+                                <i class="fas fa-home"></i>
+                                Form 16/16A
+                            </a>
+                            <ng-template ngbNavContent>
+                                <div class="row mb-3  mt-2">
+                                    <div class="col-lg-6 mb-2" *ngFor="let taxDocument of taxDocuments; let i = index">
+                                        <div *ngIf="taxDocument.YearWiseTaxDocuments;"
+                                            class="card border card-border-primary ribbon-box border shadow-none mb-lg-0">
+                                            <div class="col">
+                                                <div
+                                                    class="ribbon ribbon-primary ribbon-shape ribbon-bookmark-h text-left">
+                                                    {{taxDocument.FinYear}}
+                                                </div>
+                                            </div>
+                                            <!-- <div class="row ribbon-content mt-5">
+
+                                                    <div class="col-lg-4"
+                                                    *ngFor="let item of taxDocument.YearWiseTaxDocuments;  let k = index"></div>
+                                                </div> -->
+
+                                            <div class="col ribbon-box mb-4 right ">
+                                                <div class="ribbon ribbon-info ribbon-shape ">
+                                                    {{employeeProfile.CategorySlno == 3 ? '16 A':'Part A & B'}}
+                                                    <!-- {{item.PartId}} -->
+                                                </div>
+                                            </div>
+                                            <div class="row card-body px-4 mb-1">
+
+                                                <!-- <div [ngClass]="{'ribbon-two-primary':k%2 == 0, 'ribbon-two-info': k%2 > 0}"
+                                                        class="ribbon-two">
+                                                        <span>{{item.PartId}}</span>
+                                                    </div> -->
+                                                <div class="d-flex mb-2 align-items-center ribbon-content">
+                                                    <div class="flex-grow-1 ms-2 text-center">
+                                                        <img src="assets\images\svg\crypto-icons\pdf.svg" alt="PDF file"
+                                                            width="75" height="75">
+                                                    </div>
+                                                </div>
+                                                <a href="javascript:void(0);"
+                                                    (click)="downLoadForm16(taxDocument.YearWiseTaxDocuments)"
+                                                    class="btn btn-primary btn-sm text-white">Download
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col">
+                                        <div class="card ribbon-box border shadow-none mb-lg-0">
+                                            <div class="card-body">
+                                                <div class="ribbon ribbon-primary ribbon-shape">
+                                                    Note:</div>
+                                                <div class="ribbon-content text-muted mt-4">
+                                                    <p class="hol_color">
+                                                        We have engaged a tax filing agency to
+                                                        help
+                                                        our employees to File Income Tax Return.
+                                                        Charges for filing income tax return is
+                                                        INR 500/-
+                                                    </p>
+                                                    <div class="table-responsive">
+                                                        <table class="table table-gridjs table-fit ">
+                                                            <tr>
+                                                                <th class="fw-bold">Phone</th>
+                                                                <th class="fw-bold">Mail</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>+91 7658953212</td>
+                                                                <td>scpconsultants7@gmail.com</td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </ng-template>
+                        </li>
+
+                        <li [ngbNavItem]="3" class="nav-item">
+                            <a ngbNavLink class="nav-link" data-bs-toggle="tab" role="tab">
+                                <i class="fas fa-home"></i>
+                                ITR Uploads
+                            </a>
+                            <ng-template ngbNavContent>
+                                <div class="row ">
+                                    <div class="col-md-12 text-end "> 
+                                        <button class="btn btn-primary px-2" 
+                                                        (click)="uploadFile()"><i class="las la-plus"></i> </button>
+                                    </div>
+                                </div>
+                                <div class="row">
+
+                                    <ejs-grid [dataSource]='itrList'  [allowSorting]='true'
+                                [enableHover]='false' [enableHeaderFocus]='true' [filterSettings]='filterSettings'
+                                [allowFiltering]='true' gridLines='Both' allowPaging='true' [pageSettings]='pageSettings'
+                                [loadingIndicator]='loadingIndicator'>
+                                    <e-columns>
+                                        <e-column field='ItrYear' headerText='Year' width='120' textAlign="right"></e-column>
+                                        <e-column field='ItrNumber' headerText='ITR Number' width='120'></e-column>
+                                        <e-column field='StatusName' headerText='Status Name' width='150'></e-column>
+                                        <e-column [allowFiltering]='false' headerText='Actions' width='80'>
+                                            <ng-template #template let-data>
+                                                <div class="d-flex align-items-center">
+                                                    <button type="button"
+                                                        class="btn btn-light position-relative p-0 avatar-xs rounded-circle"
+                                                        (click)="viewFile(data)" [title]="data.FileName_Original">
+                                                        <span class="avatar-title bg-transparent text-reset">
+                                                            <i class="las la-eye  text-success fs-22"></i>
+                                                        </span>
+                                                    </button>
+                                                    <button type="button" *ngIf="data.StatusId == 1"
+                                                    class="btn btn-light position-relative p-0 avatar-xs rounded-circle"
+                                                    (click)="onStatusChange(data)" title="Cancel">
+                                                    <span class="avatar-title bg-transparent text-reset">
+                                                        <i class="ri-delete-bin-6-line text-danger fs-18"></i>
+                                                    </span>
+                                                </button>
+                                                </div>
+                                            </ng-template>
+                                        </e-column>
+                                    </e-columns>
+                                </ejs-grid>
+                                </div>
+                            </ng-template>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body p-4">
+                    <div class="tab-content">
+                        <div [ngbNavOutlet]="customNav"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

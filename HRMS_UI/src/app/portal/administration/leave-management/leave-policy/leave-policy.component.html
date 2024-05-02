@@ -1,0 +1,189 @@
+<!-- <div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="exampleModalgridLabel">Apply Employee {{leaveType?.LeaveTypeName |
+            titlecase}}</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+            (click)="activeModal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+        <form [formGroup]="leaveForm" (ngSubmit)="applyLeaveRequest()">
+            <div class="row g-3">
+                <div class="row pt-3">
+                    <div class="col-md-6">
+                        <label for="LeaveType" class="form-label">Leave Type <span class="text-danger">*</span></label>
+                        <ng-select [items]="leaveTypes" bindLabel="LeaveTypeName" (change)="onLeaveTypeChange($event)"
+                            [ngClass]="{ 'is-invalid': f['LeaveType'].invalid && (f['LeaveType'].dirty || f['LeaveType'].touched) && f['LeaveType'].errors }"
+                            formControlName="LeaveType">
+                        </ng-select>
+                        <div *ngIf="f['LeaveType'].invalid && (f['LeaveType'].dirty || f['LeaveType'].touched) &&  f['LeaveType'].errors"
+                            class="invalid-feedback">
+                            <div *ngIf="f['LeaveType'].errors['required']">Please provide leave type.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6"
+                        *ngIf="leaveType?.LeaveTypeId == leaveTypeIds.CASUAL_LEAVE || leaveType?.LeaveTypeId == leaveTypeIds.SICK_LEAVE || leaveType?.LeaveTypeId == leaveTypeIds.PRIVILEGE_LEAVE || leaveType?.LeaveTypeId == null">
+                        <label for="LeaveBalance" class="form-label">Leave Balance</label>
+                        <input type="text" class="form-control" readonly formControlName="LeaveBalance">
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col-md-6">
+                        <label for="exampleInputdate" class="form-label">From Date <span
+                                class="text-danger">*</span></label>
+                        <div class="input-group mb-3">
+                            <input id="fromDate" class="form-control flatpickr-input active" type="text" mwlFlatpickr
+                                formControlName="LeaveFrom" [altInput]="false" [convertModelValue]="true"
+                                [minDate]="minDate" [maxDate]="maxDate" [disable]="[ disableHolidays]"
+                                (flatpickrChange)='changeFromDate($event)' altFormat="d-M-Y" dateFormat="d-M-Y"
+                                [ngClass]="{ 'is-invalid': f['LeaveFrom'].invalid && (f['LeaveFrom'].dirty || f['LeaveFrom'].touched) && f['LeaveFrom'].errors}" />
+                        </div>
+                        <div *ngIf="f['LeaveFrom'].invalid && (f['LeaveFrom'].dirty || f['LeaveFrom'].touched) &&  f['LeaveFrom'].errors"
+                            class="invalid-feedback">
+                            <div *ngIf="f['LeaveFrom'].errors['required']">Please provide from date.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="exampleInputdate" class="form-label">To Date <span
+                                class="text-danger">*</span></label>
+                        <div class="input-group mb-3" *ngIf="!leaveType?.IsDisabled">
+                            <input id="LeaveTo" class="form-control flatpickr-input active" type="text" mwlFlatpickr
+                                formControlName="LeaveTo" [altInput]="false" altFormat="d-M-Y" dateFormat="d-M-Y"
+                                (flatpickrChange)='changeToDate($event)' [convertModelValue]="true"
+                                [minDate]="toMinDate" [maxDate]="maxDate" [disable]="[disableHolidays]" [ngClass]="{ 'is-invalid': f['LeaveTo'].invalid && (f['LeaveTo'].dirty || f['LeaveTo'].touched) && f['LeaveTo'].errors
+                                ,'date-pickr-disabled': leaveType?.IsDisabled }" />
+                        </div>
+                        <div class="input-group mb-3" *ngIf="leaveType?.IsDisabled">
+                            <input id="LeaveTo" class="form-control flatpickr-input active" type="text" mwlFlatpickr
+                                formControlName="LeaveTo" [altInput]="false" altFormat="d-M-Y" dateFormat="d-M-Y"
+                                (flatpickrChange)='changeToDate($event)' [convertModelValue]="true"
+                                [minDate]="toMinDate" [maxDate]="maxDate"
+                                [ngClass]="{ 'is-invalid': f['LeaveTo'].invalid && (f['LeaveTo'].dirty || f['LeaveTo'].touched) && f['LeaveTo'].errors
+                                ,'date-pickr-disabled': leaveType?.IsDisabled && (leaveemployeeProfile?.EmpSLNo !== null || leaveemployeeProfile?.EmpSLNo !== 0) }" />
+                        </div>
+                        <div *ngIf="f['LeaveTo'].invalid && (f['LeaveTo'].dirty || f['LeaveTo'].touched) &&  f['LeaveTo'].errors"
+                            class="invalid-feedback">
+                            <div *ngIf="f['LeaveTo'].errors['required']">Please provide to date.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+        </form>
+    </div>
+</div> -->
+
+
+
+<div class="row">
+    <div class="col-md-12">
+        <h5 class="mb-3">Leave Policy Information</h5>
+        <div class="card">
+            <div class="card-body">
+                <ul ngbNav #Border="ngbNav" [activeId]="1" class="nav nav-tabs nav-border-top nav-border-top-primary">
+                    <li [ngbNavItem]="1">
+                        <ng-template ngbNavContent>
+                          
+                            <dx-data-grid id="gridContainer" [dataSource]="leavePolicyInformation"
+                                [columnHidingEnabled]="false" keyExpr="PolicyID" [showBorders]="true"
+                                [columnAutoWidth]="true" [rowAlternationEnabled]="true" [showColumnLines]="true"
+                                [showRowLines]="true">
+
+                                <dxo-paging [enabled]="true" [pageSize]="17"></dxo-paging>
+                                <dxo-filter-row [visible]="showFilterRow"
+                                    [applyFilter]="currentFilter"></dxo-filter-row>
+                                <dxo-sorting mode="multiple">
+                                </dxo-sorting>
+
+                                <dxo-paging [enabled]="true" [pageSize]="17"></dxo-paging>
+                                
+                                <div *dxTemplate="let d of 'Action'" class="text-left">
+                                    <a href="javascript:void(0)" (click)="applyLeavePolicy(d)" title="Apply Leave" class="me-2">
+                                        <i class="ri-pencil-fill text-primary"></i>
+                                    </a>
+                                    <a href="javascript:void(0)" (click)="deleteRow(d)" title="Delete"
+                                    class="me-2 text-danger">
+                                    <i class="ri ri-delete-bin-line"></i>
+                                </a>
+                                </div>
+                  
+                                <dxi-column dataField="PolicyName" caption="Policy Name" dataType="string"></dxi-column>
+                                <dxi-column dataField="LowerBound" caption="Lower Bound"></dxi-column>
+                                <dxi-column dataField="UpperBound" caption="Upper Bound"></dxi-column>
+                                <dxi-column dataField="ApplyBeForeDays" caption="Apply Be fore Days"></dxi-column>
+                                <dxi-column dataField="MaxConcecutiveDays" caption="Max Concecutive Days"></dxi-column>
+                                <dxi-column dataField="AllowAfter_MaxConcecutive"
+                                    caption="Allow After Max Concecutive"></dxi-column>
+                                <dxi-column dataField="AccrualRate" caption="Accrual Rate"></dxi-column>
+                                <dxi-column dataField="NeedCertificate" caption="Need Certificate"></dxi-column>
+                                <dxi-column dataField="ConsiderWeekendsHolidays"
+                                    caption="Consider Weekends Holidays"></dxi-column>
+
+                                <dxi-column dataField="CanBeMergedWithOther"
+                                    caption="Can Be Merged With Other"></dxi-column>
+                                <dxi-column dataField="MaximumUsage" caption="Maximum Usage"></dxi-column>
+                                <dxi-column dataField="CanApplyHalfDay" caption="Can Apply HalfDay"></dxi-column>
+                                <dxi-column type="buttons" caption="Actions"  cellTemplate="Action" >
+                                </dxi-column>
+                                <div *dxTemplate="let d of 'Action'" class="text-left">
+                                    <a href="javascript:void(0)" title="Actiavte" *ngIf="d.data.StatusID === 1"
+                                    class="me-2 text-primary" (click)="onStatusChange(d)">
+                                        <i class="ri-checkbox-circle-fill text-success fs-17"></i>
+                                    </a>
+                                    <a href="javascript:void(0)" (click)="onStatusChange(d)" title="De-Activate"
+                                    class="me-2 text-primary" *ngIf="d.data.StatusID !== 1">
+                                        <i class="ri-indeterminate-circle-fill text-danger fs-17"></i>
+                                    </a>
+                                    <a href="javascript:void(0)" (click)="applyLeavePolicy(d)"
+                                        title="Edit" class="me-2 text-primary">
+                                        <i class="ri-pencil-fill  fs-17 "></i>
+                                    </a>
+                                    <a href="javascript:void(0)" (click)="deleteRow(d)" title="Delete"
+                                         class="me-2 text-danger">
+                                        <i class="ri ri-delete-bin-line fs-17"></i>
+                                    </a>
+                                </div>                              
+                                <!-- <dxi-column dataField="StatusID" caption="Status" class="form-check-input code-switcher" >
+                                    <label for="switches-color-showcode" class="form-label text-muted">Show Code</label>
+                                    <input class="form-check-input code-switcher" type="checkbox" id="switches-color-showcode" >
+                                </dxi-column>  
+                                <dxi-column type="buttons" caption="Active" cellTemplate="active">
+                                </dxi-column>
+                                <dxi-column type="buttons" caption="Actions" cellTemplate="Action" [width]="70">
+                                </dxi-column>-->
+                                <div *dxTemplate="let d of 'active'" class="text-left">
+                                    <div class="form-check form-switch form-switch-right form-switch-md me-2">
+                                        <label for="switches-color-showcode"
+                                            [title]="(d.data.StatusID == 1)?'Active':'InActive'"
+                                            class="form-label text-muted"></label>
+                                        <input class="form-check-input code-switcher"
+                                            [checked]="(d.data.StatusID == 1)? true: false" type="checkbox"
+                                            id="switches-color-showcode" (click)="onStatusChange(d)">
+                                    </div>
+                                </div>
+
+
+                                <dxo-toolbar>
+                                    <dxi-item location="after">
+                                        <div *dxTemplate>
+                                            <dx-button icon="add" (click)="applyLeavePolicy()" >
+                                            </dx-button>
+                                        </div>
+                                    </dxi-item>
+                                </dxo-toolbar>
+                            </dx-data-grid>
+
+                        </ng-template>
+                    </li>
+                </ul>
+                <div class="tab-content text-muted">
+                    <div [ngbNavOutlet]="Border"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

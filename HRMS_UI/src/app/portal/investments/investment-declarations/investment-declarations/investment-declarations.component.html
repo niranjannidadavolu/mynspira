@@ -1,0 +1,157 @@
+<app-breadcrumbs title="Investment Declarations" [breadcrumbItems]="breadCrumbItems"></app-breadcrumbs>
+<div class="row" *ngIf="profile">
+    <div class="position-relative mx-n4 mt-n4">
+        <div class="profile-wid-bg profile-setting-img">
+            <img src="assets/images/profile-bg.jpg" class="profile-wid-img" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <!-- <div class="col-lg-4 col-md-4 col-xl-4 col-xxl-3">
+            <app-employee-card [showTaxCalculations]="true"></app-employee-card>
+        </div> -->
+        <div class="col-lg-12 col-md-12 col-xl-12 col-xxl-12">
+            <div class="card mt-xxl-n5 mt-lg-n5 mt-md-n5 mt-xl-n5">
+                <div class="card-header">
+                    <ul ngbNav #customNav="ngbNav" [activeId]="1"
+                        class="nav nav-tabs-custom rounded card-header-tabs border-bottom-0" role="tablist">
+                        <li [ngbNavItem]="1" class="nav-item">
+                            <a ngbNavLink class="nav-link" data-bs-toggle="tab" role="tab">
+                                <i class="fas fa-home"></i>
+                                My Investment Declarations
+                            </a>
+                            <ng-template ngbNavContent>
+                                <div class="row">
+                                    <div class="card">
+                                        <form [formGroup]="declarationForm" (ngSubmit)="saveInvestmentDeclarations()">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <app-investment-details formControlName="InvestmentDetail">
+                                                    </app-investment-details>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <app-house-rent-allowance formControlName="HouseRentAllowance"
+                                                        [ngClass]="{ 'is-invalid': f['HouseRentAllowance'].invalid && (f['HouseRentAllowance'].dirty || f['HouseRentAllowance'].touched) && f['HouseRentAllowance'].errors }">
+                                                    </app-house-rent-allowance>
+                                                    <div *ngIf=" f['HouseRentAllowance'].invalid &&
+                                                        (f['HouseRentAllowance'].dirty ||
+                                                        f['HouseRentAllowance'].touched) &&
+                                                        f['HouseRentAllowance'].errors" class="invalid-feedback">
+                                                        <div *ngIf="f['HouseRentAllowance'].errors['required']">Please
+                                                            provide HRA Location Details.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <ngb-accordion #acc="ngbAccordion" [closeOthers]="true">                                                    
+                                                    <ngb-panel id="static-1">
+                                                        <ng-template ngbPanelTitle class="accordion-header">
+                                                            <h2 class="accordion-header" id="gen-ques-headingOne">
+                                                                <button class="accordion-button accordion-bg"
+                                                                    type="button" data-bs-toggle="collapse"
+                                                                    data-bs-target="#gen-ques-collapseOne"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="gen-ques-collapseOne">
+                                                                    Chapter VI
+                                                                </button>
+                                                            </h2>
+                                                        </ng-template>
+                                                        <ng-template ngbPanelContent>
+                                                            <app-chapter6 formControlName="Chapter6Detail">
+                                                            </app-chapter6>
+                                                        </ng-template>
+                                                    </ngb-panel>
+                                                    <ngb-panel id="static-2">
+                                                        <ng-template ngbPanelTitle class="accordion-header">
+                                                            <h2 class="accordion-header" id="gen-ques-headingOne">
+                                                                <button class="accordion-button accordion-bg"
+                                                                    type="button" data-bs-toggle="collapse"
+                                                                    data-bs-target="#gen-ques-collapseOne"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="gen-ques-collapseOne">
+                                                                    80 G
+                                                                </button>
+                                                            </h2>
+                                                        </ng-template>
+                                                        <ng-template ngbPanelContent>
+                                                            <app-section80G formControlName="Section80GDetail">
+                                                            </app-section80G>
+                                                        </ng-template>
+                                                    </ngb-panel>
+                                                    <ngb-panel id="static-3">
+                                                        <ng-template ngbPanelTitle class="accordion-header">
+                                                            <h2 class="accordion-header" id="gen-ques-headingOne">
+                                                                <button class="accordion-button accordion-bg"
+                                                                    type="button" data-bs-toggle="collapse"
+                                                                    data-bs-target="#gen-ques-collapseOne"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="gen-ques-collapseOne">
+                                                                    House Property Income
+                                                                </button>
+                                                            </h2>
+                                                        </ng-template>
+                                                        <ng-template ngbPanelContent>
+                                                            <app-house-property-income
+                                                                formControlName="HouseIncomeDetail">
+                                                            </app-house-property-income>
+                                                        </ng-template>
+                                                    </ngb-panel>
+                                                    <ngb-panel id="static-4">
+                                                        <ng-template ngbPanelTitle class="accordion-header">
+                                                            <h2 class="accordion-header" id="gen-ques-headingOne">
+                                                                <button class="accordion-button accordion-bg"
+                                                                    type="button" data-bs-toggle="collapse"
+                                                                    data-bs-target="#gen-ques-collapseOne"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="gen-ques-collapseOne">
+                                                                    Other Income
+                                                                </button>
+                                                            </h2>
+                                                        </ng-template>
+                                                        <ng-template ngbPanelContent>
+                                                            <app-other-income formControlName="OtherIncomeDetail">
+                                                            </app-other-income>
+                                                        </ng-template>
+                                                    </ngb-panel>
+                                                </ngb-accordion>
+                                            </div>
+                                            <div class="btn-right">
+                                                <!-- [disabled]="this.declarationForm.invalid " -->
+                                                <button *ngIf="!isProcessing"
+                                                [disabled]="true"
+                                                    class="btn btn-primary btn-label waves-effect waves-light rounded-pill m-2"><i
+                                                        class=" ri-save-3-line label-icon align-middle rounded-pill fs-16 me-2"></i>
+                                                    Save Declaration</button>
+                                                <button *ngIf="isProcessing" type="button"
+                                                    class="btn btn-load btn-primary btn-label waves-effect waves-light rounded-pill m-2"><i
+                                                        class=" ri-save-3-line label-icon align-middle rounded-pill fs-16 me-2"></i>
+                                                    <span class="d-flex align-items-center">
+                                                        <span class="spinner-border flex-shrink-0" role="status">
+                                                            <span class="visually-hidden">Saving Details...</span>
+                                                        </span>
+                                                        <span class="flex-grow-1 ms-2">
+                                                            Saving Details...
+                                                        </span>
+                                                    </span>
+                                                </button>
+                                                <button type="button"
+                                                    class="btn btn-danger btn-label waves-effect waves-light rounded-pill "><i
+                                                        class="ri-error-warning-line label-icon align-middle rounded-pill fs-16 me-2"></i>
+                                                    Cancel</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </ng-template>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body p-4">
+                    <div class="tab-content">
+                        <div [ngbNavOutlet]="customNav"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

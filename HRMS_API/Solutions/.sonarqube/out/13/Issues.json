@@ -1,0 +1,2415 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "4.6.0.0",
+        "fileVersion": "4.6.0-3.23259.8 (c3cc1d0c)",
+        "semanticVersion": "4.6.0",
+        "language": "en-US"
+      },
+      "results": [
+        {
+          "ruleId": "SYSLIB0022",
+          "level": "warning",
+          "message": "'RijndaelManaged' is obsolete: 'The Rijndael and RijndaelManaged types are obsolete. Use Aes instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/MyCryptography.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 20,
+                  "endLine": 13,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "SYSLIB0021",
+          "level": "warning",
+          "message": "'MD5CryptoServiceProvider' is obsolete: 'Derived cryptographic types are obsolete. Use the Create method on the base type instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/MyCryptography.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 17,
+                  "endLine": 15,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "SYSLIB0022",
+          "level": "warning",
+          "message": "'RijndaelManaged' is obsolete: 'The Rijndael and RijndaelManaged types are obsolete. Use Aes instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/MyCryptography.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 20,
+                  "endLine": 37,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "SYSLIB0021",
+          "level": "warning",
+          "message": "'MD5CryptoServiceProvider' is obsolete: 'Derived cryptographic types are obsolete. Use the Create method on the base type instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/MyCryptography.cs",
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 17,
+                  "endLine": 39,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make '_rootPath' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/FileService/FileService.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 24,
+                  "endLine": 8,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2211",
+          "level": "note",
+          "message": "Non-constant fields should not be visible",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/AwsEmailSettings.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 40,
+                  "endLine": 11,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1104",
+          "level": "warning",
+          "message": "Make this field 'private' and encapsulate it in a 'public' property.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/AwsEmailSettings.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 40,
+                  "endLine": 11,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2223",
+          "level": "warning",
+          "message": "Change the visibility of 'Current' or make it 'const' or 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/AwsEmailSettings.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 40,
+                  "endLine": 11,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/OracleSettings.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 13,
+                  "endLine": 15,
+                  "endColumn": 118
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/OracleSettings.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 9,
+                  "endLine": 25,
+                  "endColumn": 231
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2211",
+          "level": "note",
+          "message": "Non-constant fields should not be visible",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/EmailConfiguration.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 42,
+                  "endLine": 5,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1104",
+          "level": "warning",
+          "message": "Make this field 'private' and encapsulate it in a 'public' property.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/EmailConfiguration.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 42,
+                  "endLine": 5,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2223",
+          "level": "warning",
+          "message": "Change the visibility of 'Current' or make it 'const' or 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/EmailConfiguration.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 42,
+                  "endLine": 5,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/Constants/Constants.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 9,
+                  "endLine": 9,
+                  "endColumn": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2211",
+          "level": "note",
+          "message": "Non-constant fields should not be visible",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/EqualSettings.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 37,
+                  "endLine": 8,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1104",
+          "level": "warning",
+          "message": "Make this field 'private' and encapsulate it in a 'public' property.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/EqualSettings.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 37,
+                  "endLine": 8,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2223",
+          "level": "warning",
+          "message": "Change the visibility of 'Current' or make it 'const' or 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/EqualSettings.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 37,
+                  "endLine": 8,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2211",
+          "level": "note",
+          "message": "Non-constant fields should not be visible",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/JobSettings.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 35,
+                  "endLine": 8,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1104",
+          "level": "warning",
+          "message": "Make this field 'private' and encapsulate it in a 'public' property.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/JobSettings.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 35,
+                  "endLine": 8,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2223",
+          "level": "warning",
+          "message": "Change the visibility of 'Current' or make it 'const' or 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/JobSettings.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 35,
+                  "endLine": 8,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make 'connection' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/SqlTableCopier.cs",
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 31,
+                  "endLine": 24,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make 'transaction' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/SqlTableCopier.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 32,
+                  "endLine": 25,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/SqlTableCopier.cs",
+                "region": {
+                  "startLine": 100,
+                  "startColumn": 21,
+                  "endLine": 100,
+                  "endColumn": 122
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4487",
+          "level": "warning",
+          "message": "Remove this unread private field 'transaction' or refactor the code to use its value.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/SqlTableCopier.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 32,
+                  "endLine": 25,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/SqlTableCreator.cs",
+                "region": {
+                  "startLine": 207,
+                  "startColumn": 17,
+                  "endLine": 207,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1450",
+          "level": "warning",
+          "message": "Remove the field 'destinationTableName' and declare it as a local variable in the relevant methods.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/SqlTableCopier.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 24,
+                  "endLine": 26,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/SqlTableCreator.cs",
+                "region": {
+                  "startLine": 220,
+                  "startColumn": 17,
+                  "endLine": 220,
+                  "endColumn": 21
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2211",
+          "level": "note",
+          "message": "Non-constant fields should not be visible",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/MailSettings.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 36,
+                  "endLine": 5,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1104",
+          "level": "warning",
+          "message": "Make this field 'private' and encapsulate it in a 'public' property.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/MailSettings.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 36,
+                  "endLine": 5,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2223",
+          "level": "warning",
+          "message": "Change the visibility of 'Current' or make it 'const' or 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/MailSettings.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 36,
+                  "endLine": 5,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2211",
+          "level": "note",
+          "message": "Non-constant fields should not be visible",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/JwtTokenConfig.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 45,
+                  "endLine": 11,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1104",
+          "level": "warning",
+          "message": "Make this field 'private' and encapsulate it in a 'public' property.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/JwtTokenConfig.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 45,
+                  "endLine": 11,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2223",
+          "level": "warning",
+          "message": "Change the visibility of 'Current' or make it 'const' or 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/JwtTokenConfig.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 45,
+                  "endLine": 11,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2292",
+          "level": "warning",
+          "message": "Make this an auto-implemented property and remove its backing field.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/SqlTableCreator.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 30,
+                  "endLine": 25,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2292",
+          "level": "warning",
+          "message": "Make this an auto-implemented property and remove its backing field.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/SqlTableCreator.cs",
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 31,
+                  "endLine": 33,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2292",
+          "level": "warning",
+          "message": "Make this an auto-implemented property and remove its backing field.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/SqlTableCreator.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 23,
+                  "endLine": 41,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2211",
+          "level": "note",
+          "message": "Non-constant fields should not be visible",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/ResignedEmailConfiguration.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 50,
+                  "endLine": 12,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1104",
+          "level": "warning",
+          "message": "Make this field 'private' and encapsulate it in a 'public' property.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/ResignedEmailConfiguration.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 50,
+                  "endLine": 12,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2223",
+          "level": "warning",
+          "message": "Change the visibility of 'Current' or make it 'const' or 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/ResignedEmailConfiguration.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 50,
+                  "endLine": 12,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2211",
+          "level": "note",
+          "message": "Non-constant fields should not be visible",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/OracleSettings.cs",
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 44,
+                  "endLine": 42,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1104",
+          "level": "warning",
+          "message": "Make this field 'private' and encapsulate it in a 'public' property.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/OracleSettings.cs",
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 44,
+                  "endLine": 42,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2223",
+          "level": "warning",
+          "message": "Change the visibility of 'settings' or make it 'const' or 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/OracleSettings.cs",
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 44,
+                  "endLine": 42,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1118",
+          "level": "warning",
+          "message": "Hide this public constructor by making it 'protected'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/OracleSettings.cs",
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 16,
+                  "endLine": 43,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2386",
+          "level": "warning",
+          "message": "Use an immutable collection or reduce the accessibility of the public static field 'settings'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/OracleSettings.cs",
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 23,
+                  "endLine": 42,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2211",
+          "level": "note",
+          "message": "Non-constant fields should not be visible",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/OracleSettings.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 38,
+                  "endLine": 8,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1104",
+          "level": "warning",
+          "message": "Make this field 'private' and encapsulate it in a 'public' property.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/OracleSettings.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 38,
+                  "endLine": 8,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2223",
+          "level": "warning",
+          "message": "Change the visibility of 'Current' or make it 'const' or 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/OracleSettings.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 38,
+                  "endLine": 8,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1104",
+          "level": "warning",
+          "message": "Make this field 'private' and encapsulate it in a 'public' property.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/OracleSettings.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 37,
+                  "endLine": 10,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3010",
+          "level": "warning",
+          "message": "Remove this assignment of 'Current' or initialize it statically.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/ResignedEmailConfiguration.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 13,
+                  "endLine": 16,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/ResignedEmailConfiguration.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 50,
+                  "endLine": 12,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3010",
+          "level": "warning",
+          "message": "Remove this assignment of 'Current' or initialize it statically.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/AwsEmailSettings.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 13,
+                  "endLine": 15,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/AwsEmailSettings.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 40,
+                  "endLine": 11,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3010",
+          "level": "warning",
+          "message": "Remove this assignment of 'Current' or initialize it statically.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/JwtTokenConfig.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 13,
+                  "endLine": 15,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/JwtTokenConfig.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 45,
+                  "endLine": 11,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3010",
+          "level": "warning",
+          "message": "Remove this assignment of 'Current' or initialize it statically.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/EmailConfiguration.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 13,
+                  "endLine": 9,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/EmailConfiguration.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 42,
+                  "endLine": 5,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3010",
+          "level": "warning",
+          "message": "Remove this assignment of 'settings' or initialize it statically.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/OracleSettings.cs",
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 13,
+                  "endLine": 45,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/OracleSettings.cs",
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 44,
+                  "endLine": 42,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6602",
+          "level": "warning",
+          "message": "\"Find\" method should be used instead of the \"FirstOrDefault\" extension method.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/FileService/FileService.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 48,
+                  "endLine": 20,
+                  "endColumn": 62
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3010",
+          "level": "warning",
+          "message": "Remove this assignment of 'Current' or initialize it statically.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/OracleSettings.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 13,
+                  "endLine": 14,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/OracleSettings.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 38,
+                  "endLine": 8,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3010",
+          "level": "warning",
+          "message": "Remove this assignment of 'Current' or initialize it statically.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/MailSettings.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 13,
+                  "endLine": 9,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/MailSettings.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 36,
+                  "endLine": 5,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3010",
+          "level": "warning",
+          "message": "Remove this assignment of 'Current' or initialize it statically.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/JobSettings.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 13,
+                  "endLine": 12,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/JobSettings.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 35,
+                  "endLine": 8,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3010",
+          "level": "warning",
+          "message": "Remove this assignment of 'Current' or initialize it statically.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/EqualSettings.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 13,
+                  "endLine": 12,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/ApplicationSettings/EqualSettings.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 37,
+                  "endLine": 8,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4790",
+          "level": "warning",
+          "message": "Make sure this weak hash algorithm is not used in a sensitive context here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/MyCryptography.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 52,
+                  "endLine": 15,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4790",
+          "level": "warning",
+          "message": "Make sure this weak hash algorithm is not used in a sensitive context here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/MyCryptography.cs",
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 52,
+                  "endLine": 39,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1643",
+          "level": "warning",
+          "message": "Use a StringBuilder instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/MyCryptography.cs",
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 17,
+                  "endLine": 60,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1825",
+          "level": "note",
+          "message": "Avoid unnecessary zero-length array allocations.  Use Array.Empty<int>() instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/SqlTableCreator.cs",
+                "region": {
+                  "startLine": 76,
+                  "startColumn": 27,
+                  "endLine": 76,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3011",
+          "level": "warning",
+          "message": "Make sure that this accessibility bypass is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/SqlTableCopier.cs",
+                "region": {
+                  "startLine": 51,
+                  "startColumn": 86,
+                  "endLine": 51,
+                  "endColumn": 108
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3011",
+          "level": "warning",
+          "message": "Make sure that this accessibility bypass is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/SqlTableCopier.cs",
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 82,
+                  "endLine": 53,
+                  "endColumn": 104
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3011",
+          "level": "warning",
+          "message": "Make sure that this accessibility bypass is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/SqlTableCopier.cs",
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 83,
+                  "endLine": 55,
+                  "endColumn": 105
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3011",
+          "level": "warning",
+          "message": "Make sure that this accessibility bypass is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/SqlTableCopier.cs",
+                "region": {
+                  "startLine": 57,
+                  "startColumn": 90,
+                  "endLine": 57,
+                  "endColumn": 112
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3011",
+          "level": "warning",
+          "message": "Make sure that this accessibility bypass is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/SqlTableCopier.cs",
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 90,
+                  "endLine": 58,
+                  "endColumn": 112
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3878",
+          "level": "warning",
+          "message": "Remove this array creation and simply pass the elements.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/SqlTableCreator.cs",
+                "region": {
+                  "startLine": 161,
+                  "startColumn": 31,
+                  "endLine": 161,
+                  "endColumn": 55
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3878",
+          "level": "warning",
+          "message": "Remove this array creation and simply pass the elements.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/SqlTableCreator.cs",
+                "region": {
+                  "startLine": 182,
+                  "startColumn": 29,
+                  "endLine": 182,
+                  "endColumn": 58
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'CalculateChecksumDigit' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/AppHelper.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 20,
+                  "endLine": 8,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3878",
+          "level": "warning",
+          "message": "Remove this array creation and simply pass the elements.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/SqlTableCreator.cs",
+                "region": {
+                  "startLine": 205,
+                  "startColumn": 35,
+                  "endLine": 205,
+                  "endColumn": 59
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1643",
+          "level": "warning",
+          "message": "Use a StringBuilder instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/SqlTableCreator.cs",
+                "region": {
+                  "startLine": 157,
+                  "startColumn": 21,
+                  "endLine": 157,
+                  "endColumn": 94
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3878",
+          "level": "warning",
+          "message": "Remove this array creation and simply pass the elements.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/SqlTableCreator.cs",
+                "region": {
+                  "startLine": 219,
+                  "startColumn": 35,
+                  "endLine": 219,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1643",
+          "level": "warning",
+          "message": "Use a StringBuilder instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/SqlTableCreator.cs",
+                "region": {
+                  "startLine": 171,
+                  "startColumn": 21,
+                  "endLine": 171,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6444",
+          "level": "warning",
+          "message": "Pass a timeout to limit the execution time.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/PasswordGenerator.cs",
+                "region": {
+                  "startLine": 100,
+                  "startColumn": 79,
+                  "endLine": 100,
+                  "endColumn": 119
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6444",
+          "level": "warning",
+          "message": "Pass a timeout to limit the execution time.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/PasswordGenerator.cs",
+                "region": {
+                  "startLine": 101,
+                  "startColumn": 79,
+                  "endLine": 101,
+                  "endColumn": 119
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6444",
+          "level": "warning",
+          "message": "Pass a timeout to limit the execution time.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/PasswordGenerator.cs",
+                "region": {
+                  "startLine": 102,
+                  "startColumn": 73,
+                  "endLine": 102,
+                  "endColumn": 111
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6444",
+          "level": "warning",
+          "message": "Pass a timeout to limit the execution time.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/PasswordGenerator.cs",
+                "region": {
+                  "startLine": 103,
+                  "startColumn": 74,
+                  "endLine": 103,
+                  "endColumn": 112
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6444",
+          "level": "warning",
+          "message": "Pass a timeout to limit the execution time.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/PasswordGenerator.cs",
+                "region": {
+                  "startLine": 104,
+                  "startColumn": 71,
+                  "endLine": 104,
+                  "endColumn": 107
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6444",
+          "level": "warning",
+          "message": "Pass a timeout to limit the execution time.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/SqlTableCopier.cs",
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 31,
+                  "endLine": 48,
+                  "endColumn": 74
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1643",
+          "level": "warning",
+          "message": "Use a StringBuilder instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/SqlTableCreator.cs",
+                "region": {
+                  "startLine": 202,
+                  "startColumn": 21,
+                  "endLine": 202,
+                  "endColumn": 87
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1825",
+          "level": "note",
+          "message": "Avoid unnecessary zero-length array allocations.  Use Array.Empty<int>() instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/SqlTableCreator.cs",
+                "region": {
+                  "startLine": 149,
+                  "startColumn": 27,
+                  "endLine": 149,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1481",
+          "level": "warning",
+          "message": "Remove the unused local variable 'exInvlidColumn'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/SqlTableCopier.cs",
+                "region": {
+                  "startLine": 99,
+                  "startColumn": 31,
+                  "endLine": 99,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2589",
+          "level": "warning",
+          "message": "Change this condition so that it does not always evaluate to 'true'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/PasswordGenerator.cs",
+                "region": {
+                  "startLine": 100,
+                  "startColumn": 59,
+                  "endLine": 100,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2589",
+          "level": "warning",
+          "message": "Change this condition so that it does not always evaluate to 'true'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/PasswordGenerator.cs",
+                "region": {
+                  "startLine": 101,
+                  "startColumn": 59,
+                  "endLine": 101,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2589",
+          "level": "warning",
+          "message": "Change this condition so that it does not always evaluate to 'true'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/PasswordGenerator.cs",
+                "region": {
+                  "startLine": 102,
+                  "startColumn": 55,
+                  "endLine": 102,
+                  "endColumn": 69
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2589",
+          "level": "warning",
+          "message": "Change this condition so that it does not always evaluate to 'true'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/PasswordGenerator.cs",
+                "region": {
+                  "startLine": 103,
+                  "startColumn": 56,
+                  "endLine": 103,
+                  "endColumn": 70
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2589",
+          "level": "warning",
+          "message": "Change this condition so that it does not always evaluate to 'true'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/PasswordGenerator.cs",
+                "region": {
+                  "startLine": 104,
+                  "startColumn": 54,
+                  "endLine": 104,
+                  "endColumn": 67
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'GetBulkCopyColumnException' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/SqlTableCopier.cs",
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 26,
+                  "endLine": 40,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Helper/SqlTableCreator.cs",
+                "region": {
+                  "startLine": 278,
+                  "startColumn": 27,
+                  "endLine": 278,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "CA1822": {
+          "id": "CA1822",
+          "shortDescription": "Mark members as static",
+          "fullDescription": "Members that do not access instance data or call instance methods can be marked as static. After you mark the methods as static, the compiler will emit nonvirtual call sites to these members. This can give you a measurable performance gain for performance-sensitive code.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1822",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true,
+            "tags": [
+              "PortedFromFxCop",
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CA1825": {
+          "id": "CA1825",
+          "shortDescription": "Avoid zero-length array allocations",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1825",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CA2211": {
+          "id": "CA2211",
+          "shortDescription": "Non-constant fields should not be visible",
+          "fullDescription": "Static fields that are neither constants nor read-only are not thread-safe. Access to such a field must be carefully controlled and requires advanced programming techniques to synchronize access to the class object.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca2211",
+          "properties": {
+            "category": "Usage",
+            "isEnabledByDefault": true,
+            "tags": [
+              "PortedFromFxCop",
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "S1104": {
+          "id": "S1104",
+          "shortDescription": "Fields should not have public accessibility",
+          "fullDescription": "Public fields in public classes do not respect the encapsulation principle and has three main disadvantages:",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1104",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S1118": {
+          "id": "S1118",
+          "shortDescription": "Utility classes should not have public constructors",
+          "fullDescription": "Utility classes, which are collections of static members, are not meant to be instantiated.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1118",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S112": {
+          "id": "S112",
+          "shortDescription": "General exceptions should never be thrown",
+          "fullDescription": "Throwing such general exceptions as Exception, SystemException, ApplicationException, IndexOutOfRangeException, NullReferenceException, OutOfMemoryException and ExecutionEngineException prevents calling methods from handling true, system-generated exceptions differently than application-generated errors.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-112",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S125": {
+          "id": "S125",
+          "shortDescription": "Sections of code should not be commented out",
+          "fullDescription": "Programmers should not comment out code as it bloats programs and reduces readability.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-125",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S1450": {
+          "id": "S1450",
+          "shortDescription": "Private fields only used as local variables in methods should become local variables",
+          "fullDescription": "When the value of a private field is always assigned to in a class' methods before being read, then it is not being used to store class information. Therefore, it should become a local variable in the relevant methods to prevent any misunderstanding.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1450",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S1481": {
+          "id": "S1481",
+          "shortDescription": "Unused local variables should be removed",
+          "fullDescription": "If a local variable is declared but not used, it is dead code and should be removed. Doing so will improve maintainability because developers will not wonder what the variable is used for.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1481",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S1643": {
+          "id": "S1643",
+          "shortDescription": "Strings should not be concatenated using '+' in a loop",
+          "fullDescription": "StringBuilder is more efficient than string concatenation, especially when the operator is repeated over and over as in loops.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1643",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2223": {
+          "id": "S2223",
+          "shortDescription": "Non-constant static fields should not be visible",
+          "fullDescription": "Non-private static fields that are neither const nor readonly can lead to errors and unpredictable behavior.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2223",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2292": {
+          "id": "S2292",
+          "shortDescription": "Trivial properties should be auto-implemented",
+          "fullDescription": "Trivial properties, which include no logic but setting and getting a backing field should be converted to auto-implemented properties, yielding cleaner and more readable code.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2292",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2386": {
+          "id": "S2386",
+          "shortDescription": "Mutable fields should not be \"public static\"",
+          "fullDescription": "public static mutable fields of classes which are accessed directly should be protected to the degree possible. This can be done by reducing the accessibility of the field or by changing the return type to an immutable type.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2386",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2589": {
+          "id": "S2589",
+          "shortDescription": "Boolean expressions should not be gratuitous",
+          "fullDescription": "If a boolean expression doesn’t change the evaluation of the condition, then it is entirely unnecessary, and can be removed. If it is gratuitous because it does not match the programmer’s intent, then it’s a bug and the expression should be fixed.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2589",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2933": {
+          "id": "S2933",
+          "shortDescription": "Fields that are only assigned in the constructor should be \"readonly\"",
+          "fullDescription": "readonly fields can only be assigned in a class constructor. If a class has a field that’s not marked readonly but is only set in the constructor, it could cause confusion about the field’s intended use. To avoid confusion, such fields should be marked readonly to make their intended use explicit, and to prevent future maintainers from inadvertently changing their use.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2933",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S3010": {
+          "id": "S3010",
+          "shortDescription": "Static fields should not be updated in constructors",
+          "fullDescription": "Assigning a value to a static field in a constructor could cause unreliable behavior at runtime since it will change the value for all instances of the class.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3010",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S3011": {
+          "id": "S3011",
+          "shortDescription": "Reflection should not be used to increase accessibility of classes, methods, or fields",
+          "fullDescription": "This rule raises an issue when reflection is used to change the visibility of a class, method or field, and when it is used to directly update a field value. Altering or bypassing the accessibility of classes, methods, or fields violates the encapsulation principle and could lead to run-time errors.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3011",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S3878": {
+          "id": "S3878",
+          "shortDescription": "Arrays should not be created for params parameters",
+          "fullDescription": "There’s no point in creating an array solely for the purpose of passing it to a params parameter. Simply pass the elements directly. They will be consolidated into an array automatically.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3878",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S4487": {
+          "id": "S4487",
+          "shortDescription": "Unread \"private\" fields should be removed",
+          "fullDescription": "Private fields which are written but never read are a case of \"dead store\". Changing the value of such a field is useless and most probably indicates an error in the code.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-4487",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S4790": {
+          "id": "S4790",
+          "shortDescription": "Using weak hashing algorithms is security-sensitive",
+          "fullDescription": "Cryptographic hash algorithms such as MD2, MD4, MD5, MD6, HAVAL-128, HMAC-MD5, DSA (which uses SHA-1), RIPEMD, RIPEMD-128, RIPEMD-160, HMACRIPEMD160 and SHA-1 are no longer considered secure, because it is possible to have collisions (little computational effort is enough to find two or more different inputs that produce the same hash).",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-4790",
+          "properties": {
+            "category": "Critical Security Hotspot",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S6444": {
+          "id": "S6444",
+          "shortDescription": "Not specifying a timeout for regular expressions is security-sensitive",
+          "fullDescription": "Not specifying a timeout for regular expressions can lead to a Denial-of-Service attack. Pass a timeout when using System.Text.RegularExpressions to process untrusted input because a malicious user might craft a value for which the evaluation lasts excessively long.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-6444",
+          "properties": {
+            "category": "Major Security Hotspot",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S6602": {
+          "id": "S6602",
+          "shortDescription": "\"Find\" method should be used instead of the \"FirstOrDefault\" extension",
+          "fullDescription": "Both the List.Find method and IEnumerable.FirstOrDefault method can be used to find the first element that satisfies a given condition in a collection. However, List.Find can be faster than IEnumerable.FirstOrDefault for List objects. For small collections, the performance difference may be minor, but for large collections, it can make a noticeable difference. The same applies for ImmutableList and arrays too.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-6602",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "SYSLIB0021": {
+          "id": "SYSLIB0021",
+          "shortDescription": "Type or member is obsolete",
+          "defaultLevel": "warning",
+          "helpUri": "https://aka.ms/dotnet-warnings/SYSLIB0021",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry",
+              "CustomObsolete"
+            ]
+          }
+        },
+        "SYSLIB0022": {
+          "id": "SYSLIB0022",
+          "shortDescription": "Type or member is obsolete",
+          "defaultLevel": "warning",
+          "helpUri": "https://aka.ms/dotnet-warnings/SYSLIB0022",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry",
+              "CustomObsolete"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

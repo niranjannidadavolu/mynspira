@@ -1,0 +1,140 @@
+<div class="table-responsive">
+    <div class=" table-responsive table-card text-end">
+        <div class="card-body table-responsive">
+            <button class="btn btn-sm btn-info btn-add mb-3" (click)="addEducationDetails()">
+                <i class="las la-plus"></i> Add new education details</button>
+        </div>
+    </div>
+    <ejs-grid [dataSource]="educationDetails" [allowSorting]='true' [enableHover]='false' [enableHeaderFocus]='true'
+        [filterSettings]='filterSettings' [allowFiltering]='true' gridLines='Both' allowPaging='true'
+        [pageSettings]='pageSettings'>
+        <e-columns>
+            <e-column width="200" field="Education" headerText="Education">
+                <!-- <ng-template #editTemplate let-data>
+                    <ejs-dropdownlist [dataSource]="educationData" [value]="data.EducationSlno"
+                        (change)="valueChanged($event)"
+                        [fields]="{ value: 'EducationSlno', text: 'EduName' }"></ejs-dropdownlist>
+                </ng-template>
+                <ng-template #template let-data>
+                    {{data.Education}}
+                </ng-template> -->
+            </e-column>
+            <e-column width="200" field="EducationCourse" headerText="Course" [allowEditing]="true">
+                <!-- <ng-template #editTemplate let-data>
+                    <ejs-dropdownlist [dataSource]="filterCourseNames" [value]="data.EducourseSlno"
+                        [fields]="{ value: 'EducourseSlno', text: 'CourseName' }"></ejs-dropdownlist>
+                </ng-template>
+                <ng-template #template let-data>
+                    {{data.EducationCourse}}
+                </ng-template> -->
+            </e-column>
+            <e-column width="200" field="CollegeName" headerText="College/School Name"></e-column>
+            <e-column width="200" field="YearOfPassing" headerText="Year Of Passing"></e-column>
+            <e-column width="200" field="Percentage" headerText="Percentage"></e-column>
+            <e-column [allowFiltering]='false' headerText='Actions' width='100'>
+                <ng-template #template let-data>
+                    <div class="d-flex align-items-center">
+                        <button type="button" class="btn btn-light position-relative p-0 avatar-xs rounded-circle"
+                            (click)="editEducationDetails(data,'Edit')" title="Apply Leave">
+                            <span class="avatar-title bg-transparent text-reset">
+                                <i class="ri-pencil-fill text-success fs-15"></i>
+                            </span>
+                        </button>
+
+                        <button type="button" class="btn btn-light position-relative p-0 avatar-xs rounded-circle"
+                            (click)="deleteEducationDetails(data)" title="Delete EducationDetails">
+                            <span class="avatar-title bg-transparent text-reset">
+                                <i class="ri ri-delete-bin-line text-danger fs-15"></i>
+                            </span>
+                        </button>
+                    </div>
+                </ng-template>
+            </e-column>
+        </e-columns>
+    </ejs-grid>
+
+
+    <!-- <dx-data-grid id="gridContainerExperience" [dataSource]="educationDetails" keyExpr="Slno" [showBorders]="true"
+        [columnHidingEnabled]="false" (onRowUpdated)="eventAction($event,'RowUpdated')"
+        (onEditorPreparing)="onEditorPreparing($event,null)" (onRowRemoving)="deleteEducationDetails($event)"
+        (onRowInserting)="eventAction($event,'RowInserting')" (onToolbarPreparing)="onToolbarPreparingEducation($event)"
+        [columnAutoWidth]="true">
+        <dxo-paging [enabled]="true"></dxo-paging>
+
+        <dxo-editing mode="form" [allowUpdating]="true" [allowAdding]="true" [allowDeleting]="true" [useIcons]="true">
+
+            <dxo-popup title="Education Info" [showTitle]="true" [width]="700" [height]="370">
+            </dxo-popup>
+            <dxo-form>
+                <dxi-item itemType="group" [colCount]="2" [colSpan]="2">
+
+                    <dxi-item dataField="EducationSlno">
+                        <dxi-validation-rule type="required"></dxi-validation-rule>
+                    </dxi-item>
+                    <dxi-item dataField="EducourseSlno">
+                        <dxi-validation-rule type="required"></dxi-validation-rule>
+                    </dxi-item>
+                    <dxi-item dataField="HtNo">
+                        <dxi-validation-rule type="required"></dxi-validation-rule>
+                    </dxi-item>
+                    <dxi-item dataField="CollegeName">
+                        <dxi-validation-rule type="required"></dxi-validation-rule>
+                    </dxi-item>
+                    <dxi-item dataField="UniversityBoard">
+                    </dxi-item>
+                    <dxi-item dataField="UniversityBoardName">
+                        <dxi-validation-rule type="required"></dxi-validation-rule>
+                    </dxi-item>
+                    <dxi-item dataField="Specialization">
+                    </dxi-item>
+                    <dxi-item dataField="YearOfPassing">
+                        <dxi-validation-rule type="required"></dxi-validation-rule>
+                    </dxi-item>
+                    <dxi-item dataField="Percentage">
+                        <dxi-validation-rule type="required"></dxi-validation-rule>
+                    </dxi-item>
+                    <dxi-item dataField="Marksobtained">
+                        <dxi-validation-rule type="required"></dxi-validation-rule>
+                    </dxi-item>
+                    <dxi-item dataField="Addquaslno">
+                    </dxi-item>
+                    <dxi-item dataField="Reasonforgap">
+                    </dxi-item>
+                    <dxi-item dataField="ExtraActivities">
+                    </dxi-item>
+
+                </dxi-item>
+            </dxo-form>
+        </dxo-editing>
+
+        <dxi-column dataField="EducationSlno" caption="Education" [setCellValue]="setStateValue">
+            <dxo-lookup [dataSource]="educationData" (onValueChanged)="valueChanged($event)" valueExpr="EducationSlno"
+                displayExpr="EduName">
+            </dxo-lookup>
+        </dxi-column>
+        <dxi-column dataField="EducourseSlno" caption="Course">
+            <dxo-lookup [dataSource]="filterCourseNames" valueExpr="EducourseSlno" displayExpr="CourseName">
+            </dxo-lookup>
+        </dxi-column>
+        <dxi-column dataField="HtNo" [visible]="false" caption="Registration No"></dxi-column>
+        <dxi-column dataField="CollegeName" caption="College/School Name"></dxi-column>
+        <dxi-column dataField="UniversityBoard" [visible]="false" caption="Board"></dxi-column>
+        <dxi-column dataField="UniversityBoardName" [visible]="false" caption="University/Board Name"></dxi-column>
+        <dxi-column dataField="Specialization" [visible]="false" caption="Specialization"></dxi-column>
+        <dxi-column dataField="YearOfPassing" caption="Year Of Passing"></dxi-column>
+        <dxi-column dataField="Percentage" caption="Percentage"></dxi-column>
+        <dxi-column dataField="Marksobtained" [visible]="false" caption="Maximum Marks"></dxi-column>
+        <dxi-column dataField="Addquaslno" [visible]="false" caption="Additional Qualification">
+            <dxo-lookup [dataSource]="additionalQualification" valueExpr="Addquaslno" displayExpr="Name">
+            </dxo-lookup>
+        </dxi-column>
+        <dxi-column dataField="Reasonforgap" [visible]="false" caption="Reason for Gap"></dxi-column>
+        <dxi-column dataField="ExtraActivities" [visible]="false" caption="Extra Activities"></dxi-column>
+
+        <dxi-column type="buttons" [width]="110" caption="Actions">
+            <dxi-button name="edit" hint="Edit Education Information"></dxi-button>
+            <dxi-button icon="ri ri-delete-bin-line text-danger" hint="Delete Education Information" name="delete">
+            </dxi-button>
+        </dxi-column>
+    </dx-data-grid> -->
+</div>

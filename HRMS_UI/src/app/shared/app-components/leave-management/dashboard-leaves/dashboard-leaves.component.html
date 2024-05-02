@@ -1,0 +1,215 @@
+<div class="card">
+    <div class="card-header">
+        <div class="d-flex align-items-center">
+            <div class="flex-grow-1">
+                <h6 class="card-title mb-0 fs-16">Leave Management</h6>
+            </div>
+            <div class="flex-shrink-0">
+                <ul class="list-inline card-toolbar-menu d-flex align-items-center mb-0">
+                    <li class="list-inline-item" *ngIf="canHrApplyLeave">
+                        <button type="button" class="btn btn-primary me-1" (click)="applyLeaveByHrOps()"><i
+                                class="ri-check-double-line label-icon align-middle fs-10 me-2"></i> Apply
+                            Leave</button>
+                    </li>                    <li class="list-inline-item">
+                        <div class="btn-group" role="group">
+                            <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle"
+                                data-bs-toggle="dropdown" aria-expanded="false"
+                                *ngIf="employeeProfile?.CanApplyLeave && specialLeaveTypes?.length && canApplyLeave">
+                                Other Leaves
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                <li *ngFor="let item of specialLeaveTypes">
+                                    <a class="dropdown-item fs-10" (click)="applySpecialLeaves(item)"
+                                        href="javascript:void(0)">{{item.LeaveTypeName}}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="card-body" id="collapseExample2">
+        <ul ngbNav #HeaderTabs="ngbNav" [activeId]="1" class="nav nav-pills arrow-navtabs nav-success bg-light mb-3">
+            <li [ngbNavItem]="1">
+                <a ngbNavLink>
+                    My Leaves
+                </a>
+                <ng-template ngbNavContent>
+                    <dx-data-grid #myLeavesDataGrid id="myLeavesDataGrid"
+                        [ngClass]="{'min-height': !isMinheight && myLeaves}" [dataSource]="myLeaves" keyExpr="LeaveId"
+                        [showBorders]="true" [columnAutoWidth]="true">
+                        <dxo-load-panel [enabled]="true">
+                        </dxo-load-panel>
+                        <dxo-paging [enabled]="true" [pageSize]="5"></dxo-paging>
+                        <dxi-column dataField="LeaveAppliedOn" caption="Applied Date" dataType="date"
+                            format="dd-MMM-yyyy" [width]="100">
+                        </dxi-column>
+                        <dxi-column dataField="LeaveTypeId" alignment="left" caption="Leave Type"
+                            cellTemplate='LeaveTypeTemplate'>
+                        </dxi-column>
+                        <dxi-column dataField="LeaveFrom" caption="From Date" dataType="date" format="dd-MMM-yyyy">
+                        </dxi-column>
+                        <dxi-column dataField="LeaveTo" caption="To Date" dataType="date" format="dd-MMM-yyyy">
+                        </dxi-column>
+                        <dxi-column dataField="TotalDaysTaken" caption="Total Days" [width]="70"></dxi-column>
+                        <div *dxTemplate="let cell of 'LeaveTypeTemplate'" class="text-left">
+                            <span class="badge rounded-pill badge-soft-dark">{{cell.data.LeaveTypeName |
+                                titlecase}}</span>
+                        </div>
+                        <dxi-column caption="Status" [alignment]="'center'" dataField="LeaveStatusId"
+                            cellTemplate="statusTemplate" [width]="80">
+                        </dxi-column>
+                        <div *dxTemplate="let cell of 'statusTemplate'">
+                            <i *ngIf="cell.value == 1" class="dx-icon dx-icon-pending-icon"
+                                title="{{cell.data.LeaveStatusName }}"></i>
+                            <i *ngIf="cell.value == 2" class="dx-icon dx-icon-approve-icon"
+                                title="{{cell.data.LeaveStatusName }}"></i>
+                            <i *ngIf="cell.value == 3" class="dx-icon dx-icon-reject-icon"
+                                title="{{cell.data.LeaveStatusName }}"></i>
+                            <i *ngIf="cell.value == 4" class="dx-icon dx-icon-pending-icon"
+                                title="{{cell.data.LeaveStatusName }}"></i>
+                            <i *ngIf="cell.value == 5" class="dx-icon dx-icon-cancelled-icon"
+                                title="{{cell.data.LeaveStatusName }}"></i>
+                        </div>
+                        <!-- <dxi-column caption="Work Flow" dataField="LeaveWorkFlows" cellTemplate="wrkflwTemplate">
+                                        </dxi-column>
+                                        <div *dxTemplate="let cell of 'wrkflwTemplate'">
+                                            <app-workflow-tracker [trackerEntities]="cell?.data?.LeaveWorkFlows"
+                                                [totalDaysTaken]="cell?.data?.TotalDaysTaken">
+                                            </app-workflow-tracker>
+            
+                                        </div> -->
+                        <dxi-column type="buttons" caption="Actions" cellTemplate="action" [width]="70">
+                        </dxi-column>
+                        <div *dxTemplate="let d of 'action'" class="text-left">
+
+                            <a href="javascript:void(0)" (click)="viewLeaveDetails(d, leaveAction.view,false)"
+                                title="View Leave" class="me-2">
+                                <i class="dx-icon dx-icon-view-icon"></i>
+                            </a>
+                            <a href="javascript:void(0)" *ngIf="isCancelVisible(d)" (click)="cancelLeave(d)"
+                                title="Cancel Leave" class="me-2 text-danger">
+                                <i class="ri ri-delete-bin-line"></i>
+                            </a>
+                        </div>
+                    </dx-data-grid>
+                </ng-template>
+            </li>
+            <li [ngbNavItem]="2" *ngIf="!isApprovalLeaveHide">
+                <a ngbNavLink>
+                    Leaves For Approval
+                </a>
+                <ng-template ngbNavContent>
+                    <app-team-leaves-for-approval></app-team-leaves-for-approval>
+                </ng-template>
+            </li>
+            <li [ngbNavItem]="3" *ngIf="!isApprovalLeaveHide">
+                <a ngbNavLink>
+                    My Team Leaves
+                </a>
+                <ng-template ngbNavContent>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header p-0 align-items-center d-flex">
+                                    <div class="row" [formGroup]="teamLeaveForm">
+                                        <div class="col-md-5">
+                                            <label for="exampleInputdate" class="form-label">From Date
+                                                <span class="text-danger">*</span></label>
+                                            <div class="input-group mb-3">
+                                                <input id="fromDate" class="form-control flatpickr-input active"
+                                                    type="text" mwlFlatpickr [altInput]="false"
+                                                    [convertModelValue]="true" formControlName="LeaveFrom"
+                                                    [minDate]="minDate" altFormat="d-M-Y" dateFormat="d-M-Y" />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-5">
+                                            <label for="exampleInputdate" class="form-label">To Date
+                                                <span class="text-danger">*</span></label>
+                                            <div class="input-group mb-3">
+                                                <input id="toDate" class="form-control flatpickr-input active"
+                                                    type="text" mwlFlatpickr [altInput]="false"
+                                                    [convertModelValue]="true" formControlName="LeaveTo"
+                                                    [minDate]="toMinDate" altFormat="d-M-Y" dateFormat="d-M-Y" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label for="">&nbsp;</label>
+                                            <button type="button" class="btn btn-primary"
+                                                (click)="getTeamLeaves()">Submit</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="card-body p-0">
+                                    <dx-data-grid id="gridContainer" [dataSource]="teamLeaves" keyExpr="EmployeeSlno"
+                                        [showBorders]="true" [columnAutoWidth]="true">
+                                        <dxo-load-panel [enabled]="true">
+                                        </dxo-load-panel>
+                                        <dxo-paging [enabled]="true" [pageSize]="5"></dxo-paging>
+                                        <dxi-column dataField="EmpId" caption="Id" dataType="string">
+                                        </dxi-column>
+                                        <dxi-column dataField="EmployeeName" caption="Name" dataType="string">
+                                        </dxi-column>
+                                        <dxi-column dataField="BranchName" caption="BranchName" dataType="string">
+                                        </dxi-column>
+                                        <dxi-column dataField="WorkEmail" caption="Work Email" dataType="string">
+                                        </dxi-column>
+                                        <dxi-column dataField="Mobile" caption="Mobile" dataType="string">
+                                        </dxi-column>
+                                        <dxi-column dataField="TotalDaysTaken" caption="Total Days"></dxi-column>
+
+                                        <dxi-column type="buttons" caption="View Details" cellTemplate="approve">
+                                        </dxi-column>
+                                        <div *dxTemplate="let d of 'approve'">
+                                            <a href="javascript:void(0)" (click)="viewEmpHistoryDetails(d)"
+                                                title="Leave History" class="me-2">
+                                                <i class="ri ri-history-line"></i>
+                                            </a>
+                                        </div>
+                                    </dx-data-grid>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </li>
+        </ul>
+        <div class="tab-content text-muted">
+            <div [ngbNavOutlet]="HeaderTabs"></div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="card">
+    <div class="card-header align-items-center d-flex">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 text-end">
+
+                </div>
+                <div class="col-md-3">
+                    <div class="flex-grow-1 oveflow-hidden" *ngIf="employeeProfile.ReportingManagerId > 0">
+                        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-9 col-sm-9 mt-3">
+                    <div class="flex-shrink-0 ms-2">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="card-body">        
+    </div>
+</div> -->

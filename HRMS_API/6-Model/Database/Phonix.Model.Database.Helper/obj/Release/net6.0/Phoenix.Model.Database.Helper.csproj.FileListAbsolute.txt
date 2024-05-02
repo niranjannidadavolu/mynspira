@@ -1,0 +1,15 @@
+D:\Projects\Nspira\HRMS\API\6-Model\Database\Phonix.Model.Database.Helper\bin\Release\net6.0\Phoenix.Model.Database.Helper.deps.json
+D:\Projects\Nspira\HRMS\API\6-Model\Database\Phonix.Model.Database.Helper\bin\Release\net6.0\Phoenix.Model.Database.Helper.dll
+D:\Projects\Nspira\HRMS\API\6-Model\Database\Phonix.Model.Database.Helper\bin\Release\net6.0\Phoenix.Model.Database.Helper.pdb
+D:\Projects\Nspira\HRMS\API\6-Model\Database\Phonix.Model.Database.Helper\bin\Release\net6.0\Phoenix.CrossCutting.Extension.dll
+D:\Projects\Nspira\HRMS\API\6-Model\Database\Phonix.Model.Database.Helper\bin\Release\net6.0\Phoenix.CrossCutting.Extension.pdb
+D:\Projects\Nspira\HRMS\API\6-Model\Database\Phonix.Model.Database.Helper\obj\Release\net6.0\Phoenix.Model.Database.Helper.csproj.AssemblyReference.cache
+D:\Projects\Nspira\HRMS\API\6-Model\Database\Phonix.Model.Database.Helper\obj\Release\net6.0\Phoenix.Model.Database.Helper.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Nspira\HRMS\API\6-Model\Database\Phonix.Model.Database.Helper\obj\Release\net6.0\Phoenix.Model.Database.Helper.AssemblyInfoInputs.cache
+D:\Projects\Nspira\HRMS\API\6-Model\Database\Phonix.Model.Database.Helper\obj\Release\net6.0\Phoenix.Model.Database.Helper.AssemblyInfo.cs
+D:\Projects\Nspira\HRMS\API\6-Model\Database\Phonix.Model.Database.Helper\obj\Release\net6.0\Phoenix.Model.Database.Helper.csproj.CoreCompileInputs.cache
+D:\Projects\Nspira\HRMS\API\6-Model\Database\Phonix.Model.Database.Helper\obj\Release\net6.0\Phoenix.Model.Database.Helper.csproj.CopyComplete
+D:\Projects\Nspira\HRMS\API\6-Model\Database\Phonix.Model.Database.Helper\obj\Release\net6.0\Phoenix.Model.Database.Helper.dll
+D:\Projects\Nspira\HRMS\API\6-Model\Database\Phonix.Model.Database.Helper\obj\Release\net6.0\refint\Phoenix.Model.Database.Helper.dll
+D:\Projects\Nspira\HRMS\API\6-Model\Database\Phonix.Model.Database.Helper\obj\Release\net6.0\Phoenix.Model.Database.Helper.pdb
+D:\Projects\Nspira\HRMS\API\6-Model\Database\Phonix.Model.Database.Helper\obj\Release\net6.0\ref\Phoenix.Model.Database.Helper.dll

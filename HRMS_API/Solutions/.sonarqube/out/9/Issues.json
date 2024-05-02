@@ -1,0 +1,164 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "4.6.0.0",
+        "fileVersion": "4.6.0-3.23259.8 (c3cc1d0c)",
+        "semanticVersion": "4.6.0",
+        "language": "en-US"
+      },
+      "results": [
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property '_s3Client' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/6-Model/Phoenix.FileProviders/AwsFileProvider.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 34,
+                  "endLine": 21,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/6-Model/Phoenix.FileProviders/AwsFileProvider.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 34,
+                  "endLine": 21,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1144",
+          "level": "warning",
+          "message": "Remove the unused private field 'TempFilePrefix'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/6-Model/Phoenix.FileProviders/AwsFileProvider.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 9,
+                  "endLine": 20,
+                  "endColumn": 62
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1144",
+          "level": "warning",
+          "message": "Remove the unused private field 'existingBucketName'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/6-Model/Phoenix.FileProviders/AwsFileProvider.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 9,
+                  "endLine": 22,
+                  "endColumn": 65
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4487",
+          "level": "warning",
+          "message": "Remove this unread private field '_tempdirpath' or refactor the code to use its value.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/6-Model/Phoenix.FileProviders/AwsFileProvider.cs",
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 33,
+                  "endLine": 19,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "CS8618": {
+          "id": "CS8618",
+          "shortDescription": "Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8618)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "S1144": {
+          "id": "S1144",
+          "shortDescription": "Unused private types or members should be removed",
+          "fullDescription": "private or internal types or private members that are never executed or referenced are dead code: unnecessary, inoperative code that should be removed. Cleaning out dead code decreases the size of the maintained codebase, making it easier to understand the program and preventing bugs from being introduced.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1144",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S4487": {
+          "id": "S4487",
+          "shortDescription": "Unread \"private\" fields should be removed",
+          "fullDescription": "Private fields which are written but never read are a case of \"dead store\". Changing the value of such a field is useless and most probably indicates an error in the code.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-4487",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

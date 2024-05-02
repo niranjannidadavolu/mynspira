@@ -1,0 +1,17 @@
+.event-disabled {
+    pointer-events: none !important;
+    background-color: var(--vz-input-disabled-bg);
+    opacity: 1;
+}
+.ng-select.event-disabled ::ng-deep .ng-select-container  {            
+    background-color: var(--vz-input-disabled-bg);
+}
+::ng-deep .date-pickr-disabled{
+    pointer-events: none !important;
+    background-color: var(--vz-input-disabled-bg) !important;
+    opacity: 1 !important;
+}
+
+invalid-feedback {
+    display: block;
+}

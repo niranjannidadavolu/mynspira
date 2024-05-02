@@ -1,0 +1,12 @@
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Helper.Cron\bin\Debug\net7.0\Phoenix.CrossCutting.Helper.Cron.deps.json
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Helper.Cron\bin\Debug\net7.0\Phoenix.CrossCutting.Helper.Cron.dll
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Helper.Cron\bin\Debug\net7.0\Phoenix.CrossCutting.Helper.Cron.pdb
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Helper.Cron\obj\Debug\net7.0\Phoenix.CrossCutting.Helper.Cron.csproj.AssemblyReference.cache
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Helper.Cron\obj\Debug\net7.0\Phoenix.CrossCutting.Helper.Cron.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Helper.Cron\obj\Debug\net7.0\Phoenix.CrossCutting.Helper.Cron.AssemblyInfoInputs.cache
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Helper.Cron\obj\Debug\net7.0\Phoenix.CrossCutting.Helper.Cron.AssemblyInfo.cs
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Helper.Cron\obj\Debug\net7.0\Phoenix.CrossCutting.Helper.Cron.csproj.CoreCompileInputs.cache
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Helper.Cron\obj\Debug\net7.0\Phoenix.CrossCutting.Helper.Cron.dll
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Helper.Cron\obj\Debug\net7.0\refint\Phoenix.CrossCutting.Helper.Cron.dll
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Helper.Cron\obj\Debug\net7.0\Phoenix.CrossCutting.Helper.Cron.pdb
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Helper.Cron\obj\Debug\net7.0\ref\Phoenix.CrossCutting.Helper.Cron.dll

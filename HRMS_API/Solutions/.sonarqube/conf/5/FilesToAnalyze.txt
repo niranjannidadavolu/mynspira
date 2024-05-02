@@ -1,0 +1,7 @@
+﻿F:\Work\Office\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.JwtGenerator\Abstractions\IJwtTokenGenerator.cs
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.JwtGenerator\ClaimsPrincipalFactory.cs
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.JwtGenerator\Extensions\TokenValidationParametersExtensions.cs
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.JwtGenerator\JwtAuthTicketFormat.cs
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.JwtGenerator\JwtTokenGenerator.cs
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.JwtGenerator\Types\TokenOptions.cs
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.JwtGenerator\Types\TokenWithClaimsPrincipal.cs

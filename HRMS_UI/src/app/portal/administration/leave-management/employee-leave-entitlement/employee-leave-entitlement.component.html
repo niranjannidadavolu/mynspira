@@ -1,0 +1,53 @@
+<!-- BreadCrumb add for dashboard-->
+<app-breadcrumbs title="Leave Balances Report" [breadcrumbItems]="breadCrumbItems"></app-breadcrumbs>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card-header align-items-center col-12">
+            <div class="row pt-3" [formGroup]="filterReportForm">
+                <div class="col-md-5">
+                    <label for="exampleInputdate" class="form-label">Branch <span class="text-danger">*</span></label>
+                    <ejs-multiselect id='multiselect-filtering' [dataSource]='branches' [fields]='branchFields'
+                        (filtering)='onBranchFiltering($event)' [allowFiltering]='true' [placeholder]='watermark'
+                        [mode]='mode' [popupHeight]='popHeight' [showDropDownIcon]='true' showSelectAll='true'
+                        [filterBarPlaceholder]='filterPlaceholder' formControlName="BranchSlno"></ejs-multiselect>
+                </div>
+                <div class="col-md-5">
+                    <label for="exampleInputdate" class="form-label">Employee <span class="text-danger">*</span></label>
+                    <ejs-dropdownlist id='country' [dataSource]='employees' [fields]='employeeFields'
+                        (filtering)='onEmployeeFiltering($event)' [filterBarPlaceholder]="employeeFilterPlaceholder"
+                        [popupHeight]='popHeight' [allowFiltering]='true'
+                        [placeholder]='employeeWatermark'></ejs-dropdownlist>
+                </div>
+                <div class="col-md-2">
+                    <label for="" class="form-label">&nbsp;</label>
+                    <button type="button" class="btn btn-primary mt-4"
+                        (click)="getLeaveBalancesReport()">Submit</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <ejs-grid #grid id='grid' [dataSource]="leaveBalancesReport" [allowPaging]="true" [allowSorting]="true"
+            [allowFiltering]="true" [allowResizing]="true" [filterSettings]='filterOptions' width='100%'>
+            <e-columns>
+                <e-column field='BranchName' headerText='BranchName' width='120' textAlign="Left"
+                    minWidth=10></e-column>
+                <e-column field='OfficeTypeName' headerText='Office Type' width='120' textAlign="Left"
+                    minWidth=10></e-column>
+                <e-column headerText='Casual Leave' [columns]='casualColumns'></e-column>
+                <e-column headerText='Sick Leave' [columns]='sickColumns'></e-column>
+                <e-column headerText='Privilege Leave' [columns]='plColumns'></e-column>
+                <e-column [allowFiltering]='false' headerText='Actions' width='100'>
+                    <ng-template #template let-data>
+                        <a href="javascript:void(0)" (click)="deleteMappedEntitlement(data)" title="Delete Mapped Entitlement"
+                            class="me-2">
+                            <i class="ri ri-delete-bin-6-line text-danger"></i>
+                        </a>
+                    </ng-template>
+                </e-column>
+            </e-columns>
+        </ejs-grid>
+    </div>
+</div>

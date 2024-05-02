@@ -1,0 +1,90 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.JwtGenerator\\Phoenix.CrossCutting.JwtGenerator.csproj": {}
+  },
+  "projects": {
+    "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.JwtGenerator\\Phoenix.CrossCutting.JwtGenerator.csproj": {
+      "version": "5.1.0",
+      "restore": {
+        "projectUniqueName": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.JwtGenerator\\Phoenix.CrossCutting.JwtGenerator.csproj",
+        "projectName": "Phoenix.CrossCutting.JwtGenerator",
+        "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.JwtGenerator\\Phoenix.CrossCutting.JwtGenerator.csproj",
+        "packagesPath": "C:\\Users\\seshu\\.nuget\\packages\\",
+        "outputPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.JwtGenerator\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seshu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.DataProtection": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.30.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.30.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

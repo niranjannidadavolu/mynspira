@@ -1,0 +1,29 @@
+<div class="row">
+    <div *ngFor="let item of empLeaveBalance;let index=index" class="col-xl-4">
+        <div class="card card-animate mb-1">
+            <div class="card-body">
+                <div class="d-flex align-items-center">
+                    <div class="avatar-sm flex-shrink-0">
+                        <span class="avatar-title  bg-soft-primary rounded-2 fs-2">
+                            <i-feather name="briefcase" class="feather-icon-align top briefcase text-primary"></i-feather>
+                        </span>
+                    </div>
+                    <div class="flex-grow-1 overflow-hidden ms-3">
+                        <p class="text-uppercase fw-medium text-muted text-truncate mb-3">{{item.LeaveTypeName}}</p>
+                        <div class="d-flex align-items-center mb-3">
+                            <h4 class="fs-4 flex-grow-1 mb-0"><span class="counter-value"
+                                    data-target="168">{{item.AvailableLeaveBalance}}</span></h4>
+                            <span class="badge badge-soft-danger fs-12"><a href="javascript:void(0)" style="color: #f06548;"
+                                    [ngClass]="{'disabled-link': item.AvailableLeaveBalance <= 0}"
+                                    (click)="applyLeave(item)" *ngIf="employeeProfile?.CanApplyLeave"><i
+                                        class="ri-add-circle-line fs-13 align-middle me-1"></i>Apply</a></span>
+                        </div>
+                        <div *ngIf="viewDetailsShow">
+                            <a>View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end card body -->
+        </div>
+    </div>
+</div>

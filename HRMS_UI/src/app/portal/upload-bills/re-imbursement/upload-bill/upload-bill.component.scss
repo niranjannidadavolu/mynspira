@@ -1,0 +1,75 @@
+.text-right {
+    text-align: right;
+}
+
+.culture-add-imgs {
+    height: 270px;
+    background-color: white;
+}
+
+.file-upload-dashed {
+    padding: 8px 15px 8px 34px;
+    border: 2px dashed #333;
+    height: 277px;
+    width: 345px;
+    background-color: white;
+}
+
+.culture-card {
+    display: inline-block;
+    position: relative;
+}
+
+.img-wrapper {
+    position: absolute;
+    left: 0;
+}
+
+.img-170 {
+    width: 245px !important;
+}
+
+.img-responsive {
+    height: 258px;
+    width: 332px;
+    padding-left: 7px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.pt-1 {
+    padding-top: 1rem;
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.text-cent {
+    text-align: center;
+}
+
+.text-warn {
+    font-style: italic;
+    font-size: 13px;
+    float: right;    
+    text-align: center;
+    margin-top: 85px;
+    color: #662b04;
+    font-weight: bold;
+}
+
+.file-text
+{
+    margin-top: 56px;
+    margin-left: 85px;
+}
+
+.file-upload-icon
+{
+    max-width: 22px;
+    width: 22px;
+    margin-left: 90px;
+}

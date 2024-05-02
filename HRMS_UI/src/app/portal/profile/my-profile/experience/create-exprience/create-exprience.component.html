@@ -1,0 +1,167 @@
+<div class="modal-content">
+    <div class="modal-header mb-3">
+        <h5 class="modal-title fw-bold" id="exampleModalgridLabel">{{type | titlecase}} Expriences</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+            (click)="activeModal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+        <form [formGroup]="experiencefrom" (ngSubmit)="OnSubmit()">
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label for="IsNarayanaEmp" class="form-label">Is Narayana Emp <span
+                            class="text-danger">*</span></label>
+                    <ng-select [items]="employeeType" bindLabel="name" bindValue="id"
+                        [ngClass]="{ 'is-invalid': f['IsNarayanaEmp'].invalid && (f['IsNarayanaEmp'].dirty || f['IsNarayanaEmp'].touched) && f['IsNarayanaEmp'].errors }"
+                        formControlName="IsNarayanaEmp">
+                    </ng-select>
+                    <div *ngIf="f['IsNarayanaEmp'].invalid && f['IsNarayanaEmp'].touched && f['IsNarayanaEmp'].errors">
+                        <div *ngIf="f['IsNarayanaEmp'].errors['required']" class="invalid-feedback">
+                            Please select IsNarayanaEmp.
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-md-6">
+                    <input type="text" class="form-control" formControlName="EmpExSlno" visibility="false">
+                </div> -->
+                <div class="col-md-6">
+                    <label for="EmpId" class="form-label">Employee Id </label>
+                    <input type="text" class="form-control" formControlName="EmpId">
+                </div>
+                <div class="col-md-6">
+                    <label for="Organisation" class="form-label">Organisation<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" formControlName="Organisation" [ngClass]="{ 'is-invalid': f['Organisation'].invalid && (f['Organisation'].dirty ||
+                     f['Organisation'].touched) && f['Organisation'].errors }">
+                    <div *ngIf="f['Organisation'].invalid && (f['Organisation'].dirty ||  f['Organisation'].touched) &&  f['Organisation'].errors"
+                        class="invalid-feedback">
+                        <div *ngIf="f['Organisation'].errors['required']">Please provide Organisation name .
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="Designation" class="form-label">Designation<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" formControlName="Designation" [ngClass]="{ 'is-invalid': f['Designation'].invalid && (f['Designation'].dirty ||
+                     f['Designation'].touched) && f['Designation'].errors }">
+                    <div *ngIf="f['Designation'].invalid && (f['Designation'].dirty ||  f['Designation'].touched) &&  f['Designation'].errors"
+                        class="invalid-feedback">
+                        <div *ngIf="f['Designation'].errors['required']">Please provide Designation .
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- (flatpickrChange)='dateComparison($event)' -->
+                    <label for="FromDate" class="form-label">From Date <span class="text-danger">*</span></label>
+                    <div class="input-group mb-3">
+                        <input id="FromDate" class="form-control flatpickr-input active" type="text" mwlFlatpickr
+                            formControlName="FromDate" [altInput]="false" [convertModelValue]="true" [minDate]="minDate"
+                            [maxDate]="maxDate"  altFormat="d-M-Y"
+                            dateFormat="d-M-Y"
+                        
+                            [ngClass]="{ 'is-invalid': f['FromDate'].invalid && (f['FromDate'].dirty || f['FromDate'].touched) && f['FromDate'].errors}" />
+                    </div>
+                    <div *ngIf="f['FromDate'].invalid && (f['FromDate'].dirty || f['FromDate'].touched) &&  f['FromDate'].errors"
+                        class="invalid-feedback">
+                        <div *ngIf="f['FromDate'].errors['required']">Please provide from date.
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-6">
+                    <label for="ToDate" class="form-label">To Date <span class="text-danger">*</span></label>
+                    <div class="input-group">
+                        <input id="ToDate" class="form-control flatpickr-input active" type="text" mwlFlatpickr
+                            formControlName="ToDate" [altInput]="false" [convertModelValue]="true"
+                          altFormat="d-M-Y" dateFormat="d-M-Y"
+                            [ngClass]="{ 'is-invalid': f['ToDate'].invalid && (f['ToDate'].dirty || f['ToDate'].touched) && f['ToDate'].errors}" />
+                    </div>
+                    <div *ngIf="f['ToDate'].invalid && (f['ToDate'].dirty || f['ToDate'].touched) &&  f['ToDate'].errors"
+                        class="invalid-feedback">
+                        <div *ngIf="f['ToDate'].errors['required']">Please provide to date.
+                        </div>
+                    </div>
+                    
+                    <!-- From date should not be greater than to date -->
+                </div>
+                <div class="col-md-6">
+                    <label for="Salary" class="form-label">Salary<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" formControlName="Salary" (keypress)="numberOnly($event)"
+                        [ngClass]="{ 'is-invalid': f['Salary'].invalid && (f['Salary'].dirty ||
+                     f['Salary'].touched) && f['Salary'].errors }">
+                    <div *ngIf="f['Salary'].invalid && (f['Salary'].dirty ||  f['Salary'].touched) &&  f['Salary'].errors"
+                        class="invalid-feedback">
+                        <div *ngIf="f['Salary'].errors['required']">Please provide Salary .
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="Salaryunit" class="form-label">Salary Unit<span class="text-danger">*</span></label>
+                    <ng-select [items]="Salaryunit" bindLabel="name" bindValue="id"
+                        [ngClass]="{ 'is-invalid': f['Salaryunit'].invalid && (f['Salaryunit'].dirty || f['Salaryunit'].touched) && f['Salaryunit'].errors }"
+                        formControlName="Salaryunit">
+                    </ng-select>
+                    <div *ngIf="f['Salaryunit'].invalid && (f['Salaryunit'].dirty ||  f['Salaryunit'].touched) &&  f['Salaryunit'].errors"
+                        class="invalid-feedback">
+                        <div *ngIf="f['Salaryunit'].errors['required']">Please provide Salaryunit .
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="place" class="form-label">Place <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" formControlName="place" [ngClass]="{ 'is-invalid': f['place'].invalid && (f['place'].dirty ||
+                     f['place'].touched) && f['place'].errors }">
+                    <div *ngIf="f['place'].invalid && (f['place'].dirty ||  f['place'].touched) &&  f['place'].errors"
+                        class="invalid-feedback">
+                        <div *ngIf="f['place'].errors['required']">Please provide Place.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="RefName" class="form-label">Ref.Name: <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" formControlName="RefName" [ngClass]="{ 'is-invalid': f['RefName'].invalid && (f['RefName'].dirty ||
+                     f['RefName'].touched) && f['RefName'].errors }">
+                    <div *ngIf="f['RefName'].invalid && (f['RefName'].dirty ||  f['RefName'].touched) &&  f['RefName'].errors"
+                        class="invalid-feedback">
+                        <div *ngIf="f['RefName'].errors['required']">Please provide Ref.Name: .
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="RefPhoneNo" class="form-label"> Ref.Phone No: </label>
+                    <input type="text" class="form-control" formControlName="RefPhoneNo">
+                </div>
+                <div class="col-md-6">
+                    <label for="RefMobile" class="form-label"> Ref.Mobile: </label>
+                    <input type="text" class="form-control" formControlName="RefMobile">
+                </div>
+                <div class="col-md-6">
+                    <label for="RefEmail" class="form-label"> Ref.Email: </label>
+                    <input type="text" class="form-control" formControlName="RefEmail">
+                </div>
+                <div class="col-md-6">
+                    <label for="OtherDetails" class="form-label"> Other Details:</label>
+                    <input type="text" class="form-control" formControlName="OtherDetails">
+                </div>
+            </div>
+            <div class="card-footer text-end">
+                <div class="col-lg-12">
+                    <div class="hstack gap-2 justify-content-end">
+                        <button type="submit" class="btn btn-primary" *ngIf="!isSubmitted"
+                            [disabled]="experiencefrom.invalid">
+                            Submit
+                        </button>
+                        <button type="button" class="btn btn-primary btn-label waves-effect waves-light btn-load"
+                            *ngIf="isSubmitted" [disabled]="true">
+                            <span class="d-flex align-items-center">
+                                <span class="spinner-border flex-shrink-0" role="status">
+                                    <span class="visually-hidden">Submitting...</span>
+                                </span>
+                                <span class="flex-grow-1 ms-2">
+                                    Submitting...
+                                </span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

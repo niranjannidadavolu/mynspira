@@ -1,0 +1,49 @@
+<div class="row">
+    <ejs-grid [dataSource]='pendingLeaves' [allowSorting]='true' [enableHover]='false' [enableHeaderFocus]='true'
+        [filterSettings]='filterSettings' [allowFiltering]='true' gridLines='Both' allowPaging='true'
+        [pageSettings]='pageSettings'>
+        <e-columns>
+            <e-column field='EmployeeId' headerText='Employee Id' width='120'></e-column>
+            <e-column field='EmployeeName' headerText='Employee Name' width='120'></e-column>
+            <e-column field='BranchName' headerText='Branch Name' width='120'></e-column>
+            <e-column field='LeaveFrom' headerText='From Date' width='100' type="date" format='dd-MMM-yyyy'></e-column>
+            <e-column field='LeaveTo' headerText='To Date' width='100' type="date" format='dd-MMM-yyyy'></e-column>
+            <e-column field='LeaveTypeName' headerText='Leave Type' width='100'></e-column>
+            <e-column field='TotalDaysTaken' headerText='Total Days' width='60' [allowFiltering]='false'></e-column>
+            <e-column field='LeaveStatusId' headerText='Status' width='60' [allowFiltering]='false'>
+                <ng-template #template let-data>
+                    <i *ngIf="data.LeaveStatusId == 1" class="dx-icon dx-icon-pending-icon"
+                        title="{{data.LeaveStatusName }}"></i>
+                    <i *ngIf="data.LeaveStatusId  == 2" class="dx-icon dx-icon-approve-icon"
+                        title="{{data.LeaveStatusName }}"></i>
+                    <i *ngIf="data.LeaveStatusId  == 3" class="dx-icon dx-icon-reject-icon"
+                        title="{{data.LeaveStatusName }}"></i>
+                    <i *ngIf="data.LeaveStatusId  == 4" class="dx-icon dx-icon-pending-icon"
+                        title="{{data.LeaveStatusName }}"></i>
+                    <i *ngIf="data.LeaveStatusId  == 5" class="dx-icon dx-icon-cancelled-icon"
+                        title="{{data.LeaveStatusName }}"></i>
+                </ng-template>
+            </e-column>
+            <e-column [allowFiltering]='false' headerText='Actions' width='100'>
+                <ng-template #template let-data>
+                    <a href="javascript:void(0)" (click)="viewEmpHistoryDetails(data)" title="Leave History"
+                        class="me-2">
+                        <i class="ri ri-history-line"></i>
+                    </a>
+                    <a href="javascript:void(0)" *ngIf="canApproveLeave(data)"
+                        (click)="viewLeaveDetails(data, leaveAction.approve,true)" title="Approve Leave " class="me-2">
+                        <i class="dx-icon dx-icon-manager-approve-icon"></i>
+                    </a>
+                    <a href="javascript:void(0)" (click)="viewLeaveDetails(data,leaveAction.reject,true)"
+                        title="Reject Leave " class="me-2">
+                        <i class="dx-icon dx-icon-manager-reject-icon"></i>
+                    </a>
+                    <a href="javascript:void(0)" (click)="viewLeaveDetails(data, leaveAction.view,true)"
+                        title="View Leave" class="me-2">
+                        <i class="dx-icon dx-icon-view-icon"></i>
+                    </a>
+                </ng-template>
+            </e-column>
+        </e-columns>
+    </ejs-grid>
+</div>

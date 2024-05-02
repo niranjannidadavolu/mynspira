@@ -1,0 +1,281 @@
+// ::ng-deep .flatpickr-day.today {
+//     color: white !important;
+//     background: #405189 !important;
+// }
+::ng-deep .flatpickr-day.selected {
+    color: white !important;
+    background: #405189 !important;
+}
+::ng-deep .flatpickr-day.flatpickr-f_present_present {
+    background: linear-gradient(to left top, #0ab39c 50%, #0ab39c 50%) no-repeat;
+    border-color: #f3f6f9 !important;
+    color: white;
+}
+::ng-deep .flatpickr-day.flatpickr-f_present_absent {
+    background: linear-gradient(to left top, #f06548 50%, #0ab39c 50%) no-repeat;
+    border-color: #f3f6f9 !important;
+    color: white;
+}
+
+::ng-deep .flatpickr-day.flatpickr-f_absent_absent {
+    background: linear-gradient(to left top, #f06548 50%, #f06548 50%) no-repeat;
+    border-color: #f3f6f9 !important;
+    color: white;
+}
+::ng-deep .flatpickr-day.flatpickr-f_absent_present {
+    background: linear-gradient(to left top, #0ab39c 50%, #f06548 50%) no-repeat;
+    border-color: #f3f6f9 !important;
+    color: white;
+}
+
+::ng-deep .flatpickr-day.flatpickr-f_holiday {
+    box-shadow: none !important;
+    color: #fff !important;
+    background: linear-gradient(to right bottom, var(--vz-purple) 50%, var(--vz-purple) 50%);
+    border: 1px solid var(--vz-white);
+    // cursor: not-allowed;
+    // pointer-events: none !important;
+}
+::ng-deep .flatpickr-day.flatpickr-f_holiday:hover {
+    box-shadow: none !important;
+    color: #fff !important;
+    background: linear-gradient(to right bottom, var(--vz-purple) 50%, var(--vz-purple) 50%);
+    border: 1px solid var(--vz-white);
+    // cursor: not-allowed;
+    // pointer-events: none !important;
+}
+
+::ng-deep.flatpickr-day.flatpickr-f_leave_leave{
+    background: linear-gradient(to left top, var(--vz-orange) 50%, var(--vz-orange) 50%) no-repeat;
+    border: 1px solid var(--vz-white);
+    color: #fff !important;
+}
+
+::ng-deep.flatpickr-day.flatpickr-f_leave_present{
+    background: linear-gradient(to left top, #0ab39c 50%, var(--vz-orange) 50%) no-repeat;
+    border: 1px solid var(--vz-white);
+    color: #fff !important;
+}
+::ng-deep.flatpickr-day.flatpickr-f_leave_absent{
+    background: linear-gradient(to left top, #f06548 50%, var(--vz-orange) 50%) no-repeat;
+    border: 1px solid var(--vz-white);
+    color: #fff !important;
+}
+::ng-deep.flatpickr-day.flatpickr-f_present_leave{
+    background: linear-gradient(to right bottom, #0ab39c 50%, var(--vz-orange) 50%) no-repeat;
+    border: 1px solid var(--vz-white);
+    color: #fff !important;
+}
+::ng-deep.flatpickr-day.flatpickr-f_absent_leave{
+    background: linear-gradient(to right bottom, #f06548 50%, var(--vz-orange) 50%);
+
+    border: 1px solid var(--vz-white);
+    color: #fff !important;
+}
+
+::ng-deep.flatpickr-day.flatpickr-f_od_od{
+    background: linear-gradient(to left top, #008a00cc 50%, #008a00cc 50%) no-repeat;
+    border: 1px solid var(--vz-white);
+    color: #fff !important;
+}
+
+::ng-deep.flatpickr-day.flatpickr-f_od_present{
+    background: linear-gradient(to left top, #0ab39c 50%, #008a00cc 50%) no-repeat;
+    border: 1px solid var(--vz-white);
+    color: #fff !important;
+}
+::ng-deep.flatpickr-day.flatpickr-f_od_absent{
+    background: linear-gradient(to left top, #f06548 50%, #008a00cc 50%) no-repeat;
+    border: 1px solid var(--vz-white);
+    color: #fff !important;
+}
+::ng-deep.flatpickr-day.flatpickr-f_present_od{
+    background: linear-gradient(to right bottom, #0ab39c 50%, #008a00cc 50%) no-repeat;
+    border: 1px solid var(--vz-white);
+    color: #fff !important;
+}
+::ng-deep.flatpickr-day.flatpickr-f_absent_od{
+    background: linear-gradient(to right bottom, #f06548 50%, #008a00cc 50%);
+
+    border: 1px solid var(--vz-white);
+    color: #fff !important;
+}
+
+::ng-deep.flatpickr-day.flatpickr-f_leave_od{
+    background: linear-gradient(to right bottom, var(--vz-orange) 50%, #008a00cc 50%) no-repeat;
+    border: 1px solid var(--vz-white);
+    color: #fff !important;
+}
+::ng-deep.flatpickr-day.flatpickr-f_od_leave{
+    background: linear-gradient(to right bottom, #008a00cc 50%,  var(--vz-orange) 50%);
+
+    border: 1px solid var(--vz-white);
+    color: #fff !important;
+}
+
+// ::ng-deep.flatpickr-day.flatpickr-f_sunday {
+//     background: linear-gradient(to right bottom, var(--vz-purple) 50%, var(--vz-purple) 50%);
+//     border: 1px solid var(--vz-white);
+//     // cursor: not-allowed;
+//     // pointer-events: visible;
+//     color: #fff !important;
+// }
+// ::ng-deep.flatpickr-day.flatpickr-f_sunday:hover {
+//     background: linear-gradient(to right bottom, var(--vz-purple) 50%, var(--vz-purple) 50%);
+//     border: 1px solid var(--vz-white);
+//     color: #fff !important;
+// }
+// ::ng-deep.flatpickr-day.flatpickr-disabled {
+//     background: linear-gradient(to right bottom, var(--vz-purple) 50%, var(--vz-purple) 50%);
+//     border: 1px solid var(--vz-white);
+//     color: #fff !important;
+// }
+
+// ::ng-deep.flatpickr-day.flatpickr-disabled:hover {
+//     background: linear-gradient(to right bottom, var(--vz-purple) 50%, var(--vz-purple) 50%);
+//     border: 1px solid var(--vz-white);
+//     color: #fff !important;
+// }
+
+
+
+
+
+
+
+
+.label-foo {
+    height: 10px;
+    width: 10px;
+}
+
+.today {
+    background: #405189;
+}
+
+.holiday {
+    background: var(--vz-purple);
+}
+
+.absent {
+    background: #f06548;
+}
+
+.present {
+    background: #0ab39c;
+}
+
+.leave {
+    background: var(--vz-orange);
+}
+
+.onduty {
+    background: #008a00cc;
+}
+
+.head-color {
+    color: white;
+    font-weight: bold;
+    background-color: rgb(17, 88, 112);
+}
+
+.color {
+    color: #000;
+    font-size: 10px;
+    line-height: 20px !important;
+}
+
+.hol_color {
+    color: #0508d1;
+}
+
+.abs_color {
+    color: rgb(255, 0, 0);
+}
+
+.upcoming-scheduled .flatpickr-months {
+    width: 110px !important;
+}
+
+.upcoming {
+    display: inline-block;
+    padding: 9px 11px;
+    line-height: 18px;
+}
+
+.mini-stats-wid h6 {
+    font-size: 10px;
+}
+
+// .first-half{
+//     background: linear-gradient(to left top, #46c4f3 50%, transparent 50%) no-repeat;
+// }
+// .second-half{
+//     background: linear-gradient( to left top, transparent 50%, #46c4f3 50%) no-repeat;
+// }
+// .full-day{
+//     background-color: rgb(70, 196, 243);
+//     color: rgb(0, 0, 0);
+// }
+.ri-phone-line,
+.ri-user-line,
+.ri-mail-line {
+    padding: 0.15rem 0.2rem;
+}
+
+.box {
+    padding: 22px 0;
+    /* The padding is the area for the shapes, adjust it based on the ratio of the shape*/
+    height: 0px;
+    /* to illustrate the space for the content */
+    background:
+        //   url(https://i.stack.imgur.com/mG3Vb.png) top   /100% auto,
+        url('../../../../assets/images/landing/down_Wave.png') bottom/100% auto,
+        linear-gradient(#387dff, #387dff) content-box;
+    /* Color between the shapes only on the content and not the padding*/
+    background-repeat: no-repeat;
+}
+
+.text-note {
+    font-size: 10px;
+    color: red;
+    margin-top: -10px;
+}
+
+.ribbon-box {
+    min-height: 155px;
+}
+
+// .min-height{
+//   min-height: 400px;
+// }
+// .max-height{
+//   max-height: 220px;
+// }
+.text-right {
+    text-align: right;
+}
+.cls-text{
+    margin: auto;
+    font-size: 12px;
+}
+
+::ng-deep.dx-pager .dx-pages .dx-selection {
+    background-color: #405189 !important;
+    color: white !important;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.15rem 0.1rem;
+    clear: both;
+    font-weight: 400;
+    color: var(--vz-dropdown-link-color);
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    /* margin-left: -9px; */
+}

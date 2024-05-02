@@ -1,0 +1,117 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName></SccProjectName>
+    <SccProvider></SccProvider>
+    <SccAuxPath></SccAuxPath>
+    <SccLocalPath></SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <CodeAnalysisRuleSet>Arytic.Database.Repository1.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <CodeAnalysisRuleSet>Arytic.Database.Repository1.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ApplicationSettings\**" />
+    <EmbeddedResource Remove="ApplicationSettings\**" />
+    <None Remove="ApplicationSettings\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Masters\HouseIncomeDetailRepository.cs" />
+    <Compile Remove="Masters\OtherIncomeDetailRepository.cs" />
+    <Compile Remove="Masters\SectionMasterRepository.cs" />
+    <Compile Remove="Masters\SubHeadingMasterRepository.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Reports\PayslipEmp.rdlc" />
+    <None Remove="Reports\PayslipNES.rdlc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\PayslipEmp.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\PayslipNES.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\4-Infrastructure\BusinessModel\Phoenix.Infrastructure.BusinessModel.csproj">
+      <TreatAsUsed>true</TreatAsUsed>
+    </ProjectReference>
+    <ProjectReference Include="..\4-Infrastructure\Dapper\Phoenix.Infrastructure.Dapper\Phoenix.Infrastructure.Dapper.csproj" />
+    <ProjectReference Include="..\4-Infrastructure\Database\Phoenix.Infrastructure.Database.csproj">
+      <TreatAsUsed>true</TreatAsUsed>
+    </ProjectReference>
+    <ProjectReference Include="..\5-CrossCutting\Phoenix.CrossCutting.DateTimeLibrary\Phoenix.CrossCutting.DateTimeLibrary.csproj" />
+    <ProjectReference Include="..\5-CrossCutting\Phoenix.CrossCutting.Extension\Phoenix.CrossCutting.Extension.csproj" />
+    <ProjectReference Include="..\5-CrossCutting\Phoenix.CrossCutting.JwtGenerator\Phoenix.CrossCutting.JwtGenerator.csproj" />
+    <ProjectReference Include="..\5-CrossCutting\Phoenix.CrossCutting.Jwt\Phoenix.CrossCutting.Jwt.csproj" />
+    <ProjectReference Include="..\5-CrossCutting\Phoenix.CrossCutting.Resources\Phoenix.CrossCutting.Resources.csproj" />
+    <ProjectReference Include="..\5-CrossCutting\Phoenix.CrossCutting.Security\Phoenix.CrossCutting.Security.csproj" />
+    <ProjectReference Include="..\5-CrossCutting\Phoenix.CrossCutting.TimePeriod\Phoenix.CrossCutting.TimePeriod.csproj" />
+    <ProjectReference Include="..\5-CrossCutting\Phoenix.CrossCutting.Utils\Phoenix.CrossCutting.Utils.csproj" />
+    <ProjectReference Include="..\6-Model\Phoenix.Model.Business.SearchCriteria\Phoenix.Model.Business.SearchCriteria.csproj" />
+    <ProjectReference Include="..\6-Model\Phoenix.Model.Database\Phoenix.Model.Database.csproj" />
+    <ProjectReference Include="..\6-Model\Phonix.Model.Business\Phoenix.Model.Business.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ReportViewerCore.NETCore" Version="15.1.16" />
+    <PackageReference Include="RestSharp" Version="107.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Reports\EmpPartBDs.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>EmpPartBDs.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\EmpPsDs.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>EmpPsDs.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Reports\EmpPartBDs.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmpPartBDs.Designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\EmpPsDs.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmpPsDs.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Reports\Images\NES.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\Images\NspiraLogo.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Reports\Images\" />
+    <PackageReference Include="Otp.NET" Version="1.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="PasswordEncrypt">
+      <HintPath>..\ExternalDlls\PasswordEncrypt.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

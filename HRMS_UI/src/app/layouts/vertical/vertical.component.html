@@ -1,0 +1,123 @@
+<div id="layout-wrapper">
+    <!-- Top Bar -->
+    <app-topbar (mobileMenuButtonClicked)="onToggleMobileMenu()"></app-topbar>
+    <!-- Side Bar -->
+    <app-sidebar></app-sidebar>
+    <div class="main-content">
+        <div class="page-content">
+            <div class="container-fluid">
+                <!-- Main Content -->
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+        <!-- Footer -->
+        <app-footer></app-footer>
+    </div>
+</div>
+<!-- Right Side Bar -->
+<!-- <app-rightsidebar  (settingsButtonClicked)="onSettingsButtonClicked()"></app-rightsidebar> -->
+<!-- <div class="customizer-setting customizer-help d-none d-md-block">
+    <div class="btn-info btn-rounded shadow-sm btn btn-icon btn-sm btn-msg p-2" title="Help" data-bs-toggle="offcanvas"
+        data-bs-target="#theme-settings-offcanvas" aria-controls="theme-settings-offcanvas">
+        <i class='mdi mdi-help mdi-cog-outline fs-22'></i>
+    </div>
+</div>
+<div class="offcanvas offcanvas-end border-0" tabindex="-1" id="theme-settings-offcanvas">
+    <div class="d-flex align-items-center bg-primary bg-gradient p-3 offcanvas-header">
+        <h5 class="m-0 me-2 text-white">Help </h5>
+        <button type="button" class="btn-close btn-close-white ms-auto " data-bs-dismiss="offcanvas" aria-label="Close"
+            (click)="hide();"></button>
+    </div>
+    <div class="offcanvas-body p-0">
+        <div data-simplebar class="h-100">
+            <ul class="mt-2">
+                <li>If any issues related to <b>Leave Management</b>
+                    <br>
+                    Please contact your HR. Your HR Details will be shown on Dashboard.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="d-flex align-items-center bg-primary bg-gradient p-3 offcanvas-header">
+        <p class="m-0 me-2 text-white">
+            Any feeback to write:
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=feedbackmynspira@narayanagroup.com"
+                class="text-white" target="_blank">feedbackmynspira@narayanagroup.com</a>
+        </p>
+    </div>
+</div> -->
+
+
+<!-- Need to Implement the logic. -->
+<div class="customizer-setting customizer-message d-none d-md-block">
+    <div class="btn-info btn-rounded shadow-sm btn btn-icon btn-sm btn-msg p-2" title="Feedback"
+        aria-controls="theme-feedback-offcanvas" (click)="openFeedback()">
+        <i class='ri-feedback-line fs-22'></i>
+    </div>
+</div>
+<div class="offcanvas offcanvas-end border-0" tabindex="-1" id="theme-feedback-offcanvas"
+    style="visibility: visible;height: 430px;margin-top: auto;background: transparent; width: 600px;">
+    <div class="card" id="chat2">
+        <div class="card-header d-flex justify-content-between align-items-center p-3">
+            <h5 class="mb-0">Feedback</h5>
+            <button type="button" class="btn-close btn-close ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"
+                (click)="close();" data-mdb-ripple-color="dark"></button>
+        </div>
+        <div class="card-body" data-mdb-perfect-scrollbar="true" style="position: relative; height: 300px">
+            <div class="d-flex flex-row mb-4 pt-1 ">
+                <form action="" method="post" class="w-100" [formGroup]="feedback">
+                    <div class="form-group">
+                        <textarea class="form-control" name="" id="" rows="15" formControlName="Feedback"
+                        [ngClass]="{ 'is-invalid': f['Feedback'].invalid && (f['Feedback'].dirty || f['Feedback'].touched) && f['Feedback'].errors }"></textarea>
+                        <div *ngIf="f['Feedback'].invalid &&
+                                                        (f['Feedback'].dirty ||
+                                                        f['Feedback'].touched) &&
+                                                        f['Feedback'].errors" class="invalid-feedback">
+                            <div *ngIf="f['Feedback'].errors['required']">Please enter feedback details
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="card-footer text-muted d-flex justify-content-end align-items-center p-2">
+            <button type="button" *ngIf="!isProcessing" [disabled]="feedback.invalid" class="btn btn-primary ml-auto"
+                (click)="onSendFeedback()">Send</button>
+                <button *ngIf="isProcessing" type="button"
+                                            class="btn btn-load btn-primary btn-label waves-effect waves-light rounded-pill m-2"><i
+                                                class=" ri-save-3-line label-icon align-middle rounded-pill fs-16 me-2"></i>
+                                            <span class="d-flex align-items-center">
+                                                <span class="spinner-border flex-shrink-0" role="status">
+                                                    <span class="visually-hidden">Sending Details...</span>
+                                                </span>
+                                                <span class="flex-grow-1 ms-2">
+                                                    Sending Details...
+                                                </span>
+                                            </span>
+                                        </button>
+        </div>
+    </div>
+</div>
+
+
+<!-- Need to Implement the logic. -->
+<!-- Greetings card data-bs-backdrop="static" data-bs-keyboard="true"-->
+<div class="modal flip" id="staticBackdrop" height="700px" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="my-content">
+            <!-- <div class="modal-header">
+                <h5 class="modal-title">New Notifications</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div> -->
+            <div class="modal-body">
+                <div class="content-scroll text-center" id="style-7">
+                    <span [innerHTML]="message?.Notification"></span>
+                </div>
+            </div>
+            <div class="modal-footer d-none">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+        </div>
+    </div>
+</div>

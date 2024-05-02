@@ -1,0 +1,91 @@
+<div class="modal-content border-0 overflow-hidden">
+    <div class="row g-0">
+        <div class="col-lg-7">
+
+            <div class="modal-body p-5">
+                <form class="needs-validation" [formGroup]="uploadForm"  novalidate>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label for="example-text-input" class="form-label mb-1">Pan Card Number <span class="text-danger">*</span></label>
+                            <div class="input-group">
+                                <input type="text" minlength="10" maxlength="10" formControlName="PanNumber" alphanumericOnly inputUpperCase class="form-control"
+                                    id="PanNumber" placeholder="Please enter Pan Card Number">
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                                <label for="file mt-3">Upload Document <span class="text-danger">*</span> </label>
+                                
+                                <div *ngIf=" f['FileName_Original'].invalid && ( f['FileName_Original'].dirty ||  f['FileName_Original'].touched) &&  f['FileName_Original'].errors"
+                                    class="invalid-feedback">
+                                    <div *ngIf="f['FileName_Original'].errors['required']">Plesae upload pan card.</div>
+                                </div>
+                        </div>
+    
+                        <div class="col-md-6 mt-2">
+                            <div class="culture-add-imgs scrollbar-inner">
+                                <div class="card-inner placeholder">
+                                    <div class="card-content">
+                                        <div class="culture-card file-upload-dashed pointer">
+                                            <div class="img-wrapper">
+                                                <div class="img-170 text-center">
+                                                    
+                                                    <img class="img-responsive" [src]="imageSrc" id="profile" alt=""
+                                                    *ngIf="imageSrc"></div>
+                                                    
+            
+                                            </div>
+                                            <div class="culture-card text-center pointer pt-5"
+                                                (click)="fileInput.click()">
+                                                <input hidden #fileInput type="file" id="file" 
+                                                    accept="image/png, image/jpeg, image/jpg"
+                                                    [ngClass]="{ 'is-invalid': f['FileName_Original'].invalid && (f['FileName_Original'].dirty || f['FileName_Original'].touched) && f['FileName_Original'].errors }"
+                                                    (change)="onFileChange($event)" />
+                                                <p class="file-label file-text">Browse and Upload</p>
+                                                <img class="file-upload-icon"
+                                                    src="../../../assets/images/upload-icon.png" style="max-width:22px"
+                                                    alt="icon">
+                                            </div>
+                                            <p class="text-warn">* Upload image format files only</p>
+                                        </div>
+                        
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+
+                        
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <div class="col-lg-5">
+            <div class="subscribe-modals-cover h-100">
+                <img src="assets/images/auth-one-bg.jpg" alt="" class="h-100 w-100 object-cover"
+                    style="clip-path: polygon(100% 0%, 100% 100%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);">
+            </div>
+        </div>
+        
+    </div>
+    
+</div>
+
+  <div class="modal-footer">
+    
+    <button type="button" class="btn btn-primary" *ngIf="!submitted" [disabled]="this.uploadForm.invalid" (click)="onSubmit()">Submit</button> 
+    <button type="button" class="btn btn-primary btn-label waves-effect waves-light btn-load"
+    *ngIf="submitted">
+    <span class="d-flex align-items-center">
+        <span class="spinner-border flex-shrink-0" role="status">
+            <span class="visually-hidden">Submiting...</span>
+        </span>
+        <span class="flex-grow-1 ms-2">
+            Submiting...
+        </span>
+    </span>
+</button>
+     <button type="button" class="btn btn-light" *ngIf="!submitted" (click)="activeModal.dismiss('Close click')">Close</button> 
+     
+
+</div>   

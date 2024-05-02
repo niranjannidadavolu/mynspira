@@ -1,0 +1,201 @@
+<form [formGroup]="hraForm">
+    <div class="row">
+        <div class="col-lg-6">
+            <div>
+                <div class="mb-3">
+                    <label class="form-label">Is Rent
+                        House</label>
+                    <br>
+                    <input type="radio" name="IsRentHouse" id="IsRentHouse" [value]="false"
+                        formControlName="IsRentHouse"  [readOnly]="isVerify"/>
+                    No
+                    &nbsp;&nbsp;&nbsp;<input type="radio" name="IsRentHouse" id="IsRentHouse" [value]="true"
+                        formControlName="IsRentHouse"  [readOnly]="isVerify"/>
+                    Yes
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="mb-3">
+                <label class="form-label">HRA Location</label>
+                <ng-select #hraLoacation [items]="hRALocations" bindLabel="Name" bindValue="HRALocationSLNo"
+                    formControlName="LocationId">
+                    <ng-template ng-optgroup-tmp let-item="item">
+                        {{item.Name}}
+                    </ng-template>
+                </ng-select>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="mb-3">
+                <label class="form-label">H.No.</label>
+                <input maxlength="50" class="form-control" type="text" formControlName="HouseNumber"
+                    placeholder="House Number" id="house-number" name="house-number" [readOnly]="isVerify">
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="mb-3">
+                <label class="form-label">Street /
+                    Village</label>
+                <input maxlength="30" class="form-control" type="text" placeholder="Street / Village"
+                    formControlName="StreetName" id="street" name="street" [readOnly]="isVerify">
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="mb-3">
+                <label class="form-label">State</label>
+                <ng-select [items]="states" bindLabel="Name" bindValue="StateSLNo" formControlName="StateId"
+                    (change)="onStateChange($event)">
+                    <ng-template ng-optgroup-tmp let-item="item">
+                        {{item.Name}}
+                    </ng-template>
+                </ng-select>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="mb-3">
+                <label class="form-label">District</label>
+                <ng-select [items]="districts" bindLabel="Name" bindValue="DistrictSLNo" formControlName="DistrictId"
+                    (change)="onDistrictChange($event)">
+                    <ng-template ng-optgroup-tmp let-item="item">
+                        {{item.Name}}
+                    </ng-template>
+                </ng-select>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="mb-3">
+                <label class="form-label">Mandal</label>
+                <ng-select [items]="mandals" bindLabel="Name" bindValue="MandalSLNo" formControlName="MandalId">
+                    <ng-template ng-optgroup-tmp let-item="item">
+                        {{item.Name}}
+                    </ng-template>
+                </ng-select>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="mb-3">
+                <label class="form-label">PIN</label>
+                <input class="form-control" maxlength="6" type="text" formControlName="Pincode" placeholder="PIN"
+                    id="picode" (keypress)="numberOnly($event)" [readOnly]="isVerify">
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="mb-3">
+                <label class="form-label">Phone</label>
+                <input minlength="10" maxlength="12" class="form-control" type="text" formControlName="PhoneNumber"
+                    placeholder="Phone" (keypress)="numberOnly($event)" [readOnly]="isVerify">
+            </div>
+        </div>
+
+        <div class=" table-responsive col-lg-12">
+            <div class="mb-3">
+                <div formArrayName="RentPaymentDetails">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Owner Name</th>
+                                <th>Owner PAN</th>
+                                <th>No.of Months</th>
+                                <th>Rent Paid</th>
+                                <th>Proposed Amount</th>
+                                <th>Is Verified</th>
+                                <th>Verfied PAN</th>
+                                <th>Verified Name</th>
+                                <th>Remarks</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let itemrow of RentPayments.controls; let index = index;"
+                                [formGroupName]="index">
+                                <td>
+                                    <input class="form-control" maxlength="150" type="text" placeholder="Owner Name"
+                                        id="OwnerName_{{index}}" name="OwnerName_{{index}}" formControlName="OwnerName"
+                                        [ngClass]="{ 'is-invalid': itemrow.get('OwnerName')?.invalid && (itemrow.get('OwnerName')?.dirty 
+                                            || itemrow.get('OwnerName')?.touched) }">
+                                    <div *ngIf="itemrow.get('OwnerName')?.invalid && (itemrow.get('OwnerName')?.dirty 
+                                        || itemrow.get('OwnerName')?.touched)  " class="invalid-feedback">Please
+                                        provide
+                                        owner name.
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="input-group">
+                                        <input class="form-control" maxlength="10" type="text" placeholder="Owner Pan"
+                                            id="OwnerPan_{{index}}" name="OwnerPan_{{index}}" formControlName="OwnerPan"
+                                            [ngClass]="{ 'is-invalid': itemrow.get('OwnerPan')?.invalid && (itemrow.get('OwnerPan')?.dirty 
+                                            || itemrow.get('OwnerPan')?.touched) }">
+                                        <!-- Buttons with Label -->
+                                        <button type="button" class="btn btn-primary waves-effect waves-light"
+                                            (click)="verifyPanCard(index, itemrow)" *ngIf='isVerify'>Verify</button>
+                                    </div>
+                                    <div *ngIf="itemrow.get('OwnerPan')?.invalid && (itemrow.get('OwnerPan')?.dirty
+                                            || itemrow.get('OwnerPan')?.touched)  " class="invalid-feedback">Please
+                                        provide owner pan.
+                                    </div>
+                                </td>
+                                <td width="5%"><input class="form-control" maxlength="2" type="text"
+                                        placeholder="No.Of Months" id="NoOfMonths_{{index}}" name="NoOfMonths_{{index}}"
+                                        formControlName="NoOfMonths" (keypress)="numberOnly($event)" [ngClass]="{ 'is-invalid': itemrow.get('NoOfMonths')?.invalid && (itemrow.get('NoOfMonths')?.dirty 
+                                            || itemrow.get('NoOfMonths')?.touched) }">
+                                    <div *ngIf="itemrow.get('NoOfMonths')?.invalid && (itemrow.get('NoOfMonths')?.dirty
+                                            || itemrow.get('NoOfMonths')?.touched)  " class="invalid-feedback">Please
+                                        provide number of months.
+                                    </div>
+                                </td>
+                                <td width="10%"><input class="form-control col-md-4" maxlength="10" type="text"
+                                        id="Amount_{{index}}" name="Amount_{{index}}" formControlName="Amount"
+                                        (keypress)="numberOnly($event)" [ngClass]="{ 'is-invalid': itemrow.get('Amount')?.invalid && (itemrow.get('Amount')?.dirty 
+                                            || itemrow.get('Amount')?.touched) }">
+                                    <div *ngIf="itemrow.get('Amount')?.invalid && (itemrow.get('Amount')?.dirty
+                                            || itemrow.get('Amount')?.touched)  " class="invalid-feedback">Please
+                                        provide
+                                        amount.
+                                    </div>
+                                </td>
+                                <td width="10%">
+                                    <input class="form-control col-md-4" type="text" id="VerifiedAmount_{{index}}"
+                                        name="VerifiedAmount_{{index}}" formControlName="VerifiedAmount"
+                                        >
+                                </td>
+
+                                <td width="10%">
+                                    <input class="form-control col-md-4" type="text" id="IsPanVerified_{{index}}"
+                                        name="IsPanVerified_{{index}}" formControlName="IsPanVerified">
+                                </td>
+
+                                <td width="10%">
+                                    <input class="form-control col-md-4" type="text" id="VerifiedPan_{{index}}"
+                                        name="VerifiedPan_{{index}}" formControlName="VerifiedPan"
+                                        >
+                                </td>
+
+                                <td width="10%">
+                                    <input class="form-control col-md-4" type="text" id="VerifiedName_{{index}}"
+                                        name="VerifiedName_{{index}}" formControlName="VerifiedName">
+                                </td>
+                                <td>
+                                    <input class="form-control col-md-4" type="text" id="VerifiedRemarks_{{index}}"
+                                        name="VerifiedRemarks_{{index}}" formControlName="VerifiedRemarks">
+                                </td>
+                                <td>
+                                    <button type="button" id="page-header-cart-dropdown" *ngIf="isVerify"
+                                        class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle ml-1"
+                                        (click)="viewAttachments(itemrow)">
+                                        <i _ngcontent-fsy-c552="" class="las la-eye fs-22"></i>
+                                        <span *ngIf="itemrow.get('FileCount')?.value>0"
+                                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+                                            {{itemrow.get('FileCount')?.value}}
+                                        </span>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

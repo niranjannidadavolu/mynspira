@@ -1,0 +1,15 @@
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Utils\bin\Debug\net7.0\Phoenix.CrossCutting.Utils.deps.json
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Utils\bin\Debug\net7.0\Phoenix.CrossCutting.Utils.dll
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Utils\bin\Debug\net7.0\Phoenix.CrossCutting.Utils.pdb
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Utils\bin\Debug\net7.0\Phoenix.CrossCutting.Extension.dll
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Utils\bin\Debug\net7.0\Phoenix.CrossCutting.Extension.pdb
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Utils\obj\Debug\net7.0\Phoenix.CrossCutting.Utils.csproj.AssemblyReference.cache
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Utils\obj\Debug\net7.0\Phoenix.CrossCutting.Utils.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Utils\obj\Debug\net7.0\Phoenix.CrossCutting.Utils.AssemblyInfoInputs.cache
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Utils\obj\Debug\net7.0\Phoenix.CrossCutting.Utils.AssemblyInfo.cs
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Utils\obj\Debug\net7.0\Phoenix.CrossCutting.Utils.csproj.CoreCompileInputs.cache
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Utils\obj\Debug\net7.0\Phoenix.CrossCutting.Utils.csproj.CopyComplete
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Utils\obj\Debug\net7.0\Phoenix.CrossCutting.Utils.dll
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Utils\obj\Debug\net7.0\refint\Phoenix.CrossCutting.Utils.dll
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Utils\obj\Debug\net7.0\Phoenix.CrossCutting.Utils.pdb
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Utils\obj\Debug\net7.0\ref\Phoenix.CrossCutting.Utils.dll

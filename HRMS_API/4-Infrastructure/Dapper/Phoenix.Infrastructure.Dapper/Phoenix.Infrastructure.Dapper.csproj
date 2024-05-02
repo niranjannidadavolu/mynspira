@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="Dapper.Oracle" Version="2.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="3.21.100" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\5-CrossCutting\Phoenix.CrossCutting.Enumerations\Phoenix.CrossCutting.Enumerations.csproj" />
+    <ProjectReference Include="..\..\..\5-CrossCutting\Phoenix.CrossCutting.Helper\Phoenix.CrossCutting.Helper.csproj" />
+    <ProjectReference Include="..\..\..\5-CrossCutting\Phoenix.CrossCutting.Logging\Phoenix.CrossCutting.Logging.csproj" />
+  </ItemGroup>
+
+</Project>

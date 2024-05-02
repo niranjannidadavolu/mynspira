@@ -1,0 +1,160 @@
+<div class="modal-content">
+    <div class="modal-header mb-3">
+        <h5 class="modal-title fw-bold" id="exampleModalgridLabel">{{type | titlecase}} Education Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+            (click)="activeModal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+        <form [formGroup]="educationFrom" (ngSubmit)="OnSubmit()">
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label for="EducationSlno" class="form-label">Education <span class="text-danger">*</span></label>
+                    <ng-select [items]="educationData" bindLabel="EduName" bindValue="EducationSlno"
+                        (change)="valueChanged($event)"
+                        [ngClass]="{ 'is-invalid': f['EducationSlno'].invalid && (f['EducationSlno'].dirty || f['EducationSlno'].touched) && f['EducationSlno'].errors }"
+                        formControlName="EducationSlno">
+                    </ng-select>
+                    <div *ngIf="f['EducationSlno'].invalid && f['EducationSlno'].touched && f['EducationSlno'].errors">
+                        <div *ngIf="f['EducationSlno'].errors['required']" class="invalid-feedback">
+                            Please select Education.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="EducourseSlno" class="form-label">Course <span class="text-danger">*</span></label>
+                  
+                    <ng-select [items]="filterCourseNames" bindLabel="CourseName" bindValue="EducourseSlno"
+                        [ngClass]="{ 'is-invalid': f['EducourseSlno'].invalid && (f['EducourseSlno'].dirty || f['EducourseSlno'].touched) && f['EducourseSlno'].errors }"
+                        formControlName="EducourseSlno">
+                 
+
+                    </ng-select>
+                    <div *ngIf="f['EducourseSlno'].invalid && f['EducourseSlno'].touched && f['EducourseSlno'].errors">
+                        <div *ngIf="f['EducourseSlno'].errors['required']" class="invalid-feedback">
+                            Please select Course.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="HtNo" class="form-label">Registration No<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" formControlName="HtNo" [ngClass]="{ 'is-invalid': f['HtNo'].invalid && (f['HtNo'].dirty ||
+                     f['HtNo'].touched) && f['HtNo'].errors }">
+                    <div *ngIf="f['HtNo'].invalid && (f['HtNo'].dirty ||  f['HtNo'].touched) &&  f['HtNo'].errors"
+                        class="invalid-feedback">
+                        <div *ngIf="f['HtNo'].errors['required']">Please provide Registration Number .
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="CollegeName" class="form-label">College/School Name<span
+                            class="text-danger">*</span></label>
+                    <input type="text" class="form-control" formControlName="CollegeName" [ngClass]="{ 'is-invalid': f['CollegeName'].invalid && (f['CollegeName'].dirty ||
+                     f['CollegeName'].touched) && f['CollegeName'].errors }">
+                    <div *ngIf="f['CollegeName'].invalid && (f['CollegeName'].dirty ||  f['CollegeName'].touched) &&  f['CollegeName'].errors"
+                        class="invalid-feedback">
+                        <div *ngIf="f['CollegeName'].errors['required']">Please provide College/School Name .
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="UniversityBoard" class="form-label">Board Name:</label>
+                    <input type="text" class="form-control" formControlName="UniversityBoard" [ngClass]="{ 'is-invalid': f['UniversityBoard'].invalid && (f['UniversityBoard'].dirty ||
+                     f['UniversityBoard'].touched) && f['UniversityBoard'].errors }">
+
+                </div>
+                <div class="col-md-6">
+                    <label for="UniversityBoardName" class="form-label">University/Board Name:<span
+                            class="text-danger">*</span></label>
+                    <input type="text" class="form-control" formControlName="UniversityBoardName" [ngClass]="{ 'is-invalid': f['UniversityBoardName'].invalid && (f['UniversityBoardName'].dirty ||
+                     f['UniversityBoardName'].touched) && f['UniversityBoardName'].errors }">
+                    <div *ngIf="f['UniversityBoardName'].invalid && (f['UniversityBoardName'].dirty ||  f['UniversityBoardName'].touched) &&  f['UniversityBoardName'].errors"
+                        class="invalid-feedback">
+                        <div *ngIf="f['UniversityBoardName'].errors['required']">Please provide University Name .
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="Specialization" class="form-label">Specialization:</label>
+                    <input type="text" class="form-control" formControlName="Specialization" [ngClass]="{ 'is-invalid': f['Specialization'].invalid && (f['Specialization'].dirty ||
+                     f['Specialization'].touched) && f['Specialization'].errors }">
+
+                </div>
+
+                <div class="col-md-6">
+                    <label for="YearOfPassing" class="form-label"> Year Of Passing<span
+                            class="text-danger">*</span></label>
+                    <input type="text" class="form-control" formControlName="YearOfPassing" [ngClass]="{ 'is-invalid': f['YearOfPassing'].invalid && (f['YearOfPassing'].dirty ||
+                     f['YearOfPassing'].touched) && f['YearOfPassing'].errors }">
+                    <div *ngIf="f['YearOfPassing'].invalid && (f['YearOfPassing'].dirty ||  f['YearOfPassing'].touched) &&  f['YearOfPassing'].errors"
+                        class="invalid-feedback">
+                        <div *ngIf="f['YearOfPassing'].errors['required']">Please provide YearOfPassing .
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="Percentage" class="form-label"> Percentage<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" formControlName="Percentage" [ngClass]="{ 'is-invalid': f['Percentage'].invalid && (f['Percentage'].dirty ||
+                     f['Percentage'].touched) && f['Percentage'].errors }">
+                    <div *ngIf="f['Percentage'].invalid && (f['Percentage'].dirty ||  f['Percentage'].touched) &&  f['Percentage'].errors"
+                        class="invalid-feedback">
+                        <div *ngIf="f['Percentage'].errors['required']">Please provide Percentage .
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="Marksobtained" class="form-label"> Maximum Marks<span
+                            class="text-danger">*</span></label>
+                    <input type="text" class="form-control" formControlName="Marksobtained" [ngClass]="{ 'is-invalid': f['Marksobtained'].invalid && (f['Marksobtained'].dirty ||
+                     f['Marksobtained'].touched) && f['Marksobtained'].errors }">
+                    <div *ngIf="f['Marksobtained'].invalid && (f['Marksobtained'].dirty ||  f['Marksobtained'].touched) &&  f['Marksobtained'].errors"
+                        class="invalid-feedback">
+                        <div *ngIf="f['Marksobtained'].errors['required']">Please provide Marksobtained .
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="Addquaslno" class="form-label">Additional Qualification </label>
+                    <ng-select [items]="additionalQualification" bindLabel="Name" bindValue="Addquaslno"
+                        [ngClass]="{ 'is-invalid': f['Addquaslno'].invalid && (f['Addquaslno'].dirty || f['Addquaslno'].touched) && f['Addquaslno'].errors }"
+                        formControlName="Addquaslno">
+                    </ng-select>
+
+                </div>
+
+                <div class="col-md-6">
+                    <label for="Reasonforgap" class="form-label">Reason for Gap:</label>
+                    <input type="text" class="form-control" formControlName="Reasonforgap" [ngClass]="{ 'is-invalid': f['Reasonforgap'].invalid && (f['Reasonforgap'].dirty ||
+                     f['Reasonforgap'].touched) && f['Reasonforgap'].errors }">
+
+                </div>
+
+                <div class="col-md-6">
+                    <label for="ExtraActivities" class="form-label">Extra Activities:</label>
+                    <input type="text" class="form-control" formControlName="ExtraActivities" >
+
+                </div>
+            </div>
+            <div class="card-footer text-end">
+                <div class="col-lg-12">
+                    <div class="hstack gap-2 justify-content-end">
+                        <button type="submit" class="btn btn-primary" *ngIf="!isSubmitted"
+                            [disabled]="educationFrom.invalid">
+                            Submit
+                        </button>
+                        <button type="button" class="btn btn-primary btn-label waves-effect waves-light btn-load"
+                            *ngIf="isSubmitted" [disabled]="true">
+                            <span class="d-flex align-items-center">
+                                <span class="spinner-border flex-shrink-0" role="status">
+                                    <span class="visually-hidden">Submitting...</span>
+                                </span>
+                                <span class="flex-grow-1 ms-2">
+                                    Submitting...
+                                </span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

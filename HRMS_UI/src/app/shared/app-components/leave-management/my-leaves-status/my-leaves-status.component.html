@@ -1,0 +1,26 @@
+<div class="col-xl-12">
+    <div class="card">
+        <div class="card-body">
+            <div class="live-preview">
+                <dx-data-grid id="gridContainer" [dataSource]="gridData" keyExpr="LeaveId" [showBorders]="true" [columnAutoWidth]="true"
+                    (onRowRemoving)="cancelLeave($event)">
+                    <dxo-load-panel [enabled]="true">
+                    </dxo-load-panel>
+                    <dxo-paging [enabled]="true" [pageSize]="5"></dxo-paging>                    
+                    <dxi-column type="buttons"  caption="Actions">
+                        <dxi-button icon="ri ri-delete-bin-line text-danger" name="delete" hint="Cancel Leave">
+                        </dxi-button>
+                    </dxi-column>
+                    <dxi-column dataField="LeaveFrom" caption="From Date" dataType="date"
+                        format="dd-MMM-yyyy"></dxi-column>
+                    <dxi-column dataField="LeaveTo"  caption="To Date" dataType="date" format="dd-MMM-yyyy">
+                    </dxi-column>
+                    <dxi-column dataField="LeaveTypeName" caption="Leave Type"></dxi-column>
+                    <dxi-column dataField="TotalDaysTaken" caption="Total Days"></dxi-column>
+                    <dxo-editing mode="row" [allowDeleting]="true" [useIcons]="true" name="delete" hint="Cancel Leave"
+                        [texts]="{confirmDeleteMessage: 'Are you sure to cancel leaves?'}">
+                    </dxo-editing>
+                </dx-data-grid>
+            </div>
+        </div>
+    </div>

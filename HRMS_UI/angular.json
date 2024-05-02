@@ -1,0 +1,439 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "35c2a030-70e4-44b0-bcac-3c33ef95e5a5"
+  },
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "velzon": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        },
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/portal",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "node_modules/devextreme/dist/css/dx.light.css",
+              "src/styles.scss",
+              "src/assets/scss/config/default/bootstrap.scss",
+              "src/assets/scss/config/default/app.scss",
+              "src/assets/scss/icons.scss",
+              "node_modules/shepherd.js/dist/css/shepherd.css",
+              "node_modules/@videogular/ngx-videogular/fonts/videogular.css",
+              "node_modules/ngx-lightbox/lightbox.css"
+            ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "30mb",
+                  "maximumError": "30mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "30mb",
+                  "maximumError": "30mb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "outputPath": "dist/velzon/prod",
+              "outputHashing": "all"
+            },
+            "uat": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "30mb",
+                  "maximumError": "30mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "30mb",
+                  "maximumError": "30mb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.uat.ts"
+                }
+              ],
+              "outputPath": "dist/velzon/uat",
+              "outputHashing": "all"
+            },
+            "test": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "30mb",
+                  "maximumError": "30mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "30mb",
+                  "maximumError": "30mb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.test.ts"
+                }
+              ],
+              "outputPath": "dist/velzon/test",
+              "outputHashing": "all"
+            },
+            "development": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "30mb",
+                  "maximumError": "30mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "30mb",
+                  "maximumError": "30mb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.dev.ts"
+                }
+              ],
+              "outputPath": "dist/velzon/development",
+              "outputHashing": "all"
+            },
+            "dev": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "30mb",
+                  "maximumError": "30mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "30mb",
+                  "maximumError": "30mb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.local.ts"
+                }
+              ],
+              "outputPath": "dist/velzon/dev",
+              "outputHashing": "all"
+            }
+          },
+          "defaultConfiguration": "dev"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "velzon:build:production"
+            },
+            "development": {
+              "browserTarget": "velzon:build:development"
+            },
+            "uat": {
+              "browserTarget": "velzon:build:uat"
+            },
+            "test": {
+              "browserTarget": "velzon:build:test"
+            },
+            "dev": {
+              "browserTarget": "velzon:build:dev"
+            }
+          },
+          "defaultConfiguration": "dev"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "velzon:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "src/test.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.spec.json",
+            "karmaConfig": "karma.conf.js",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.scss",
+              "node_modules/datatables.net-bs5/css/dataTables.bootstrap5.css"
+            ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/datatables.net/js/jquery.dataTables.js",
+              "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.js"
+            ]
+          }
+        }
+      }
+    },
+    "portal": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        },
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/portal",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "node_modules/devextreme/dist/css/dx.light.css",
+              "src/styles.scss",
+              "src/assets/scss/config/default/bootstrap.scss",
+              "src/assets/scss/config/default/app.scss",
+              "src/assets/scss/icons.scss",
+              "node_modules/shepherd.js/dist/css/shepherd.css",
+              "node_modules/@videogular/ngx-videogular/fonts/videogular.css",
+              "node_modules/ngx-lightbox/lightbox.css"
+            ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "30mb",
+                  "maximumError": "30mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "30mb",
+                  "maximumError": "30mb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "outputPath": "dist/velzon/prod",
+              "outputHashing": "all"
+            },
+            "uat": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "30mb",
+                  "maximumError": "30mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "30mb",
+                  "maximumError": "30mb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.uat.ts"
+                }
+              ],
+              "outputPath": "dist/velzon/uat",
+              "outputHashing": "all"
+            },
+            "test": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "30mb",
+                  "maximumError": "30mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "30mb",
+                  "maximumError": "30mb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.test.ts"
+                }
+              ],
+              "outputPath": "dist/velzon/test",
+              "outputHashing": "all"
+            },
+            "development": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "30mb",
+                  "maximumError": "30mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "30mb",
+                  "maximumError": "30mb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.dev.ts"
+                }
+              ],
+              "outputPath": "dist/velzon/development",
+              "outputHashing": "all"
+            },
+            "dev": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "30mb",
+                  "maximumError": "30mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "30mb",
+                  "maximumError": "30mb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.local.ts"
+                }
+              ],
+              "outputPath": "dist/velzon/dev",
+              "outputHashing": "all"
+            }
+          },
+          "defaultConfiguration": "dev"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "velzon:build:production"
+            },
+            "development": {
+              "browserTarget": "velzon:build:development"
+            },
+            "uat": {
+              "browserTarget": "velzon:build:uat"
+            },
+            "test": {
+              "browserTarget": "velzon:build:test"
+            },
+            "dev": {
+              "browserTarget": "velzon:build:dev"
+            }
+          },
+          "defaultConfiguration": "dev"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "velzon:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "src/test.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.spec.json",
+            "karmaConfig": "karma.conf.js",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.scss",
+              "node_modules/datatables.net-bs5/css/dataTables.bootstrap5.css"
+            ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/datatables.net/js/jquery.dataTables.js",
+              "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.js"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "portal"
+}

@@ -1,0 +1,66 @@
+<app-breadcrumbs title="SELF REVIEW" [breadcrumbItems]="breadCrumbItems"></app-breadcrumbs>
+<div class="row" *ngIf="kraInformation">
+    <div class="card">
+        <div class="card-body table-responsive">
+            <form [formGroup]="reviewForm">
+                <div class="">
+                    <ejs-grid #grid [dataSource]="kraInformation.EmployeeReviewDetails" [allowPaging]="false"
+                        [pageSettings]='pageSettings' allowGrouping='true' [groupSettings]='groupSettings'
+                        allowFiltering='true' [filterSettings]="filterSettings" [editSettings]='editSettings'
+                        (actionComplete)="onActionComplete($event)" (queryCellInfo)="queryCellInfo($event)" (actionBegin)="onActionBegin($event)"[columns]="columns">
+                        <e-columns>
+                            <e-column field='KraName' headerText='KRA Title' width='120'
+                                [allowEditing]="false"></e-column>
+                            <e-column field='KpiName' headerText='KPI Name' width='120'
+                                [allowEditing]="false"></e-column>
+                            <e-column field='FrequencyName' headerText='Frequency' width='50' textAlign='left'
+                                [allowEditing]="false"></e-column>
+                            <e-column field='MaxScore' headerText='Score' width='50' textAlign='left'
+                                [allowEditing]="false"></e-column>
+                            <e-column field='EmployeeScore' headerText='Employee Score' width='50' type="Number"
+                                [allowEditing]="true">
+                            </e-column>
+                            <e-column field='EmployeeComments' headerText='Comments' width='50' textAlign='Left'
+                                editType='textedit' [allowEditing]="true"
+                                [validationRules]='reviewValidationRules'></e-column>
+                        </e-columns>
+                        <e-aggregates>
+                            <e-aggregate>
+                                <e-columns>
+                                    <e-column field="MaxScore" type="Max">
+                                        <ng-template #footerTemplate let-data>Max Score: {{data.Max}} </ng-template>
+                                    </e-column>
+                                    <e-column field="EmployeeScore" type="sum">
+                                        <ng-template #footerTemplate let-data>Employee Score: {{data.sum}}
+                                        </ng-template>
+                                    </e-column>
+                                </e-columns>
+                            </e-aggregate>
+                        </e-aggregates>
+                    </ejs-grid>
+                   </div>
+                <div class="row">
+                    <div class="col-md-12 mt-2">
+                        <label for="EmployeeComments" class="form-label">Employee Comments:</label>
+                        <div class="input-group">
+                            <textarea type="text" class="form-control" formControlName="EmployeeComments"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-end">
+                        <button class="btn btn-primary mt-4 me-2" [disabled]="!isValidScores" (click)="saveReview()">
+                            Save As Draft
+                        </button>
+                        <button class="btn btn-success mt-4 me-2" [disabled]="!isValidScores" (click)="submitReview()">
+                            Submit Review
+                        </button>
+                        <button class="btn btn-warning mt-4" (click)="cancelReview()">
+                            Cancel Review
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

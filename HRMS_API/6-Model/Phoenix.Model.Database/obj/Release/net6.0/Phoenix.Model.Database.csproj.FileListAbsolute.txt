@@ -1,0 +1,11 @@
+D:\Projects\Portal\HRMS_API\6-Model\Phoenix.Model.Database\bin\Release\net6.0\Phoenix.Model.Database.deps.json
+D:\Projects\Portal\HRMS_API\6-Model\Phoenix.Model.Database\bin\Release\net6.0\Phoenix.Model.Database.dll
+D:\Projects\Portal\HRMS_API\6-Model\Phoenix.Model.Database\bin\Release\net6.0\Phoenix.Model.Database.pdb
+D:\Projects\Portal\HRMS_API\6-Model\Phoenix.Model.Database\obj\Release\net6.0\Phoenix.Model.Database.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Portal\HRMS_API\6-Model\Phoenix.Model.Database\obj\Release\net6.0\Phoenix.Model.Database.AssemblyInfoInputs.cache
+D:\Projects\Portal\HRMS_API\6-Model\Phoenix.Model.Database\obj\Release\net6.0\Phoenix.Model.Database.AssemblyInfo.cs
+D:\Projects\Portal\HRMS_API\6-Model\Phoenix.Model.Database\obj\Release\net6.0\Phoenix.Model.Database.csproj.CoreCompileInputs.cache
+D:\Projects\Portal\HRMS_API\6-Model\Phoenix.Model.Database\obj\Release\net6.0\Phoenix.Model.Database.dll
+D:\Projects\Portal\HRMS_API\6-Model\Phoenix.Model.Database\obj\Release\net6.0\refint\Phoenix.Model.Database.dll
+D:\Projects\Portal\HRMS_API\6-Model\Phoenix.Model.Database\obj\Release\net6.0\Phoenix.Model.Database.pdb
+D:\Projects\Portal\HRMS_API\6-Model\Phoenix.Model.Database\obj\Release\net6.0\ref\Phoenix.Model.Database.dll

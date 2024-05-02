@@ -1,0 +1,17 @@
+D:\Projects\Nspira\HRMS\API\6-Model\Database\Phonix.Model.Database\bin\Debug\net6.0\Phoenix.Model.Database.deps.json
+D:\Projects\Nspira\HRMS\API\6-Model\Database\Phonix.Model.Database\bin\Debug\net6.0\Phoenix.Model.Database.dll
+D:\Projects\Nspira\HRMS\API\6-Model\Database\Phonix.Model.Database\bin\Debug\net6.0\Phoenix.Model.Database.pdb
+D:\Projects\Nspira\HRMS\API\6-Model\Database\Phonix.Model.Database\bin\Debug\net6.0\Phoenix.CrossCutting.Extension.dll
+D:\Projects\Nspira\HRMS\API\6-Model\Database\Phonix.Model.Database\bin\Debug\net6.0\Phoenix.Infrastructure.DataModel.dll
+D:\Projects\Nspira\HRMS\API\6-Model\Database\Phonix.Model.Database\bin\Debug\net6.0\Phoenix.Infrastructure.DataModel.pdb
+D:\Projects\Nspira\HRMS\API\6-Model\Database\Phonix.Model.Database\bin\Debug\net6.0\Phoenix.CrossCutting.Extension.pdb
+D:\Projects\Nspira\HRMS\API\6-Model\Database\Phonix.Model.Database\obj\Debug\net6.0\Phoenix.Model.Database.csproj.AssemblyReference.cache
+D:\Projects\Nspira\HRMS\API\6-Model\Database\Phonix.Model.Database\obj\Debug\net6.0\Phoenix.Model.Database.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Nspira\HRMS\API\6-Model\Database\Phonix.Model.Database\obj\Debug\net6.0\Phoenix.Model.Database.AssemblyInfoInputs.cache
+D:\Projects\Nspira\HRMS\API\6-Model\Database\Phonix.Model.Database\obj\Debug\net6.0\Phoenix.Model.Database.AssemblyInfo.cs
+D:\Projects\Nspira\HRMS\API\6-Model\Database\Phonix.Model.Database\obj\Debug\net6.0\Phoenix.Model.Database.csproj.CoreCompileInputs.cache
+D:\Projects\Nspira\HRMS\API\6-Model\Database\Phonix.Model.Database\obj\Debug\net6.0\Phoenix.Model.Database.csproj.CopyComplete
+D:\Projects\Nspira\HRMS\API\6-Model\Database\Phonix.Model.Database\obj\Debug\net6.0\Phoenix.Model.Database.dll
+D:\Projects\Nspira\HRMS\API\6-Model\Database\Phonix.Model.Database\obj\Debug\net6.0\refint\Phoenix.Model.Database.dll
+D:\Projects\Nspira\HRMS\API\6-Model\Database\Phonix.Model.Database\obj\Debug\net6.0\Phoenix.Model.Database.pdb
+D:\Projects\Nspira\HRMS\API\6-Model\Database\Phonix.Model.Database\obj\Debug\net6.0\ref\Phoenix.Model.Database.dll

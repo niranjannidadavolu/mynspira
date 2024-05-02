@@ -1,0 +1,495 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "4.6.0.0",
+        "fileVersion": "4.6.0-3.23259.8 (c3cc1d0c)",
+        "semanticVersion": "4.6.0",
+        "language": "en-US"
+      },
+      "results": [
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Utils/Token/JwtAuthManager.cs",
+                "region": {
+                  "startLine": 100,
+                  "startColumn": 13,
+                  "endLine": 100,
+                  "endColumn": 107
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Utils/Token/JwtAuthManager.cs",
+                "region": {
+                  "startLine": 135,
+                  "startColumn": 13,
+                  "endLine": 135,
+                  "endColumn": 159
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3881",
+          "level": "warning",
+          "message": "Fix this implementation of 'IDisposable' to conform to the dispose pattern.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Utils/Token/JwtRefreshTokenCache.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 18,
+                  "endLine": 9,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Utils/Token/JwtRefreshTokenCache.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 18,
+                  "endLine": 9,
+                  "endColumn": 38
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Utils/Token/JwtRefreshTokenCache.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 21,
+                  "endLine": 37,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "Provide 'protected' overridable implementation of 'Dispose(bool)' on 'JwtRefreshTokenCache' or mark the type as 'sealed'.",
+              "1": "'JwtRefreshTokenCache.Dispose()' should call 'Dispose(true)' and 'GC.SuppressFinalize(this)'."
+            }
+          }
+        },
+        {
+          "ruleId": "S927",
+          "level": "warning",
+          "message": "Rename parameter 'stoppingToken' to 'cancellationToken' to match the interface declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Utils/Token/JwtRefreshTokenCache.cs",
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 50,
+                  "endLine": 19,
+                  "endColumn": 63
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1481",
+          "level": "warning",
+          "message": "Remove the unused local variable 'message'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Utils/Validation/Validator.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 21,
+                  "endLine": 15,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S927",
+          "level": "warning",
+          "message": "Rename parameter 'stoppingToken' to 'cancellationToken' to match the interface declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Utils/Token/JwtRefreshTokenCache.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 49,
+                  "endLine": 31,
+                  "endColumn": 62
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1816",
+          "level": "note",
+          "message": "Change JwtRefreshTokenCache.Dispose() to call GC.SuppressFinalize(object). This will prevent derived types that introduce a finalizer from needing to re-implement 'IDisposable' to call it.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Utils/Token/JwtRefreshTokenCache.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 21,
+                  "endLine": 37,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6444",
+          "level": "warning",
+          "message": "Pass a timeout to limit the execution time.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Utils/Extensions/StringExtensions.cs",
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 20,
+                  "endLine": 34,
+                  "endColumn": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6602",
+          "level": "warning",
+          "message": "\"Find\" method should be used instead of the \"FirstOrDefault\" extension method.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Utils/Token/JwtAuthManager.cs",
+                "region": {
+                  "startLine": 72,
+                  "startColumn": 76,
+                  "endLine": 72,
+                  "endColumn": 90
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6602",
+          "level": "warning",
+          "message": "\"Find\" method should be used instead of the \"FirstOrDefault\" extension method.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Utils/Token/JwtAuthManager.cs",
+                "region": {
+                  "startLine": 175,
+                  "startColumn": 84,
+                  "endLine": 175,
+                  "endColumn": 98
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'GetPrincipalFromExpiredToken' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Utils/Token/JwtAuthManager.cs",
+                "region": {
+                  "startLine": 117,
+                  "startColumn": 32,
+                  "endLine": 117,
+                  "endColumn": 60
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1481",
+          "level": "warning",
+          "message": "Remove the unused local variable 'jwtSecurityToken'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Utils/Token/JwtAuthManager.cs",
+                "region": {
+                  "startLine": 134,
+                  "startColumn": 17,
+                  "endLine": 134,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1481",
+          "level": "warning",
+          "message": "Remove the unused local variable 'principal2'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Utils/Token/JwtAuthManager.cs",
+                "region": {
+                  "startLine": 98,
+                  "startColumn": 17,
+                  "endLine": 98,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1481",
+          "level": "warning",
+          "message": "Remove the unused local variable 'jwtToken'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Utils/Token/JwtAuthManager.cs",
+                "region": {
+                  "startLine": 99,
+                  "startColumn": 30,
+                  "endLine": 99,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'GenerateClaims' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Utils/Token/JwtAuthManager.cs",
+                "region": {
+                  "startLine": 198,
+                  "startColumn": 25,
+                  "endLine": 198,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "CA1816": {
+          "id": "CA1816",
+          "shortDescription": "Dispose methods should call SuppressFinalize",
+          "fullDescription": "A method that is an implementation of Dispose does not call GC.SuppressFinalize; or a method that is not an implementation of Dispose calls GC.SuppressFinalize; or a method calls GC.SuppressFinalize and passes something other than this (Me in Visual Basic).",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1816",
+          "properties": {
+            "category": "Usage",
+            "isEnabledByDefault": true,
+            "tags": [
+              "PortedFromFxCop",
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CA1822": {
+          "id": "CA1822",
+          "shortDescription": "Mark members as static",
+          "fullDescription": "Members that do not access instance data or call instance methods can be marked as static. After you mark the methods as static, the compiler will emit nonvirtual call sites to these members. This can give you a measurable performance gain for performance-sensitive code.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1822",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true,
+            "tags": [
+              "PortedFromFxCop",
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "S125": {
+          "id": "S125",
+          "shortDescription": "Sections of code should not be commented out",
+          "fullDescription": "Programmers should not comment out code as it bloats programs and reduces readability.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-125",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S1481": {
+          "id": "S1481",
+          "shortDescription": "Unused local variables should be removed",
+          "fullDescription": "If a local variable is declared but not used, it is dead code and should be removed. Doing so will improve maintainability because developers will not wonder what the variable is used for.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1481",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S3881": {
+          "id": "S3881",
+          "shortDescription": "\"IDisposable\" should be implemented correctly",
+          "fullDescription": "The IDisposable interface is a mechanism to release unmanaged resources, if not implemented correctly this could result in resource leaks or more severe bugs.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3881",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S6444": {
+          "id": "S6444",
+          "shortDescription": "Not specifying a timeout for regular expressions is security-sensitive",
+          "fullDescription": "Not specifying a timeout for regular expressions can lead to a Denial-of-Service attack. Pass a timeout when using System.Text.RegularExpressions to process untrusted input because a malicious user might craft a value for which the evaluation lasts excessively long.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-6444",
+          "properties": {
+            "category": "Major Security Hotspot",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S6602": {
+          "id": "S6602",
+          "shortDescription": "\"Find\" method should be used instead of the \"FirstOrDefault\" extension",
+          "fullDescription": "Both the List.Find method and IEnumerable.FirstOrDefault method can be used to find the first element that satisfies a given condition in a collection. However, List.Find can be faster than IEnumerable.FirstOrDefault for List objects. For small collections, the performance difference may be minor, but for large collections, it can make a noticeable difference. The same applies for ImmutableList and arrays too.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-6602",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S927": {
+          "id": "S927",
+          "shortDescription": "Parameter names should match base declaration and other partial definitions",
+          "fullDescription": "The name of a parameter in an externally visible. This rule raises an issue when method override does not match the name of the parameter in the base declaration of the method, or the name of the parameter in the interface declaration of the method or the name of any other partial definition.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-927",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

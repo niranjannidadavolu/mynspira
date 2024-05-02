@@ -1,0 +1,21 @@
+<div class="col-xl-12">
+    <div class="card">
+        <div class="card-body">
+            <div class="live-preview">
+                <dx-data-grid id="gridContainer" [dataSource]="gridData" keyExpr="LeaveId" [showBorders]="true" [columnAutoWidth]="true"
+                   >
+                    <dxo-load-panel [enabled]="true">
+                    </dxo-load-panel>
+                    <dxo-paging [enabled]="true" [pageSize]="5"></dxo-paging>     
+                    <dxi-column dataField="EmployeeName" caption="Employee Name"></dxi-column> 
+                    <!-- <dxi-column dataField="EmpId" caption="Employee Id"></dxi-column>                -->
+                    <dxi-column dataField="LeaveFrom" caption="From Date" dataType="date"
+                        format="dd-MMM-yyyy"></dxi-column>
+                    <dxi-column dataField="LeaveTo"  caption="To Date" dataType="date" format="dd-MMM-yyyy">
+                    </dxi-column>
+                    <!-- <dxi-column dataField="LeaveTypeName" caption="Leave Type"></dxi-column> -->
+                    <dxi-column dataField="TotalDaysTaken" caption="Total Days"></dxi-column>
+                </dx-data-grid>
+            </div>
+        </div>
+    </div>

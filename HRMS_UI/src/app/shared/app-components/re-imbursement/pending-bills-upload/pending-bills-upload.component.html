@@ -1,0 +1,47 @@
+<form [formGroup]="uploadForm" (ngSubmit)="onSubmit()">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title mb-0">Multiple File Upload</h4>
+                    <button type="button" class="btn-close" aria-hidden="true"
+                        (click)="activeModal.dismiss('Cross click')"></button>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-6 mt-2">
+                            <div>
+                                <label for="email">Bill Amount</label>
+                                <input type="text" class="form-control" id="amount"
+                                    formControlName="amount" (keypress)="numberOnly($event)"
+                                    [ngClass]="{ 'is-invalid': f['amount'].invalid && (f['amount'].dirty || f['amount'].touched) && f['amount'].errors }"
+                                    placeholder="Enter Amount">
+                                <div *ngIf="f['amount'].invalid && (f['amount'].dirty || f['amount'].touched) &&  f['amount'].errors"
+                                    class="invalid-feedback">
+                                    <div *ngIf="f['amount'].errors['required']">Plesae provide bill amount.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-2">
+                            <label for="file">Upload Bill Copy.</label>
+                            <input type="file" id="file" name="file" formControlName="file"
+                                accept="image/png, image/jpeg, image/gif" data-allow-reorder="true"
+                                data-max-file-size="3MB" (change)="onFileChange($event)"
+                                [ngClass]="{ 'is-invalid':  f['file'].invalid }">
+                            <div *ngIf=" f['file'].invalid && ( f['file'].dirty ||  f['file'].touched) &&  f['file'].errors"
+                                class="invalid-feedback">
+                                <div *ngIf="f['file'].errors['required']">Plesae upload bill copy.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-light" (click)="activeModal.close('Close click')">Close</button>
+            <button type="submit" class="btn btn-primary" [disabled]="uploadForm.invalid">Save
+            </button>
+        </div>
+    </div>
+</form>

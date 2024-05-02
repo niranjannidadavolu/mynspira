@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
+  <ProjectName>Phoenix.Web.Service</ProjectName>
+  <ProjectLanguage>C#</ProjectLanguage>
+  <ProjectType>Product</ProjectType>
+  <ProjectGuid>b13bfc4a-5f60-4be1-a30c-5a61c43ff1e7</ProjectGuid>
+  <FullPath>F:\Work\Office\Projects\Nspira\Portal\HRMS_API\1-Web\Phoenix.Web.Service\Phoenix.Web.Service.csproj</FullPath>
+  <IsExcluded>false</IsExcluded>
+  <AnalysisResults>
+    <AnalysisResult Id="FilesToAnalyze" Location="F:\Work\Office\Projects\Nspira\Portal\HRMS_API\Solutions\.sonarqube\conf\28\FilesToAnalyze.txt" />
+  </AnalysisResults>
+  <AnalysisSettings>
+    <Property Name="sonar.cs.roslyn.reportFilePaths">F:\Work\Office\Projects\Nspira\Portal\HRMS_API\Solutions\.sonarqube\out\28\Issues.json</Property>
+    <Property Name="sonar.cs.analyzer.projectOutPaths">F:\Work\Office\Projects\Nspira\Portal\HRMS_API\Solutions\.sonarqube\out\28</Property>
+  </AnalysisSettings>
+  <Configuration>Debug</Configuration>
+  <Platform>AnyCPU</Platform>
+  <TargetFramework>net6.0</TargetFramework>
+</ProjectInfo>

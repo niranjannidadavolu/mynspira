@@ -1,0 +1,93 @@
+<app-breadcrumbs title="Reviewer Evaluation" [breadcrumbItems]="breadCrumbItems"></app-breadcrumbs>
+<div class="card">
+    <div class="card-header">
+        <div class="d-flex align-items-center">
+            <div class="flex-grow-1">
+                <h6 class="card-title mb-0">Reviewer Evaluation</h6>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 p-3">
+        <div class="row pt-3">
+            <ejs-tab id="element">
+                <e-tabitems>
+                    <e-tabitem>
+                        <ng-template #headerText>
+                            <div>Submitted</div>
+                        </ng-template>
+                        <ng-template #content>
+                            <ejs-grid #grid [dataSource]="pendingReviews" [allowPaging]="false"
+                                [pageSettings]='pageSettings' allowFiltering='true' [filterSettings]="filterSettings"
+                                (actionComplete)="onActionComplete($event)">
+                                <e-columns>
+                                    <e-column field='Sno' headerText='SNO' [visible]="true" isPrimaryKey="true"
+                                        [allowFiltering]='false' width="30" textAlign="center">
+                                        <ng-template #template let-pendingReviews let-i="index" +1>
+                                            {{ +pendingReviews.index +1 }}
+                                        </ng-template>
+                                    </e-column>
+                                    <e-column field='EmployeeName' headerText='Employee Name' width='50'></e-column>
+                                    <e-column field='Department' headerText='Departments' width='50'></e-column>
+                                    <e-column field='Designation' headerText='Designations' width='50'></e-column>
+                                    <e-column field='EmployeeScore' headerText='Employee Score' width='50'></e-column>
+                                    <e-column field='EmployeeComments' headerText='Employee Comments' width='50'></e-column>
+                                    <e-column field='AppraiserScore' headerText='Appraiser Score' width='50'></e-column>
+                                    <e-column field='AppraiserComments' headerText='Appraiser Comments' width='50'></e-column>
+                                    <e-column field='Actions' headerText='Actions' width='50' [allowFiltering]='false'>
+                                        <ng-template #template let-data>
+                                            <div class="d-flex align-items-center">
+                                                <button type="button"
+                                                    class="btn btn-light position-relative p-0 avatar-xs rounded-circle"
+                                                    (click)="employeePendingReview(data)">
+                                                    <span class="avatar-title bg-transparent text-reset">
+                                                        <i class="bx bx-info-circle text-info fs-18"></i>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </ng-template>
+                                    </e-column>
+                                </e-columns>
+                            </ejs-grid>
+                        </ng-template>
+                    </e-tabitem>
+                    <e-tabitem>
+                        <ng-template #headerText>
+                            <div>Not Submitted</div>
+                        </ng-template>
+                        <ng-template #content>
+                            <ejs-grid #grid [dataSource]="nonSubmittedReviews" [allowPaging]="false"
+                                [pageSettings]='pageSettings' [allowFiltering]='true' [filterSettings]="filterSettings"
+                                (actionComplete)="onActionComplete($event)">
+                                <e-columns>
+                                    <e-column field='Sno' headerText='SNO' [visible]="true" isPrimaryKey="true"
+                                        [allowFiltering]='false' width="30" textAlign="center">
+                                        <ng-template #template let-nonSubmittedReviews let-i="index" +1>
+                                            {{ +nonSubmittedReviews.index +1 }}
+                                        </ng-template>
+                                    </e-column>
+                                    <e-column field='EmployeeName' headerText='Employee Name' width='50'></e-column>
+                                    <e-column field='Department' headerText='Departments' width='50'></e-column>
+                                    <e-column field='Designation' headerText='Designations' width='50'></e-column>
+                                    <e-column field='Actions' headerText='Actions' width='50' [allowFiltering]='false'>
+                                        <ng-template #template let-data>
+                                            <div class="d-flex align-items-center">
+                                                <button type="button"
+                                                    class="btn btn-light position-relative p-0 avatar-xs rounded-circle"
+                                                    (click)="alertEmployee()">
+                                                    <span class="avatar-title bg-transparent text-reset">
+                                                        <i class="bx bx-bell text-info fs-18"></i>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </ng-template>
+                                    </e-column>
+                                </e-columns>
+                            </ejs-grid>
+                        </ng-template>
+                    </e-tabitem>
+                </e-tabitems>
+            </ejs-tab>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,1 @@
+export * from './house-property-income.component';

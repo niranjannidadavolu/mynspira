@@ -1,0 +1,112 @@
+<div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="exampleModalgridLabel">
+            {{mode}} KPP Information
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+            (click)="activeModal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+        <form [formGroup]="kpiForm">
+            <div class="row">
+                <div class="col-md-12 mt-2 mb-1">
+                    <label for="kpiTitle" class="form-label">KPP Title <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" formControlName="KpiName" [readOnly]="mode === 'View'"/>
+                    <div *ngIf="kpiForm.get('KpiName')?.hasError('required') && kpiForm.get('KpiName')?.touched"
+                        style="color:red;">
+                        KPP Name is required!
+                    </div>
+                    <div *ngIf="kpiForm.get('KpiName')?.hasError('invalidInput') && kpiForm.get('KpiName')?.touched"
+                        style="color:red;">
+                        KPP Name Should not contain the Special Characters and Leading Spaces.
+                    </div>
+                    <div *ngIf="kpiForm.get('KpiName')?.hasError('valueExists') && kpiForm.get('KpiName')?.touched"
+                        style="color:red;">
+                        Entered KPP Name is already exists.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mt-2 mb-1">
+                    <label for="kpiTitle" class="form-label">Key Result Area <span class="text-danger">*</span></label>
+                    <ejs-dropdownlist id='country' [dataSource]='kraInformations' [fields]='KraFields'
+                        [filterBarPlaceholder]="filterPlaceholder" [popupHeight]='height' [allowFiltering]='true'
+                        [placeholder]='watermarkKra' formControlName="KraSlno" [readonly]="mode === 'View'"
+                        (change)='onKraChange($event)'></ejs-dropdownlist>
+                    <div *ngIf="kpiForm.get('KraSlno')?.hasError('required') && kpiForm.get('KraSlno')?.touched"
+                        style="color:red;">
+                        KRA Name is required!
+                    </div>
+                </div>
+                <div class="col-md-6 mt-2 mb-1">
+                    <label for="kpiTitle" class="form-label">Frequency <span class="text-danger">*</span></label>
+                    <ejs-dropdownlist id='country' [dataSource]='frequencyInfo' [fields]='frequencyFields'
+                        [filterBarPlaceholder]="filterPlaceholder" [popupHeight]='height' [allowFiltering]='true'
+                        [placeholder]='watermarkFrequency' formControlName="FrequencySlno" [readonly]="mode === 'View'"
+                        (change)='onFrequencyChange($event)'></ejs-dropdownlist>
+                    <div *ngIf="kpiForm.get('FrequencySlno')?.hasError('required') && kpiForm.get('FrequencySlno')?.touched"
+                        style="color:red;">
+                        Frequency is required!
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 mt-2 mb-1">
+                <label for="measurement" class="form-label">Measurement <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" formControlName="Measurement" [readOnly]="mode === 'View'"/>
+                <div *ngIf="kpiForm.get('Measurement')?.hasError('required') && kpiForm.get('Measurement')?.touched"
+                    style="color:red;">
+                    Measurement is required!
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mt-2 mb-1">
+                    <label for="MinThresholdValues" class="form-label">Minimum Threshold Value <span class="text-danger">*</span></label>
+                    <input type="number" class="form-control" formControlName="MinThresholdValues" [readOnly]="mode === 'View'"/>
+                    <div *ngIf="kpiForm.get('MinThresholdValues')?.hasError('required') && kpiForm.get('MinThresholdValues')?.touched"
+                        style="color:red;">
+                        Minimum Threshold Value is required!
+                    </div>
+                </div>
+                <div class="col-md-6 mt-2 mb-1">
+                    <label for="MaxThresholdValues" class="form-label">Maximum Threshold Value <span class="text-danger">*</span></label>
+                    <input type="number" class="form-control" formControlName="MaxThresholdValues" [readOnly]="mode === 'View'"/>
+                    <div *ngIf="kpiForm.get('MaxThresholdValues')?.hasError('required') && kpiForm.get('MaxThresholdValues')?.touched"
+                        style="color:red;">
+                        Maximum Threshold Value is required!
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 mt-2">
+                <label for="kpiTitle" class="form-label">KPP Description <span class="text-danger">*</span></label>
+                <textarea type="text" class="form-control" formControlName="Description" [readOnly]="mode === 'View'"></textarea>
+                <div *ngIf="kpiForm.get('Description')?.hasError('required') && kpiForm.get('Description')?.touched"
+                        style="color:red;">
+                        KPP Description is required!
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="live-preview mt-3">
+                    <div class="row">
+                        <div class="col text-end">
+                            <button class="btn btn-secondary mt-4" type="button" *ngIf="!isSubmitted  && mode !== 'View'"
+                                [disabled]="!kpiForm.valid" (click)="SaveKpiInformation()">
+                                Save
+                            </button>
+                            <button type="button" class="btn btn-secondary btn-load" *ngIf="isSubmitted">
+                                <span class="d-flex align-items-center">
+                                    <span class="spinner-border flex-shrink-0" role="status">
+                                        <span class="visually-hidden">Saving...</span>
+                                    </span>
+                                    <span class="flex-grow-1 ms-2">
+                                        Saving...
+                                    </span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>

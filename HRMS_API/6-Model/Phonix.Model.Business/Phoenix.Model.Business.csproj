@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Investment\AssesseeDetail.cs" />
+    <Compile Remove="Investment\OtherIncomeDetail.cs" />
+    <Compile Remove="LeaveManagement\EmpLeaveCancelRequest.cs" />
+    <Compile Remove="LeaveManagement\EmpLeaves.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\4-Infrastructure\BusinessModel\Phoenix.Infrastructure.BusinessModel.csproj" />
+    <ProjectReference Include="..\..\5-CrossCutting\Phoenix.CrossCutting.Enumerations\Phoenix.CrossCutting.Enumerations.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="FileProviders\" />
+  </ItemGroup>
+
+</Project>

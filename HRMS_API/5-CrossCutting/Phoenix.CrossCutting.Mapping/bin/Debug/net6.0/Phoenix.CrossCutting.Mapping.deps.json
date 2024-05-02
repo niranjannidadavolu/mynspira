@@ -1,0 +1,86 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Phoenix.CrossCutting.Mapping/1.0.0": {
+        "dependencies": {
+          "AgileObjects.AgileMapper": "1.8.0",
+          "SonarAnalyzer.CSharp": "8.35.0.42613"
+        },
+        "runtime": {
+          "Phoenix.CrossCutting.Mapping.dll": {}
+        }
+      },
+      "AgileObjects.AgileMapper/1.8.0": {
+        "dependencies": {
+          "AgileObjects.ReadableExpressions": "2.6.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AgileObjects.AgileMapper.dll": {
+            "assemblyVersion": "1.8.0.0",
+            "fileVersion": "1.8.0.0"
+          }
+        }
+      },
+      "AgileObjects.NetStandardPolyfills/1.5.0": {
+        "runtime": {
+          "lib/netstandard2.0/AgileObjects.NetStandardPolyfills.dll": {
+            "assemblyVersion": "1.5.0.0",
+            "fileVersion": "1.5.0.0"
+          }
+        }
+      },
+      "AgileObjects.ReadableExpressions/2.6.0": {
+        "dependencies": {
+          "AgileObjects.NetStandardPolyfills": "1.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AgileObjects.ReadableExpressions.dll": {
+            "assemblyVersion": "2.6.0.0",
+            "fileVersion": "2.6.0.0"
+          }
+        }
+      },
+      "SonarAnalyzer.CSharp/8.35.0.42613": {}
+    }
+  },
+  "libraries": {
+    "Phoenix.CrossCutting.Mapping/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AgileObjects.AgileMapper/1.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5+Y/xYZkZX8MELd0PljRrCMGrPCE3j8N0tHQDpAhAmhlSISbohc7fb8YreXQUkx0isSm1+5NnmHo2ARCahKxPA==",
+      "path": "agileobjects.agilemapper/1.8.0",
+      "hashPath": "agileobjects.agilemapper.1.8.0.nupkg.sha512"
+    },
+    "AgileObjects.NetStandardPolyfills/1.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+eWxs3HINdHPZpXALiPIHilHnsuKCj1nxoyZlgZSxgv5OVQPwt7IWRYtOx+4/6x0qO8cjXQuLalrxouT42EZzQ==",
+      "path": "agileobjects.netstandardpolyfills/1.5.0",
+      "hashPath": "agileobjects.netstandardpolyfills.1.5.0.nupkg.sha512"
+    },
+    "AgileObjects.ReadableExpressions/2.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GfyVg7MRALnM182yHN86yMDd20rOAwUmjkcrJoPnIlPtSwunUSOiXJ7ZotyhtWTNno4HUfa6q85ZSwwOgfDdYg==",
+      "path": "agileobjects.readableexpressions/2.6.0",
+      "hashPath": "agileobjects.readableexpressions.2.6.0.nupkg.sha512"
+    },
+    "SonarAnalyzer.CSharp/8.35.0.42613": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bSEpHYZXrSOXJVMr6ozINn0sO5WT9ShmOUZJsJN2CCgyzUhPUZd0wnp59cm9zUiBA28B7yESPo61nbX5trICYw==",
+      "path": "sonaranalyzer.csharp/8.35.0.42613",
+      "hashPath": "sonaranalyzer.csharp.8.35.0.42613.nupkg.sha512"
+    }
+  }
+}

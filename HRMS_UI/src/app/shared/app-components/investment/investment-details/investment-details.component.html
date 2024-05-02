@@ -1,0 +1,56 @@
+<div [formGroup]="investmentDetails">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="mb-2">
+                <label class="form-label">Assessee</label>
+                <ng-select #hraLoacation [items]="assessmentTypes" bindLabel="Name" bindValue="AssesseeTypeSlNo"
+                    formControlName="AssesseeTypeId" [ngClass]="{'event-disabled': isVerify}"  [disabled]="isVerify" >
+                    <ng-template ng-optgroup-tmp let-item="item">
+                        {{item.Name}}
+                    </ng-template>
+                </ng-select>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="mb-2" >
+                <label class="form-label mb-3">TDS
+                    Regime</label>
+                <br>
+                <input type="radio" name="Is_NewRegime" id="regime" [value]="true" formControlName="Is_NewRegime" [ngClass]="{'event-disabled': isVerify}" />
+                New &nbsp;&nbsp;&nbsp;
+                <input type="radio" name="Is_NewRegime" id="regime" [value]="false" formControlName="Is_NewRegime" [ngClass]="{'event-disabled': isVerify}" />
+                Old
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <!-- <div class="mb-2">
+                <label class="form-label">Is Parents are Senior
+                    Citizen</label>
+                <br>
+                <input type="radio" name="Is_Senior_Citizen" id="regime" [value]="true"
+                    formControlName="Is_Senior_Citizen" />
+                New &nbsp;&nbsp;&nbsp;
+                <input type="radio" name="Is_Senior_Citizen" id="regime" [value]="false"
+                    formControlName="Is_Senior_Citizen" />
+                Old
+            </div> -->
+
+            <div class="mb-2">
+                <label class="form-label mb-3">Is Parents are Senior
+                    Citizen</label>
+                <br>
+                <input type="radio" name="Is_Senior_Citizen" id="Is_Senior_Citizen" [value]="true" formControlName="Is_Senior_Citizen" [ngClass]="{'event-disabled': isVerify}" />
+                Yes &nbsp;&nbsp;&nbsp;
+                <input type="radio" name="Is_Senior_Citizen" id="Is_Senior_Citizen" [value]="false" formControlName="Is_Senior_Citizen" [ngClass]="{'event-disabled': isVerify}" />
+                No
+            </div>
+            <!-- <div class="form-check form-switch mb-3" dir="ltr">
+                <label class="form-check-label" for="isSeniorCitizen">If
+                    Parents are senior
+                    citizen</label>
+                <input type="checkbox" class="form-check-input" id="isSeniorCitizen" formControlName="Is_Senior_Citizen"
+                    name="Is_Senior_Citizen">
+            </div> -->
+        </div>
+    </div>
+</div>

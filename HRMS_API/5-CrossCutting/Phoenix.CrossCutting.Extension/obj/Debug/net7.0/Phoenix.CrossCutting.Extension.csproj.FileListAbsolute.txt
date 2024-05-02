@@ -1,0 +1,12 @@
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Extension\bin\Debug\net7.0\Phoenix.CrossCutting.Extension.deps.json
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Extension\bin\Debug\net7.0\Phoenix.CrossCutting.Extension.dll
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Extension\bin\Debug\net7.0\Phoenix.CrossCutting.Extension.pdb
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Extension\obj\Debug\net7.0\Phoenix.CrossCutting.Extension.csproj.AssemblyReference.cache
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Extension\obj\Debug\net7.0\Phoenix.CrossCutting.Extension.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Extension\obj\Debug\net7.0\Phoenix.CrossCutting.Extension.AssemblyInfoInputs.cache
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Extension\obj\Debug\net7.0\Phoenix.CrossCutting.Extension.AssemblyInfo.cs
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Extension\obj\Debug\net7.0\Phoenix.CrossCutting.Extension.csproj.CoreCompileInputs.cache
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Extension\obj\Debug\net7.0\Phoenix.CrossCutting.Extension.dll
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Extension\obj\Debug\net7.0\refint\Phoenix.CrossCutting.Extension.dll
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Extension\obj\Debug\net7.0\Phoenix.CrossCutting.Extension.pdb
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Extension\obj\Debug\net7.0\ref\Phoenix.CrossCutting.Extension.dll

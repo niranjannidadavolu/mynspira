@@ -1,0 +1,2968 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+	<Body>
+		<ReportItems>
+			<Textbox Name="LEGNAME">
+				<CanGrow>true</CanGrow>
+				<KeepTogether>true</KeepTogether>
+				<Paragraphs>
+					<Paragraph>
+						<TextRuns>
+							<TextRun>
+								<Value>=First(Fields!LEGNAME.Value, "EmpPsDs")</Value>
+								<Style>
+									<FontWeight>Bold</FontWeight>
+								</Style>
+							</TextRun>
+						</TextRuns>
+						<Style>
+							<TextAlign>Center</TextAlign>
+						</Style>
+					</Paragraph>
+				</Paragraphs>
+				<rd:DefaultName>LEGNAME</rd:DefaultName>
+				<Top>0.64066cm</Top>
+				<Left>3.27966cm</Left>
+				<Height>0.50475cm</Height>
+				<Width>12.75526cm</Width>
+				<Style>
+					<Border>
+						<Style>None</Style>
+					</Border>
+					<VerticalAlign>Middle</VerticalAlign>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+					<PaddingBottom>2pt</PaddingBottom>
+				</Style>
+			</Textbox>
+			<Textbox Name="Textbox5">
+				<CanGrow>true</CanGrow>
+				<KeepTogether>true</KeepTogether>
+				<Paragraphs>
+					<Paragraph>
+						<TextRuns>
+							<TextRun>
+								<Value>Payslip for the Month of</Value>
+								<Style>
+									<FontFamily>Courier New</FontFamily>
+									<FontSize>9pt</FontSize>
+									<FontWeight>Bold</FontWeight>
+								</Style>
+							</TextRun>
+						</TextRuns>
+						<Style />
+					</Paragraph>
+				</Paragraphs>
+				<rd:DefaultName>Textbox5</rd:DefaultName>
+				<Top>1.29506cm</Top>
+				<Left>4.92008cm</Left>
+				<Height>0.473cm</Height>
+				<Width>4.78954cm</Width>
+				<ZIndex>1</ZIndex>
+				<Style>
+					<Border>
+						<Style>None</Style>
+					</Border>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+					<PaddingBottom>2pt</PaddingBottom>
+				</Style>
+			</Textbox>
+			<Textbox Name="MONTHNAME">
+				<CanGrow>true</CanGrow>
+				<KeepTogether>true</KeepTogether>
+				<Paragraphs>
+					<Paragraph>
+						<TextRuns>
+							<TextRun>
+								<Value>=First(Fields!MONTHNAME.Value, "EmpPsDs")</Value>
+								<Style>
+									<FontFamily>Courier New</FontFamily>
+									<FontSize>9pt</FontSize>
+									<FontWeight>Bold</FontWeight>
+								</Style>
+							</TextRun>
+						</TextRuns>
+						<Style />
+					</Paragraph>
+				</Paragraphs>
+				<rd:DefaultName>MONTHNAME</rd:DefaultName>
+				<Top>1.29506cm</Top>
+				<Left>9.78018cm</Left>
+				<Height>0.473cm</Height>
+				<Width>4.97592cm</Width>
+				<ZIndex>2</ZIndex>
+				<Style>
+					<Border>
+						<Style>None</Style>
+					</Border>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+					<PaddingBottom>2pt</PaddingBottom>
+				</Style>
+			</Textbox>
+			<Image Name="Image1">
+				<Source>Embedded</Source>
+				<Value>NES</Value>
+				<Sizing>Fit</Sizing>
+				<Top>0.37005cm</Top>
+				<Left>0.61207cm</Left>
+				<Height>1.63689cm</Height>
+				<Width>2.20486cm</Width>
+				<ZIndex>3</ZIndex>
+				<Visibility>
+					<Hidden>true</Hidden>
+				</Visibility>
+				<ToolTip>Nspira</ToolTip>
+				<Style>
+					<Border>
+						<Style>None</Style>
+					</Border>
+				</Style>
+			</Image>
+			<Textbox Name="Textbox1">
+				<CanGrow>true</CanGrow>
+				<KeepTogether>true</KeepTogether>
+				<Paragraphs>
+					<Paragraph>
+						<TextRuns>
+							<TextRun>
+								<Value>
+									(All Amounts are in Rupees)
+								</Value>
+								<Style>
+									<FontFamily>Courier New</FontFamily>
+									<FontSize>8pt</FontSize>
+									<FontWeight>Bold</FontWeight>
+								</Style>
+							</TextRun>
+						</TextRuns>
+						<Style />
+					</Paragraph>
+				</Paragraphs>
+				<rd:DefaultName>Textbox1</rd:DefaultName>
+				<Top>18.53531cm</Top>
+				<Left>0.47508cm</Left>
+				<Height>0.473cm</Height>
+				<Width>5.27656cm</Width>
+				<ZIndex>4</ZIndex>
+				<Style>
+					<Border>
+						<Style>None</Style>
+					</Border>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+					<PaddingBottom>2pt</PaddingBottom>
+				</Style>
+			</Textbox>
+			<Rectangle Name="Rectangle1">
+				<ReportItems>
+					<Textbox Name="Textbox2">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>Name        :</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>Textbox2</rd:DefaultName>
+						<Top>0.0635cm</Top>
+						<Left>0.19062cm</Left>
+						<Height>0.473cm</Height>
+						<Width>3.01789cm</Width>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<VerticalAlign>Middle</VerticalAlign>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="EMPLOYEENAME">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>=First(Fields!EMPLOYEENAME.Value, "EmpPsDs")</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>EMPLOYEENAME</rd:DefaultName>
+						<Top>0.0635cm</Top>
+						<Left>3.34963cm</Left>
+						<Height>0.473cm</Height>
+						<Width>6.70278cm</Width>
+						<ZIndex>1</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<VerticalAlign>Middle</VerticalAlign>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="Textbox3">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>Emp ID:</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value />
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>Textbox2</rd:DefaultName>
+						<Top>0.0635cm</Top>
+						<Left>10.26584cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.09783cm</Width>
+						<ZIndex>2</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<VerticalAlign>Middle</VerticalAlign>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="EMPNO">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>=First(Fields!EMPNO.Value, "EmpPsDs")</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>EMPNO</rd:DefaultName>
+						<Top>0.0635cm</Top>
+						<Left>12.49892cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.30421cm</Width>
+						<ZIndex>3</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<VerticalAlign>Middle</VerticalAlign>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Line Name="Line5">
+						<Top>0.5715cm</Top>
+						<Height>0cm</Height>
+						<Width>15.55984cm</Width>
+						<ZIndex>4</ZIndex>
+						<Style>
+							<Border>
+								<Style>Solid</Style>
+							</Border>
+						</Style>
+					</Line>
+					<Line Name="Line6">
+						<Top>0.54328cm</Top>
+						<Left>8.76829cm</Left>
+						<Height>3.01506cm</Height>
+						<Width>0cm</Width>
+						<ZIndex>5</ZIndex>
+						<Style>
+							<Border>
+								<Style>Solid</Style>
+							</Border>
+						</Style>
+					</Line>
+					<Textbox Name="Textbox4">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>Department  :</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>Textbox2</rd:DefaultName>
+						<Top>0.6325cm</Top>
+						<Left>0.19062cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.96497cm</Width>
+						<ZIndex>6</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="Textbox8">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>Designation :</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>Textbox8</rd:DefaultName>
+						<Top>1.16946cm</Top>
+						<Left>0.19062cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.96497cm</Width>
+						<ZIndex>7</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="Textbox9">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>DOJ         :</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>Textbox8</rd:DefaultName>
+						<Top>1.7236cm</Top>
+						<Left>0.19062cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.96497cm</Width>
+						<ZIndex>8</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="Textbox10">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>CTC         :</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>Textbox8</rd:DefaultName>
+						<Top>2.27245cm</Top>
+						<Left>0.19062cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.96497cm</Width>
+						<ZIndex>9</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="Textbox11">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>W.Days CTC  :</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>Textbox8</rd:DefaultName>
+						<Top>2.76309cm</Top>
+						<Left>0.19062cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.96497cm</Width>
+						<ZIndex>10</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="Textbox12">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>Bank A/c No.:</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>Textbox8</rd:DefaultName>
+						<Top>0.6325cm</Top>
+						<Left>8.9288cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.91804cm</Width>
+						<ZIndex>11</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="Textbox13">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>PF UAN No.  :</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>Textbox8</rd:DefaultName>
+						<Top>1.16946cm</Top>
+						<Left>8.9288cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.91804cm</Width>
+						<ZIndex>12</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="Textbox14">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>ESI No.     :</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>Textbox8</rd:DefaultName>
+						<Top>1.7236cm</Top>
+						<Left>8.9288cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.91804cm</Width>
+						<ZIndex>13</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="Textbox15">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>PAN         :</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>Textbox8</rd:DefaultName>
+						<Top>2.27245cm</Top>
+						<Left>8.90235cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.91804cm</Width>
+						<ZIndex>14</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="DEPARTMENT">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>=First(Fields!DEPARTMENT.Value, "EmpPsDs")</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>DEPARTMENT</rd:DefaultName>
+						<Top>0.6325cm</Top>
+						<Left>3.34963cm</Left>
+						<Height>0.473cm</Height>
+						<Width>5.24757cm</Width>
+						<ZIndex>15</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="DESIGNATION">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>=First(Fields!DESIGNATION.Value, "EmpPsDs")</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>DESIGNATION</rd:DefaultName>
+						<Top>1.16946cm</Top>
+						<Left>3.37609cm</Left>
+						<Height>0.473cm</Height>
+						<Width>5.24757cm</Width>
+						<ZIndex>16</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="DOJ">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>=First(Fields!DOJ.Value, "EmpPsDs")</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+											<Format>dd-MMM-yyyy</Format>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>DOJ</rd:DefaultName>
+						<Top>1.7236cm</Top>
+						<Left>3.34963cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.5cm</Width>
+						<ZIndex>17</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="CTC_GROSSSALARY">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>=First(Fields!CTC_GROSSSALARY.Value, "EmpPsDs")</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+											<Format>#,0.00;(#,0.00)</Format>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style>
+									<TextAlign>Left</TextAlign>
+								</Style>
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>CTC_GROSSSALARY</rd:DefaultName>
+						<Top>2.27245cm</Top>
+						<Left>3.34963cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.5cm</Width>
+						<ZIndex>18</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="GROSSSALARY">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>=First(Fields!GROSSSALARY.Value, "EmpPsDs")</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+											<Format>#,0.00;(#,0.00)</Format>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style>
+									<TextAlign>Left</TextAlign>
+								</Style>
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>GROSSSALARY</rd:DefaultName>
+						<Top>2.76309cm</Top>
+						<Left>3.34963cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.5cm</Width>
+						<ZIndex>19</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="ACCOUNTNO">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>=First(Fields!ACCOUNTNO.Value, "EmpPsDs")</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style>
+									<TextAlign>Left</TextAlign>
+								</Style>
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>ACCOUNTNO</rd:DefaultName>
+						<Top>0.6325cm</Top>
+						<Left>11.94345cm</Left>
+						<Height>0.473cm</Height>
+						<Width>3.262cm</Width>
+						<ZIndex>20</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="PFNO">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>=First(Fields!PFNO.Value, "EmpPsDs")</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style>
+									<TextAlign>Left</TextAlign>
+								</Style>
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>PFNO</rd:DefaultName>
+						<Top>1.16946cm</Top>
+						<Left>11.94345cm</Left>
+						<Height>0.473cm</Height>
+						<Width>3.262cm</Width>
+						<ZIndex>21</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="ESINO">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>=First(Fields!ESINO.Value, "EmpPsDs")</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style>
+									<TextAlign>Left</TextAlign>
+								</Style>
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>ESINO</rd:DefaultName>
+						<Top>1.7236cm</Top>
+						<Left>11.94345cm</Left>
+						<Height>0.473cm</Height>
+						<Width>3.262cm</Width>
+						<ZIndex>22</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="PANNO">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>=First(Fields!PANNO.Value, "EmpPsDs")</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style>
+									<TextAlign>Left</TextAlign>
+								</Style>
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>PANNO</rd:DefaultName>
+						<Top>2.27245cm</Top>
+						<Left>11.917cm</Left>
+						<Height>0.473cm</Height>
+						<Width>3.262cm</Width>
+						<ZIndex>23</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+				</ReportItems>
+				<KeepTogether>true</KeepTogether>
+				<Top>2.13644cm</Top>
+				<Left>0.47508cm</Left>
+				<Height>3.55834cm</Height>
+				<Width>15.55984cm</Width>
+				<ZIndex>5</ZIndex>
+				<Style>
+					<Border>
+						<Style>Solid</Style>
+					</Border>
+				</Style>
+			</Rectangle>
+			<Rectangle Name="Rectangle2">
+				<ReportItems>
+					<Textbox Name="Textbox16">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>Total Number of Days  : </Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>Textbox8</rd:DefaultName>
+						<Top>0.07688cm</Top>
+						<Left>0.2249cm</Left>
+						<Height>0.473cm</Height>
+						<Width>5.19906cm</Width>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="Textbox17">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>Paid Number of Days : </Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>Textbox8</rd:DefaultName>
+						<Top>0.07688cm</Top>
+						<Left>8.57235cm</Left>
+						<Height>0.473cm</Height>
+						<Width>4.59934cm</Width>
+						<ZIndex>1</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="NDAYS">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>=First(Fields!NDAYS.Value, "EmpPsDs")</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+											<Format>0.0;(0.0)</Format>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style>
+									<TextAlign>Right</TextAlign>
+								</Style>
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>NDAYS</rd:DefaultName>
+						<Top>0.07688cm</Top>
+						<Left>5.67812cm</Left>
+						<Height>0.473cm</Height>
+						<Width>1.37271cm</Width>
+						<ZIndex>2</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="PRESENTDAYS">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>=First(Fields!PRESENTDAYS.Value, "EmpPsDs")</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+											<Format>0.0;(0.0)</Format>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style>
+									<TextAlign>Right</TextAlign>
+								</Style>
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>PRESENTDAYS</rd:DefaultName>
+						<Top>0.07688cm</Top>
+						<Left>13.29869cm</Left>
+						<Height>0.473cm</Height>
+						<Width>1.47814cm</Width>
+						<ZIndex>3</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+				</ReportItems>
+				<KeepTogether>true</KeepTogether>
+				<Top>5.82473cm</Top>
+				<Left>0.47508cm</Left>
+				<Height>0.70083cm</Height>
+				<Width>15.55984cm</Width>
+				<ZIndex>6</ZIndex>
+				<Style>
+					<Border>
+						<Style>Solid</Style>
+					</Border>
+				</Style>
+			</Rectangle>
+			<Rectangle Name="Rectangle3">
+				<ReportItems>
+					<Textbox Name="Textbox18">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>Earnings </Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+											<FontWeight>Bold</FontWeight>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>Textbox8</rd:DefaultName>
+						<Top>0.01058cm</Top>
+						<Left>4.19365cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.40475cm</Width>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="Textbox19">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>Deductions </Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+											<FontWeight>Bold</FontWeight>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>Textbox8</rd:DefaultName>
+						<Left>11.35048cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.60069cm</Width>
+						<ZIndex>1</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Line Name="Line7">
+						<Top>0.48711cm</Top>
+						<Height>0cm</Height>
+						<Width>15.55984cm</Width>
+						<ZIndex>2</ZIndex>
+						<Style>
+							<Border>
+								<Style>Solid</Style>
+							</Border>
+						</Style>
+					</Line>
+					<Line Name="Line8">
+						<Top>0.01058cm</Top>
+						<Left>8.57235cm</Left>
+						<Height>9.26687cm</Height>
+						<Width>0cm</Width>
+						<ZIndex>3</ZIndex>
+						<Style>
+							<Border>
+								<Style>Solid</Style>
+							</Border>
+						</Style>
+					</Line>
+					<Line Name="Line9">
+						<Top>0.508cm</Top>
+						<Left>5.58271cm</Left>
+						<Height>8.76945cm</Height>
+						<Width>0cm</Width>
+						<ZIndex>4</ZIndex>
+						<Style>
+							<Border>
+								<Style>Solid</Style>
+							</Border>
+						</Style>
+					</Line>
+					<Line Name="Line10">
+						<Top>0.4671cm</Top>
+						<Left>12.65471cm</Left>
+						<Height>8.81035cm</Height>
+						<Width>0cm</Width>
+						<ZIndex>5</ZIndex>
+						<Style>
+							<Border>
+								<Style>Solid</Style>
+							</Border>
+						</Style>
+					</Line>
+					<Textbox Name="Textbox20">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>Basic   </Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>Textbox8</rd:DefaultName>
+						<Top>0.73099cm</Top>
+						<Left>0.24607cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.79104cm</Width>
+						<ZIndex>6</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="Textbox21">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>DA        </Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>Textbox8</rd:DefaultName>
+						<Top>1.45728cm</Top>
+						<Left>0.24607cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.79104cm</Width>
+						<ZIndex>7</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="Textbox22">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>HRA        </Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>Textbox8</rd:DefaultName>
+						<Top>2.18358cm</Top>
+						<Left>0.24607cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.79104cm</Width>
+						<ZIndex>8</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="Textbox23">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>Other Allowance / Bonus</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>Textbox8</rd:DefaultName>
+						<Top>2.90987cm</Top>
+						<Left>0.24607cm</Left>
+						<Height>0.473cm</Height>
+						<Width>5.03049cm</Width>
+						<ZIndex>9</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="Textbox24">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>Earned Employer PF </Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>Textbox8</rd:DefaultName>
+						<Top>3.63617cm</Top>
+						<Left>0.27253cm</Left>
+						<Height>0.473cm</Height>
+						<Width>4.35239cm</Width>
+						<ZIndex>10</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="Textbox26">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>Professional Tax</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>Textbox8</rd:DefaultName>
+						<Top>0.50874cm</Top>
+						<Left>8.80165cm</Left>
+						<Height>0.473cm</Height>
+						<Width>3.67844cm</Width>
+						<ZIndex>11</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="Textbox27">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>Employee PF</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>Textbox8</rd:DefaultName>
+						<Top>1.15738cm</Top>
+						<Left>8.80165cm</Left>
+						<Height>0.473cm</Height>
+						<Width>3.08239cm</Width>
+						<ZIndex>12</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="Textbox28">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>Employee ESI</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>Textbox8</rd:DefaultName>
+						<Top>1.80603cm</Top>
+						<Left>8.80165cm</Left>
+						<Height>0.473cm</Height>
+						<Width>3.08239cm</Width>
+						<ZIndex>13</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="Textbox29">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>Income Tax</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>Textbox8</rd:DefaultName>
+						<Top>2.45467cm</Top>
+						<Left>8.80165cm</Left>
+						<Height>0.473cm</Height>
+						<Width>3.08239cm</Width>
+						<ZIndex>14</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="Textbox30">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>Phone</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>Textbox8</rd:DefaultName>
+						<Top>3.75195cm</Top>
+						<Left>8.80165cm</Left>
+						<Height>0.473cm</Height>
+						<Width>3.08239cm</Width>
+						<ZIndex>15</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="Textbox31">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>GMC</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>Textbox8</rd:DefaultName>
+						<Top>4.4006cm</Top>
+						<Left>8.80165cm</Left>
+						<Height>0.473cm</Height>
+						<Width>3.08239cm</Width>
+						<ZIndex>16</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="BASIC">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>=First(Fields!BASIC.Value, "EmpPsDs")</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+											<Format>#,0.00;(#,0.00)</Format>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style>
+									<TextAlign>Right</TextAlign>
+								</Style>
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>BASIC</rd:DefaultName>
+						<Top>0.73099cm</Top>
+						<Left>5.78307cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.5cm</Width>
+						<ZIndex>17</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="DA">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>=First(Fields!DA.Value, "EmpPsDs")</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+											<Format>#,0.00;(#,0.00)</Format>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style>
+									<TextAlign>Right</TextAlign>
+								</Style>
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>DA</rd:DefaultName>
+						<Top>1.45728cm</Top>
+						<Left>5.78307cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.5cm</Width>
+						<ZIndex>18</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="HRA">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>=First(Fields!HRA.Value, "EmpPsDs")</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+											<Format>#,0.00;(#,0.00)</Format>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style>
+									<TextAlign>Right</TextAlign>
+								</Style>
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>HRA</rd:DefaultName>
+						<Top>2.18358cm</Top>
+						<Left>5.78307cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.5cm</Width>
+						<ZIndex>19</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="OTHERALLOWANCE">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>=First(Fields!OTHERALLOWANCE.Value, "EmpPsDs")</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+											<Format>#,0.00;(#,0.00)</Format>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style>
+									<TextAlign>Right</TextAlign>
+								</Style>
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>OTHERALLOWANCE</rd:DefaultName>
+						<Top>2.90987cm</Top>
+						<Left>5.78307cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.5cm</Width>
+						<ZIndex>20</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="EMPLOYERPF">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>=First(Fields!EMPLOYERPF.Value, "EmpPsDs")</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+											<Format>#,0.00;(#,0.00)</Format>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style>
+									<TextAlign>Right</TextAlign>
+								</Style>
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>EMPLOYERPF</rd:DefaultName>
+						<Top>3.63617cm</Top>
+						<Left>5.80953cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.5cm</Width>
+						<ZIndex>21</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="EMPLOYERESI">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>=First(Fields!EMPLOYERESI.Value, "EmpPsDs")</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+											<Format>#,0.00;(#,0.00)</Format>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style>
+									<TextAlign>Right</TextAlign>
+								</Style>
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>EMPLOYERESI</rd:DefaultName>
+						<Top>4.36246cm</Top>
+						<Left>5.78307cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.5cm</Width>
+						<ZIndex>22</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="PT">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>=First(Fields!PT.Value, "EmpPsDs")</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+											<Format>#,0.00;(#,0.00)</Format>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style>
+									<TextAlign>Right</TextAlign>
+								</Style>
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>PT</rd:DefaultName>
+						<Top>0.50874cm</Top>
+						<Left>12.88521cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.4365cm</Width>
+						<ZIndex>23</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="PF">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>=First(Fields!PF.Value, "EmpPsDs")</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+											<Format>#,0.00;(#,0.00)</Format>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style>
+									<TextAlign>Right</TextAlign>
+								</Style>
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>PF</rd:DefaultName>
+						<Top>1.15738cm</Top>
+						<Left>12.85346cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.46825cm</Width>
+						<ZIndex>24</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="ESI">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>=First(Fields!ESI.Value, "EmpPsDs")</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+											<Format>#,0.00;(#,0.00)</Format>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style>
+									<TextAlign>Right</TextAlign>
+								</Style>
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>ESI</rd:DefaultName>
+						<Top>1.80603cm</Top>
+						<Left>12.85346cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.46825cm</Width>
+						<ZIndex>25</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="TDS">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>=First(Fields!TDS.Value, "EmpPsDs")</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+											<Format>#,0.00;(#,0.00)</Format>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style>
+									<TextAlign>Right</TextAlign>
+								</Style>
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>TDS</rd:DefaultName>
+						<Top>2.45467cm</Top>
+						<Left>12.85346cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.46825cm</Width>
+						<ZIndex>26</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="PHAMT">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>=First(Fields!PHAMT.Value, "EmpPsDs")</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+											<Format>#,0.00;(#,0.00)</Format>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style>
+									<TextAlign>Right</TextAlign>
+								</Style>
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>PHAMT</rd:DefaultName>
+						<Top>3.75195cm</Top>
+						<Left>12.85346cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.46825cm</Width>
+						<ZIndex>27</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="GMC">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>=First(Fields!GMC.Value, "EmpPsDs")</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+											<Format>#,0.00;(#,0.00)</Format>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style>
+									<TextAlign>Right</TextAlign>
+								</Style>
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>GMC</rd:DefaultName>
+						<Top>4.4006cm</Top>
+						<Left>12.85346cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.46825cm</Width>
+						<ZIndex>28</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Line Name="Line4">
+						<Top>9.27745cm</Top>
+						<Height>0cm</Height>
+						<Width>15.55984cm</Width>
+						<ZIndex>29</ZIndex>
+						<Style>
+							<Border>
+								<Style>Solid</Style>
+							</Border>
+						</Style>
+					</Line>
+					<Line Name="Line11">
+						<Top>10.04063cm</Top>
+						<Left>0.05821cm</Left>
+						<Height>0cm</Height>
+						<Width>15.50163cm</Width>
+						<ZIndex>30</ZIndex>
+						<Style>
+							<Border>
+								<Style>Solid</Style>
+							</Border>
+						</Style>
+					</Line>
+					<Textbox Name="Textbox36">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>Reimbursement</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>Textbox8</rd:DefaultName>
+						<Top>10.14294cm</Top>
+						<Left>7.4001cm</Left>
+						<Height>0.473cm</Height>
+						<Width>4.35239cm</Width>
+						<ZIndex>31</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="REIMBURSEMENT">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>=First(Fields!REIMBURSEMENT.Value, "EmpPsDs")</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+											<Format>#,0.00;(#,0.00)</Format>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style>
+									<TextAlign>Right</TextAlign>
+								</Style>
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>REIMBURSEMENT</rd:DefaultName>
+						<Top>10.13941cm</Top>
+						<Left>12.65238cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.65875cm</Width>
+						<ZIndex>32</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Line Name="Line12">
+						<Top>10.80202cm</Top>
+						<Left>0.01763cm</Left>
+						<Height>0cm</Height>
+						<Width>15.54221cm</Width>
+						<ZIndex>33</ZIndex>
+						<Style>
+							<Border>
+								<Style>Solid</Style>
+							</Border>
+						</Style>
+					</Line>
+					<Textbox Name="Textbox37">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>NetPay</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>Textbox8</rd:DefaultName>
+						<Top>10.95991cm</Top>
+						<Left>0.27798cm</Left>
+						<Height>0.473cm</Height>
+						<Width>1.65364cm</Width>
+						<ZIndex>34</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="ROUNDEDNET">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>=First(Fields!ROUNDEDNET.Value, "EmpPsDs")</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+											<Format>#,0.00;(#,0.00)</Format>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style>
+									<TextAlign>Right</TextAlign>
+								</Style>
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>ROUNDEDNET</rd:DefaultName>
+						<Top>10.95991cm</Top>
+						<Left>12.52025cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.8175cm</Width>
+						<ZIndex>35</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="Textbox33">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>Misc.Amount</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>Textbox8</rd:DefaultName>
+						<Top>5.69788cm</Top>
+						<Left>8.80165cm</Left>
+						<Height>0.473cm</Height>
+						<Width>3.08239cm</Width>
+						<ZIndex>36</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="Textbox34">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>Employer PF</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>Textbox8</rd:DefaultName>
+						<Top>6.34652cm</Top>
+						<Left>8.80165cm</Left>
+						<Height>0.473cm</Height>
+						<Width>3.08239cm</Width>
+						<ZIndex>37</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="Textbox35">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>Employer ESI</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>Textbox8</rd:DefaultName>
+						<Top>6.99517cm</Top>
+						<Left>8.80165cm</Left>
+						<Height>0.473cm</Height>
+						<Width>3.08239cm</Width>
+						<ZIndex>38</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="MISCAMT">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>=First(Fields!MISCAMT.Value, "EmpPsDs")</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+											<Format>#,0.00;(#,0.00)</Format>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style>
+									<TextAlign>Right</TextAlign>
+								</Style>
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>MISCAMT</rd:DefaultName>
+						<Top>5.69788cm</Top>
+						<Left>12.87992cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.46825cm</Width>
+						<ZIndex>39</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="EMPLOYERPF1">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>=First(Fields!EMPLOYERPF.Value, "EmpPsDs")</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+											<Format>#,0.00;(#,0.00)</Format>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style>
+									<TextAlign>Right</TextAlign>
+								</Style>
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>EMPLOYERPF1</rd:DefaultName>
+						<Top>6.34652cm</Top>
+						<Left>12.85346cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.46825cm</Width>
+						<ZIndex>40</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="EMPLOYERESI1">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>=First(Fields!EMPLOYERESI.Value, "EmpPsDs")</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+											<Format>#,0.00;(#,0.00)</Format>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style>
+									<TextAlign>Right</TextAlign>
+								</Style>
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>EMPLOYERESI1</rd:DefaultName>
+						<Top>6.99517cm</Top>
+						<Left>12.85346cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.46825cm</Width>
+						<ZIndex>41</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="Textbox25">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>Earned Employer ESI</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>Textbox8</rd:DefaultName>
+						<Top>4.36246cm</Top>
+						<Left>0.24607cm</Left>
+						<Height>0.473cm</Height>
+						<Width>4.35239cm</Width>
+						<ZIndex>42</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="AMTINWORDS">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>=First(Fields!AMTINWORDS.Value, "EmpPsDs")</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>AMTINWORDS</rd:DefaultName>
+						<Top>10.95991cm</Top>
+						<Left>2.05862cm</Left>
+						<Height>0.473cm</Height>
+						<Width>10.11455cm</Width>
+						<ZIndex>43</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="Textbox38">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>Salary Advance</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>Textbox8</rd:DefaultName>
+						<Top>3.10331cm</Top>
+						<Left>8.80165cm</Left>
+						<Height>0.473cm</Height>
+						<Width>3.34506cm</Width>
+						<ZIndex>44</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="ADVANCES">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>=First(Fields!ADVANCES.Value, "EmpPsDs")</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+											<Format>#,0.00;(#,0.00)</Format>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style>
+									<TextAlign>Right</TextAlign>
+								</Style>
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>ADVANCES</rd:DefaultName>
+						<Top>3.10331cm</Top>
+						<Left>12.85346cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.46825cm</Width>
+						<ZIndex>45</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="Textbox39">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>Food Coupons</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>Textbox8</rd:DefaultName>
+						<Top>5.04924cm</Top>
+						<Left>8.80165cm</Left>
+						<Height>0.473cm</Height>
+						<Width>3.08239cm</Width>
+						<ZIndex>46</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="FOOD_COUPONS">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>=First(Fields!FOOD_COUPONS.Value, "EmpPsDs")</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+											<Format>#,0.00;(#,0.00)</Format>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style>
+									<TextAlign>Right</TextAlign>
+								</Style>
+							</Paragraph>
+						</Paragraphs>
+						<Top>5.04924cm</Top>
+						<Left>12.89579cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.46825cm</Width>
+						<ZIndex>47</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="Textbox40">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>Sincerity Fund</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+											<TextDecoration>None</TextDecoration>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style />
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>Textbox8</rd:DefaultName>
+						<Top>7.64381cm</Top>
+						<Left>8.80165cm</Left>
+						<Height>0.473cm</Height>
+						<Width>3.67844cm</Width>
+						<ZIndex>48</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+					<Textbox Name="EMPLOYERESI2">
+						<CanGrow>true</CanGrow>
+						<KeepTogether>true</KeepTogether>
+						<Paragraphs>
+							<Paragraph>
+								<TextRuns>
+									<TextRun>
+										<Value>=First(Fields!SINCERITY_FUND.Value, "EmpPsDs")</Value>
+										<Style>
+											<FontFamily>Courier New</FontFamily>
+											<Format>#,0.00;(#,0.00)</Format>
+										</Style>
+									</TextRun>
+								</TextRuns>
+								<Style>
+									<TextAlign>Right</TextAlign>
+								</Style>
+							</Paragraph>
+						</Paragraphs>
+						<rd:DefaultName>EMPLOYERESI1</rd:DefaultName>
+						<Top>7.64381cm</Top>
+						<Left>12.85346cm</Left>
+						<Height>0.473cm</Height>
+						<Width>2.46825cm</Width>
+						<ZIndex>49</ZIndex>
+						<Style>
+							<Border>
+								<Style>None</Style>
+							</Border>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<PaddingBottom>2pt</PaddingBottom>
+						</Style>
+					</Textbox>
+				</ReportItems>
+				<KeepTogether>true</KeepTogether>
+				<Top>6.66583cm</Top>
+				<Left>0.47508cm</Left>
+				<Height>11.58049cm</Height>
+				<Width>15.55984cm</Width>
+				<ZIndex>7</ZIndex>
+				<Style>
+					<Border>
+						<Style>Solid</Style>
+					</Border>
+				</Style>
+			</Rectangle>
+			<Textbox Name="EARNINGTOTAL">
+				<CanGrow>true</CanGrow>
+				<KeepTogether>true</KeepTogether>
+				<Paragraphs>
+					<Paragraph>
+						<TextRuns>
+							<TextRun>
+								<Value>=First(Fields!EARNINGTOTAL.Value, "EmpPsDs")</Value>
+								<Style>
+									<FontFamily>Courier New</FontFamily>
+									<Format>#,0.00;(#,0.00)</Format>
+								</Style>
+							</TextRun>
+						</TextRuns>
+						<Style>
+							<TextAlign>Right</TextAlign>
+						</Style>
+					</Paragraph>
+				</Paragraphs>
+				<rd:DefaultName>EARNINGTOTAL</rd:DefaultName>
+				<Top>16.04823cm</Top>
+				<Left>6.26946cm</Left>
+				<Height>0.473cm</Height>
+				<Width>2.5cm</Width>
+				<ZIndex>8</ZIndex>
+				<Style>
+					<Border>
+						<Style>None</Style>
+					</Border>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+					<PaddingBottom>2pt</PaddingBottom>
+				</Style>
+			</Textbox>
+			<Textbox Name="DEDUCATIONTOTAL">
+				<CanGrow>true</CanGrow>
+				<KeepTogether>true</KeepTogether>
+				<Paragraphs>
+					<Paragraph>
+						<TextRuns>
+							<TextRun>
+								<Value>=First(Fields!DEDUCATIONTOTAL.Value, "EmpPsDs")</Value>
+								<Style>
+									<FontFamily>Courier New</FontFamily>
+									<Format>#,0.00;(#,0.00)</Format>
+								</Style>
+							</TextRun>
+						</TextRuns>
+						<Style>
+							<TextAlign>Right</TextAlign>
+						</Style>
+					</Paragraph>
+				</Paragraphs>
+				<rd:DefaultName>DEDUCATIONTOTAL</rd:DefaultName>
+				<Top>16.04823cm</Top>
+				<Left>13.31267cm</Left>
+				<Height>0.473cm</Height>
+				<Width>2.46825cm</Width>
+				<ZIndex>9</ZIndex>
+				<Style>
+					<Border>
+						<Style>None</Style>
+					</Border>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+					<PaddingBottom>2pt</PaddingBottom>
+				</Style>
+			</Textbox>
+			<Image Name="Image2">
+				<Source>Embedded</Source>
+				<Value>NES</Value>
+				<Sizing>Fit</Sizing>
+				<Top>0.37005cm</Top>
+				<Left>0.61207cm</Left>
+				<Height>1.63689cm</Height>
+				<Width>2.20486cm</Width>
+				<ZIndex>10</ZIndex>
+				<ToolTip>Nspira</ToolTip>
+				<Style>
+					<Border>
+						<Style>None</Style>
+					</Border>
+				</Style>
+			</Image>
+		</ReportItems>
+		<Height>7.62928in</Height>
+		<Style>
+			<Border>
+				<Style>Solid</Style>
+				<Width>1.5pt</Width>
+			</Border>
+		</Style>
+	</Body>
+	<Width>6.5in</Width>
+	<Page>
+		<LeftMargin>1in</LeftMargin>
+		<RightMargin>1in</RightMargin>
+		<TopMargin>1in</TopMargin>
+		<BottomMargin>1in</BottomMargin>
+		<Style />
+	</Page>
+	<AutoRefresh>0</AutoRefresh>
+	<DataSources>
+		<DataSource Name="EmpPsDs">
+			<ConnectionProperties>
+				<DataProvider>System.Data.DataSet</DataProvider>
+				<ConnectString>/* Local Connection */</ConnectString>
+			</ConnectionProperties>
+			<rd:DataSourceID>ba92032f-9162-4d41-a178-07239ff1b023</rd:DataSourceID>
+		</DataSource>
+	</DataSources>
+	<DataSets>
+		<DataSet Name="EmpPsDs">
+			<Query>
+				<DataSourceName>EmpPsDs</DataSourceName>
+				<CommandText>/* Local Query */</CommandText>
+			</Query>
+			<Fields>
+				<Field Name="EMPLOYEENAME">
+					<DataField>EMPLOYEENAME</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="GENDER">
+					<DataField>GENDER</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="PRESENTDAYS">
+					<DataField>PRESENTDAYS</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="NDAYS">
+					<DataField>NDAYS</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="LOPDAYS">
+					<DataField>LOPDAYS</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="PFNO">
+					<DataField>PFNO</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="ESINO">
+					<DataField>ESINO</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="PANNO">
+					<DataField>PANNO</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="ACCOUNTNO">
+					<DataField>ACCOUNTNO</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="EMPNO">
+					<DataField>EMPNO</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="DOJ">
+					<DataField>DOJ</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="DEPARTMENT">
+					<DataField>DEPARTMENT</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="DESIGNATION">
+					<DataField>DESIGNATION</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="CTC_GROSSSALARY">
+					<DataField>CTC_GROSSSALARY</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="GROSSSALARY">
+					<DataField>GROSSSALARY</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="BASIC">
+					<DataField>BASIC</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="DA">
+					<DataField>DA</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="HRA">
+					<DataField>HRA</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="OTHERALLOWANCE">
+					<DataField>OTHERALLOWANCE</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="EMPLOYERPF">
+					<DataField>EMPLOYERPF</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="EMPLOYERESI">
+					<DataField>EMPLOYERESI</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="EARNINGTOTAL">
+					<DataField>EARNINGTOTAL</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="PT">
+					<DataField>PT</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="PF">
+					<DataField>PF</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="ESI">
+					<DataField>ESI</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="TDS">
+					<DataField>TDS</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="ADVANCES">
+					<DataField>ADVANCES</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="PHAMT">
+					<DataField>PHAMT</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="GMC">
+					<DataField>GMC</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="FOOD_COUPONS">
+					<DataField>FOOD_COUPONS</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="MISCAMT">
+					<DataField>MISCAMT</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="DEDUCATIONTOTAL">
+					<DataField>DEDUCATIONTOTAL</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="ROUNDEDNET">
+					<DataField>ROUNDEDNET</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="MONTHNAME">
+					<DataField>MONTHNAME</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="LEGNAME">
+					<DataField>LEGNAME</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="SDATE">
+					<DataField>SDATE</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="AMTINWORDS">
+					<DataField>AMTINWORDS</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="LEGBRANCHSLNO">
+					<DataField>LEGBRANCHSLNO</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="REIMBURSEMENT">
+					<DataField>REIMBURSEMENT</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="IMAGEURL">
+					<DataField>IMAGEURL</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="LEGDESCRIPTION">
+					<DataField>LEGDESCRIPTION</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="SINCERITY_FUND">
+					<DataField>SINCERITY_FUND</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="IS_SINCERITY_FUND">
+					<DataField>IS_SINCERITY_FUND</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+			</Fields>
+			<rd:DataSetInfo>
+				<rd:DataSetName>EmpPsDs</rd:DataSetName>
+				<rd:SchemaPath>F:\Work\Office\Projects\Nspira\Portal\HRMS_API\8-Database\Reports\EmpPsDs.xsd</rd:SchemaPath>
+				<rd:TableName>DataTable1</rd:TableName>
+				<rd:TableAdapterFillMethod />
+				<rd:TableAdapterGetDataMethod />
+				<rd:TableAdapterName />
+			</rd:DataSetInfo>
+		</DataSet>
+	</DataSets>
+	<EmbeddedImages>
+		<EmbeddedImage Name="NES">
+			<MIMEType>image/jpeg</MIMEType>
+			<ImageData>
+				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
+			</ImageData>
+		</EmbeddedImage>
+		<EmbeddedImage Name="NES1">
+			<MIMEType>image/jpeg</MIMEType>
+			<ImageData>
+				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
+			</ImageData>
+		</EmbeddedImage>
+		<EmbeddedImage Name="NspiraLogo">
+			<MIMEType>image/jpeg</MIMEType>
+			<ImageData>
+				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
+				AFFFFABRRRQAUUUUAFFFFAH/2Q==
+			</ImageData>
+		</EmbeddedImage>
+	</EmbeddedImages>
+	<rd:ReportUnitType>Inch</rd:ReportUnitType>
+	<rd:ReportID>88a5f433-b8d3-4eee-9d8a-d9575a206aef</rd:ReportID>
+</Report>

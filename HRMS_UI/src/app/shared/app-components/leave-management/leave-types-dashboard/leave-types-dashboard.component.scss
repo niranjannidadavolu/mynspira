@@ -1,0 +1,19 @@
+.img {
+    width: 24px;
+    height: 24px;
+}
+.img1 {
+    width: 20px;
+    height: 26px;
+}
+.img2 {
+    width: 30px;
+    height: 24px;
+}
+.disabled-link{
+    // pointer-events: none;
+    color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+  }

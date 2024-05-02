@@ -1,0 +1,61 @@
+<app-breadcrumbs title="Manage Score" [breadcrumbItems]="breadCrumbItems"></app-breadcrumbs>
+<div class="row">
+    <div class="card">
+        <div class="card-body table-responsive">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="control-section">
+                        <ejs-grid #grid id='grid' [dataSource]="keyPerformanceIndices" [allowPaging]="false"
+                            [pageSettings]='pageSettings' allowGrouping='true' [groupSettings]='groupSettings'
+                            allowFiltering='true' [filterSettings]="filterSettings" [editSettings]='editSettings'
+                            (rowSelected)="rowSelected($event)" (rowDeselected)="rowDeselect($event)"
+                            (rowDataBound)='rowDataBound($event)' (dataBound)='dataBound()' (actionBegin)='onActionBegin($event)'
+                            (actionComplete)="onActionComplete($event)" (load)='load()'>
+                            <e-columns>
+                                <e-column type="checkbox" width="50"></e-column>
+                                <e-column field='KraName' headerText='KRA Title' width='120'></e-column>
+                                <e-column field='KpiName' headerText='KPP Title' width='120'
+                                    [isPrimaryKey]="true"></e-column>
+                                <e-column field='Measurement' headerText='Measurement' width='120'
+                                    [allowEditing]="false"></e-column>
+                                <e-column field='MinThresholdValues' headerText='Minimum Threshold Value' width='120'
+                                    [allowEditing]="false"></e-column>
+                                <e-column field='MaxThresholdValues' headerText='Maximum Threshold Value' width='120'
+                                    [allowEditing]="false"></e-column>
+                                <e-column field='MaxScore' headerText='Score' width='85' textAlign='left'
+                                    [validationRules]='scoreValidationRules' editType='numericedit'></e-column>
+                                <e-column field='FrequencyName' headerText='Frequency' width=85
+                                    [allowEditing]="false"></e-column>
+                            </e-columns>
+                            <e-aggregates>
+                                <e-aggregate>
+                                    <e-columns>
+                                        <e-column type="Sum" field="MaxScore">
+                                            <ng-template #footerTemplate let-keyPerformanceIndices>Total Score:
+                                                {{keyPerformanceIndices.Sum}}</ng-template>
+                                        </e-column>
+                                    </e-columns>
+                                </e-aggregate>
+                                <e-aggregate>
+                                </e-aggregate>
+                            </e-aggregates>
+                        </ejs-grid>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-end">
+                            <button class="btn btn-primary mt-4 me-2" [disabled]="!isValidScores" (click)="saveReview()">
+                                Save As Draft
+                            </button>
+                            <button class="btn btn-success mt-4 me-2" [disabled]="!isValidScores" (click)="submitReview()">
+                                Submit
+                            </button>
+                            <button class="btn btn-warning mt-4">
+                                Cancel
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>

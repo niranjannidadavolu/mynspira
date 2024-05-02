@@ -1,0 +1,215 @@
+<div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="exampleModalgridLabel">
+            {{visibleButton | titlecase}} Leave
+        </h5>
+
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+            (click)="activeModal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+        <form [formGroup]="leaveForm">
+            <div class="row g-3">
+                <div class="row pt-3">
+                    <div class="col-md-6" *ngIf="isManager">
+                        <label for="LeaveType" class="form-label">Name</label>
+                        <input type="text" class="form-control" readonly formControlName="EmployeeName">
+                    </div>
+                    <div class="col-md-6" *ngIf="isManager">
+                        <label for="LeaveType" class="form-label">Emp ID.</label>
+                        <input type="text" class="form-control" readonly formControlName="EmployeeId">
+                    </div>
+                    <div class="col-md-6" [ngClass]="{'pt-3':isManager}">
+                        <label for="LeaveType" class="form-label">Leave Type</label>
+                        <input type="text" class="form-control" readonly formControlName="LeaveTypeName">
+                    </div>
+                    <div class="col-md-6" [ngClass]="{'pt-3':isManager}" *ngIf="leaveForm.value.LeaveReason">
+                        <label for="LeaveType" class="form-label">Leave Reason</label>
+                        <input type="text" class="form-control" readonly formControlName="LeaveReason">
+                    </div>
+                    <div class="col-md-6" [ngClass]="{'pt-3':leaveForm.value.LeaveReason}">
+                        <label for="LeaveBalance" class="form-label">Total Days Taken</label>
+                        <input type="text" class="form-control" readonly formControlName="TotalDaysTaken">
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col-md-6">
+                        <label for="exampleInputdate" class="form-label">From Date</label>
+                        <input type="text" class="form-control" readonly formControlName="LeaveFrom">
+                    </div>
+                    <div class="col-md-6"
+                        *ngIf="leaveType?.CanApplyHalfDay && selectedRowData?.data?.LeaveTypeId != leaveTypes.EARLY_LOGOUT_TIME " >
+                        <div class="col-md-12">
+                            <label for="LeaveType" class="form-label">Day Type</label>
+                        </div>
+                        <div class="col-md-12 mt-2">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" [attr.disabled]="true"
+                                    name="FromDateDayTypeId" id="FromDateDayTypeId" [value]="1"
+                                    formControlName="FromDateDayTypeId">
+                                <label class="form-check-label" for="inlineRadio1">Full Day</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" [attr.disabled]="true"
+                                    name="FromDateDayTypeId" id="FromDateDayTypeId" [value]="2"
+                                    formControlName="FromDateDayTypeId">
+                                <label class="form-check-label" for="inlineRadio2">First Half</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" [attr.disabled]="true"
+                                    name="FromDateDayTypeId" id="FromDateDayTypeId" [value]="3"
+                                    formControlName="FromDateDayTypeId">
+                                <label class="form-check-label" for="inlineRadio3">Second Half</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6"
+                        [ngClass]="{'pt-3': leaveType?.CanApplyHalfDay && selectedRowData?.data?.LeaveTypeId != leaveTypes.EARLY_LOGOUT_TIME}">
+                        <label for="exampleInputdate" class="form-label">To Date</label>
+                        <input type="text" class="form-control" readonly formControlName="LeaveTo">
+                    </div>
+                    <div class="col-md-6" [ngClass]="{'pt-3': leaveType?.CanApplyHalfDay}"
+                        *ngIf="leaveType?.CanApplyHalfDay && selectedRowData?.data?.LeaveTypeId != leaveTypes.EARLY_LOGOUT_TIME  && selectedRowData?.data?.LeaveFrom !=  selectedRowData?.data?.LeaveTo">
+                        <div class="col-md-12">
+                            <label for="LeaveType" class="form-label">Day Type</label>
+                        </div>
+                        <div class="col-md-12 mt-2">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" [attr.disabled]="true"
+                                    name="ToDateDayTypeId" id="secondHalf1" [value]="1"
+                                    formControlName="ToDateDayTypeId">
+                                <label class="form-check-label" for="inlineRadio1">Full Day</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" [attr.disabled]="true"
+                                    name="ToDateDayTypeId" id="secondHalf2" [value]="2"
+                                    formControlName="ToDateDayTypeId">
+                                <label class="form-check-label" for="inlineRadio2">First Half</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" [attr.disabled]="true"
+                                    name="ToDateDayTypeId" id="secondHalf3" [value]="3"
+                                    formControlName="ToDateDayTypeId">
+                                <label class="form-check-label" for="inlineRadio3">Second Half</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6"
+                        *ngIf="selectedRowData?.data?.LeaveTypeId == leaveTypes.COMPENSATORY_OFF_LEAVE">
+                        <div class="mb-3 pt-3">
+                            <label class="form-label">Comp-Off Date <span class="text-danger">*</span></label>
+                            <div class="input-group mb-3">
+                                <!-- <input id="CompOffDate" class="form-control flatpickr-input active date-pickr-disabled"
+                                    type="text" mwlFlatpickr placeholder="Select date" formControlName="CompOffDate"
+                                    [altInput]="false" altFormat="d-M-Y" dateFormat="d-M-Y" [convertModelValue]="true"
+                                    [ngClass]="{ 'is-invalid': f['CompOffDate'].invalid && (f['CompOffDate'].dirty || f['CompOffDate'].touched) && f['CompOffDate'].errors }" /> -->
+                                    <input  class="form-control" type="text" readonly
+                                    [value]="toDisableDate"  />
+                            </div>
+                            <div *ngIf="f['CompOffDate'].invalid && (f['CompOffDate'].dirty || f['CompOffDate'].touched) &&  f['CompOffDate'].errors"
+                                class="invalid-feedback">
+                                <div>Please provide Comp-Off Date.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" *ngIf="selectedRowData?.data?.LeaveTypeId == leaveTypes.EARLY_LOGOUT_TIME">
+                        <div class="mb-3 pt-3">
+                            <label class="form-label">Early LogOut Time <span class="text-danger">*</span></label>
+                            <div class="input-group mb-3">
+                                <input type="text" name="EarlyLogoutTimeDisplay" id="EarlyLogoutTimeDisplay"
+                                    formControlName="EarlyLogoutTimeDisplay" readonly class="form-control">
+                            </div>
+                            <div *ngIf="f['EarlyLogoutTimeDisplay'].invalid && (f['EarlyLogoutTimeDisplay'].dirty || f['EarlyLogoutTimeDisplay'].touched) &&  f['EarlyLogoutTimeDisplay'].errors"
+                                class="invalid-feedback">
+                                <div>Please provide Comp-Off Date.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 pt-3" *ngIf="leaveFiles.length>0">
+                        <label for="exampleFormControlTextarea5" class="form-label">Attached Documents</label>
+                        <table>
+                            <tr>
+                                <!-- <td *ngFor="let file of leaveFiles;">
+                                    <button title="{{file.OriginalFileName}}"
+                                        class="btn btn-danger btn-icon waves-effect" (click)="downloadFile(file)"><i
+                                            class="ri-download-2-fill"></i></button>
+                                </td> -->
+                                <td *ngIf="leaveFiles.length">
+                                    <button class="btn btn-primary btn-icon waves-effect" (click)="previewDocument()"><i
+                                            class="ri-eye-line"></i></button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div>
+                        <label for="exampleFormControlTextarea5" class="form-label">Remarks</label>
+                        <textarea readonly class="form-control" formControlName="Remarks" id="Remarks" rows="3"
+                            [ngClass]="{ 'is-invalid': f['Remarks'].invalid && (f['Remarks'].dirty || f['Remarks'].touched) && f['Remarks'].errors }"></textarea>
+                    </div>
+                    <div *ngIf="f['Remarks'].invalid && (f['Remarks'].dirty || f['Remarks'].touched) &&  f['Remarks'].errors"
+                        class="invalid-feedback">
+                        <div *ngIf="f['Remarks'].errors['required']">Please Remarks.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12" *ngIf="visibleButton != leaveAction.view">
+                    <div>
+                        <label for="exampleFormControlTextarea5" class="form-label">
+                            <!-- {{(visibleButton ==
+                            leaveAction.approve? 'approver':visibleButton) | titlecase}} -->
+                            Approver Remarks
+                            <span class="text-danger" *ngIf="visibleButton == leaveAction.reject">*</span> </label>
+                        <textarea class="form-control" formControlName="ApprovedRemarks" id="ApprovedRemarks" rows="3"
+                            [ngClass]="{ 'is-invalid': f['ApprovedRemarks'].invalid && (f['ApprovedRemarks'].dirty || f['ApprovedRemarks'].touched) && f['ApprovedRemarks'].errors }"
+                            [readonly]="visibleButton == leaveAction.view"></textarea>
+                    </div>
+                    <div *ngIf="f['ApprovedRemarks'].invalid && (f['ApprovedRemarks'].dirty || f['ApprovedRemarks'].touched) && f['ApprovedRemarks'].errors "
+                        class="invalid-feedback">
+                        <div *ngIf="f['ApprovedRemarks'].errors['required']">Please enter remarks.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="hstack gap-2 justify-content-end">
+                        <div
+                            *ngIf="visibleButton === leaveAction.approve || visibleButton === leaveAction.approveOrReject">
+                            <button type="button" class="btn btn-primary" (click)="approve()"
+                                *ngIf="!isApproveSubmitted" [disabled]="this.leaveForm.invalid">Approve</button>
+                            <button type="button" class="btn btn-primary btn-label waves-effect waves-light btn-load"
+                                *ngIf="isApproveSubmitted">
+                                <span class="d-flex align-items-center">
+                                    <span class="spinner-border flex-shrink-0" role="status">
+                                        <span class="visually-hidden">Approving...</span>
+                                    </span>
+                                    <span class="flex-grow-1 ms-2">
+                                        Approving...
+                                    </span>
+                                </span>
+                            </button>
+                        </div>
+                        <div
+                            *ngIf="visibleButton === leaveAction.reject || visibleButton === leaveAction.approveOrReject">
+                            <button type="button" class="btn btn-danger" (click)="reject()" *ngIf="!isRejectSubmitted"
+                                [disabled]="this.leaveForm.invalid">Reject</button>
+                            <button type="button" class="btn btn-danger btn-label waves-effect waves-light btn-load"
+                                *ngIf="isRejectSubmitted">
+                                <span class="d-flex align-items-center">
+                                    <span class="spinner-border flex-shrink-0" role="status">
+                                        <span class="visually-hidden">Rejecting...</span>
+                                    </span>
+                                    <span class="flex-grow-1 ms-2">
+                                        Rejecting...
+                                    </span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

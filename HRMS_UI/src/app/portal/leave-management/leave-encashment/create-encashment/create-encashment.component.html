@@ -1,0 +1,140 @@
+<div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="exampleModalgridLabel">{{type | titlecase}} Encashment</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+            (click)="activeModal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+        <form [formGroup]="leaveForm" >
+            <div class="row g-3">
+                <div class="col-md-6" >
+                    <label for="LeaveBalance" class="form-label">Leave Balance</label>
+                    <input type="text"  class="form-control"  readonly formControlName="LeaveBalance">
+                </div>
+                <div class="col-md-6" >
+                    <label for="TotalDaysTaken" class="form-label">No of Encash Days <span
+                        class="text-danger">*</span></label>
+                    <input type="number" class="form-control" (change)="onEncashChange($event.target)"  formControlName="TotalDaysTaken" [readonly]="selectedRowData"
+                    (keypress)="numberOnly($event)"
+                    [ngClass]="{ 'is-invalid': f['TotalDaysTaken'].invalid && (f['TotalDaysTaken'].dirty || f['TotalDaysTaken'].touched) && f['TotalDaysTaken'].errors }">
+                    <div *ngIf="f['TotalDaysTaken'].invalid && (f['TotalDaysTaken'].dirty ||  f['TotalDaysTaken'].touched) &&  f['TotalDaysTaken'].errors"
+                    class="invalid-feedback">
+                    <div *ngIf="f['TotalDaysTaken'].errors['required']">Please provide No of Encash Days.
+                    </div>
+                </div>
+                <div *ngIf="(leaveForm.value.LeaveBalance - leaveForm.value.TotalDaysTaken) < 15 && (leaveForm.controls['TotalDaysTaken'].valid) && !selectedRowData"
+                class="invalid-feedback">
+                <div >Should be hold atleast 15 days of leaves
+                </div>
+            </div>
+                </div>
+               
+                <div class="col-md-6" *ngIf="!selectedRowData">
+                    <label for="EncashmentAmount" class="form-label">Encashement Amount</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">&#8377;</span>
+                        </div>
+                        <input type="text" class="form-control"  readonly formControlName="EncashmentAmount">
+                    </div>
+                </div>
+                <div class="col-md-6" *ngIf="!selectedRowData">
+                    <label for="TaxbleAmount" class="form-label">Taxble Amount</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">&#8377;</span>
+                        </div>
+                        <input type="text" class="form-control" readonly formControlName="TaxbleAmount">
+                    </div>
+                </div><div class="col-md-6" *ngIf="!selectedRowData">
+                    <label for="TotalAmount" class="form-label">Total Amount</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">&#8377;</span>
+                        </div>
+                        <input type="text" class="form-control" readonly formControlName="TotalAmount">
+                    </div>
+                </div>
+                <!--end col-->
+                <div class="col-lg-12">
+                    <div>
+                        <label for="exampleFormControlTextarea5" class="form-label">Remarks <span
+                                class="text-danger">*</span></label>
+                        <textarea class="form-control" formControlName="Remarks" id="Remarks" rows="3"  [readonly]="selectedRowData"
+                            [ngClass]="{ 'is-invalid': f['Remarks'].invalid && (f['Remarks'].dirty || f['Remarks'].touched) && f['Remarks'].errors }"></textarea>
+                    </div>
+                    <div *ngIf="f['Remarks'].invalid && (f['Remarks'].dirty || f['Remarks'].touched) &&  f['Remarks'].errors"
+                        class="invalid-feedback">
+                        <div *ngIf="f['Remarks'].errors['required']">Please enter Remarks.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12" *ngIf="selectedRowData">
+                    <div>
+                        <label for="exampleFormControlTextarea5" class="form-label"> Approver Remarks <span
+                                class="text-danger" *ngIf="type == leaveAction.reject">*</span></label>
+                        <textarea class="form-control" formControlName="ApprovedRemarks" id="ApprovedRemarks" rows="3" [readonly]="type == leaveAction.view"
+                            [ngClass]="{ 'is-invalid': f['ApprovedRemarks'].invalid && (f['ApprovedRemarks'].dirty || f['ApprovedRemarks'].touched) && f['ApprovedRemarks'].errors }"></textarea>
+                    </div>
+                    <div *ngIf="f['ApprovedRemarks'].invalid && (f['ApprovedRemarks'].dirty || f['ApprovedRemarks'].touched) &&  f['ApprovedRemarks'].errors"
+                        class="invalid-feedback">
+                        <div *ngIf="f['ApprovedRemarks'].errors['required']">Please enter Approver Remarks.
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-12">
+                    <div class="hstack gap-2 justify-content-end" *ngIf="type == leaveAction.add">
+                        <button type="submit" class="btn btn-primary" *ngIf="!isSubmitted && type != leaveAction.view" (click)="applyLeaveRequest()"
+                            [disabled]="this.leaveForm.invalid || ((leaveForm.value.LeaveBalance - leaveForm.value.TotalDaysTaken) < 15)">Submit</button>
+                        <button type="button" class="btn btn-primary btn-label waves-effect waves-light btn-load"
+                            *ngIf="isSubmitted  && type != leaveAction.view">
+                            <span class="d-flex align-items-center">
+                                <span class="spinner-border flex-shrink-0" role="status">
+                                    <span class="visually-hidden">Submitting...</span>
+                                </span>
+                                <span class="flex-grow-1 ms-2">
+                                    Submitting...
+                                </span>
+                            </span>
+                        </button>
+                    </div>
+                    <div
+                    *ngIf="type == leaveAction.approve">
+                    <button type="button" class="btn btn-primary" (click)="approve()"
+                        *ngIf="!isApproveSubmitted" [disabled]="this.leaveForm.invalid">Approve</button>
+                    <button type="button" class="btn btn-primary btn-label waves-effect waves-light btn-load"
+                        *ngIf="isApproveSubmitted">
+                        <span class="d-flex align-items-center">
+                            <span class="spinner-border flex-shrink-0" role="status">
+                                <span class="visually-hidden">Approving...</span>
+                            </span>
+                            <span class="flex-grow-1 ms-2">
+                                Approving...
+                            </span>
+                        </span>
+                    </button>
+                </div>
+                <div
+                    *ngIf="type ==  leaveAction.reject">
+                    <button type="button" class="btn btn-danger" (click)="reject()" *ngIf="!isRejectSubmitted"
+                        [disabled]="this.leaveForm.invalid">Reject</button>
+                    <button type="button" class="btn btn-danger btn-label waves-effect waves-light btn-load"
+                        *ngIf="isRejectSubmitted">
+                        <span class="d-flex align-items-center">
+                            <span class="spinner-border flex-shrink-0" role="status">
+                                <span class="visually-hidden">Rejecting...</span>
+                            </span>
+                            <span class="flex-grow-1 ms-2">
+                                Rejecting...
+                            </span>
+                        </span>
+                    </button>
+                </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

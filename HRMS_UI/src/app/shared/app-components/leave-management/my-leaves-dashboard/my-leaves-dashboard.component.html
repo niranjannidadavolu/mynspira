@@ -1,0 +1,69 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-body">
+        <!-- Nav tabs -->
+        <ul ngbNav #Border="ngbNav" [activeId]="1" class="nav nav-tabs nav-border-top nav-border-top-primary">
+          <li [ngbNavItem]="1">
+            <a ngbNavLink>
+              My Leaves
+            </a>
+            <ng-template ngbNavContent>
+              <ejs-grid [dataSource]='myLeaves' [allowSorting]='true' [enableHover]='false' [enableHeaderFocus]='true'
+                [filterSettings]='filterSettings' [allowFiltering]='true' gridLines='Both' allowPaging='true'
+                [pageSettings]='pageSettings'>
+                <e-columns>
+                  <e-column field='LeaveAppliedOn' headerText='Applied Date' width='100' format="dd-MMM-yyyy"
+                    type="date"></e-column>
+                  <e-column field='LeaveTypeName' headerText='Leave Type' width='100'></e-column>
+                  <e-column field='LeaveFrom' headerText='From Date' width='100' format="dd-MMM-yyyy"
+                    type="date"></e-column>
+                  <e-column field='LeaveTo' headerText='To Date' width='100' format="dd-MMM-yyyy"
+                    type="date"></e-column>
+                  <e-column field='TotalDaysTaken' headerText='Total Days' width='60'
+                    [allowFiltering]='false'></e-column>
+                  <e-column field='LeaveStatusId' headerText='Status' width='60' [allowFiltering]='false'>
+                    <ng-template #template let-data>
+                      <i *ngIf="data.LeaveStatusId == 1" class="dx-icon dx-icon-pending-icon"
+                        title="{{data.LeaveStatusName }}"></i>
+                      <i *ngIf="data.LeaveStatusId  == 2" class="dx-icon dx-icon-approve-icon"
+                        title="{{data.LeaveStatusName }}"></i>
+                      <i *ngIf="data.LeaveStatusId  == 3" class="dx-icon dx-icon-reject-icon"
+                        title="{{data.LeaveStatusName }}"></i>
+                      <i *ngIf="data.LeaveStatusId  == 4" class="dx-icon dx-icon-pending-icon"
+                        title="{{data.LeaveStatusName }}"></i>
+                      <i *ngIf="data.LeaveStatusId  == 5" class="dx-icon dx-icon-cancelled-icon"
+                        title="{{data.LeaveStatusName }}"></i>
+                    </ng-template>
+                  </e-column>
+                  <e-column headerText='WorkFlows' width='60' [allowFiltering]='false'>
+                    <ng-template #template let-data>
+                      <app-workflow-tracker [trackerEntities]="data.LeaveWorkFlows"
+                        [totalDaysTaken]="data.TotalDaysTaken">
+                      </app-workflow-tracker>
+                    </ng-template>
+                  </e-column>
+                  <e-column [allowFiltering]='false' headerText='Actions' width='100'>
+                    <ng-template #template let-data>
+                      <a href="javascript:void(0)" (click)="viewLeaveDetails(data, leaveAction.view,false)"
+                        title="View Leave" class="me-2">
+                        <i class="las la-eye  text-success fs-20"></i>
+                      </a>
+                      <a href="javascript:void(0)" *ngIf="isCancelVisible(data)" (click)="cancelLeave(data)"
+                        title="Cancel Leave" class="me-2 text-danger fs-20">
+                        <i class="ri ri-delete-bin-line"></i>
+                      </a>
+                    </ng-template>
+                  </e-column>
+                </e-columns>
+              </ejs-grid>
+            </ng-template>
+          </li>
+        </ul>
+        <div class="tab-content text-muted">
+          <div [ngbNavOutlet]="Border"></div>
+        </div>
+      </div><!-- end card-body -->
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.AppException\bin\Debug\net7.0\Phoenix.CrossCutting.AppException.deps.json
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.AppException\bin\Debug\net7.0\Phoenix.CrossCutting.AppException.dll
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.AppException\bin\Debug\net7.0\Phoenix.CrossCutting.AppException.pdb
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.AppException\bin\Debug\net7.0\Phoenix.CrossCutting.Logging.dll
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.AppException\bin\Debug\net7.0\Phoenix.CrossCutting.Logging.pdb
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.AppException\obj\Debug\net7.0\Phoenix.CrossCutting.AppException.csproj.AssemblyReference.cache
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.AppException\obj\Debug\net7.0\Phoenix.CrossCutting.AppException.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.AppException\obj\Debug\net7.0\Phoenix.CrossCutting.AppException.AssemblyInfoInputs.cache
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.AppException\obj\Debug\net7.0\Phoenix.CrossCutting.AppException.AssemblyInfo.cs
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.AppException\obj\Debug\net7.0\Phoenix.CrossCutting.AppException.csproj.CoreCompileInputs.cache
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.AppException\obj\Debug\net7.0\Phoenix.CrossCutting.AppException.csproj.CopyComplete
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.AppException\obj\Debug\net7.0\Phoenix.CrossCutting.AppException.dll
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.AppException\obj\Debug\net7.0\refint\Phoenix.CrossCutting.AppException.dll
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.AppException\obj\Debug\net7.0\Phoenix.CrossCutting.AppException.pdb
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.AppException\obj\Debug\net7.0\ref\Phoenix.CrossCutting.AppException.dll

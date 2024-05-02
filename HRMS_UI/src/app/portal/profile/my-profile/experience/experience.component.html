@@ -1,0 +1,140 @@
+<div class="table-responsive">
+    <div class=" table-responsive table-card text-end">
+        <div class="card-body table-responsive">
+            <button class="btn btn-sm btn-info btn-add mb-3"
+                (click)="applyExperince(null)">
+                <i class="las la-plus"></i> Add New Experince Details</button>
+        </div>
+    </div>
+
+    <ejs-grid [dataSource]='experienceDetails' [allowSorting]='true' [enableHover]='false'
+    [enableHeaderFocus]='true' [filterSettings]='filterSettings' [allowSorting]='true'
+    [allowFiltering]='true' gridLines='Both' allowPaging='true' [pageSettings]='pageSettings'>
+        <e-columns>
+            <e-column field="EmpId" headerText="Employee Id"></e-column>
+            <e-column field="Organisation" headerText="Organisation"></e-column>
+            <e-column field="Designation" headerText="Designation"></e-column>
+            <e-column field="FromDate" headerText="From Date" type="date" format="dd-MMM-yyyy"></e-column>
+            <e-column field="ToDate" headerText="To Date" type="date" format="dd-MMM-yyyy"></e-column>
+            <e-column field="Place" headerText="Place"></e-column>
+            <e-column [allowFiltering]='false' headerText='Actions' width='100'>
+                <ng-template #template let-data>
+                    <div class="d-flex align-items-center">
+                        <button type="button" class="btn btn-light position-relative p-0 avatar-xs rounded-circle"
+                            (click)="onEditorPreparing(data,'Edit')" title="Edit Experience">
+                            <span class="avatar-title bg-transparent text-reset">
+                                <i class="ri-pencil-fill text-success fs-15"></i>
+                            </span>
+                        </button>
+                 
+                        <button type="button" class="btn btn-light position-relative p-0 avatar-xs rounded-circle"
+                            (click)="deleteExceperienceDetails(data)" title="Delete Experience">
+                            <span class="avatar-title bg-transparent text-reset">
+                                <i class="ri ri-delete-bin-line text-danger fs-15"></i>
+                            </span>
+                        </button>
+                    </div>
+                </ng-template>
+            </e-column>
+          
+        </e-columns>
+    </ejs-grid>
+
+    
+     <!-- <dx-data-grid id="gridContainerExperience" [dataSource]="experienceDetails" keyExpr="Slno" [showBorders]="true"
+        [columnHidingEnabled]="false" (onRowUpdated)="eventAction($event,'RowUpdated')"
+        (onEditorPreparing)="onEditorPreparing($event)" (onRowRemoving)="deleteExceperienceDetails($event)"
+        (onRowInserting)="eventAction($event,'RowInserting')"
+        (onToolbarPreparing)="onToolbarPreparingExperience($event)" (onEditorPrepared)="onEditorPrepared($event)"
+        [columnAutoWidth]="true" >
+        <dxo-paging [enabled]="true"></dxo-paging>
+
+        <dxo-editing mode="form" [allowUpdating]="true" [allowAdding]="true" [allowDeleting]="true" [useIcons]="true">
+            <dxo-texts addRow="Add new Family member">
+            </dxo-texts>
+            <dxo-popup title="Employee Info" [showTitle]="true" [width]="700" [height]="370">
+            </dxo-popup>
+            <dxo-form>
+                <dxi-item itemType="group" [colCount]="2" [colSpan]="2">
+
+                    <dxi-item dataField="IsNarayanaEmp">
+                        <dxi-validation-rule type="required"></dxi-validation-rule>
+                    </dxi-item>
+                    <dxi-item dataField="EmpId" caption="Employee Id">
+                    </dxi-item>
+                    <dxi-item dataField="Organisation">
+                        <dxi-validation-rule type="required"></dxi-validation-rule>
+                    </dxi-item>
+                    <dxi-item dataField="Designation">
+                        <dxi-validation-rule type="required"></dxi-validation-rule>
+                    </dxi-item>
+                    <dxi-item dataField="FromDate">
+                        <dxi-validation-rule type="required"></dxi-validation-rule>
+                        <dxi-validation-rule type="custom" [validationCallback]="dateComparison"
+                            message="From date should not be greater than to date">
+                        </dxi-validation-rule>
+                    </dxi-item>
+                    <dxi-item dataField="ToDate">
+                        <dxi-validation-rule type="required"></dxi-validation-rule>
+                        <dxi-validation-rule type="custom" [validationCallback]="dateComparison"
+                            message="From date should not be greater than to date">
+                        </dxi-validation-rule>
+                    </dxi-item>
+                    <dxi-item dataField="Salary">
+                        <dxi-validation-rule type="required"></dxi-validation-rule>
+                    </dxi-item>
+                    <dxi-item dataField="SalaryUnit">
+                        <dxi-validation-rule type="required"></dxi-validation-rule>
+                    </dxi-item>
+                    <dxi-item dataField="Place">
+                        <dxi-validation-rule type="required"></dxi-validation-rule>
+                    </dxi-item>
+                    <dxi-item dataField="RefName">
+                        <dxi-validation-rule type="required"></dxi-validation-rule>
+                    </dxi-item>
+                    <dxi-item dataField="Refmobileno" dataType="number">
+                        <dxi-validation-rule type="pattern" [pattern]="pattern"
+                            message="Please enter valid mobile number"></dxi-validation-rule>
+                    </dxi-item>
+                    <dxi-item dataField="Refphoneno" dataType="number">
+                        <dxi-validation-rule type="pattern" [pattern]="pattern"
+                            message="Please enter valid phone number"></dxi-validation-rule>
+                    </dxi-item>
+                    <dxi-item dataField="Refemail">
+                    </dxi-item>
+                    <dxi-item dataField="Description">
+                    </dxi-item>
+                </dxi-item>
+            </dxo-form>
+        </dxo-editing>
+
+        <dxi-column dataField="IsNarayanaEmp" [visible]="false" caption="Is Narayana Emp">
+            <dxo-lookup [dataSource]="employeeType" displayExpr="name" valueExpr="id">
+            </dxo-lookup>
+        </dxi-column>
+        <dxi-column dataField="EmpId" caption="Employee Id"></dxi-column>
+        <dxi-column dataField="Organisation" caption="Organisation"></dxi-column>
+        <dxi-column dataField="Designation" caption="Designation"></dxi-column>
+        <dxi-column dataField="FromDate" dataType="date" format="dd-MMM-yyyy" caption="From Date"></dxi-column>
+        <dxi-column dataField="ToDate" dataType="date" format="dd-MMM-yyyy" caption="To Date"></dxi-column>
+        <dxi-column dataField="SalaryUnit" [visible]="false" caption="Salary Unit" [width]="125">
+            <dxo-lookup [dataSource]="salaryUnits" displayExpr="name" valueExpr="id">
+            </dxo-lookup>
+        </dxi-column>
+        <dxi-column dataField="Salary" [visible]="false" caption="Salary"></dxi-column>
+        <dxi-column dataField="Place" caption="Place"></dxi-column>
+        <dxi-column dataField="RefName" [visible]="false" caption="Ref.Name"></dxi-column>
+        <dxi-column dataField="Refmobileno" [visible]="false" caption="Ref.Phone No"></dxi-column>
+        <dxi-column dataField="Refphoneno" [visible]="false" caption="Ref.Mobile"></dxi-column>
+        <dxi-column dataField="Refemail" [visible]="false" caption="Ref.Email"></dxi-column>
+        <dxi-column dataField="Description" [visible]="false" caption="Other Details"></dxi-column>
+
+
+        <dxi-column type="buttons" [width]="110" caption="Actions">
+            <dxi-button name="edit" hint="Edit Experience Information"></dxi-button>
+            <dxi-button icon="ri ri-delete-bin-line text-danger" hint="Delete Experience Information" name="delete">
+            </dxi-button>
+        </dxi-column>
+
+    </dx-data-grid>  -->
+</div>

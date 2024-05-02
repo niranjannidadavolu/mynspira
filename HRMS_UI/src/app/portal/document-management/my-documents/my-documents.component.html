@@ -1,0 +1,10 @@
+<app-breadcrumbs title="My Documents" [breadcrumbItems]="breadCrumbItems"></app-breadcrumbs>
+<div class="col-md-12">
+    <dx-file-manager id="fileManager" [fileSystemProvider]="fileItems" [customizeThumbnail]="customizeIcon"
+        height="450" (onItemDownloading)="onItemDownloading($event)">
+        <dxo-item-view mode="thumbnails"> </dxo-item-view>
+        <dxo-permissions [create]="false" [copy]="false" [move]="false" [delete]="false" [rename]="false" [upload]="false"
+            [download]="true">
+        </dxo-permissions>
+    </dx-file-manager>
+</div>

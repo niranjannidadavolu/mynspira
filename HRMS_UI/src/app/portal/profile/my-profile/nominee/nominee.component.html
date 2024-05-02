@@ -1,0 +1,179 @@
+<!-- Ribbon Shape -->
+
+    <div class="card">
+        <div class="ribbon-box border shadow-none mb-lg-0 w-100 p-0" *ngIf = "ESINo">
+            <div class="ribbon ribbon-primary ribbon-shape row">
+                <div class="col"> Nominee For ESI &nbsp; &nbsp; ESI No :  &nbsp;{{ESINo}} </div>
+            </div>
+            <div class="ribbon-content text-muted mt-5 p-2" >
+                <dx-data-grid id="gridContainer" [dataSource]="familyMembers" keyExpr="Slno" [showBorders]="true"
+                [columnHidingEnabled]="false" [columnAutoWidth]="true" (onRowUpdated)="eventAction($event,'update')"
+                (onEditorPreparing)="onEditorPreparing($event)" (onToolbarPreparing)="onToolbarPreparingESI($event)"
+                (onRowRemoving)="deleteSelectedFamilyMember($event)" (onRowInserting)="eventAction($event,'new')" >
+                <dxo-paging [enabled]="true">  
+                        
+                </dxo-paging>
+                <dxo-editing mode="form" [allowUpdating]="true" [allowAdding]="true" [allowDeleting]="true"
+                    [useIcons]="true">
+                    <dxo-texts addRow="Add ESI">
+                    </dxo-texts>
+                    <dxo-popup title="Employee Info" [showTitle]="true" [width]="700" [height]="370">
+                    </dxo-popup>
+                    <dxo-form>
+                        <dxi-item itemType="group" [colCount]="2" [colSpan]="2">
+                           
+                            <dxi-item dataField="BrelSlno">
+                                <dxi-validation-rule type="required"></dxi-validation-rule>
+                            </dxi-item>
+                            <dxi-item dataField="RelationName">
+                                <dxi-validation-rule type="required"></dxi-validation-rule>
+                            </dxi-item>
+                            <dxi-item dataField="RelationDOB">
+                                <dxi-validation-rule type="required"></dxi-validation-rule>
+                            </dxi-item>
+                            <!-- <dxi-item dataField="Description"></dxi-item>
+                            <dxi-item dataField="Isdependent" editorType="dxCheckBox"> 
+                            </dxi-item>-->
+                        </dxi-item>
+                    </dxo-form>
+                </dxo-editing>
+           
+                
+                <dxi-column dataField="BrelSlno" caption="Blood Relation" [width]="125">
+                    <dxo-lookup [dataSource]="bloodRelationData" displayExpr="BrelName" valueExpr="BrelSlno">
+                    </dxo-lookup>
+                </dxi-column>
+                <dxi-column dataField="Description" [visible]="false" caption="Description"></dxi-column>
+                <dxi-column dataField="Isdependent" [visible]="false" caption="Is Dependent"></dxi-column>
+        
+                <dxi-column dataField="RelationName" caption="Relative Name"></dxi-column>
+                <dxi-column dataField="RelationDOB" dataType="date" format="dd-MMM-yyyy"
+                    caption="Date of Birth"></dxi-column>
+                <dxi-column type="buttons" [width]="110" caption="Actions">
+                    <dxi-button name="edit" hint="Edit Member Information"></dxi-button>
+                    <dxi-button icon="ri ri-delete-bin-line text-danger" hint="Delete Member Information"
+                        name="delete"></dxi-button>
+                </dxi-column>
+            </dx-data-grid>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="ribbon-box border shadow-none mb-lg-0 w-100 p-0">
+            <div class="ribbon ribbon-primary ribbon-shape row">
+                <div class="col"> Nominee For Gratuity  &nbsp; &nbsp;  DOJ : {{Doj}} &nbsp; &nbsp;  Tenure : &nbsp; {{Years}} Years </div>
+            </div>
+            <div class="ribbon-content text-muted mt-5 p-2">
+                <dx-data-grid id="gridContainer" [dataSource]="familyMembers" keyExpr="Slno" [showBorders]="true"
+                [columnHidingEnabled]="false" [columnAutoWidth]="true" (onRowUpdated)="eventAction($event,'update')"
+                (onEditorPreparing)="onEditorPreparing($event)" (onToolbarPreparing)="onToolbarPreparingGT($event)"
+                (onRowRemoving)="deleteSelectedFamilyMember($event)" (onRowInserting)="eventAction($event,'new')" >
+                <dxo-paging [enabled]="true">  
+                        
+                </dxo-paging>
+                <dxo-editing mode="form" [allowUpdating]="true" [allowAdding]="true" [allowDeleting]="true"
+                    [useIcons]="true">
+        
+                    <dxo-texts addRow="Add ESI">
+                    </dxo-texts>
+                    <dxo-popup title="Employee Info" [showTitle]="true" [width]="700" [height]="370">
+                    </dxo-popup>
+                    <dxo-form>
+                        <dxi-item itemType="group" [colCount]="2" [colSpan]="2">
+                           
+                            <dxi-item dataField="BrelSlno">
+                                <dxi-validation-rule type="required"></dxi-validation-rule>
+                            </dxi-item>
+                            <dxi-item dataField="RelationName">
+                                <dxi-validation-rule type="required"></dxi-validation-rule>
+                            </dxi-item>
+                            <dxi-item dataField="RelationDOB">
+                                <dxi-validation-rule type="required"></dxi-validation-rule>
+                            </dxi-item>
+                            <!-- <dxi-item dataField="Description"></dxi-item>
+                            <dxi-item dataField="Isdependent" editorType="dxCheckBox"> 
+                            </dxi-item>-->
+                        </dxi-item>
+                    </dxo-form>
+                </dxo-editing>
+           
+                
+                <dxi-column dataField="BrelSlno" caption="Blood Relation" [width]="125">
+                    <dxo-lookup [dataSource]="bloodRelationData" displayExpr="BrelName" valueExpr="BrelSlno">
+                    </dxo-lookup>
+                </dxi-column>
+                <dxi-column dataField="Description" [visible]="false" caption="Description"></dxi-column>
+                <dxi-column dataField="Isdependent" [visible]="false" caption="Is Dependent"></dxi-column>
+        
+                <dxi-column dataField="RelationName" caption="Relative Name"></dxi-column>
+                <dxi-column dataField="RelationDOB" dataType="date" format="dd-MMM-yyyy"
+                    caption="Date of Birth"></dxi-column>
+                <dxi-column type="buttons" [width]="110" caption="Actions">
+                    <dxi-button name="edit" hint="Edit Member Information"></dxi-button>
+                    <dxi-button icon="ri ri-delete-bin-line text-danger" hint="Delete Member Information"
+                        name="delete"></dxi-button>
+                </dxi-column>
+            </dx-data-grid>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="ribbon-box border shadow-none mb-lg-0 w-100 p-0" *ngIf = "PFNo">
+            <div class="ribbon ribbon-primary ribbon-shape row">
+                <div class="col">  Nominee For PF  &nbsp; &nbsp;  &nbsp; &nbsp;  PF NO : &nbsp;  {{PFNo}}  </div>
+            </div>
+            <div class="ribbon-content text-muted mt-5 p-2">
+                <dx-data-grid id="gridContainer" [dataSource]="familyMembers" keyExpr="Slno" [showBorders]="true"
+                [columnHidingEnabled]="false" [columnAutoWidth]="true" (onRowUpdated)="eventAction($event,'update')"
+                (onEditorPreparing)="onEditorPreparing($event)" (onToolbarPreparing)="onToolbarPreparingPF($event)"
+                (onRowRemoving)="deleteSelectedFamilyMember($event)" (onRowInserting)="eventAction($event,'new')" >
+                <dxo-paging [enabled]="true">  
+                        
+                </dxo-paging>
+                <dxo-editing mode="form" [allowUpdating]="true" [allowAdding]="true" [allowDeleting]="true"
+                    [useIcons]="true">
+        
+                    <dxo-texts addRow="Add ESI">
+                    </dxo-texts>
+                    <dxo-popup title="Employee Info" [showTitle]="true" [width]="700" [height]="370">
+                    </dxo-popup>
+                    <dxo-form>
+                        <dxi-item itemType="group" [colCount]="2" [colSpan]="2">
+                           
+                            <dxi-item dataField="BrelSlno">
+                                <dxi-validation-rule type="required"></dxi-validation-rule>
+                            </dxi-item>
+                            <dxi-item dataField="RelationName">
+                                <dxi-validation-rule type="required"></dxi-validation-rule>
+                            </dxi-item>
+                            <dxi-item dataField="RelationDOB">
+                                <dxi-validation-rule type="required"></dxi-validation-rule>
+                            </dxi-item>
+                            <!-- <dxi-item dataField="Description"></dxi-item>
+                            <dxi-item dataField="Isdependent" editorType="dxCheckBox"> 
+                            </dxi-item>-->
+                        </dxi-item>
+                    </dxo-form>
+                </dxo-editing>
+           
+                
+                <dxi-column dataField="BrelSlno" caption="Blood Relation" [width]="125">
+                    <dxo-lookup [dataSource]="bloodRelationData" displayExpr="BrelName" valueExpr="BrelSlno">
+                    </dxo-lookup>
+                </dxi-column>
+                <dxi-column dataField="Description" [visible]="false" caption="Description"></dxi-column>
+                <dxi-column dataField="Isdependent" [visible]="false" caption="Is Dependent"></dxi-column>
+        
+                <dxi-column dataField="RelationName" caption="Relative Name"></dxi-column>
+                <dxi-column dataField="RelationDOB" dataType="date" format="dd-MMM-yyyy"
+                    caption="Date of Birth"></dxi-column>
+                <dxi-column type="buttons" [width]="110" caption="Actions">
+                    <dxi-button name="edit" hint="Edit Member Information"></dxi-button>
+                    <dxi-button icon="ri ri-delete-bin-line text-danger" hint="Delete Member Information"
+                        name="delete"></dxi-button>
+                </dxi-column>
+            </dx-data-grid>
+            </div>
+        </div>
+    </div>

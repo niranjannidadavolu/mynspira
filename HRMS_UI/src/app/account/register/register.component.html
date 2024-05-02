@@ -1,0 +1,149 @@
+<div class="modal-content border-0 overflow-hidden">
+    <div class="row g-0">
+        <div class="col-lg-7">
+            <div class="modal-body p-5">
+                <form class="needs-validation" [formGroup]="userForm" (ngSubmit)="getOtp()" novalidate>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label for="example-text-input" class="form-label mb-1">Employee Global Number</label>
+                            <div class="input-group">
+                                <input type="text" formControlName="EmployeeId" class="form-control"
+                                    [ngClass]="{ 'is-invalid': userSubmitted && userControls['EmployeeId'].errors }"
+                                    id="EmployeeId" placeholder="Please Enter Employee No">
+                                <button class="btn btn-primary waves-effect waves-light"
+                                    [disabled]="userForm.invalid || hasOtp" *ngIf="!userSubmitted">Get
+                                    OTP</button>
+                                <button class="btn btn-primary waves-effect waves-light"
+                                    *ngIf="userSubmitted">Validating... <i class="fa fa-spinner fa-spin"></i></button>
+                            </div>
+                            <div *ngIf="userControls['EmployeeId'].invalid && (userControls['EmployeeId'].dirty || userControls['EmployeeId'].touched) &&  userControls['EmployeeId'].errors"
+                                class="invalid-feedback">
+                                <div *ngIf="userControls['EmployeeId'].errors['required']">Please
+                                    provide
+                                    your
+                                    <b>Employee No</b>
+                                </div>
+                            </div>
+                            <div class="txt-right text-danger">
+                                {{displayText}}
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div *ngIf="hasOtp">
+                    <form class="needs-validation" [formGroup]="otpForm" (ngSubmit)="validateOtp()">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>Successfully sent OTP to Mobile Number :
+                                    {{otpData.MobileNumber}}</label>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="example-text-input" class="form-label mb-1">OTP</label>
+                                <div class="input-group">
+                                    <input formControlName="otp" class="form-control"
+                                        [ngClass]="{ 'is-invalid': otpControls['otp'].invalid && (otpControls['otp'].dirty || otpControls['otp'].touched) && otpControls['otp'].errors }"
+                                        id="otp" placeholder="Please enter OTP" />
+                                    <button class="btn btn-primary waves-effect waves-light" type="submit"
+                                        *ngIf="!otpSubmitted" [disabled]="otpForm.invalid || isValidOtp">Validate
+                                        OTP</button>
+                                    <button class="btn btn-primary waves-effect waves-light"
+                                        *ngIf="otpSubmitted">Validating... <i
+                                            class="fa fa-spinner fa-spin"></i></button>
+                                </div>
+                                <div *ngIf="otpControls['otp'].invalid && (otpControls['otp'].dirty || otpControls['otp'].touched) && otpControls['otp'].errors"
+                                    class="invalid-feedback">
+                                    <div *ngIf="otpControls['otp'].errors['required']">Please
+                                        enter <b>OTP</b>
+                                        Received on
+                                        your
+                                        mobile.</div>
+                                </div>
+                                <div class="txt-right">
+                                    {{otpDisplayText}}
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div *ngIf="isValidOtp">
+                    <form class="needs-validation" [formGroup]="passwordForm" (ngSubmit)="changePassword()">
+                        <div *ngIf="isValidOtp && showPassword">
+                            <div class="mb-3">
+                                <label for="email" class="mt-2">Password</label>
+
+                                <input type="password" formControlName="password" class="form-control"
+                                    [ngClass]="{ 'is-invalid': passwordControls['password'].invalid && (passwordControls['password'].dirty || passwordControls['password'].touched) && passwordControls['password'].errors }"
+                                    id="password" placeholder="Please enter new password." />
+
+                                <div *ngIf="passwordControls['password'].invalid && (passwordControls['password'].dirty || passwordControls['password'].touched) && passwordControls['password'].errors"
+                                    class="invalid-feedback">
+                                    <div *ngIf="passwordControls['password'].errors['required']">
+                                        Please
+                                        enter new
+                                        password.</div>
+                                    <div *ngIf="passwordControls['password'].errors['pattern']">
+                                        Password
+                                        must
+                                        contain more than 8 characters, 1 numeric, 1 upper case
+                                        letter, and
+                                        1 special character($@$!%*?&)</div>
+                                    <div *ngIf="passwordControls['password'].errors['maxlength']">
+                                        Password
+                                        must
+                                        not be more than 20 charecters in length.</div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email">Confirm Password</label>
+
+                                <input type="password" formControlName="confirmPassword" class="form-control"
+                                    [ngClass]="{ 'is-invalid': passwordControls['confirmPassword'].invalid && (passwordControls['confirmPassword'].dirty || passwordControls['confirmPassword'].touched) && passwordControls['confirmPassword'].errors }"
+                                    id="confirmPassword" placeholder="Please enter confirm password." />
+
+                                <div *ngIf="passwordControls['confirmPassword'].invalid && (passwordControls['confirmPassword'].dirty || passwordControls['confirmPassword'].touched) && passwordControls['confirmPassword'].errors"
+                                    class="invalid-feedback">
+                                    <div *ngIf="passwordControls['confirmPassword'].errors['required']">
+                                        Please
+                                        enter Confirm Password.
+                                    </div>
+                                    <div *ngIf="passwordControls['confirmPassword'].errors['pattern']">
+                                        Password
+                                        must contain more than 8 characters, 1 numeric, 1 upper
+                                        case
+                                        letter,
+                                        and 1 special character($@$!%*?&) </div>
+                                    <div *ngIf="passwordControls['confirmPassword'].errors['maxlength']">
+                                        Confirm
+                                        Password must not be more than 20 charecters in length.
+                                    </div>
+                                    <div *ngIf="passwordControls['confirmPassword'].errors['mustMatch']">
+                                        Passsword
+                                        and
+                                        Confirm Password didn't match. </div>
+                                </div>
+                            </div>
+                            <div class="text-end">
+                                <button class="btn btn-primary w-100 waves-effect waves-light"
+                                    *ngIf="!passwordSubmitted" [disabled]="passwordForm.invalid">Change
+                                    Password</button>
+                                <button class="btn btn-primary w-100 waves-effect waves-light"
+                                    *ngIf="passwordSubmitted">Validating... <i
+                                        class="fa fa-spinner fa-spin"></i></button>
+
+                            </div>
+                            <div class="txt-right">
+                                {{changePwdDisplayText}}
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5">
+            <div class="subscribe-modals-cover h-100">
+                <img src="assets/images/auth-one-bg.jpg" alt="" class="h-100 w-100 object-cover"
+                    style="clip-path: polygon(100% 0%, 100% 100%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);">
+            </div>
+        </div>
+    </div>
+</div><!-- /.modal-content -->

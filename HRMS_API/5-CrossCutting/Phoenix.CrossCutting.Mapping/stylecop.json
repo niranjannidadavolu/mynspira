@@ -1,0 +1,16 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/DotNetAnalyzers/StyleCopAnalyzers/master/StyleCop.Analyzers/StyleCop.Analyzers/Settings/stylecop.schema.json",
+  "settings": {
+    "orderingRules": {
+      "elementOrder": [],
+      "usingDirectivesPlacement": "outsideNamespace"
+    },
+    "documentationRules": {
+      "companyName": "Kular Fasion Stores",
+      "copyrightText": "© {copyrightYears} {companyName};\n\nThe copyright to the computer program(s) and source code herein is\nthe property of the {companyName}. The\nprogram(s) and source code may be used and/or copied only with the\nwritten permission of the {companyName} or\nin accordance with the terms and conditions stipulated in the\nagreement/contract under which the program(s) and source code have\nbeen supplied.",
+      "variables": {
+        "copyrightYears": "2019"
+      }
+    }
+  }
+}

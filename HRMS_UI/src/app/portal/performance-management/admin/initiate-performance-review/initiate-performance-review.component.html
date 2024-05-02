@@ -1,0 +1,55 @@
+<app-breadcrumbs title="INITIATE PERFORMANCE REVIEW" [breadcrumbItems]="breadCrumbItems"></app-breadcrumbs>
+<div class="row">
+    <div class="card">
+        <div class="card-body table-responsive">
+            <ejs-tab id="element">
+                <div class="e-tab-header">
+                    <div>Is Locked </div>
+                    <div>Still Pending </div>
+                </div>
+                <div class="e-content">
+                    <div>
+                        <ejs-grid #grid [dataSource]='finalReviews' height='290px' [allowPaging]='true' [toolbar]='toolbar' [editSettings]='editSettings'>
+                            <e-columns>
+                                <e-column field='DepartmentName' headerText='Department Name' isPrimaryKey='true' width=150></e-column>
+                                <e-column field='DesignationName' headerText='Designation Name' width=150></e-column>
+                               
+                                <e-column field='KraCount' headerText='No. of KRA Mapped' width=150></e-column>
+                                <e-column field='ShipCity' headerText='Date Range' width=150></e-column>
+                            </e-columns>
+                            <e-aggregates>
+                                <e-aggregate>
+                                        <e-columns>
+                                            <e-column field="Freight" type="sum" format="C2">
+                                                <ng-template #footerTemplate let-data>Sum: </ng-template>
+                                            </e-column>
+                                        </e-columns>
+                                </e-aggregate>
+                            </e-aggregates>
+                        </ejs-grid>
+                    </div>
+                    <div>
+                        <ejs-grid #grid [dataSource]='pendingReviews' height='290px' [allowPaging]='true' [toolbar]='toolbar' [editSettings]='editSettings'>
+                            <e-columns>
+                                <e-column field='DepartmentName' headerText='Department Name' isPrimaryKey='true' width=150></e-column>
+                                <e-column field='DesignationName' headerText='Designation Name' width=150></e-column>
+                                <!-- <e-column field='DesignationName' headerText='Frequency Name'  width=120></e-column> -->
+                                <!-- <e-column field='ShipCountry' headerText='Max Score' width=150></e-column> -->
+                                <e-column field='ShipCity' headerText='Date Range' width=150></e-column>
+                            </e-columns>
+                            <e-aggregates>
+                                <e-aggregate>
+                                        <e-columns>
+                                            <e-column field="Freight" type="sum" format="C2">
+                                                <ng-template #footerTemplate let-data>Sum: </ng-template>
+                                            </e-column>
+                                        </e-columns>
+                                </e-aggregate>
+                            </e-aggregates>
+                        </ejs-grid>
+                    </div>
+                </div>
+            </ejs-tab>
+        </div>
+    </div>
+</div>

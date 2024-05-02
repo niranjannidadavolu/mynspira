@@ -1,0 +1,157 @@
+<!-- BreadCrumb add for dashboard-->
+<app-breadcrumbs title="Leave Transactions" [breadcrumbItems]="breadCrumbItems"></app-breadcrumbs>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card-header align-items-center col-12">
+            <div class="row pt-3" [formGroup]="filterReportForm">
+                <div class="col-md-3">
+                    <label for="exampleInputdate" class="form-label">Branch <span class="text-danger">*</span></label>
+                    <ejs-multiselect id='multiselect-filtering' [dataSource]='branches' [fields]='fields'
+                        (filtering)='onFiltering($event)' [allowFiltering]='true' [placeholder]='watermarks'
+                        [mode]='mode' [popupHeight]='popHeight' [showDropDownIcon]='true' showSelectAll='true'
+                        [filterBarPlaceholder]='filterPlaceholder' formControlName="Branches"></ejs-multiselect>
+
+                    <!-- <ng-select [items]="branches" #dataValue [multiple]="true" bindLabel="BranchName"
+                        groupBy="selectedAllGroup" [selectableGroup]="true" [selectableGroupAsModel]="false"
+                        [closeOnSelect]="false" bindValue="PBranchSLNo" (change)="onChangeBranch($event)"
+                        clearAllText="Clear"
+                        [ngClass]="{ 'is-invalid': filterReportForm.controls['pBranchSlno'].invalid && (filterReportForm.controls['pBranchSlno'].dirty || filterReportForm.controls['pBranchSlno'].touched) && filterReportForm.controls['pBranchSlno'].errors }">
+                        <ng-template ng-optgroup-tmp let-item="item" let-item$="item$" let-index="index">
+                            <input id="item-{{index}}" type="checkbox" [checked]="item$.selected ? true : false"
+                                name="SelectAll" />
+                            <label for="SelectAll"> &nbsp; Select All</label><br>
+                        </ng-template>
+                        <ng-template ng-option-tmp let-item="item" let-item$="item$" let-index="index">
+                            <input id="item-{{index}}" type="checkbox" name="{{item}}-{{index}}"
+                                [checked]="item$.selected ? true : false" />
+                            <label class="ng-option-value mb-0" for="{{item}}-{{index}}"> &nbsp;
+                                {{(item.BranchName.length>30)? '...'+(item.BranchName |
+                                slice:6:30):(item.BranchName)}}</label>
+                        </ng-template>
+                        <ng-template ng-multi-label-tmp let-bitems="items" let-index="index">
+                            <div class="ng-value" *ngFor="let bb of bitems | slice:0:1">
+                                <span class="ng-value-label"> {{getValue(bb)}}</span>
+                            </div>
+                            <div class="ng-value" *ngIf="bitems.length > 1">
+                                <span class="ng-value-label">{{bitems.length - 1}} more...</span>
+                            </div>
+                        </ng-template>
+                    </ng-select> -->
+                    <!-- <div *ngIf="pBranchSlnoControl.invalid && isSubmitted" class="invalid-feedback">
+                        <div *ngIf="pBranchSlnoControl.errors?.['required']">
+                            Please provide branch.
+                        </div>
+                    </div> -->
+                </div>
+                <div class="col-md-2">
+                    <label for="exampleInputdate" class="form-label">From Date </label>
+                    <div class="input-group mb-3">
+                        <input id="FromDate" class="form-control flatpickr-input active" type="text" mwlFlatpickr
+                            [altInput]="false" [convertModelValue]="true" formControlName="FromDate" [minDate]="minDate"
+                            altFormat="d-M-Y" dateFormat="d-M-Y" />
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <label for="exampleInputdate" class="form-label">To Date </label>
+                    <div class="input-group mb-3">
+                        <input id="ToDate" class="form-control flatpickr-input active" type="text" mwlFlatpickr
+                            [altInput]="false" [convertModelValue]="true" formControlName="ToDate" [minDate]="toMinDate"
+                            altFormat="d-M-Y" dateFormat="d-M-Y" />
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <label for="" class="form-label">&nbsp;</label>
+                    <button type="button" class="btn btn-primary mt-4" (click)="getLeaveReports()">Submit</button>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="col-md-12 text-end mb-2">
+                    <button type="button" class="btn btn-success mt-4 text-end text-black"
+                        (click)="approveAllLeaves()">Approve All</button>
+                    <button type="button" class="btn btn-warning mt-4 text-end text-black"
+                        (click)="rejectAllLeaves()">Reject All</button>
+                </div>
+                <ejs-grid #grid id='grid' [dataSource]="leaveReports" [allowPaging]="true" [allowSorting]="true"
+                    [allowFiltering]="true" [allowResizing]="true" [filterSettings]='filterOptions' width='100%'
+                    allowExcelExport='true' [allowExcelExport]='true' [allowPdfExport]='true'
+                    [selectionSettings]="selectionSettings">
+                    <e-columns>
+                        <e-column type='checkbox' width='50'></e-column>
+                        <e-column [allowFiltering]='false' headerText='Actions' width='140'>
+                            <ng-template #template let-data>
+                                <div class="d-flex align-items-center">
+                                    <button type="button" *ngIf="false"
+                                        class="btn btn-light position-relative p-0 avatar-xs rounded-circle">
+                                        <span class="avatar-title bg-transparent text-reset">
+                                            <i class="bx bx-history text-warning fs-18"></i>
+                                        </span>
+                                    </button>
+                                    <button type="button" *ngIf="false"
+                                        class="btn btn-light position-relative p-0 avatar-xs rounded-circle">
+                                        <span class="avatar-title bg-transparent text-reset">
+                                            <i class="bx bx-info-circle text-info fs-18"></i>
+                                        </span>
+                                    </button>
+                                    <button type="button"
+                                        class="btn btn-light position-relative p-0 avatar-xs rounded-circle">
+                                        <span class="avatar-title bg-transparent text-reset">
+                                            <i class="bx bx-like text-success fs-18" (click)="approveLeave(data)"></i>
+                                        </span>
+                                    </button>
+                                    <button type="button"
+                                        class="btn btn-light position-relative p-0 avatar-xs rounded-circle">
+                                        <span class="avatar-title bg-transparent text-reset">
+                                            <i class="bx bx-dislike text-danger fs-18" (click)="rejectLeave(data)"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                            </ng-template>
+                        </e-column>
+                        <e-column field='LeaveStatusName' headerText='Status' width='150'>
+                            <ng-template #template let-data>
+                                <div class="trust">
+                                    <img style="width: 31px; height: 24px"
+                                        src="./assets/lms/{{data.LeaveStatusName}}.png" />
+                                    <span id="Trusttext">{{data.LeaveStatusName}}</span>
+                                </div>
+                            </ng-template>
+                        </e-column>
+                        <e-column field='LeaveId' isPrimaryKey='true' headerText='Employee Id' width='200'
+                            textAlign="Left" visible="false"></e-column>
+                        <e-column field='EmployeeId' headerText='Employee Id' width='200' textAlign="Left"></e-column>
+                        <e-column field='EmployeeNumber' headerText='Employee Number' width='200'
+                            textAlign="Left"></e-column>
+                        <e-column field='EmployeeName' headerText='Employee Name' width='200'
+                            textAlign="Left"></e-column>
+                        <e-column field='BranchName' headerText='BranchName' width='200' textAlign="Left"></e-column>
+                        <e-column field='OfficeTypeName' headerText='Office Type' width='200'
+                            textAlign="Left"></e-column>
+                        <e-column field='LeaveTypeName' headerText='Leave Type' width='180'>
+                            <ng-template #template let-data>
+                                <div class="d-flex align-items-center">
+                                    <div class="avatar-xxs">
+                                        <span
+                                            class="avatar-title bg-primary rounded-circle text-white">{{getShortName(data.LeaveTypeName)}}</span>
+                                    </div>
+                                    <div>
+                                        <span id="Emptext" class="ms-2 text-end">{{data.LeaveTypeName}}</span>
+                                    </div>
+                                </div>
+                            </ng-template>
+                        </e-column>
+                        <e-column field='LeaveAppliedOn' headerText='Applied On' width='200' type='date'
+                            format="dd-MM-yyyy" textAlign="right"></e-column>
+                        <e-column field='LeaveFrom' headerText='From Date' width='200' type='date' format="dd-MM-yyyy"
+                            textAlign="right"></e-column>
+                        <e-column field='LeaveTo' headerText='To Date' width='200' type='date' format="dd-MM-yyyy"
+                            textAlign="right"></e-column>
+                        <e-column field='TotalDaysTaken' headerText='Total Days' width='150'
+                            textAlign="right"></e-column>
+
+                    </e-columns>
+                </ejs-grid>
+            </div>
+        </div>
+    </div>
+</div>

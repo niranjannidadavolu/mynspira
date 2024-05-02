@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "r/p9gxPg13vL0aJEZS+K/uvShBsoMwIiLT88MMNcqHoi8OI2IG76fvW/Lq5nABUCe5GDxAi61K4Xrzqhc3SPeA==",
+  "success": true,
+  "projectFilePath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\6-Model\\Phoenix.FileProviders\\Phoenix.FileProviders.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\seshu\\.nuget\\packages\\awssdk.core\\3.7.107.6\\awssdk.core.3.7.107.6.nupkg.sha512",
+    "C:\\Users\\seshu\\.nuget\\packages\\awssdk.s3\\3.7.105\\awssdk.s3.3.7.105.nupkg.sha512"
+  ],
+  "logs": []
+}

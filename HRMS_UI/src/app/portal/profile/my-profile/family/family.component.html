@@ -1,0 +1,93 @@
+<div class="row">
+    <div class="col-lg-12">
+
+
+
+        <!-- <ejs-grid #grid [dataSource]="familyMembers" allowPaging="true" [editSettings]="editSettings" 
+        [toolbar]='toolbar'  (actionBegin)='onActionBegin($event)'  >
+          <e-columns>
+              <e-column field="BrelSlno" headerText="Blood Relation" width="150"
+              editType="dropdownedit">
+              <ng-template #template let-bloodRelationData let-rowIndex="index">
+                  {{ this.bloodRelationData.BloodRelation }}
+              </ng-template>
+                  <ng-template #editTemplate let-data let-rowIndex="index">
+                  <ejs-dropdownlist [dataSource]="bloodRelationData"
+                      [fields]="{ text: 'BloodRelation', value: 'BrelSlno' }"
+                      [value]="data.BrelSlno" name='BloodRelation'
+                      (change)="onDropdownChange($event)">
+                  </ejs-dropdownlist>
+                  </ng-template>
+               </e-column>
+              <e-column with="200" field="RelationName" headerText="Relative Name"></e-column>
+              <e-column with="200" field='RelationDOB' headerText='Date of Birth' editType='datepickeredit' format="dd-MMM-yyyy" type="date"  ></e-column>
+              <e-column with="200" field="Description" headerText="Description" ></e-column>
+              <e-column with="200" field="Isdependent" headerText="Isdependent"  [allowEditing]="false" editType="booleanedit">
+                  <ng-template #template let-data>
+                      <ejs-checkbox [checked]="data.Isdependent" [disabled]="!data.Isdependent"></ejs-checkbox>
+                  </ng-template>
+                  <ng-template #editTemplate let-data let-rowIndex="index">
+                    <ejs-checkbox [checked]="data.Isdependent"  [disabled]="data.Isdependent"></ejs-checkbox>
+                  </ng-template>
+              </e-column>
+              
+          </e-columns>
+      </ejs-grid> -->
+
+        <dx-data-grid id="gridContainer" [dataSource]="familyMembers" keyExpr="Slno"
+            [showBorders]="true" [columnHidingEnabled]="false" [columnAutoWidth]="true"
+            (onRowUpdated)="eventAction($event,'update')"
+            (onEditorPreparing)="onEditorPreparing($event)"
+            (onToolbarPreparing)="onToolbarPreparing($event)"
+            (onRowRemoving)="deleteSelectedFamilyMember($event)"
+            (onRowInserting)="eventAction($event,'new')">
+            <dxo-paging [enabled]="true"></dxo-paging>
+           
+
+            <dxo-editing mode="form" [allowUpdating]="true" [allowAdding]="true"
+                [allowDeleting]="true" [useIcons]="true">
+                <dxo-texts addRow="Add new Family member">
+                </dxo-texts>
+                <dxo-popup title="Employee Info" [showTitle]="true" [width]="700"
+                    [height]="370">
+                </dxo-popup>
+                <dxo-form>
+                    <dxi-item itemType="group" [colCount]="2" [colSpan]="2">
+                        <dxi-item dataField="BrelSlno">
+                            <dxi-validation-rule type="required"></dxi-validation-rule>
+                        </dxi-item>
+                        <dxi-item dataField="RelationName">
+                            <dxi-validation-rule  type="required"></dxi-validation-rule>
+                            
+                        </dxi-item>
+                        <dxi-item dataField="RelationDOB">
+                            <dxi-validation-rule type="required"></dxi-validation-rule>
+                        </dxi-item>
+                        <dxi-item dataField="Description"></dxi-item>
+                        <dxi-item dataField="Isdependent" editorType="dxCheckBox">
+                        </dxi-item>
+                        <!-- <dxi-item dataField="Description" editorType="dxTextArea"
+                            [colSpan]="2" [editorOptions]="{ height: 110 }">
+                        </dxi-item> -->
+                    </dxi-item>
+                </dxo-form>
+            </dxo-editing>
+            <dxi-column dataField="BrelSlno" caption="Blood Relation" [width]="125">
+                <dxo-lookup [dataSource]="bloodRelationData" displayExpr="BrelName"
+                    valueExpr="BrelSlno">
+                </dxo-lookup>
+            </dxi-column>
+            <dxi-column dataField="Description" [visible]="false" caption="Description"></dxi-column>
+            <dxi-column dataField="Isdependent" [visible]="false" caption="Is Dependent"></dxi-column>
+
+            <dxi-column dataField="RelationName" caption="Relative Name"></dxi-column>
+            <dxi-column dataField="RelationDOB" dataType="date" format="dd-MMM-yyyy"
+                caption="Date of Birth"></dxi-column>
+            <dxi-column type="buttons" [width]="110" caption="Actions">
+                <dxi-button name="edit" hint="Edit Member Information"></dxi-button>
+                <dxi-button icon="ri ri-delete-bin-line text-danger"
+                    hint="Delete Member Information" name="delete"></dxi-button>
+            </dxi-column>
+        </dx-data-grid>
+    </div>
+</div>

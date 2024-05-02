@@ -1,0 +1,203 @@
+<!-- BreadCrumb add for dashboard-->
+<app-breadcrumbs title="Leave Encashment" [breadcrumbItems]="breadCrumbItems"></app-breadcrumbs>
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <ul ngbNav #customNav="ngbNav" [activeId]="1"
+                    class="nav nav-tabs-custom rounded card-header-tabs border-bottom-0" role="tablist">
+                    <li [ngbNavItem]="1" class="nav-item">
+                        <a ngbNavLink class="nav-link" data-bs-toggle="tab" role="tab">
+                            <i class="fas fa-home"></i>
+                            Leave Encashment
+                        </a>
+                        <ng-template ngbNavContent>
+                            <div class=" table-responsive table-card text-end">
+                                <div class="card-body table-responsive">
+                                    <button class="btn btn-sm btn-info btn-add ml-2"
+                                        [disabled]="plLeaveData == null || plLeaveData < 15"
+                                        (click)="applyEncashment(null,leaveAction.add)">
+                                        <i class="las la-plus"></i> Apply Encashment</button>
+                                </div>
+                            </div>
+                            <div class="table-responsive table-card mt-3 mb-1">
+                                <ejs-grid [dataSource]='leaveEncashmentList' [allowSorting]='true' [enableHover]='false'
+                                    [enableHeaderFocus]='true' [filterSettings]='filterSettings' [allowFiltering]='true'
+                                    gridLines='Both' allowPaging='true' [pageSettings]='pageSettings'>
+                                    <e-columns>
+                                        <e-column field="CreatedDate" headerText="Applied Date" width="100"
+                                            format="dd-MMM-yyyy" type="date"></e-column>
+                                        <e-column field="TotalDaysTaken" headerText="Total Days" width="100"></e-column>
+                                        <e-column field="EncashmentAmount" headerText="Encashment Amount" width="120"
+                                            format="₹##0.00"></e-column>
+                                        <e-column field="TaxbleAmount" headerText="Taxble Amount" width="100"
+                                            format="₹##0.00"></e-column>
+                                        <e-column field="TotalAmount" headerText="Total Amount" width="100"
+                                            format="₹##0.00"></e-column>
+                                        <e-column field="IsApproved" headerText="Is Approved" width="100"
+                                            type="boolean"></e-column>
+                                        <e-column field="IsPaid" headerText="Is Paid" width="80"
+                                            type="boolean"></e-column>
+                                        <e-column field='StatusId' headerText='Status' width='60'
+                                            [allowFiltering]='false'>
+                                            <ng-template #template let-data>
+                                                <i *ngIf="data.LeaveStatusId == 1" class="dx-icon dx-icon-pending-icon"
+                                                    title="{{data.LeaveStatusName }}"></i>
+                                                <i *ngIf="data.LeaveStatusId  == 2" class="dx-icon dx-icon-approve-icon"
+                                                    title="{{data.LeaveStatusName }}"></i>
+                                                <i *ngIf="data.LeaveStatusId  == 3" class="dx-icon dx-icon-reject-icon"
+                                                    title="{{data.LeaveStatusName }}"></i>
+                                                <i *ngIf="data.LeaveStatusId  == 4" class="dx-icon dx-icon-pending-icon"
+                                                    title="{{data.LeaveStatusName }}"></i>
+                                                <i *ngIf="data.LeaveStatusId  == 5"
+                                                    class="dx-icon dx-icon-cancelled-icon"
+                                                    title="{{data.LeaveStatusName }}"></i>
+                                            </ng-template>
+                                        </e-column>
+                                        <e-column headerText='WorkFlows' width='150' [allowFiltering]='false'>
+                                            <ng-template #template let-data>
+                                                <app-workflow-tracker [trackerEntities]="data.LeaveWorkFlows"
+                                                    [totalDaysTaken]="data.TotalDaysTaken">
+                                                </app-workflow-tracker>
+                                            </ng-template>
+                                        </e-column>
+                                        <e-column [allowFiltering]='false' headerText='Actions' width='80'>
+                                            <ng-template #template let-data>
+                                                <a href="javascript:void(0)"
+                                                    (click)="applyEncashment(data,leaveAction.view)" title="View Leave"
+                                                    class="me-2">
+                                                    <i class="dx-icon dx-icon-view-icon fs-16"></i>
+                                                </a>
+                                                <a href="javascript:void(0)" *ngIf="isCancelVisible(data)"
+                                                    (click)="deleteEncashment(data)" title="Cancel Leave"
+                                                    class="me-2 text-danger">
+                                                    <i class="ri ri-delete-bin-line"></i>
+                                                </a>
+                                            </ng-template>
+                                        </e-column>
+                                    </e-columns>
+                                </ejs-grid>
+                            </div>
+                            <div class="row" *ngIf="plLeaveData == null || plLeaveData < 15">
+                                <p class="text-danger">You does not have a encashement leave balance.</p>
+                            </div>
+                        </ng-template>
+                    </li>
+                    <li [ngbNavItem]="2" class="nav-item">
+                        <a ngbNavLink class="nav-link" data-bs-toggle="tab" role="tab">
+                            <i class="fas fa-home"></i>
+                            Leave Encashment Approval
+                        </a>
+                        <ng-template ngbNavContent>
+                            <div class="table-responsive table-card mt-3 mb-1">
+                                <ejs-grid #dataGrid id="dataGrid" [dataSource]="leaveEncashmentApprovalList"
+                                    [allowPaging]="true" [pageSettings]='{pageSize: 10}' [allowFiltering]="true"
+                                    [filterSettings]="{ type: 'Menu' }">
+                                    <e-columns>
+                                        <e-column width="100" field="EmpId" headerText="Employee Id"></e-column>
+                                        <e-column width="100" field="EmployeeName"
+                                            headerText="Employee Name"></e-column>
+                                        <e-column width="100" field="BranchName" headerText="Branch"></e-column>
+                                        <e-column width="100" field="BiomatricRegNo"
+                                            headerText="Biometric Id"></e-column>
+                                        <e-column width="100" field="CreatedDate" headerText="Applied Date" type="date"
+                                            format="dd-MMM-yyyy"></e-column>
+                                        <e-column width="100" field="TotalDaysTaken" headerText="Total Days"></e-column>
+                                        <e-column width="100" headerText="Status" textAlign="Center" width="80">
+                                            <ng-template #template let-data>
+                                                <i *ngIf="data.StatusId == 1" class="dx-icon dx-icon-pending-icon"
+                                                    title="{{ data.StatusName }}"></i>
+                                                <i *ngIf="data.StatusId == 2" class="dx-icon dx-icon-approve-icon"
+                                                    title="{{ data.StatusName }}"></i>
+                                                <i *ngIf="data.StatusId == 3" class="dx-icon dx-icon-reject-icon"
+                                                    title="{{ data.StatusName }}"></i>
+                                                <i *ngIf="data.StatusId == 4" class="dx-icon dx-icon-pending-icon"
+                                                    title="{{ data.StatusName }}"></i>
+                                                <i *ngIf="data.StatusId == 5" class="dx-icon dx-icon-cancelled-icon"
+                                                    title="{{ data.StatusName }}"></i>
+                                            </ng-template>
+                                        </e-column>
+                                        <e-column headerText="Actions" textAlign="Center" width="70">
+                                            <ng-template #template let-data>
+                                                <a href="javascript:void(0)"
+                                                    (click)="applyEncashment(data, leaveAction.approve)"
+                                                    title="Reject Leave Encashment" class="me-2 text-danger">
+                                                    <i *ngIf="data" class="dx-icon dx-icon-approve-icon"
+                                                        title="{{ data.LeaveStatusName }}"></i>
+                                                </a>
+                                                <a href="javascript:void(0)"
+                                                    (click)="applyEncashment(data, leaveAction.reject)"
+                                                    title="Approve Leave Encashment"  class="me-2 text-danger">
+                                                    <i *ngIf="data" class="dx-icon dx-icon-reject-icon"
+                                                        title="{{ data.LeaveStatusName }}"></i>
+                                                </a>
+                                            </ng-template>
+                                        </e-column>
+                                    </e-columns>
+                                </ejs-grid>
+                                <!-- <dx-data-grid #dataGrid id="dataGrid" keyExpr="EncashmentId"
+                                    [dataSource]="leaveEncashmentApprovalList" [showBorders]="true"
+                                    [columnAutoWidth]="true">
+                                    <dxo-load-panel [enabled]="true">
+                                    </dxo-load-panel>
+                                    <dxo-paging [enabled]="true" [pageSize]="10"></dxo-paging>
+                                    <dxo-filter-row [visible]="true"></dxo-filter-row>
+                                    <dxi-column dataField="EmpId" caption="Employee Id">
+                                    </dxi-column>
+                                    <dxi-column dataField="EmployeeName" caption="Employee Name">
+                                    </dxi-column>
+                                    <dxi-column dataField="BranchName" caption="Branch">
+                                    </dxi-column>
+                                    <dxi-column dataField="BiomatricRegNo" caption="Biometric Id">
+                                    </dxi-column>
+                                    <dxi-column dataField="CreatedDate" caption="Applied Date" dataType="date"
+                                        format="dd-MMM-yyyy">
+                                    </dxi-column>
+                                    <dxi-column dataField="TotalDaysTaken" caption="Total Days"></dxi-column>
+                                    <dxi-column caption="Status" [alignment]="'center'" dataField="StatusId"
+                                        cellTemplate="statusTemplate" [width]="80">
+                                    </dxi-column>
+                                    <div *dxTemplate="let cell of 'statusTemplate'">
+                                        <i *ngIf="cell.value == 1" class="dx-icon dx-icon-pending-icon"
+                                            title="{{cell.data.StatusName }}"></i>
+                                        <i *ngIf="cell.value == 2" class="dx-icon dx-icon-approve-icon"
+                                            title="{{cell.data.StatusName }}"></i>
+                                        <i *ngIf="cell.value == 3" class="dx-icon dx-icon-reject-icon"
+                                            title="{{cell.data.StatusName }}"></i>
+                                        <i *ngIf="cell.value == 4" class="dx-icon dx-icon-pending-icon"
+                                            title="{{cell.data.StatusName }}"></i>
+                                        <i *ngIf="cell.value == 5" class="dx-icon dx-icon-cancelled-icon"
+                                            title="{{cell.data.StatusName }}"></i>
+                                    </div>
+                                    <dxi-column type="buttons" caption="Actions" cellTemplate="action" [width]="70">
+                                    </dxi-column>
+                                    <div *dxTemplate="let d of 'action'" class="text-left">
+                                         <a href="javascript:void(0)" (click)="applyEncashment(d,leaveAction.view)" title="View Leave"
+                                            class="me-2">
+                                            <i class="dx-icon dx-icon-view-icon"></i>
+                                        </a> 
+                                        <a href="javascript:void(0)" (click)="applyEncashment(d,leaveAction.approve)"
+                                            title="Approve Leave" class="me-2 text-danger">
+                                            <i *ngIf="d" class="dx-icon dx-icon-approve-icon"
+                                                title="{{d.data.LeaveStatusName }}"></i>
+                                        </a>
+                                        <a href="javascript:void(0)" (click)="applyEncashment(d,leaveAction.reject)"
+                                            title="Approve Leave" class="me-2 text-danger">
+                                            <i *ngIf="d" class="dx-icon dx-icon-reject-icon"
+                                                title="{{d.data.LeaveStatusName }}"></i>
+                                        </a>
+                                    </div>
+                                </dx-data-grid> -->
+                            </div>
+                        </ng-template>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-body p-4">
+                <div class="tab-content">
+                    <div [ngbNavOutlet]="customNav"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

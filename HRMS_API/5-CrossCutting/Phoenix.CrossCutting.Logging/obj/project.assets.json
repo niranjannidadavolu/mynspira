@@ -1,0 +1,164 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "NLog/4.7.10": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/NLog.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "SonarAnalyzer.CSharp/8.35.0.42613": {
+        "type": "package"
+      }
+    }
+  },
+  "libraries": {
+    "NLog/4.7.10": {
+      "sha512": "rcegW7kYOCjl7wX0SzsqpPBqnJ51JKi1WkYb6QBVX0Wc5IgH19Pv4t/co+T0s06OS0Ne44xgkY/mHg0PdrmJow==",
+      "type": "package",
+      "path": "nlog/4.7.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid44/NLog.dll",
+        "lib/monoandroid44/NLog.xml",
+        "lib/net35/NLog.dll",
+        "lib/net35/NLog.xml",
+        "lib/net40-client/NLog.dll",
+        "lib/net40-client/NLog.xml",
+        "lib/net45/NLog.dll",
+        "lib/net45/NLog.xml",
+        "lib/netstandard1.3/NLog.dll",
+        "lib/netstandard1.3/NLog.xml",
+        "lib/netstandard1.5/NLog.dll",
+        "lib/netstandard1.5/NLog.xml",
+        "lib/netstandard2.0/NLog.dll",
+        "lib/netstandard2.0/NLog.xml",
+        "lib/sl4/NLog.dll",
+        "lib/sl4/NLog.xml",
+        "lib/sl5/NLog.dll",
+        "lib/sl5/NLog.xml",
+        "lib/wp8/NLog.dll",
+        "lib/wp8/NLog.xml",
+        "lib/xamarinios10/NLog.dll",
+        "lib/xamarinios10/NLog.xml",
+        "nlog.4.7.10.nupkg.sha512",
+        "nlog.nuspec"
+      ]
+    },
+    "SonarAnalyzer.CSharp/8.35.0.42613": {
+      "sha512": "bSEpHYZXrSOXJVMr6ozINn0sO5WT9ShmOUZJsJN2CCgyzUhPUZd0wnp59cm9zUiBA28B7yESPo61nbX5trICYw==",
+      "type": "package",
+      "path": "sonaranalyzer.csharp/8.35.0.42613",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/Google.Protobuf.dll",
+        "analyzers/SonarAnalyzer.CFG.dll",
+        "analyzers/SonarAnalyzer.CSharp.dll",
+        "analyzers/SonarAnalyzer.dll",
+        "images/sonarsource_64.png",
+        "license/THIRD-PARTY-NOTICES.txt",
+        "sonaranalyzer.csharp.8.35.0.42613.nupkg.sha512",
+        "sonaranalyzer.csharp.nuspec",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "NLog >= 4.7.10",
+      "SonarAnalyzer.CSharp >= 8.35.0.42613"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\seshu\\.nuget\\packages\\": {},
+    "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Logging\\Phoenix.CrossCutting.Logging.csproj",
+      "projectName": "Phoenix.CrossCutting.Logging",
+      "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Logging\\Phoenix.CrossCutting.Logging.csproj",
+      "packagesPath": "C:\\Users\\seshu\\.nuget\\packages\\",
+      "outputPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Logging\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\seshu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "NLog": {
+            "target": "Package",
+            "version": "[4.7.10, )"
+          },
+          "SonarAnalyzer.CSharp": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[8.35.0.42613, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

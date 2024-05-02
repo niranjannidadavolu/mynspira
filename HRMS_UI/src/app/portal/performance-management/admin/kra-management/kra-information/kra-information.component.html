@@ -1,0 +1,67 @@
+<div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="exampleModalgridLabel">
+            {{mode}} KRA Information
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+            (click)="activeModal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+        <form [formGroup]="kraForm">
+            <div class="row">
+                <div class="col-md-12 mt-2">
+                    <label for="kpiTitle" class="form-label">KRA Title</label>
+                    <div class="input-group mb-1">
+                        <input type="text" class="form-control" formControlName="KraName" [readonly]="mode == 'View'"/>
+                    </div>
+                    <div *ngIf="kraForm.get('KraName')?.hasError('required') && kraForm.get('KraName')?.touched"
+                        style="color:red;" >
+                        KRA Name is required!
+                    </div>
+                    <div *ngIf="kraForm.get('KraName')?.hasError('invalidInput') && kraForm.get('KraName')?.touched"
+                        style="color:red;">
+                        KRA Name Should not contain the Special Characters and Leading Spaces.
+                    </div>
+                    <div *ngIf="kraForm.get('KraName')?.hasError('valueExists') && kraForm.get('KraName')?.touched"
+                        style="color:red;">
+                        Entered KRA Name is already exists.
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-12 mt-2">
+                <label for="kpiTitle" class="form-label">KRA Description</label>
+                <div class="input-group">
+                    <textarea type="text" class="form-control" formControlName="Description" [readonly]="mode == 'View'"></textarea>
+                </div>
+                <div *ngIf="kraForm.get('Description')?.hasError('required') && kraForm.get('Description')?.touched"
+                        style="color:red;" >
+                        KRA Description is required!
+                    </div>
+            </div>
+            <div class="row mt-3">
+                <div class="live-preview mt-3">
+                    <div class="row">
+                        <div class="col text-end">
+                            <button class="btn btn-secondary mt-4" type="button" *ngIf="!isSubmitted && mode !== 'View'"
+                                [disabled]="!kraForm.valid" (click)="SaveKraInformation()">
+                                Save
+                            </button>
+                            <button type="button" class="btn btn-secondary btn-load" *ngIf="isSubmitted">
+                                <span class="d-flex align-items-center">
+                                    <span class="spinner-border flex-shrink-0" role="status">
+                                        <span class="visually-hidden">Saving...</span>
+                                    </span>
+                                    <span class="flex-grow-1 ms-2">
+                                        Saving...
+                                    </span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>

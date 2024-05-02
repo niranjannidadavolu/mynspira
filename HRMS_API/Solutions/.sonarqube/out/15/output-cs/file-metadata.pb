@@ -1,0 +1,11 @@
+ñ
+åF:\Work\Office\Projects\Nspira\Portal\HRMS_API\6-Model\Phoenix.Model.Business.SearchCriteria\Administration\RoleInformationSearchCriteria.csutf-8ñ
+åF:\Work\Office\Projects\Nspira\Portal\HRMS_API\6-Model\Phoenix.Model.Business.SearchCriteria\Administration\UserInformationSearchCriteria.csutf-8o
+fF:\Work\Office\Projects\Nspira\Portal\HRMS_API\6-Model\Phoenix.Model.Business.SearchCriteria\Class1.csutf-8ü
+ïF:\Work\Office\Projects\Nspira\Portal\HRMS_API\6-Model\Phoenix.Model.Business.SearchCriteria\EmployeeInformation\EmployeeInformationSearchCriteria.csutf-8ç
+ÉF:\Work\Office\Projects\Nspira\Portal\HRMS_API\6-Model\Phoenix.Model.Business.SearchCriteria\LeaveManagement\LeaveSearchCriteria.csutf-8ã
+ÅF:\Work\Office\Projects\Nspira\Portal\HRMS_API\6-Model\Phoenix.Model.Business.SearchCriteria\NSL\EmployeeProfileSearchCriteria.csutf-8ì
+âF:\Work\Office\Projects\Nspira\Portal\HRMS_API\6-Model\Phoenix.Model.Business.SearchCriteria\TimeSheet\ReporteeTimeSheetSearchCriteria.csutf-8±
+•F:\Work\Office\Projects\Nspira\Portal\HRMS_API\6-Model\Phoenix.Model.Business.SearchCriteria\obj\Debug\net6.0\Phoenix.Model.Business.SearchCriteria.GlobalUsings.g.csutf-8®
+úF:\Work\Office\Projects\Nspira\Portal\HRMS_API\6-Model\Phoenix.Model.Business.SearchCriteria\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.csutf-8Ø
+£F:\Work\Office\Projects\Nspira\Portal\HRMS_API\6-Model\Phoenix.Model.Business.SearchCriteria\obj\Debug\net6.0\Phoenix.Model.Business.SearchCriteria.AssemblyInfo.csutf-8

@@ -1,0 +1,17 @@
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Enumerations\bin\Release\net7.0\Phoenix.CrossCutting.Enumerations.deps.json
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Enumerations\bin\Release\net7.0\Phoenix.CrossCutting.Enumerations.dll
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Enumerations\bin\Release\net7.0\Phoenix.CrossCutting.Enumerations.pdb
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Enumerations\bin\Release\net7.0\Phoenix.CrossCutting.Extension.dll
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Enumerations\bin\Release\net7.0\Phoenix.CrossCutting.Helper.dll
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Enumerations\bin\Release\net7.0\Phoenix.CrossCutting.Helper.pdb
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Enumerations\bin\Release\net7.0\Phoenix.CrossCutting.Extension.pdb
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Enumerations\obj\Release\net7.0\Phoenix.CrossCutting.Enumerations.csproj.AssemblyReference.cache
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Enumerations\obj\Release\net7.0\Phoenix.CrossCutting.Enumerations.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Enumerations\obj\Release\net7.0\Phoenix.CrossCutting.Enumerations.AssemblyInfoInputs.cache
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Enumerations\obj\Release\net7.0\Phoenix.CrossCutting.Enumerations.AssemblyInfo.cs
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Enumerations\obj\Release\net7.0\Phoenix.CrossCutting.Enumerations.csproj.CoreCompileInputs.cache
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Enumerations\obj\Release\net7.0\Phoenix.CrossCutting.Enumerations.csproj.CopyComplete
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Enumerations\obj\Release\net7.0\Phoenix.CrossCutting.Enumerations.dll
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Enumerations\obj\Release\net7.0\refint\Phoenix.CrossCutting.Enumerations.dll
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Enumerations\obj\Release\net7.0\Phoenix.CrossCutting.Enumerations.pdb
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Enumerations\obj\Release\net7.0\ref\Phoenix.CrossCutting.Enumerations.dll

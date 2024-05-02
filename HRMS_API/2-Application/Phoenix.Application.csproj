@@ -1,0 +1,64 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup Label="Globals">
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <CodeAnalysisRuleSet>Phoenix.Applications.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <CodeAnalysisRuleSet>Phoenix.Applications.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+	
+  <ItemGroup>
+    <Compile Remove="Billing\**" />
+    <Compile Remove="Candidate\**" />
+    <Compile Remove="Customer\**" />
+    <Compile Remove="Job\**" />
+    <Compile Remove="Master\**" />
+    <Compile Remove="Messaging\**" />
+    <Compile Remove="PureMaster\**" />
+    <Compile Remove="Questionnaire\**" />
+    <EmbeddedResource Remove="Billing\**" />
+    <EmbeddedResource Remove="Candidate\**" />
+    <EmbeddedResource Remove="Customer\**" />
+    <EmbeddedResource Remove="Job\**" />
+    <EmbeddedResource Remove="Master\**" />
+    <EmbeddedResource Remove="Messaging\**" />
+    <EmbeddedResource Remove="PureMaster\**" />
+    <EmbeddedResource Remove="Questionnaire\**" />
+    <None Remove="Billing\**" />
+    <None Remove="Candidate\**" />
+    <None Remove="Customer\**" />
+    <None Remove="Job\**" />
+    <None Remove="Master\**" />
+    <None Remove="Messaging\**" />
+    <None Remove="PureMaster\**" />
+    <None Remove="Questionnaire\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="stylecop.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <AdditionalFiles Include="stylecop.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\3-Domain\Phoenix.Domain.csproj" />
+    <ProjectReference Include="..\5-CrossCutting\Phoenix.CrossCutting.Security\Phoenix.CrossCutting.Security.csproj" />
+    <ProjectReference Include="..\6-Model\Phoenix.Model.Business.SearchCriteria\Phoenix.Model.Business.SearchCriteria.csproj" />
+    <ProjectReference Include="..\6-Model\Phonix.Model.Business\Phoenix.Model.Business.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.9.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.9.0" />
+    <PackageReference Include="SonarAnalyzer.CSharp" Version="8.35.0.42613">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewFolder\" />
+  </ItemGroup>
+</Project>

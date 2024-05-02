@@ -1,0 +1,15 @@
+D:\Projects\Nspira\Portal\HRMS_API\4-Infrastructure\BusinessModel\bin\Debug\net7.0\Phoenix.Infrastructure.BusinessModel.deps.json
+D:\Projects\Nspira\Portal\HRMS_API\4-Infrastructure\BusinessModel\bin\Debug\net7.0\Phoenix.Infrastructure.BusinessModel.dll
+D:\Projects\Nspira\Portal\HRMS_API\4-Infrastructure\BusinessModel\bin\Debug\net7.0\Phoenix.Infrastructure.BusinessModel.pdb
+D:\Projects\Nspira\Portal\HRMS_API\4-Infrastructure\BusinessModel\bin\Debug\net7.0\Phoenix.CrossCutting.Extension.dll
+D:\Projects\Nspira\Portal\HRMS_API\4-Infrastructure\BusinessModel\bin\Debug\net7.0\Phoenix.CrossCutting.Extension.pdb
+D:\Projects\Nspira\Portal\HRMS_API\4-Infrastructure\BusinessModel\obj\Debug\net7.0\Phoenix.Infrastructure.BusinessModel.csproj.AssemblyReference.cache
+D:\Projects\Nspira\Portal\HRMS_API\4-Infrastructure\BusinessModel\obj\Debug\net7.0\Phoenix.Infrastructure.BusinessModel.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Nspira\Portal\HRMS_API\4-Infrastructure\BusinessModel\obj\Debug\net7.0\Phoenix.Infrastructure.BusinessModel.AssemblyInfoInputs.cache
+D:\Projects\Nspira\Portal\HRMS_API\4-Infrastructure\BusinessModel\obj\Debug\net7.0\Phoenix.Infrastructure.BusinessModel.AssemblyInfo.cs
+D:\Projects\Nspira\Portal\HRMS_API\4-Infrastructure\BusinessModel\obj\Debug\net7.0\Phoenix.Infrastructure.BusinessModel.csproj.CoreCompileInputs.cache
+D:\Projects\Nspira\Portal\HRMS_API\4-Infrastructure\BusinessModel\obj\Debug\net7.0\Phoenix.Infrastructure.BusinessModel.csproj.CopyComplete
+D:\Projects\Nspira\Portal\HRMS_API\4-Infrastructure\BusinessModel\obj\Debug\net7.0\Phoenix.Infrastructure.BusinessModel.dll
+D:\Projects\Nspira\Portal\HRMS_API\4-Infrastructure\BusinessModel\obj\Debug\net7.0\refint\Phoenix.Infrastructure.BusinessModel.dll
+D:\Projects\Nspira\Portal\HRMS_API\4-Infrastructure\BusinessModel\obj\Debug\net7.0\Phoenix.Infrastructure.BusinessModel.pdb
+D:\Projects\Nspira\Portal\HRMS_API\4-Infrastructure\BusinessModel\obj\Debug\net7.0\ref\Phoenix.Infrastructure.BusinessModel.dll

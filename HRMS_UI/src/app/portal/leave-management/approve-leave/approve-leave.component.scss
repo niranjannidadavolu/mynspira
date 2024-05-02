@@ -1,0 +1,16 @@
+.form-check-label {
+    opacity: 1 !important;
+}
+
+.invalid-feedback {
+    display: block;
+}
+
+.icon-size {
+    font: 24px/1 DXIcons;
+}
+.date-pickr-disabled{
+    pointer-events: none !important;
+    background-color: var(--vz-input-disabled-bg);
+    opacity: 1;
+}

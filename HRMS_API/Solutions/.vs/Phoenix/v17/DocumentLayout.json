@@ -1,0 +1,1161 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\Solutions\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3C122A-0D67-4092-B89C-2E1B88766AE1}|..\\6-Model\\Phonix.Model.Business\\Phoenix.Model.Business.csproj|f:\\work\\office\\projects\\portal\\hrms_api\\6-model\\phonix.model.business\\masters\\leavetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B13BFC4A-5F60-4BE1-A30C-5A61C43FF1E7}|..\\1-Web\\Phoenix.Web.Service\\Phoenix.Web.Service.csproj|f:\\work\\office\\projects\\portal\\hrms_api\\1-web\\phoenix.web.service\\controllers\\masters\\leavetypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2B6FA93-AA29-4F28-BBFC-0A807B68E772}|..\\8-Database\\Phoenix.Database.Repository.csproj|f:\\work\\office\\projects\\portal\\hrms_api\\8-database\\masters\\leavetyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2B6FA93-AA29-4F28-BBFC-0A807B68E772}|..\\8-Database\\Phoenix.Database.Repository.csproj|f:\\work\\office\\projects\\portal\\hrms_api\\8-database\\administration\\userinformationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B13BFC4A-5F60-4BE1-A30C-5A61C43FF1E7}|..\\1-Web\\Phoenix.Web.Service\\Phoenix.Web.Service.csproj|f:\\work\\office\\projects\\portal\\hrms_api\\1-web\\phoenix.web.service\\controllers\\authentication\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2B6FA93-AA29-4F28-BBFC-0A807B68E772}|..\\8-Database\\Phoenix.Database.Repository.csproj|f:\\work\\office\\projects\\portal\\hrms_api\\8-database\\employee\\employeeinformationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2B6FA93-AA29-4F28-BBFC-0A807B68E772}|..\\8-Database\\Phoenix.Database.Repository.csproj|f:\\work\\office\\projects\\portal\\hrms_api\\8-database\\leavemanagement\\leavemanagementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B13BFC4A-5F60-4BE1-A30C-5A61C43FF1E7}|..\\1-Web\\Phoenix.Web.Service\\Phoenix.Web.Service.csproj|f:\\work\\office\\projects\\portal\\hrms_api\\1-web\\phoenix.web.service\\settings\\oraclesettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B13BFC4A-5F60-4BE1-A30C-5A61C43FF1E7}|..\\1-Web\\Phoenix.Web.Service\\Phoenix.Web.Service.csproj|f:\\work\\office\\projects\\portal\\hrms_api\\1-web\\phoenix.web.service\\settings\\applicationsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2B6FA93-AA29-4F28-BBFC-0A807B68E772}|..\\8-Database\\Phoenix.Database.Repository.csproj|f:\\work\\office\\projects\\portal\\hrms_api\\8-database\\employeeverification\\employeeverificationrespository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE31B287-D434-45CE-A33D-413631109793}|..\\3-Domain\\Phoenix.Domain.csproj|f:\\work\\office\\projects\\portal\\hrms_api\\3-domain\\employeeverification\\implementations\\employeeverificationdomain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B72CE225-B4BE-43DE-9F17-F4F420B5CCE2}|..\\2-Application\\Phoenix.Application.csproj|f:\\work\\office\\projects\\portal\\hrms_api\\2-application\\employeeverification\\implementations\\employeeverificationapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B13BFC4A-5F60-4BE1-A30C-5A61C43FF1E7}|..\\1-Web\\Phoenix.Web.Service\\Phoenix.Web.Service.csproj|f:\\work\\office\\projects\\portal\\hrms_api\\1-web\\phoenix.web.service\\controllers\\employeeverification\\employeeverificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2B6FA93-AA29-4F28-BBFC-0A807B68E772}|..\\8-Database\\Phoenix.Database.Repository.csproj|f:\\work\\office\\projects\\portal\\hrms_api\\8-database\\masters\\branchrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B13BFC4A-5F60-4BE1-A30C-5A61C43FF1E7}|..\\1-Web\\Phoenix.Web.Service\\Phoenix.Web.Service.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-web\\phoenix.web.service\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6906568-30D3-4B9E-BAA7-7ADE1E7B6D0E}|..\\5-CrossCutting\\Phoenix.CrossCutting.Helper\\Phoenix.CrossCutting.Helper.csproj|f:\\work\\office\\projects\\portal\\hrms_api\\5-crosscutting\\phoenix.crosscutting.helper\\applicationsettings\\applicationsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3C122A-0D67-4092-B89C-2E1B88766AE1}|..\\6-Model\\Phonix.Model.Business\\Phoenix.Model.Business.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\6-model\\phonix.model.business\\leavemanagement\\employeeleavereport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE31B287-D434-45CE-A33D-413631109793}|..\\3-Domain\\Phoenix.Domain.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\3-domain\\leavemanagement\\implementations\\leavemanagementdomain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B72CE225-B4BE-43DE-9F17-F4F420B5CCE2}|..\\2-Application\\Phoenix.Application.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\2-application\\leavemanagement\\implementations\\leavemanagementapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B13BFC4A-5F60-4BE1-A30C-5A61C43FF1E7}|..\\1-Web\\Phoenix.Web.Service\\Phoenix.Web.Service.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-web\\phoenix.web.service\\controllers\\leavemanagement\\leavemanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B13BFC4A-5F60-4BE1-A30C-5A61C43FF1E7}|..\\1-Web\\Phoenix.Web.Service\\Phoenix.Web.Service.csproj|f:\\work\\office\\projects\\portal\\hrms_api\\1-web\\phoenix.web.service\\hostedservice\\appointmentlettersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B13BFC4A-5F60-4BE1-A30C-5A61C43FF1E7}|..\\1-Web\\Phoenix.Web.Service\\Phoenix.Web.Service.csproj|f:\\work\\office\\projects\\portal\\hrms_api\\1-web\\phoenix.web.service\\settings\\s3bucketsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2B6FA93-AA29-4F28-BBFC-0A807B68E772}|..\\8-Database\\Phoenix.Database.Repository.csproj|f:\\work\\office\\projects\\portal\\hrms_api\\8-database\\investment\\investmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B13BFC4A-5F60-4BE1-A30C-5A61C43FF1E7}|..\\1-Web\\Phoenix.Web.Service\\Phoenix.Web.Service.csproj|f:\\work\\office\\projects\\portal\\hrms_api\\1-web\\phoenix.web.service\\controllers\\documentmanagement\\documentmanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B13BFC4A-5F60-4BE1-A30C-5A61C43FF1E7}|..\\1-Web\\Phoenix.Web.Service\\Phoenix.Web.Service.csproj|f:\\work\\office\\projects\\portal\\hrms_api\\1-web\\phoenix.web.service\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B13BFC4A-5F60-4BE1-A30C-5A61C43FF1E7}|..\\1-Web\\Phoenix.Web.Service\\Phoenix.Web.Service.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-web\\phoenix.web.service\\settings\\jobsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2B6FA93-AA29-4F28-BBFC-0A807B68E772}|..\\8-Database\\Phoenix.Database.Repository.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-database\\reimbursement\\reimbursementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2B6FA93-AA29-4F28-BBFC-0A807B68E772}|..\\8-Database\\Phoenix.Database.Repository.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-database\\carlease\\carleaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3C122A-0D67-4092-B89C-2E1B88766AE1}|..\\6-Model\\Phonix.Model.Business\\Phoenix.Model.Business.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\6-model\\phonix.model.business\\leavemanagement\\leavebalance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3C122A-0D67-4092-B89C-2E1B88766AE1}|..\\6-Model\\Phonix.Model.Business\\Phoenix.Model.Business.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\6-model\\phonix.model.business\\leavemanagement\\leaveentitlementreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2B6FA93-AA29-4F28-BBFC-0A807B68E772}|..\\8-Database\\Phoenix.Database.Repository.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-database\\leavemanagementreports\\reportsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B13BFC4A-5F60-4BE1-A30C-5A61C43FF1E7}|..\\1-Web\\Phoenix.Web.Service\\Phoenix.Web.Service.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-web\\phoenix.web.service\\controllers\\leavemanagementreports\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2B6FA93-AA29-4F28-BBFC-0A807B68E772}|..\\8-Database\\Phoenix.Database.Repository.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-database\\leavemanagement\\leaveentitlementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2B6FA93-AA29-4F28-BBFC-0A807B68E772}|..\\8-Database\\Phoenix.Database.Repository.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-database\\leavemanagement\\leaveencashmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2B6FA93-AA29-4F28-BBFC-0A807B68E772}|..\\8-Database\\Phoenix.Database.Repository.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-database\\masters\\payrollperiodrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9363312C-9871-43C3-8CB2-EC79E629A64C}|..\\9-Jobs\\Phoenix.Console.Job\\Phoenix.Console.Job.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\9-jobs\\phoenix.console.job\\email\\emailnotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B13BFC4A-5F60-4BE1-A30C-5A61C43FF1E7}|..\\1-Web\\Phoenix.Web.Service\\Phoenix.Web.Service.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-web\\phoenix.web.service\\hostedservice\\emailnotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3C122A-0D67-4092-B89C-2E1B88766AE1}|..\\6-Model\\Phonix.Model.Business\\Phoenix.Model.Business.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\6-model\\phonix.model.business\\leavemanagement\\employeeleave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C88A441-76B8-4F7F-BCED-7DEFAF36A25F}|..\\6-Model\\Phoenix.Model.Business.Validator\\Phoenix.Model.Business.Validator.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\6-model\\phoenix.model.business.validator\\leavemanagement\\leaveinformationvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B72CE225-B4BE-43DE-9F17-F4F420B5CCE2}|..\\2-Application\\Phoenix.Application.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\2-application\\employeeinformation\\interfaces\\iemployeeinformationapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3C122A-0D67-4092-B89C-2E1B88766AE1}|..\\6-Model\\Phonix.Model.Business\\Phoenix.Model.Business.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\6-model\\phonix.model.business\\attendance\\holidayinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3C122A-0D67-4092-B89C-2E1B88766AE1}|..\\6-Model\\Phonix.Model.Business\\Phoenix.Model.Business.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\6-model\\phonix.model.business\\sitenotification\\sitenotificationdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B13BFC4A-5F60-4BE1-A30C-5A61C43FF1E7}|..\\1-Web\\Phoenix.Web.Service\\Phoenix.Web.Service.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-web\\phoenix.web.service\\controllers\\sitenotification\\sitenotificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2B6FA93-AA29-4F28-BBFC-0A807B68E772}|..\\8-Database\\Phoenix.Database.Repository.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-database\\sitenotificaton\\sitenotificationrespository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2B6FA93-AA29-4F28-BBFC-0A807B68E772}|..\\8-Database\\Phoenix.Database.Repository.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-database\\attendance\\biometricrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE31B287-D434-45CE-A33D-413631109793}|..\\3-Domain\\Phoenix.Domain.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\3-domain\\employeeinformation\\implementations\\employeeinformationdomain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE31B287-D434-45CE-A33D-413631109793}|..\\3-Domain\\Phoenix.Domain.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\3-domain\\employeeinformation\\interfaces\\iemployeeinformationdomain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B72CE225-B4BE-43DE-9F17-F4F420B5CCE2}|..\\2-Application\\Phoenix.Application.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\2-application\\employeeinformation\\implementations\\employeeinformationapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B13BFC4A-5F60-4BE1-A30C-5A61C43FF1E7}|..\\1-Web\\Phoenix.Web.Service\\Phoenix.Web.Service.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-web\\phoenix.web.service\\controllers\\emplpoyeeinformation\\employeeinformationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B13BFC4A-5F60-4BE1-A30C-5A61C43FF1E7}|..\\1-Web\\Phoenix.Web.Service\\Phoenix.Web.Service.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-web\\phoenix.web.service\\controllers\\performancemanagement\\employeeperformancereviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B72CE225-B4BE-43DE-9F17-F4F420B5CCE2}|..\\2-Application\\Phoenix.Application.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\2-application\\pms\\interfaces\\iemployeeperformancereviewapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B72CE225-B4BE-43DE-9F17-F4F420B5CCE2}|..\\2-Application\\Phoenix.Application.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\2-application\\pms\\implementations\\employeeperformancereviewapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE31B287-D434-45CE-A33D-413631109793}|..\\3-Domain\\Phoenix.Domain.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\3-domain\\pms\\interfaces\\iemployeeperformancereviewdomain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE31B287-D434-45CE-A33D-413631109793}|..\\3-Domain\\Phoenix.Domain.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\3-domain\\pms\\implementations\\employeeperformancereviewdomain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2B6FA93-AA29-4F28-BBFC-0A807B68E772}|..\\8-Database\\Phoenix.Database.Repository.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-database\\pms\\assignkratoemployeerepositry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B13BFC4A-5F60-4BE1-A30C-5A61C43FF1E7}|..\\1-Web\\Phoenix.Web.Service\\Phoenix.Web.Service.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-web\\phoenix.web.service\\controllers\\performancemanagement\\assignkracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2B6FA93-AA29-4F28-BBFC-0A807B68E772}|..\\8-Database\\Phoenix.Database.Repository.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-database\\administration\\roleinformationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B13BFC4A-5F60-4BE1-A30C-5A61C43FF1E7}|..\\1-Web\\Phoenix.Web.Service\\Phoenix.Web.Service.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-web\\phoenix.web.service\\controllers\\administration\\userinformationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B72CE225-B4BE-43DE-9F17-F4F420B5CCE2}|..\\2-Application\\Phoenix.Application.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\2-application\\administration\\interfaces\\iuserinformationapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B13BFC4A-5F60-4BE1-A30C-5A61C43FF1E7}|..\\1-Web\\Phoenix.Web.Service\\Phoenix.Web.Service.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-web\\phoenix.web.service\\controllers\\administration\\roleinformationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3C122A-0D67-4092-B89C-2E1B88766AE1}|..\\6-Model\\Phonix.Model.Business\\Phoenix.Model.Business.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\6-model\\phonix.model.business\\pms\\krainformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B13BFC4A-5F60-4BE1-A30C-5A61C43FF1E7}|..\\1-Web\\Phoenix.Web.Service\\Phoenix.Web.Service.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-web\\phoenix.web.service\\controllers\\performancemanagement\\krainformationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B72CE225-B4BE-43DE-9F17-F4F420B5CCE2}|..\\2-Application\\Phoenix.Application.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\2-application\\pms\\implementations\\krainformationapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B72CE225-B4BE-43DE-9F17-F4F420B5CCE2}|..\\2-Application\\Phoenix.Application.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\2-application\\pms\\interfaces\\iassignkraapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2B6FA93-AA29-4F28-BBFC-0A807B68E772}|..\\8-Database\\Phoenix.Database.Repository.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-database\\pms\\krainformationrepositry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE31B287-D434-45CE-A33D-413631109793}|..\\3-Domain\\Phoenix.Domain.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\3-domain\\pms\\implementations\\krainformationdomain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE31B287-D434-45CE-A33D-413631109793}|..\\3-Domain\\Phoenix.Domain.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\3-domain\\pms\\interfaces\\iassignkradomain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B72CE225-B4BE-43DE-9F17-F4F420B5CCE2}|..\\2-Application\\Phoenix.Application.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\2-application\\pms\\interfaces\\ikrainformationapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE31B287-D434-45CE-A33D-413631109793}|..\\3-Domain\\Phoenix.Domain.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\3-domain\\pms\\interfaces\\ikrainformationdomain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DA6860-F2D9-4DBE-9A0C-3CAAAFE41715}|..\\5-CrossCutting\\Phoenix.CrossCutting.Resources\\Phoenix.CrossCutting.Resources.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\5-crosscutting\\phoenix.crosscutting.resources\\performancemanagement.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B72CE225-B4BE-43DE-9F17-F4F420B5CCE2}|..\\2-Application\\Phoenix.Application.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\2-application\\pms\\implementations\\assignkraapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE31B287-D434-45CE-A33D-413631109793}|..\\3-Domain\\Phoenix.Domain.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\3-domain\\pms\\implementations\\assignkradomain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B13BFC4A-5F60-4BE1-A30C-5A61C43FF1E7}|..\\1-Web\\Phoenix.Web.Service\\Phoenix.Web.Service.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-web\\phoenix.web.service\\controllers\\performancemanagement\\kpiinformationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2B6FA93-AA29-4F28-BBFC-0A807B68E772}|..\\8-Database\\Phoenix.Database.Repository.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-database\\pms\\employeeperformancereviewrepositry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3C122A-0D67-4092-B89C-2E1B88766AE1}|..\\6-Model\\Phonix.Model.Business\\Phoenix.Model.Business.csproj|F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\6-model\\phonix.model.business\\pms\\employeereviewinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LeaveType.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\6-Model\\Phonix.Model.Business\\Masters\\LeaveType.cs",
+              "RelativeDocumentMoniker": "..\\6-Model\\Phonix.Model.Business\\Masters\\LeaveType.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\6-Model\\Phonix.Model.Business\\Masters\\LeaveType.cs",
+              "RelativeToolTip": "..\\6-Model\\Phonix.Model.Business\\Masters\\LeaveType.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAA/wEcAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T07:19:17.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LeaveTypeController.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Controllers\\Masters\\LeaveTypeController.cs",
+              "RelativeDocumentMoniker": "..\\1-Web\\Phoenix.Web.Service\\Controllers\\Masters\\LeaveTypeController.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Controllers\\Masters\\LeaveTypeController.cs",
+              "RelativeToolTip": "..\\1-Web\\Phoenix.Web.Service\\Controllers\\Masters\\LeaveTypeController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwCMAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T07:19:12.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserInformationRepository.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-Database\\Administration\\UserInformationRepository.cs",
+              "RelativeDocumentMoniker": "..\\8-Database\\Administration\\UserInformationRepository.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-Database\\Administration\\UserInformationRepository.cs",
+              "RelativeToolTip": "..\\8-Database\\Administration\\UserInformationRepository.cs",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAcwIIAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T07:00:47.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LeaveManagementRepository.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-Database\\LeaveManagement\\LeaveManagementRepository.cs",
+              "RelativeDocumentMoniker": "..\\8-Database\\LeaveManagement\\LeaveManagementRepository.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-Database\\LeaveManagement\\LeaveManagementRepository.cs",
+              "RelativeToolTip": "..\\8-Database\\LeaveManagement\\LeaveManagementRepository.cs",
+              "ViewState": "AQIAAGgAAAAAAAAAAIAwwIAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LeaveTypeRepository.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-Database\\Masters\\LeaveTypeRepository.cs",
+              "RelativeDocumentMoniker": "..\\8-Database\\Masters\\LeaveTypeRepository.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-Database\\Masters\\LeaveTypeRepository.cs",
+              "RelativeToolTip": "..\\8-Database\\Masters\\LeaveTypeRepository.cs",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAewGwAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthenticationController.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Controllers\\Authentication\\AuthenticationController.cs",
+              "RelativeDocumentMoniker": "..\\1-Web\\Phoenix.Web.Service\\Controllers\\Authentication\\AuthenticationController.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Controllers\\Authentication\\AuthenticationController.cs",
+              "RelativeToolTip": "..\\1-Web\\Phoenix.Web.Service\\Controllers\\Authentication\\AuthenticationController.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAmwCQAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T09:23:17.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OracleSettings.json",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Settings\\OracleSettings.json",
+              "RelativeDocumentMoniker": "..\\1-Web\\Phoenix.Web.Service\\Settings\\OracleSettings.json",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Settings\\OracleSettings.json",
+              "RelativeToolTip": "..\\1-Web\\Phoenix.Web.Service\\Settings\\OracleSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-10T10:45:44.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ApplicationSettings.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Helper\\ApplicationSettings\\ApplicationSettings.cs",
+              "RelativeDocumentMoniker": "..\\5-CrossCutting\\Phoenix.CrossCutting.Helper\\ApplicationSettings\\ApplicationSettings.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Helper\\ApplicationSettings\\ApplicationSettings.cs",
+              "RelativeToolTip": "..\\5-CrossCutting\\Phoenix.CrossCutting.Helper\\ApplicationSettings\\ApplicationSettings.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAADwvzMAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T11:22:22.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmployeeInformationRepository.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-Database\\Employee\\EmployeeInformationRepository.cs",
+              "RelativeDocumentMoniker": "..\\8-Database\\Employee\\EmployeeInformationRepository.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-Database\\Employee\\EmployeeInformationRepository.cs",
+              "RelativeToolTip": "..\\8-Database\\Employee\\EmployeeInformationRepository.cs",
+              "ViewState": "AQIAAKkDAAAAAAAAAADwv70DAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.833Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EmployeeVerificationDomain.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\3-Domain\\EmployeeVerification\\Implementations\\EmployeeVerificationDomain.cs",
+              "RelativeDocumentMoniker": "..\\3-Domain\\EmployeeVerification\\Implementations\\EmployeeVerificationDomain.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\3-Domain\\EmployeeVerification\\Implementations\\EmployeeVerificationDomain.cs",
+              "RelativeToolTip": "..\\3-Domain\\EmployeeVerification\\Implementations\\EmployeeVerificationDomain.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAnwCgAAABWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T12:51:13.291Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ApplicationSettings.json",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Settings\\ApplicationSettings.json",
+              "RelativeDocumentMoniker": "..\\1-Web\\Phoenix.Web.Service\\Settings\\ApplicationSettings.json",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Settings\\ApplicationSettings.json",
+              "RelativeToolTip": "..\\1-Web\\Phoenix.Web.Service\\Settings\\ApplicationSettings.json",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACUAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-10T10:45:44.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BranchRepository.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-Database\\Masters\\BranchRepository.cs",
+              "RelativeDocumentMoniker": "..\\8-Database\\Masters\\BranchRepository.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-Database\\Masters\\BranchRepository.cs",
+              "RelativeToolTip": "..\\8-Database\\Masters\\BranchRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T13:21:09.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EmployeeVerificationController.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Controllers\\EmployeeVerification\\EmployeeVerificationController.cs",
+              "RelativeDocumentMoniker": "..\\1-Web\\Phoenix.Web.Service\\Controllers\\EmployeeVerification\\EmployeeVerificationController.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Controllers\\EmployeeVerification\\EmployeeVerificationController.cs",
+              "RelativeToolTip": "..\\1-Web\\Phoenix.Web.Service\\Controllers\\EmployeeVerification\\EmployeeVerificationController.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAC4AAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T12:50:49.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EmployeeVerificationApplication.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\2-Application\\EmployeeVerification\\Implementations\\EmployeeVerificationApplication.cs",
+              "RelativeDocumentMoniker": "..\\2-Application\\EmployeeVerification\\Implementations\\EmployeeVerificationApplication.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\2-Application\\EmployeeVerification\\Implementations\\EmployeeVerificationApplication.cs",
+              "RelativeToolTip": "..\\2-Application\\EmployeeVerification\\Implementations\\EmployeeVerificationApplication.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T12:51:06.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EmployeeVerificationRespository.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-Database\\EmployeeVerification\\EmployeeVerificationRespository.cs",
+              "RelativeDocumentMoniker": "..\\8-Database\\EmployeeVerification\\EmployeeVerificationRespository.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-Database\\EmployeeVerification\\EmployeeVerificationRespository.cs",
+              "RelativeToolTip": "..\\8-Database\\EmployeeVerification\\EmployeeVerificationRespository.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAmwEIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T12:51:16.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "LeaveManagementDomain.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\3-Domain\\LeaveManagement\\Implementations\\LeaveManagementDomain.cs",
+              "RelativeDocumentMoniker": "..\\3-Domain\\LeaveManagement\\Implementations\\LeaveManagementDomain.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\3-Domain\\LeaveManagement\\Implementations\\LeaveManagementDomain.cs",
+              "RelativeToolTip": "..\\3-Domain\\LeaveManagement\\Implementations\\LeaveManagementDomain.cs",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAewG0AAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.924Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "EmployeeLeaveReport.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\6-Model\\Phonix.Model.Business\\LeaveManagement\\EmployeeLeaveReport.cs",
+              "RelativeDocumentMoniker": "..\\6-Model\\Phonix.Model.Business\\LeaveManagement\\EmployeeLeaveReport.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\6-Model\\Phonix.Model.Business\\LeaveManagement\\EmployeeLeaveReport.cs",
+              "RelativeToolTip": "..\\6-Model\\Phonix.Model.Business\\LeaveManagement\\EmployeeLeaveReport.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAcwCkAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Startup.cs",
+              "RelativeDocumentMoniker": "..\\1-Web\\Phoenix.Web.Service\\Startup.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Startup.cs",
+              "RelativeToolTip": "..\\1-Web\\Phoenix.Web.Service\\Startup.cs",
+              "ViewState": "AQIAALUAAAAAAAAAAAA8wLsAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.925Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "LeaveManagementApplication.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\2-Application\\LeaveManagement\\Implementations\\LeaveManagementApplication.cs",
+              "RelativeDocumentMoniker": "..\\2-Application\\LeaveManagement\\Implementations\\LeaveManagementApplication.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\2-Application\\LeaveManagement\\Implementations\\LeaveManagementApplication.cs",
+              "RelativeToolTip": "..\\2-Application\\LeaveManagement\\Implementations\\LeaveManagementApplication.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAewDkAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.925Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "LeaveManagementController.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Controllers\\LeaveManagement\\LeaveManagementController.cs",
+              "RelativeDocumentMoniker": "..\\1-Web\\Phoenix.Web.Service\\Controllers\\LeaveManagement\\LeaveManagementController.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Controllers\\LeaveManagement\\LeaveManagementController.cs",
+              "RelativeToolTip": "..\\1-Web\\Phoenix.Web.Service\\Controllers\\LeaveManagement\\LeaveManagementController.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAIAwwEQAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "InvestmentRepository.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-Database\\Investment\\InvestmentRepository.cs",
+              "RelativeDocumentMoniker": "..\\8-Database\\Investment\\InvestmentRepository.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-Database\\Investment\\InvestmentRepository.cs",
+              "RelativeToolTip": "..\\8-Database\\Investment\\InvestmentRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T05:01:08.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AppointmentLettersService.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\HostedService\\AppointmentLettersService.cs",
+              "RelativeDocumentMoniker": "..\\1-Web\\Phoenix.Web.Service\\HostedService\\AppointmentLettersService.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\HostedService\\AppointmentLettersService.cs",
+              "RelativeToolTip": "..\\1-Web\\Phoenix.Web.Service\\HostedService\\AppointmentLettersService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAIMAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "JobSettings.json",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Settings\\JobSettings.json",
+              "RelativeDocumentMoniker": "..\\1-Web\\Phoenix.Web.Service\\Settings\\JobSettings.json",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Settings\\JobSettings.json",
+              "RelativeToolTip": "..\\1-Web\\Phoenix.Web.Service\\Settings\\JobSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-10T10:45:44.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DocumentManagementController.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Controllers\\DocumentManagement\\DocumentManagementController.cs",
+              "RelativeDocumentMoniker": "..\\1-Web\\Phoenix.Web.Service\\Controllers\\DocumentManagement\\DocumentManagementController.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Controllers\\DocumentManagement\\DocumentManagementController.cs",
+              "RelativeToolTip": "..\\1-Web\\Phoenix.Web.Service\\Controllers\\DocumentManagement\\DocumentManagementController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABkAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T07:51:29.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "S3BucketSettings.json",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Settings\\S3BucketSettings.json",
+              "RelativeDocumentMoniker": "..\\1-Web\\Phoenix.Web.Service\\Settings\\S3BucketSettings.json",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Settings\\S3BucketSettings.json",
+              "RelativeToolTip": "..\\1-Web\\Phoenix.Web.Service\\Settings\\S3BucketSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-27T04:54:49.8Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ReimbursementRepository.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-Database\\Reimbursement\\ReimbursementRepository.cs",
+              "RelativeDocumentMoniker": "..\\8-Database\\Reimbursement\\ReimbursementRepository.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-Database\\Reimbursement\\ReimbursementRepository.cs",
+              "RelativeToolTip": "..\\8-Database\\Reimbursement\\ReimbursementRepository.cs",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAmwHUAAAB2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.656Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ReportsRepository.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-Database\\LeaveManagementReports\\ReportsRepository.cs",
+              "RelativeDocumentMoniker": "..\\8-Database\\LeaveManagementReports\\ReportsRepository.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-Database\\LeaveManagementReports\\ReportsRepository.cs",
+              "RelativeToolTip": "..\\8-Database\\LeaveManagementReports\\ReportsRepository.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAowB4AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Program.cs",
+              "RelativeDocumentMoniker": "..\\1-Web\\Phoenix.Web.Service\\Program.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Program.cs",
+              "RelativeToolTip": "..\\1-Web\\Phoenix.Web.Service\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:46:45.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "LeaveEncashmentRepository.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-Database\\LeaveManagement\\LeaveEncashmentRepository.cs",
+              "RelativeDocumentMoniker": "..\\8-Database\\LeaveManagement\\LeaveEncashmentRepository.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-Database\\LeaveManagement\\LeaveEncashmentRepository.cs",
+              "RelativeToolTip": "..\\8-Database\\LeaveManagement\\LeaveEncashmentRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CarLeaseRepository.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-Database\\CarLease\\CarLeaseRepository.cs",
+              "RelativeDocumentMoniker": "..\\8-Database\\CarLease\\CarLeaseRepository.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-Database\\CarLease\\CarLeaseRepository.cs",
+              "RelativeToolTip": "..\\8-Database\\CarLease\\CarLeaseRepository.cs",
+              "ViewState": "AQIAAKwAAAAAAAAAAAAYwIIAAACSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "LeaveBalance.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\6-Model\\Phonix.Model.Business\\LeaveManagement\\LeaveBalance.cs",
+              "RelativeDocumentMoniker": "..\\6-Model\\Phonix.Model.Business\\LeaveManagement\\LeaveBalance.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\6-Model\\Phonix.Model.Business\\LeaveManagement\\LeaveBalance.cs",
+              "RelativeToolTip": "..\\6-Model\\Phonix.Model.Business\\LeaveManagement\\LeaveBalance.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.919Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "LeaveEntitlementReport.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\6-Model\\Phonix.Model.Business\\LeaveManagement\\LeaveEntitlementReport.cs",
+              "RelativeDocumentMoniker": "..\\6-Model\\Phonix.Model.Business\\LeaveManagement\\LeaveEntitlementReport.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\6-Model\\Phonix.Model.Business\\LeaveManagement\\LeaveEntitlementReport.cs",
+              "RelativeToolTip": "..\\6-Model\\Phonix.Model.Business\\LeaveManagement\\LeaveEntitlementReport.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAgAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "PayrollPeriodRepository.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-Database\\Masters\\PayrollPeriodRepository.cs",
+              "RelativeDocumentMoniker": "..\\8-Database\\Masters\\PayrollPeriodRepository.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-Database\\Masters\\PayrollPeriodRepository.cs",
+              "RelativeToolTip": "..\\8-Database\\Masters\\PayrollPeriodRepository.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAcwCoAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ReportsController.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Controllers\\LeaveManagementReports\\ReportsController.cs",
+              "RelativeDocumentMoniker": "..\\1-Web\\Phoenix.Web.Service\\Controllers\\LeaveManagementReports\\ReportsController.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Controllers\\LeaveManagementReports\\ReportsController.cs",
+              "RelativeToolTip": "..\\1-Web\\Phoenix.Web.Service\\Controllers\\LeaveManagementReports\\ReportsController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "LeaveEntitlementRepository.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-Database\\LeaveManagement\\LeaveEntitlementRepository.cs",
+              "RelativeDocumentMoniker": "..\\8-Database\\LeaveManagement\\LeaveEntitlementRepository.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-Database\\LeaveManagement\\LeaveEntitlementRepository.cs",
+              "RelativeToolTip": "..\\8-Database\\LeaveManagement\\LeaveEntitlementRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "EmployeeLeave.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\6-Model\\Phonix.Model.Business\\LeaveManagement\\EmployeeLeave.cs",
+              "RelativeDocumentMoniker": "..\\6-Model\\Phonix.Model.Business\\LeaveManagement\\EmployeeLeave.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\6-Model\\Phonix.Model.Business\\LeaveManagement\\EmployeeLeave.cs",
+              "RelativeToolTip": "..\\6-Model\\Phonix.Model.Business\\LeaveManagement\\EmployeeLeave.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "EmailNotificationService.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\9-Jobs\\Phoenix.Console.Job\\Email\\EmailNotificationService.cs",
+              "RelativeDocumentMoniker": "..\\9-Jobs\\Phoenix.Console.Job\\Email\\EmailNotificationService.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\9-Jobs\\Phoenix.Console.Job\\Email\\EmailNotificationService.cs",
+              "RelativeToolTip": "..\\9-Jobs\\Phoenix.Console.Job\\Email\\EmailNotificationService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "IEmployeeInformationApplication.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\2-Application\\EmployeeInformation\\Interfaces\\IEmployeeInformationApplication.cs",
+              "RelativeDocumentMoniker": "..\\2-Application\\EmployeeInformation\\Interfaces\\IEmployeeInformationApplication.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\2-Application\\EmployeeInformation\\Interfaces\\IEmployeeInformationApplication.cs",
+              "RelativeToolTip": "..\\2-Application\\EmployeeInformation\\Interfaces\\IEmployeeInformationApplication.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "EmailNotificationService.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\HostedService\\EmailNotificationService.cs",
+              "RelativeDocumentMoniker": "..\\1-Web\\Phoenix.Web.Service\\HostedService\\EmailNotificationService.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\HostedService\\EmailNotificationService.cs",
+              "RelativeToolTip": "..\\1-Web\\Phoenix.Web.Service\\HostedService\\EmailNotificationService.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAowF4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "LeaveInformationValidator.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\6-Model\\Phoenix.Model.Business.Validator\\LeaveManagement\\LeaveInformationValidator.cs",
+              "RelativeDocumentMoniker": "..\\6-Model\\Phoenix.Model.Business.Validator\\LeaveManagement\\LeaveInformationValidator.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\6-Model\\Phoenix.Model.Business.Validator\\LeaveManagement\\LeaveInformationValidator.cs",
+              "RelativeToolTip": "..\\6-Model\\Phoenix.Model.Business.Validator\\LeaveManagement\\LeaveInformationValidator.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAIAwwCIAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "HolidayInformation.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\6-Model\\Phonix.Model.Business\\Attendance\\HolidayInformation.cs",
+              "RelativeDocumentMoniker": "..\\6-Model\\Phonix.Model.Business\\Attendance\\HolidayInformation.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\6-Model\\Phonix.Model.Business\\Attendance\\HolidayInformation.cs",
+              "RelativeToolTip": "..\\6-Model\\Phonix.Model.Business\\Attendance\\HolidayInformation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "BioMetricRepository.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-Database\\Attendance\\BioMetricRepository.cs",
+              "RelativeDocumentMoniker": "..\\8-Database\\Attendance\\BioMetricRepository.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-Database\\Attendance\\BioMetricRepository.cs",
+              "RelativeToolTip": "..\\8-Database\\Attendance\\BioMetricRepository.cs",
+              "ViewState": "AQIAAJIAAAAAAAAAAIA9wKIAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "SiteNotificationController.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Controllers\\SiteNotification\\SiteNotificationController.cs",
+              "RelativeDocumentMoniker": "..\\1-Web\\Phoenix.Web.Service\\Controllers\\SiteNotification\\SiteNotificationController.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Controllers\\SiteNotification\\SiteNotificationController.cs",
+              "RelativeToolTip": "..\\1-Web\\Phoenix.Web.Service\\Controllers\\SiteNotification\\SiteNotificationController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "SiteNotificationDetails.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\6-Model\\Phonix.Model.Business\\SiteNotification\\SiteNotificationDetails.cs",
+              "RelativeDocumentMoniker": "..\\6-Model\\Phonix.Model.Business\\SiteNotification\\SiteNotificationDetails.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\6-Model\\Phonix.Model.Business\\SiteNotification\\SiteNotificationDetails.cs",
+              "RelativeToolTip": "..\\6-Model\\Phonix.Model.Business\\SiteNotification\\SiteNotificationDetails.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "SiteNotificationRespository.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-Database\\SiteNotificaton\\SiteNotificationRespository.cs",
+              "RelativeDocumentMoniker": "..\\8-Database\\SiteNotificaton\\SiteNotificationRespository.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-Database\\SiteNotificaton\\SiteNotificationRespository.cs",
+              "RelativeToolTip": "..\\8-Database\\SiteNotificaton\\SiteNotificationRespository.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACkAAABbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "EmployeeInformationApplication.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\2-Application\\EmployeeInformation\\Implementations\\EmployeeInformationApplication.cs",
+              "RelativeDocumentMoniker": "..\\2-Application\\EmployeeInformation\\Implementations\\EmployeeInformationApplication.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\2-Application\\EmployeeInformation\\Implementations\\EmployeeInformationApplication.cs",
+              "RelativeToolTip": "..\\2-Application\\EmployeeInformation\\Implementations\\EmployeeInformationApplication.cs",
+              "ViewState": "AQIAAKAAAAAAAAAAAAAAwMcAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "IEmployeeInformationDomain.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\3-Domain\\EmployeeInformation\\Interfaces\\IEmployeeInformationDomain.cs",
+              "RelativeDocumentMoniker": "..\\3-Domain\\EmployeeInformation\\Interfaces\\IEmployeeInformationDomain.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\3-Domain\\EmployeeInformation\\Interfaces\\IEmployeeInformationDomain.cs",
+              "RelativeToolTip": "..\\3-Domain\\EmployeeInformation\\Interfaces\\IEmployeeInformationDomain.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAzwCoAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "EmployeeInformationDomain.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\3-Domain\\EmployeeInformation\\Implementations\\EmployeeInformationDomain.cs",
+              "RelativeDocumentMoniker": "..\\3-Domain\\EmployeeInformation\\Implementations\\EmployeeInformationDomain.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\3-Domain\\EmployeeInformation\\Implementations\\EmployeeInformationDomain.cs",
+              "RelativeToolTip": "..\\3-Domain\\EmployeeInformation\\Implementations\\EmployeeInformationDomain.cs",
+              "ViewState": "AQIAAAMBAAAAAAAAAAAYwCQBAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "EmployeeInformationController.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Controllers\\EmplpoyeeInformation\\EmployeeInformationController.cs",
+              "RelativeDocumentMoniker": "..\\1-Web\\Phoenix.Web.Service\\Controllers\\EmplpoyeeInformation\\EmployeeInformationController.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Controllers\\EmplpoyeeInformation\\EmployeeInformationController.cs",
+              "RelativeToolTip": "..\\1-Web\\Phoenix.Web.Service\\Controllers\\EmplpoyeeInformation\\EmployeeInformationController.cs",
+              "ViewState": "AQIAABwBAAAAAAAAAAAqwDIBAABkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "IEmployeePerformanceReviewApplication.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\2-Application\\PMS\\Interfaces\\IEmployeePerformanceReviewApplication.cs",
+              "RelativeDocumentMoniker": "..\\2-Application\\PMS\\Interfaces\\IEmployeePerformanceReviewApplication.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\2-Application\\PMS\\Interfaces\\IEmployeePerformanceReviewApplication.cs",
+              "RelativeToolTip": "..\\2-Application\\PMS\\Interfaces\\IEmployeePerformanceReviewApplication.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAB2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "EmployeePerformanceReviewController.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Controllers\\PerformanceManagement\\EmployeePerformanceReviewController.cs",
+              "RelativeDocumentMoniker": "..\\1-Web\\Phoenix.Web.Service\\Controllers\\PerformanceManagement\\EmployeePerformanceReviewController.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Controllers\\PerformanceManagement\\EmployeePerformanceReviewController.cs",
+              "RelativeToolTip": "..\\1-Web\\Phoenix.Web.Service\\Controllers\\PerformanceManagement\\EmployeePerformanceReviewController.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAwEgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "EmployeePerformanceReviewRepositry.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-Database\\PMS\\EmployeePerformanceReviewRepositry.cs",
+              "RelativeDocumentMoniker": "..\\8-Database\\PMS\\EmployeePerformanceReviewRepositry.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-Database\\PMS\\EmployeePerformanceReviewRepositry.cs",
+              "RelativeToolTip": "..\\8-Database\\PMS\\EmployeePerformanceReviewRepositry.cs",
+              "ViewState": "AQIAAJQAAAAAAAAAAIA4wKQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "IEmployeePerformanceReviewDomain.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\3-Domain\\PMS\\Interfaces\\IEmployeePerformanceReviewDomain.cs",
+              "RelativeDocumentMoniker": "..\\3-Domain\\PMS\\Interfaces\\IEmployeePerformanceReviewDomain.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\3-Domain\\PMS\\Interfaces\\IEmployeePerformanceReviewDomain.cs",
+              "RelativeToolTip": "..\\3-Domain\\PMS\\Interfaces\\IEmployeePerformanceReviewDomain.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAB1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "EmployeePerformanceReviewDomain.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\3-Domain\\PMS\\Implementations\\EmployeePerformanceReviewDomain.cs",
+              "RelativeDocumentMoniker": "..\\3-Domain\\PMS\\Implementations\\EmployeePerformanceReviewDomain.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\3-Domain\\PMS\\Implementations\\EmployeePerformanceReviewDomain.cs",
+              "RelativeToolTip": "..\\3-Domain\\PMS\\Implementations\\EmployeePerformanceReviewDomain.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAmwGIAAACDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.943Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "EmployeeReviewInformation.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\6-Model\\Phonix.Model.Business\\PMS\\EmployeeReviewInformation.cs",
+              "RelativeDocumentMoniker": "..\\6-Model\\Phonix.Model.Business\\PMS\\EmployeeReviewInformation.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\6-Model\\Phonix.Model.Business\\PMS\\EmployeeReviewInformation.cs",
+              "RelativeToolTip": "..\\6-Model\\Phonix.Model.Business\\PMS\\EmployeeReviewInformation.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAA7wC8AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.943Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "EmployeePerformanceReviewApplication.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\2-Application\\PMS\\Implementations\\EmployeePerformanceReviewApplication.cs",
+              "RelativeDocumentMoniker": "..\\2-Application\\PMS\\Implementations\\EmployeePerformanceReviewApplication.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\2-Application\\PMS\\Implementations\\EmployeePerformanceReviewApplication.cs",
+              "RelativeToolTip": "..\\2-Application\\PMS\\Implementations\\EmployeePerformanceReviewApplication.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAwwDYAAACDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "IUserInformationApplication.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\2-Application\\Administration\\Interfaces\\IUserInformationApplication.cs",
+              "RelativeDocumentMoniker": "..\\2-Application\\Administration\\Interfaces\\IUserInformationApplication.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\2-Application\\Administration\\Interfaces\\IUserInformationApplication.cs",
+              "RelativeToolTip": "..\\2-Application\\Administration\\Interfaces\\IUserInformationApplication.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAWwBEAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "UserInformationController.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Controllers\\Administration\\UserInformationController.cs",
+              "RelativeDocumentMoniker": "..\\1-Web\\Phoenix.Web.Service\\Controllers\\Administration\\UserInformationController.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Controllers\\Administration\\UserInformationController.cs",
+              "RelativeToolTip": "..\\1-Web\\Phoenix.Web.Service\\Controllers\\Administration\\UserInformationController.cs",
+              "ViewState": "AQIAAFwAAAAAAAAAAAD4v2kAAABfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "RoleInformationController.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Controllers\\Administration\\RoleInformationController.cs",
+              "RelativeDocumentMoniker": "..\\1-Web\\Phoenix.Web.Service\\Controllers\\Administration\\RoleInformationController.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Controllers\\Administration\\RoleInformationController.cs",
+              "RelativeToolTip": "..\\1-Web\\Phoenix.Web.Service\\Controllers\\Administration\\RoleInformationController.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "AssignKRAController.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Controllers\\PerformanceManagement\\AssignKRAController.cs",
+              "RelativeDocumentMoniker": "..\\1-Web\\Phoenix.Web.Service\\Controllers\\PerformanceManagement\\AssignKRAController.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Controllers\\PerformanceManagement\\AssignKRAController.cs",
+              "RelativeToolTip": "..\\1-Web\\Phoenix.Web.Service\\Controllers\\PerformanceManagement\\AssignKRAController.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAIwCkAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "AssignKRAtoEmployeeRepositry.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-Database\\PMS\\AssignKRAtoEmployeeRepositry.cs",
+              "RelativeDocumentMoniker": "..\\8-Database\\PMS\\AssignKRAtoEmployeeRepositry.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-Database\\PMS\\AssignKRAtoEmployeeRepositry.cs",
+              "RelativeToolTip": "..\\8-Database\\PMS\\AssignKRAtoEmployeeRepositry.cs",
+              "ViewState": "AQIAAL0AAAAAAAAAAAAWwMcAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "RoleInformationRepository.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-Database\\Administration\\RoleInformationRepository.cs",
+              "RelativeDocumentMoniker": "..\\8-Database\\Administration\\RoleInformationRepository.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-Database\\Administration\\RoleInformationRepository.cs",
+              "RelativeToolTip": "..\\8-Database\\Administration\\RoleInformationRepository.cs",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAWwHEAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "KraInformationRepositry.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-Database\\PMS\\KraInformationRepositry.cs",
+              "RelativeDocumentMoniker": "..\\8-Database\\PMS\\KraInformationRepositry.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\8-Database\\PMS\\KraInformationRepositry.cs",
+              "RelativeToolTip": "..\\8-Database\\PMS\\KraInformationRepositry.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAA8wGwAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "IKraInformationDomain.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\3-Domain\\PMS\\Interfaces\\IKraInformationDomain.cs",
+              "RelativeDocumentMoniker": "..\\3-Domain\\PMS\\Interfaces\\IKraInformationDomain.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\3-Domain\\PMS\\Interfaces\\IKraInformationDomain.cs",
+              "RelativeToolTip": "..\\3-Domain\\PMS\\Interfaces\\IKraInformationDomain.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAowBQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "KraInformationDomain.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\3-Domain\\PMS\\Implementations\\KraInformationDomain.cs",
+              "RelativeDocumentMoniker": "..\\3-Domain\\PMS\\Implementations\\KraInformationDomain.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\3-Domain\\PMS\\Implementations\\KraInformationDomain.cs",
+              "RelativeToolTip": "..\\3-Domain\\PMS\\Implementations\\KraInformationDomain.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAewEsAAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "KraInformationApplication.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\2-Application\\PMS\\Implementations\\KraInformationApplication.cs",
+              "RelativeDocumentMoniker": "..\\2-Application\\PMS\\Implementations\\KraInformationApplication.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\2-Application\\PMS\\Implementations\\KraInformationApplication.cs",
+              "RelativeToolTip": "..\\2-Application\\PMS\\Implementations\\KraInformationApplication.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAuwDMAAABZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "KraInformation.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\6-Model\\Phonix.Model.Business\\PMS\\KraInformation.cs",
+              "RelativeDocumentMoniker": "..\\6-Model\\Phonix.Model.Business\\PMS\\KraInformation.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\6-Model\\Phonix.Model.Business\\PMS\\KraInformation.cs",
+              "RelativeToolTip": "..\\6-Model\\Phonix.Model.Business\\PMS\\KraInformation.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAUwBMAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "KraInformationController.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Controllers\\PerformanceManagement\\KraInformationController.cs",
+              "RelativeDocumentMoniker": "..\\1-Web\\Phoenix.Web.Service\\Controllers\\PerformanceManagement\\KraInformationController.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Controllers\\PerformanceManagement\\KraInformationController.cs",
+              "RelativeToolTip": "..\\1-Web\\Phoenix.Web.Service\\Controllers\\PerformanceManagement\\KraInformationController.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAwwDsAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "IKraInformationApplication.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\2-Application\\PMS\\Interfaces\\IKraInformationApplication.cs",
+              "RelativeDocumentMoniker": "..\\2-Application\\PMS\\Interfaces\\IKraInformationApplication.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\2-Application\\PMS\\Interfaces\\IKraInformationApplication.cs",
+              "RelativeToolTip": "..\\2-Application\\PMS\\Interfaces\\IKraInformationApplication.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "IAssignKRADomain.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\3-Domain\\PMS\\Interfaces\\IAssignKRADomain.cs",
+              "RelativeDocumentMoniker": "..\\3-Domain\\PMS\\Interfaces\\IAssignKRADomain.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\3-Domain\\PMS\\Interfaces\\IAssignKRADomain.cs",
+              "RelativeToolTip": "..\\3-Domain\\PMS\\Interfaces\\IAssignKRADomain.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "IAssignKRAApplication.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\2-Application\\PMS\\Interfaces\\IAssignKRAApplication.cs",
+              "RelativeDocumentMoniker": "..\\2-Application\\PMS\\Interfaces\\IAssignKRAApplication.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\2-Application\\PMS\\Interfaces\\IAssignKRAApplication.cs",
+              "RelativeToolTip": "..\\2-Application\\PMS\\Interfaces\\IAssignKRAApplication.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "PerformanceManagement.resx",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Resources\\PerformanceManagement.resx",
+              "RelativeDocumentMoniker": "..\\5-CrossCutting\\Phoenix.CrossCutting.Resources\\PerformanceManagement.resx",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Resources\\PerformanceManagement.resx",
+              "RelativeToolTip": "..\\5-CrossCutting\\Phoenix.CrossCutting.Resources\\PerformanceManagement.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-03-10T10:45:44.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "AssignKRADomain.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\3-Domain\\PMS\\Implementations\\AssignKRADomain.cs",
+              "RelativeDocumentMoniker": "..\\3-Domain\\PMS\\Implementations\\AssignKRADomain.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\3-Domain\\PMS\\Implementations\\AssignKRADomain.cs",
+              "RelativeToolTip": "..\\3-Domain\\PMS\\Implementations\\AssignKRADomain.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAgwCsAAAB3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "AssignKRAApplication.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\2-Application\\PMS\\Implementations\\AssignKRAApplication.cs",
+              "RelativeDocumentMoniker": "..\\2-Application\\PMS\\Implementations\\AssignKRAApplication.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\2-Application\\PMS\\Implementations\\AssignKRAApplication.cs",
+              "RelativeToolTip": "..\\2-Application\\PMS\\Implementations\\AssignKRAApplication.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwCEAAACHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "KpiInformationController.cs",
+              "DocumentMoniker": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Controllers\\PerformanceManagement\\KpiInformationController.cs",
+              "RelativeDocumentMoniker": "..\\1-Web\\Phoenix.Web.Service\\Controllers\\PerformanceManagement\\KpiInformationController.cs",
+              "ToolTip": "F:\\Work\\Office\\Projects\\Portal\\HRMS_API\\1-Web\\Phoenix.Web.Service\\Controllers\\PerformanceManagement\\KpiInformationController.cs",
+              "RelativeToolTip": "..\\1-Web\\Phoenix.Web.Service\\Controllers\\PerformanceManagement\\KpiInformationController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T10:45:44.957Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

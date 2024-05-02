@@ -1,0 +1,17 @@
+D:\Projects\Nspira\HRMS\API\4-Model\Business\Phonix.Model.Business\bin\Release\net6.0\Phonix.Model.Business.deps.json
+D:\Projects\Nspira\HRMS\API\4-Model\Business\Phonix.Model.Business\bin\Release\net6.0\Phonix.Model.Business.dll
+D:\Projects\Nspira\HRMS\API\4-Model\Business\Phonix.Model.Business\bin\Release\net6.0\Phonix.Model.Business.pdb
+D:\Projects\Nspira\HRMS\API\4-Model\Business\Phonix.Model.Business\bin\Release\net6.0\Phoenix.CrossCutting.Extension.dll
+D:\Projects\Nspira\HRMS\API\4-Model\Business\Phonix.Model.Business\bin\Release\net6.0\Phoenix.Infrastructure.BusinessModel.dll
+D:\Projects\Nspira\HRMS\API\4-Model\Business\Phonix.Model.Business\bin\Release\net6.0\Phoenix.Infrastructure.BusinessModel.pdb
+D:\Projects\Nspira\HRMS\API\4-Model\Business\Phonix.Model.Business\bin\Release\net6.0\Phoenix.CrossCutting.Extension.pdb
+D:\Projects\Nspira\HRMS\API\4-Model\Business\Phonix.Model.Business\obj\Release\net6.0\Phonix.Model.Business.csproj.AssemblyReference.cache
+D:\Projects\Nspira\HRMS\API\4-Model\Business\Phonix.Model.Business\obj\Release\net6.0\Phonix.Model.Business.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Nspira\HRMS\API\4-Model\Business\Phonix.Model.Business\obj\Release\net6.0\Phonix.Model.Business.AssemblyInfoInputs.cache
+D:\Projects\Nspira\HRMS\API\4-Model\Business\Phonix.Model.Business\obj\Release\net6.0\Phonix.Model.Business.AssemblyInfo.cs
+D:\Projects\Nspira\HRMS\API\4-Model\Business\Phonix.Model.Business\obj\Release\net6.0\Phonix.Model.Business.csproj.CoreCompileInputs.cache
+D:\Projects\Nspira\HRMS\API\4-Model\Business\Phonix.Model.Business\obj\Release\net6.0\Phonix.Model.Business.csproj.CopyComplete
+D:\Projects\Nspira\HRMS\API\4-Model\Business\Phonix.Model.Business\obj\Release\net6.0\Phonix.Model.Business.dll
+D:\Projects\Nspira\HRMS\API\4-Model\Business\Phonix.Model.Business\obj\Release\net6.0\refint\Phonix.Model.Business.dll
+D:\Projects\Nspira\HRMS\API\4-Model\Business\Phonix.Model.Business\obj\Release\net6.0\Phonix.Model.Business.pdb
+D:\Projects\Nspira\HRMS\API\4-Model\Business\Phonix.Model.Business\obj\Release\net6.0\ref\Phonix.Model.Business.dll

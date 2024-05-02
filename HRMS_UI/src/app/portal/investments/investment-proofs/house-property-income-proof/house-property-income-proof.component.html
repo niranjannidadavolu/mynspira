@@ -1,0 +1,83 @@
+<form [formGroup]="housePropertyForm">
+    <div formArrayName="HousePropertyIncomeDetails">
+        <div class=" table-responsive col-lg-12">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Particulars</th>
+                        <th>Lender PAN </th>
+                        <th>Amount</th>
+                        <th>Proposed Amount</th>
+                        <th>Is Verified</th>
+                        <th>Verfied PAN</th>
+                        <th>Verified Name</th>
+                        <th>Remarks</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let caserow of HousePropertyIncomeDetails.controls; let index=index"
+                        [formGroupName]="index">
+                        <td>
+                            <input class="form-control" type="text" formControlName="Description"
+                                placeholder="Particulars" id="hparticulars_{{index}}" name="hparticulars_{{index}}">
+                        </td>
+                        <td width="18%">
+                            <div class="input-group">
+                                <input class="form-control" maxlength="12" type="text" placeholder="Lender Pan"
+                                    formControlName="PanNumber" id="PanNumber_{{index}}" name="PanNumber_{{index}}"
+                                    [ngClass]="{ 'is-invalid': caserow.get('PanNumber')?.invalid && (caserow.get('PanNumber')?.dirty || caserow.get('PanNumber')?.touched) }">
+                                <button type="button" class="btn btn-primary waves-effect waves-light"
+                                    (click)="verifyPanCard(index, caserow)" *ngIf="isVerify">Verify</button>
+                            </div>
+                            <div *ngIf="caserow.get('PanNumber')?.invalid && (caserow.get('PanNumber')?.dirty
+                                || caserow.get('PanNumber')?.touched)  " class="invalid-feedback">Please provide pan
+                                number.
+                            </div>
+                        </td>
+                        <td width="10%"><input class="form-control" maxlength="10" type="number" placeholder="Amount"
+                                formControlName="Amount" id="Amount_{{index}}" name="Amount_{{index}}"
+                                [ngClass]="{ 'is-invalid': caserow.get('Amount')?.invalid && (caserow.get('Amount')?.dirty || caserow.get('Amount')?.touched) }">
+                            <div *ngIf="caserow.get('Amount')?.invalid && (caserow.get('Amount')?.dirty
+                            || caserow.get('Amount')?.touched)  " class="invalid-feedback">Please provide amount.
+                            </div>
+                        </td>
+                        <td width="10%">
+                            <input maxlength="10" class="form-control" type="text" id="VerifiedAmount_{{index}}"
+                                name="VerifiedAmount_{{index}}" formControlName="VerifiedAmount">
+                        </td>
+                        <td width="10%">
+                            <input class="form-control col-md-4" type="text" id="IsPanVerified_{{index}}"
+                                name="IsPanVerified_{{index}}" formControlName="IsPanVerified">
+                        </td>
+
+                        <td width="10%">
+                            <input class="form-control col-md-4" type="text" id="VerifiedPan_{{index}}"
+                                name="VerifiedPan_{{index}}" formControlName="VerifiedPan">
+                        </td>
+
+                        <td width="10%">
+                            <input class="form-control col-md-4" type="text" id="VerifiedName_{{index}}"
+                                name="VerifiedName_{{index}}" formControlName="VerifiedName">
+                        </td>
+                        <td width="13%">
+                            <input class="form-control col-md-4" type="text" id="VerifiedRemarks_{{index}}"
+                                name="VerifiedRemarks_{{index}}" formControlName="VerifiedRemarks">
+                        </td>
+                        <td>
+                            <button type="button" id="page-header-cart-dropdown" *ngIf="isVerify"
+                                class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle ml-1"
+                                (click)="viewAttachments(caserow)">
+                                <i _ngcontent-fsy-c552="" class="las la-eye fs-22"></i>
+                                <span *ngIf="caserow.get('FileCount')?.value>0"
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+                                    {{caserow.get('FileCount')?.value}}
+                                </span>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</form>

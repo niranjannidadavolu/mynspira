@@ -1,0 +1,179 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName></SccProjectName>
+    <SccProvider></SccProvider>
+    <SccAuxPath></SccAuxPath>
+    <SccLocalPath></SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+    <UserSecretsId>b629106b-c107-4a92-9bea-b80a7374cc7b</UserSecretsId>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <CodeAnalysisRuleSet>Phoenix.Web.Service.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <CodeAnalysisRuleSet>Phoenix.Web.Service.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\Billing\**" />
+    <Compile Remove="Controllers\Candidate\**" />
+    <Compile Remove="Controllers\Common\**" />
+    <Compile Remove="Controllers\Customer\**" />
+    <Compile Remove="Controllers\Job\**" />
+    <Compile Remove="Controllers\Master\**" />
+    <Compile Remove="Controllers\Messaging\**" />
+    <Compile Remove="Controllers\PMS\**" />
+    <Compile Remove="Controllers\PureMaster\**" />
+    <Compile Remove="Controllers\Questionnaire\**" />
+    <Compile Remove="Controllers\Stock\**" />
+    <Content Remove="Controllers\Billing\**" />
+    <Content Remove="Controllers\Candidate\**" />
+    <Content Remove="Controllers\Common\**" />
+    <Content Remove="Controllers\Customer\**" />
+    <Content Remove="Controllers\Job\**" />
+    <Content Remove="Controllers\Master\**" />
+    <Content Remove="Controllers\Messaging\**" />
+    <Content Remove="Controllers\PMS\**" />
+    <Content Remove="Controllers\PureMaster\**" />
+    <Content Remove="Controllers\Questionnaire\**" />
+    <Content Remove="Controllers\Stock\**" />
+    <EmbeddedResource Remove="Controllers\Billing\**" />
+    <EmbeddedResource Remove="Controllers\Candidate\**" />
+    <EmbeddedResource Remove="Controllers\Common\**" />
+    <EmbeddedResource Remove="Controllers\Customer\**" />
+    <EmbeddedResource Remove="Controllers\Job\**" />
+    <EmbeddedResource Remove="Controllers\Master\**" />
+    <EmbeddedResource Remove="Controllers\Messaging\**" />
+    <EmbeddedResource Remove="Controllers\PMS\**" />
+    <EmbeddedResource Remove="Controllers\PureMaster\**" />
+    <EmbeddedResource Remove="Controllers\Questionnaire\**" />
+    <EmbeddedResource Remove="Controllers\Stock\**" />
+    <None Remove="Controllers\Billing\**" />
+    <None Remove="Controllers\Candidate\**" />
+    <None Remove="Controllers\Common\**" />
+    <None Remove="Controllers\Customer\**" />
+    <None Remove="Controllers\Job\**" />
+    <None Remove="Controllers\Master\**" />
+    <None Remove="Controllers\Messaging\**" />
+    <None Remove="Controllers\PMS\**" />
+    <None Remove="Controllers\PureMaster\**" />
+    <None Remove="Controllers\Questionnaire\**" />
+    <None Remove="Controllers\Stock\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="nlog.config" />
+  </ItemGroup>
+
+  <ItemGroup>   
+    <PackageReference Include="AspNetCore.HealthChecks.UI" Version="7.0.2" />   
+    <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="3.7.7" />   
+    <PackageReference Include="AWSSDK.S3" Version="3.7.104.16" />   
+    <PackageReference Include="AWSSDK.SimpleEmail" Version="3.7.200.14" />   
+    <PackageReference Include="ClosedXML.Report" Version="0.2.1" />   
+    <PackageReference Include="Cronos" Version="0.7.1" />   
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />   
+    <PackageReference Include="Hangfire.LiteDB" Version="0.4.1" />   
+    <PackageReference Include="iTextSharp.LGPLv2.Core" Version="3.4.3" />   
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.8" />   
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Core" Version="1.1.0" />    
+    <PackageReference Include="Microsoft.Extensions.Caching.Redis" Version="2.2.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
+    <PackageReference Include="NETCore.MailKit" Version="2.1.0" />  
+    <PackageReference Include="NHibernate" Version="5.3.12" />  
+    <PackageReference Include="RoslynSecurityGuard" Version="2.3.0" />
+    <PackageReference Include="SonarAnalyzer.CSharp" Version="8.44.0.52574">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore.Newtonsoft" Version="6.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.4.0" />
+	<PackageReference Include="MimeMapping" Version="1.0.1.37" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="nlog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.Development.json">
+      <DependentUpon>appsettings.json</DependentUpon>
+    </None>
+    <None Update="appsettings.Staging.json">
+      <DependentUpon>appsettings.json</DependentUpon>
+    </None>
+    <None Update="appsettings.Production.json">
+      <DependentUpon>appsettings.json</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Helper\PermissionHandler.cs" />
+    <Compile Remove="Helper\PermissionRequirement.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Controllers\Payslips\PayslipEmp.rdlc" />
+    <None Remove="Controllers\Payslips\PayslipNES.rdlc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Remove="D:\Projects\Nspira\Portal\HRMS_API\Solutions\stylecop.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Remove="D:\Projects\Nspira\Portal\HRMS_API\Solutions\stylecop.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <AdditionalFiles Include="$(SolutionDir)stylecop.json" Link="stylecop.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="StyleCopeRules.ruleset">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\AppointmentLetters\NELT.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\AppointmentLetters\NES.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\AppointmentLetters\NET.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\AppointmentLetters\NSPIRA.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\Daily_Resigned_Employees_Report.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\2-Application\Phoenix.Application.csproj" />
+    <ProjectReference Include="..\..\4-Infrastructure\BusinessModel\Phoenix.Infrastructure.BusinessModel.csproj" />
+    <ProjectReference Include="..\..\5-CrossCutting\Phoenix.CrossCutting.AppException\Phoenix.CrossCutting.AppException.csproj" />
+    <ProjectReference Include="..\..\5-CrossCutting\Phoenix.CrossCutting.AspNetCore\Phoenix.CrossCutting.AspNetCore.csproj" />
+    <ProjectReference Include="..\..\5-CrossCutting\Phoenix.CrossCutting.DependencyInjection\Phoenix.CrossCutting.DependencyInjection.csproj" />
+    <ProjectReference Include="..\..\5-CrossCutting\Phoenix.CrossCutting.Helper.Cron\Phoenix.CrossCutting.Helper.Cron.csproj" />
+    <ProjectReference Include="..\..\5-CrossCutting\Phoenix.CrossCutting.Helper\Phoenix.CrossCutting.Helper.csproj" />
+    <ProjectReference Include="..\..\5-CrossCutting\Phoenix.CrossCutting.Logging\Phoenix.CrossCutting.Logging.csproj" />
+    <ProjectReference Include="..\..\5-CrossCutting\Phoenix.CrossCutting.Security\Phoenix.CrossCutting.Security.csproj" />
+    <ProjectReference Include="..\..\5-CrossCutting\Phoenix.CrossCutting.Utils\Phoenix.CrossCutting.Utils.csproj" />
+    <ProjectReference Include="..\..\6-Model\Phoenix.Model.Business.SearchCriteria\Phoenix.Model.Business.SearchCriteria.csproj" />
+    <ProjectReference Include="..\..\6-Model\Phoenix.Model.Business.Validator\Phoenix.Model.Business.Validator.csproj" />
+    <ProjectReference Include="..\..\6-Model\Phonix.Model.Business\Phoenix.Model.Business.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\PublishProfiles\" />
+  </ItemGroup>
+</Project>

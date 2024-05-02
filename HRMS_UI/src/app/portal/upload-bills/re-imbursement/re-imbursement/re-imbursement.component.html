@@ -1,0 +1,127 @@
+<app-breadcrumbs title="Re-Imbursement" [breadcrumbItems]="breadCrumbItems"></app-breadcrumbs>
+<div class="row justify-content-center" *ngIf="profile">
+    <div class="position-relative mx-n2 mt-n4">
+        <div class="profile-wid-bg profile-setting-img">
+            <img src="assets/images/profile-bg.jpg" class="profile-wid-img" alt="">
+        </div>
+    </div>
+    <div class="row justify-content-center p-0">
+        <div class="col-lg-12 col-md-12 col-xl-12 col-xxl-12">
+            <div class="card mt-xxl-n5 mt-lg-n6 mt-md-n5 mt-xl-n5">
+                <div class="card-header">
+                </div>
+                <div class="card-body p-2">
+                    <!-- <div class="col-md-12">
+                        <div class="col-md-12"> -->
+                    <div class="row justify-content-center">
+                        <div class="row justify-content-center p-0">
+                            <div class="row p-0">
+                                <div class="col-sm-6 text-start mt-2 fs-0">
+                                    <strong>Eligible Amount</strong>
+                                </div>
+                                <div class="col-sm-6 text-end">
+                                    <button class="btn btn-info btn-sm mb-2" (click)="getApprovedBills()">
+                                        <i class="ri-refresh-line me-2"></i> Refresh
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row p-0">
+                                <div>
+                                    <ejs-grid [dataSource]='approvedBills' [allowSorting]='true' [enableHover]='true'
+                                        gridLines='Both' [enableHeaderFocus]='true' [filterSettings]='filterSettings'
+                                        [allowFiltering]='true'>
+                                        <e-columns>
+                                            <e-column field='MonthName' headerText='Month Name' width='100'></e-column>
+                                            <e-column field='Amount' headerText='Eligible Amount' textAlign='right'
+                                                width='100' format='C2'></e-column>
+                                            <e-column field='Paid' headerText='Paid Amount' width='150'
+                                                textAlign='right' format='C2'>
+                                            </e-column>
+                                            <e-column field='Balance' headerText='Balance Amount' width='100'
+                                                textAlign='right' format='C2'></e-column>
+                                        </e-columns>
+                                        <e-aggregates>
+                                            <e-aggregate>
+                                                <e-columns>
+                                                    <e-column field="MonthName" type="count" format="NO">
+                                                        <ng-template #footerTemplate let-data>Count: {{
+                                                            data['MonthName-count'] }}</ng-template>
+                                                    </e-column>
+                                                    <e-column field="Amount" type="sum">
+                                                        <ng-template #footerTemplate let-data>{{data['Amount - sum'] |
+                                                            currency:'INR'}}</ng-template>
+                                                    </e-column>
+                                                    <e-column field="Paid" type="sum">
+                                                        <ng-template #footerTemplate let-data>{{data['Paid - sum'] |
+                                                            currency:'INR'}} </ng-template>
+                                                    </e-column>
+                                                    <e-column field="Balance" type="sum">
+                                                        <ng-template #footerTemplate let-data>{{data['Balance - sum'] |
+                                                            currency:'INR'}} </ng-template>
+                                                    </e-column>
+                                                </e-columns>
+                                            </e-aggregate>
+                                        </e-aggregates>
+                                    </ejs-grid>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-5 justify-content-center">
+                            <div class="row p-0">
+                                <div class="col-sm-6 text-start mt-2 fs-0">
+                                    <strong>Pending Bills</strong>
+                                </div>
+                                <div class="col-sm-6 text-end">
+                                    <button class="btn btn-success btn-sm mb-2 me-2" (click)="uploadNewBill()"
+                                        [disabled]="!enableUploadButton">
+                                        <i class="ri-bill-line me-2"></i> Upload New Bill
+                                    </button>
+                                    <button class="btn btn-info btn-sm mb-2" (click)="getApprovedBills()">
+                                        <i class="ri-refresh-line me-2"></i> Refresh
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row p-0">
+                                <div>
+                                    <ejs-grid [dataSource]='pendingBills' [allowSorting]='true' [enableHover]='true'
+                                        gridLines='Both' [enableHeaderFocus]='true' [filterSettings]='filterSettings'
+                                        [allowFiltering]='true'>
+                                        <e-columns>
+                                            <e-column field='BillDate' headerText='Bill Date' dataType="date"
+                                                width='120' format="dd-MMM-yyyy"></e-column>
+                                            <e-column field='BillNo' headerText='Bill No' width='120'></e-column>
+                                            <e-column field='Amount' headerText='Amount' textAlign='right' width='100'
+                                                [format]="inrCurrency"></e-column>
+                                            <e-column field='Status' headerText='Bill Status' width='100'></e-column>
+                                            <e-column field='FileName' headerText='File Name' width='100'></e-column>
+                                            <e-column field='Remarks' headerText='Remarks' width='150'></e-column>
+                                            <e-column [allowFiltering]='false' headerText='Actions' width='80'>
+                                                <ng-template #template let-data>
+                                                    <div class="d-flex align-items-center">
+                                                        <button type="button"
+                                                            class="btn btn-light position-relative p-0 avatar-xs rounded-circle"
+                                                            (click)="deleteSelectedBill(data)" title="Delete">
+                                                            <span class="avatar-title bg-transparent text-reset">
+                                                                <i class="ri-delete-bin-6-line text-danger fs-15"></i>
+                                                            </span>
+                                                        </button>
+                                                        <button type="button"
+                                                            class="btn btn-light position-relative p-0 avatar-xs rounded-circle"
+                                                            (click)="downloadFile(data)" title="Download File">
+                                                            <span class="avatar-title bg-transparent text-reset">
+                                                                <i class="dx-icon-download text-info fs-15"></i>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                </ng-template>
+                                            </e-column>
+                                        </e-columns>
+                                    </ejs-grid>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

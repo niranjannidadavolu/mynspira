@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
+  <ProjectName>Phoenix.Infrastructure.Database</ProjectName>
+  <ProjectLanguage>C#</ProjectLanguage>
+  <ProjectType>Product</ProjectType>
+  <ProjectGuid>a37efdc4-f3be-4550-b8b9-206ce081141e</ProjectGuid>
+  <FullPath>F:\Work\Office\Projects\Nspira\Portal\HRMS_API\4-Infrastructure\Database\Phoenix.Infrastructure.Database.csproj</FullPath>
+  <IsExcluded>false</IsExcluded>
+  <AnalysisResults />
+  <AnalysisSettings>
+    <Property Name="sonar.cs.roslyn.reportFilePaths">F:\Work\Office\Projects\Nspira\Portal\HRMS_API\Solutions\.sonarqube\out\16\Issues.json</Property>
+    <Property Name="sonar.cs.analyzer.projectOutPaths">F:\Work\Office\Projects\Nspira\Portal\HRMS_API\Solutions\.sonarqube\out\16</Property>
+  </AnalysisSettings>
+  <Configuration>Debug</Configuration>
+  <Platform>AnyCPU</Platform>
+  <TargetFramework>net6.0</TargetFramework>
+</ProjectInfo>

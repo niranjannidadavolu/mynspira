@@ -1,0 +1,36 @@
+<app-breadcrumbs title="Car Lease" [breadcrumbItems]="breadCrumbItems"></app-breadcrumbs>
+
+<div class="card col-lg-12">
+    <div class="card-header">
+        <ul ngbNav #customNav="ngbNav" [activeId]="1"
+            class="nav nav-tabs-custom rounded card-header-tabs border-bottom-0" role="tablist">
+            <li [ngbNavItem]="1" class="nav-item">
+                <a ngbNavLink class="nav-link" data-bs-toggle="tab" role="tab">
+                    <i class="fas fa-home"></i>
+                    Agreement Bills
+                </a>
+                <ng-template ngbNavContent>
+                    <div class="col-md-12">
+                        <app-agreement-bills></app-agreement-bills>
+                    </div>
+                </ng-template>
+            </li>
+            <li [ngbNavItem]="2" class="nav-item">
+                <a ngbNavLink class="nav-link" data-bs-toggle="tab" role="tab">
+                    <i class="fas fa-home"></i>
+                    Maintenance Bills
+                </a>
+                <ng-template ngbNavContent>
+                    <div class="col-md-12">
+                      <app-maintenance-bill></app-maintenance-bill>
+                    </div>
+                </ng-template>
+            </li>
+        </ul>
+    </div>
+    <div class="card-body p-2">
+        <div class="tab-content">
+            <div [ngbNavOutlet]="customNav"></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+<app-breadcrumbs title="APPROVALS" [breadcrumbItems]="breadCrumbItems"></app-breadcrumbs>
+<div class="row">
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-12 text-end mb-1">
+                <button id="btnSearch" class="btn btn-primary btn-md  me-2" [disabled]="selectedRowsCount <=0"
+                    (click)="ApproveLeaves()">Approve Selected Leaves</button>
+                <button id="btnClear" class="btn btn-danger btn-md" [disabled]="selectedRowsCount <=0"
+                    (click)="RejectLeaves()">Reject Selected Leaves</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 mt-2">
+        <ejs-grid #grid id='grid' [dataSource]='pendingLeaves' rowHeight='38' [allowSelection]='true'
+            [allowSorting]='true' showColumnChooser='true' [loadingIndicator]='loadingIndicator'
+            height='600' [enableHover]='true' [enableHeaderFocus]='true'
+            [selectionSettings]='selectionSettings' [filterSettings]='filterSettings' [allowSorting]='true'
+            [allowFiltering]='true' [enableVirtualization]='true' (toolbarClick)='toolbarClick($event)'>
+            <e-columns>
+                <e-column type='checkbox' [allowFiltering]='false' [allowSorting]='false' width='60'></e-column>
+                <e-column field='LeaveId' [visible]='false' headerText='Leave Id' width='130' [isPrimaryKey]='true'
+                    [showInColumnChooser]='false'></e-column>
+                <e-column field='EmployeeId' headerText='Global Id' clipMode='EllipsisWithTooltip'
+                    width='200'></e-column>
+                <e-column field='EmployeeNumber' headerText='Employee No.' clipMode='EllipsisWithTooltip'
+                    width='200'></e-column>
+                <e-column field='EmployeeName' headerText='Employee Name' clipMode='EllipsisWithTooltip'
+                    width='200'></e-column>
+                <e-column field='BranchName' headerText='Branch Name' clipMode='EllipsisWithTooltip'
+                    width='170'></e-column>
+                <e-column field='LeaveFrom' headerText='Leave From' type='date' width='150' format="dd-MM-yyyy"
+                    textAlign='Right'></e-column>
+                <e-column field='LeaveTo' headerText='Leave To' type='date' width='150' format="dd-MM-yyyy"
+                    textAlign='Right'></e-column>
+                <e-column field='LeaveTypeName' headerText='Leave Type' width='100'></e-column>
+                <e-column field='TotalDaysTaken' headerText='Total Days' width='100' textAlign='Right'></e-column>
+                <e-column field='Remarks' headerText="Remarks" width="250"></e-column>
+            </e-columns>
+        </ejs-grid>
+    </div>
+</div>

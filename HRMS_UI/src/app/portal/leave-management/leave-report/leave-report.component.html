@@ -1,0 +1,149 @@
+<!-- BreadCrumb add for dashboard-->
+<app-breadcrumbs title="Leave Adjustments" [breadcrumbItems]="breadCrumbItems"></app-breadcrumbs>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card-header align-items-center col-12">
+            <div class="row pt-3" [formGroup]="filterReportForm">
+                <div class="col-md-3">
+                    <label for="exampleInputdate" class="form-label">Branch <span class="text-danger">*</span></label>
+                    <ng-select [items]="branches" #dataValue [multiple]="true" bindLabel="BranchName"
+                        groupBy="selectedAllGroup" [selectableGroup]="true" [selectableGroupAsModel]="false"
+                        [closeOnSelect]="false" bindValue="PBranchSLNo" (change)="onChangeBranch($event)"
+                        clearAllText="Clear"
+                        [ngClass]="{ 'is-invalid': filterReportForm.controls['pBranchSlno'].invalid && (filterReportForm.controls['pBranchSlno'].dirty || filterReportForm.controls['pBranchSlno'].touched) && filterReportForm.controls['pBranchSlno'].errors }">
+                        <ng-template ng-optgroup-tmp let-item="item" let-item$="item$" let-index="index">
+                            <input id="item-{{index}}" type="checkbox" [checked]="item$.selected ? true : false"
+                                name="SelectAll" />
+                            <label for="SelectAll"> &nbsp; Select All</label><br>
+                        </ng-template>
+                        <ng-template ng-option-tmp let-item="item" let-item$="item$" let-index="index">
+                            <input id="item-{{index}}" type="checkbox" name="{{item}}-{{index}}"
+                                [checked]="item$.selected ? true : false" />
+                            <label class="ng-option-value mb-0" for="{{item}}-{{index}}"> &nbsp;
+                                {{(item.BranchName.length>30)? '...'+(item.BranchName |
+                                slice:6:30):(item.BranchName)}}</label>
+                        </ng-template>
+                        <ng-template ng-multi-label-tmp let-bitems="items" let-index="index">
+                            <div class="ng-value" *ngFor="let bb of bitems | slice:0:1">
+                                <span class="ng-value-label"> {{getValue(bb)}}</span>
+                            </div>
+                            <div class="ng-value" *ngIf="bitems.length > 1">
+                                <span class="ng-value-label">{{bitems.length - 1}} more...</span>
+                            </div>
+                        </ng-template>
+                    </ng-select>
+                    <div *ngIf="pBranchSlnoControl.invalid && isSubmitted" class="invalid-feedback">
+                        <div *ngIf="pBranchSlnoControl.errors?.['required']">
+                            Please provide branch.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <label for="exampleInputdate" class="form-label">From Date </label>
+                    <div class="input-group mb-3">
+                        <input id="fromDate" class="form-control flatpickr-input active" type="text" mwlFlatpickr
+                            [altInput]="false" [convertModelValue]="true" formControlName="fromDate" [minDate]="minDate"
+                            altFormat="d-M-Y" dateFormat="d-M-Y" />
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <label for="exampleInputdate" class="form-label">To Date </label>
+                    <div class="input-group mb-3">
+                        <input id="toDate" class="form-control flatpickr-input active" type="text" mwlFlatpickr
+                            [altInput]="false" [convertModelValue]="true" formControlName="toDate"
+                            formControlName="toDate" [minDate]="toMinDate" altFormat="d-M-Y" dateFormat="d-M-Y" />
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <label for="" class="form-label">&nbsp;</label>
+                    <button type="button" class="btn btn-primary mt-4" (click)="getLeaveReports()">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <dx-data-grid id="leaveReport" [dataSource]="leaveReports" keyExpr="LeaveId" [showBorders]="true"
+            [columnHidingEnabled]="false" [columnAutoWidth]="true" [showColumnLines]="true" [showRowLines]="true"
+            [rowAlternationEnabled]="true">
+            <dxo-selection ch [selectAllMode]="allMode" [showCheckBoxesMode]="checkBoxesMode"
+                mode="multiple"></dxo-selection>
+            <dxo-paging [enabled]="true" [pageSize]="10"></dxo-paging>
+            <dxo-filter-row [visible]="showFilterRow" [applyFilter]="currentFilter"></dxo-filter-row>
+            <dxo-sorting mode="multiple">
+            </dxo-sorting>
+            <dxi-column dataField="EmpId" caption="Employee Id" dataType="string">
+            </dxi-column>
+            <dxi-column dataField="EmployeeNumber" caption="Employee No" dataType="string">
+            </dxi-column>
+            <dxi-column dataField="EmployeeName" caption="Name" dataType="string">
+            </dxi-column>
+            <dxi-column dataField="BranchName" caption="BranchName" dataType="string">
+            </dxi-column>
+            <dxi-column dataField="WorkEmail" caption="Work Email" dataType="string">
+            </dxi-column>
+            <dxi-column dataField="MobileNumber" caption="Mobile" dataType="string">
+            </dxi-column>
+
+            <dxi-column dataField="LeaveFrom" caption="From Date" dataType="date" format="dd-MMM-yyyy">
+            </dxi-column>
+            <dxi-column dataField="LeaveTo" caption="To Date" dataType="date" format="dd-MMM-yyyy">
+            </dxi-column>
+            <dxi-column dataField="LeaveTypeName" caption="Leave Type"></dxi-column>
+            <dxi-column dataField="TotalDaysTaken" caption="Total Days" [width]="100"></dxi-column>
+            <dxi-column caption="Status" dataField="LeaveStatusId" cellTemplate="statusTemplate" [width]="80"
+                [alignment]="'center'">
+            </dxi-column>
+            <div *dxTemplate="let cell of 'statusTemplate'">
+                <i *ngIf="cell.value == 1" class="dx-icon dx-icon-pending-icon"
+                    title="{{cell.data.LeaveStatusName }}"></i>
+                <i *ngIf="cell.value == 2" class="dx-icon dx-icon-approve-icon"
+                    title="{{cell.data.LeaveStatusName }}"></i>
+                <i *ngIf="cell.value == 3" class="dx-icon dx-icon-reject-icon"
+                    title="{{cell.data.LeaveStatusName }}"></i>
+                <i *ngIf="cell.value == 4" class="dx-icon dx-icon-pending-icon"
+                    title="{{cell.data.LeaveStatusName }}"></i>
+                <i *ngIf="cell.value == 5" class="dx-icon dx-icon-cancelled-icon"
+                    title="{{cell.data.LeaveStatusName }}"></i>
+            </div>
+            <dxi-column type="buttons" caption="Actions" dataField="leaveFileUploadReports" cellTemplate="action"
+                >
+            </dxi-column>
+            <div *dxTemplate="let d of 'action'" class="text-left">
+                <button type="button" id="page-header-cart-dropdown"
+                    [disabled]="!d?.data?.leaveFileUploadReports?.length" title="Uploaded Files" (click)="viewFiles(d)"
+                    class="btn btn-icon btn-sm btn-topbar btn-ghost-secondary rounded-circle">
+                    <i _ngcontent-fsy-c552="" class="las la-paperclip fs-22"></i>
+                    <span *ngIf="d?.data?.leaveFileUploadReports?.length>0"
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+                        {{d?.data?.leaveFileUploadReports?.length}}
+                    </span>
+                </button>
+                <button type="button" id="page-header-cart-dropdown"
+                     title="Uploaded Files"
+                    (click)="approveOrRejectLeave(d.data,true)"
+                    class="btn btn-icon btn-sm btn-topbar btn-ghost-secondary rounded-circle">
+                    <i class="dx-icon dx-icon-manager-approve-icon"></i>
+                </button>
+                <button type="button" id="page-header-cart-dropdown"
+                    title="Uploaded Files"
+                    (click)="approveOrRejectLeave(d.data,false)"
+                    class="btn btn-icon btn-sm btn-topbar btn-ghost-secondary rounded-circle">
+                    <i class="dx-icon dx-icon-manager-reject-icon"></i>
+                </button>
+            </div>
+            <dxo-toolbar>
+                <dxi-item location="after">
+                    <div *dxTemplate>
+                        <dx-button class="my-2 me-4" (click)="getSelectedRowsData(true)" stylingMode="contained"
+                            type="default" text="Approve">
+                        </dx-button>
+                        <dx-button class="my-2 me-4" (click)="getSelectedRowsData(false)" stylingMode="contained"
+                            type="danger" text="Reject">
+                        </dx-button>
+                    </div>
+                </dxi-item>
+            </dxo-toolbar>
+        </dx-data-grid>
+    </div>
+</div>

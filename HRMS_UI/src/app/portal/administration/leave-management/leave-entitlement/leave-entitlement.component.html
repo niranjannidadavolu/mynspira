@@ -1,0 +1,167 @@
+<app-breadcrumbs title="Leave Entitlement" [breadcrumbItems]="breadCrumbItems"></app-breadcrumbs>
+<div class="row">
+    <div class="card">
+        <div class="card-header border-0 align-items-center row">
+            <h4 class="card-title mb-0 col-md-6">Leave Entitlement</h4>
+            <div class="btn-right text-end col-md-6">
+                <div class="btn-right">
+                    <button *ngIf="!isSubmitted"(click)="getSelectedRowsData()"
+                        class="btn btn-primary btn-label waves-effect waves-light  m-1"><i
+                            class=" ri-save-3-line label-icon align-middle  fs-16 me-2"></i>
+                        Save Entitlement
+                    </button>
+
+                    <button *ngIf="isSubmitted " type="button"
+                        class="btn btn-load btn-primary btn-label waves-effect waves-light m-1"><i
+                            class=" ri-save-3-line label-icon align-middle  fs-16 me-2"></i>
+                        <span class="d-flex align-items-center">
+                            <span class="spinner-border flex-shrink-0" role="status">
+                                <span class="visually-hidden">Saving Entitlement...</span>
+                            </span>
+                            <span class="flex-grow-1 ms-2">
+                                Saving Entitlement...
+                            </span>
+                        </span>
+                    </button>
+
+                    <!-- <button *ngIf="!isDeleted " 
+                        class="btn btn-danger btn-label waves-effect waves-light  m-1"><i
+                            class=" ri ri-delete-bin-line label-icon align-middle  fs-16 me-2"></i>
+                        Delete Entitlement(s)
+                    </button>
+
+                    <button *ngIf="isDeleted " type="button"
+                        class="btn btn-load btn-danger btn-label waves-effect waves-light  m-1"><i
+                            class=" ri ri-delete-bin-line label-icon align-middle  fs-16 me-2"></i>
+                        <span class="d-flex align-items-center">
+                            <span class="spinner-border flex-shrink-0" role="status">
+                                <span class="visually-hidden">Deleting Entitlement(s)...</span>
+                            </span>
+                            <span class="flex-grow-1 ms-2">
+                                Deleting Entitlement(s)...
+                            </span>
+                        </span>
+                    </button>
+
+                    <button type="button" class="btn btn-warning btn-label waves-effect waves-light m-1 "
+                        (click)="createForm()"><i class="ri-error-warning-line label-icon align-middle  fs-16 me-2"></i>
+                        Cancel</button> -->
+                </div>
+            </div>
+        </div>
+        <div class="card-body table-responsive py-0">
+            <form [formGroup]="filterForm" novalidate>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="col-md-12">
+                            <label for="officeTypeSlno" class="form-label">Office Type </label>
+                            <ng-select [items]="officeTypeList" formControlName="OfficeTypeSlno"
+                                bindLabel="OfficeTypeName" bindValue="OfficeTypeSlno"
+                                (change)="onChangeOfficeType($event)">
+                            </ng-select>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="leaveTypeId" class="form-label">Leave Type </label>
+                            <ng-select [items]="leaveTypeList" formControlName="LeaveTypeId" bindLabel="LeaveTypeName"
+                                bindValue="LeaveTypeId" (change)="onChangeLeaveType($event)">
+                            </ng-select>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="BranchSlno" class="form-label">Branch </label>
+                            <!-- <ng-select [items]="branchLIst" formControlName="BranchSlno" bindLabel="BranchName"
+                                bindValue="PBranchSLNo">
+                            </ng-select> -->
+                            <ng-select [items]="branchLIst" #dataValue [multiple]="true" bindLabel="BranchName"
+                                formControlName="BranchSlno" groupBy="selectedAllGroup" [selectableGroup]="true"
+                                [selectableGroupAsModel]="false" [closeOnSelect]="false" bindValue="PBranchSLNo"
+                                (change)="onChangeBranch($event)" clearAllText="Clear"
+                                [ngClass]="{ 'is-invalid': f['BranchSlno'].invalid && (f['BranchSlno'].dirty || f['BranchSlno'].touched) && f['BranchSlno'].errors }">
+                                <ng-template ng-optgroup-tmp let-item="item" let-item$="item$" let-index="index">
+                                    <input id="item-{{index}}" type="checkbox" [checked]="item$.selected ? true : false"
+                                        name="SelectAll" />
+                                    <label for="SelectAll"> &nbsp; Select All</label><br>
+                                </ng-template>
+                                <ng-template ng-option-tmp let-item="item" let-item$="item$" let-index="index">
+                                    <input id="item-{{index}}" type="checkbox" name="{{item}}-{{index}}"
+                                        [checked]="item$.selected ? true : false" />
+                                    <label class="ng-option-value mb-0" for="{{item}}-{{index}}"> &nbsp;
+                                        {{(item.BranchName.length>30)? '...'+(item.BranchName |
+                                        slice:6:30):(item.BranchName)}}</label>
+                                </ng-template>
+                                <ng-template ng-multi-label-tmp let-bitems="items" let-index="index">
+                                    <div class="ng-value" *ngFor="let bb of bitems | slice:0:1">
+                                        <span class="ng-value-label"> {{getValue(bb)}}</span>
+                                    </div>
+                                    <div class="ng-value" *ngIf="bitems.length > 1">
+                                        <span class="ng-value-label">{{bitems.length - 1}} more...</span>
+                                    </div>
+                                </ng-template>
+
+                            </ng-select>
+                        </div>
+                        <div class="col-md-12 text-end">
+
+                            <button type="button" class="btn btn-primary mt-4 mb-2" (click)="getLeaveEntitlement()">Get
+                                Entitlements</button>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                         <div class="col-md-12">
+                            <dx-data-grid #myLeavesDataGrid id="myLeavesDataGrid" [dataSource]="entitlements"
+                                [showBorders]="true" [columnAutoWidth]="true" [height]="650"
+                                (onSaved)="updateRow($event)" keyExpr="EmployeeSlno"
+                                (onContextMenuPreparing)="addMenuItems($event)">
+                                <dxo-editing mode="cell" [allowUpdating]="true" [allowDeleting]="false">
+                                </dxo-editing>
+                                <dxo-selection [selectAllMode]="allMode" [showCheckBoxesMode]="checkBoxesMode"
+                                    mode="multiple"></dxo-selection>
+                                <dxo-filter-row [visible]="true"></dxo-filter-row>
+                                <dxo-paging [enabled]="true" [pageSize]="14"></dxo-paging>
+                                <dxi-column dataField="EmpNo" [allowEditing]="false" caption="Employee No">
+                                </dxi-column>
+                                <dxi-column dataField="EmpId" [allowEditing]="false" caption="Employee Id">
+                                </dxi-column>
+                                <dxi-column dataField="EmployeeName" [allowEditing]="false"></dxi-column>
+                                <dxi-column dataField="BranchName" [allowEditing]="false"></dxi-column>
+                                <dxi-column dataField="LeaveYear" caption="Leave Year">
+                                    <dxi-validation-rule type="required"></dxi-validation-rule>
+                                </dxi-column>
+                                <dxi-column dataField="DateValidFrom" dataType="date" format="dd-MMM-yyyy"
+                                    caption="Date Valid From">
+                                    <dxi-validation-rule type="required"></dxi-validation-rule>
+                                </dxi-column>
+                                <dxi-column dataField="DateValidUntil" dataType="date" format="dd-MMM-yyyy"
+                                    caption="Date Valid Until">
+                                    <dxi-validation-rule type="required"></dxi-validation-rule>
+                                </dxi-column>
+                                <dxi-column dataField="TotalLeaves" caption="Total Leaves">
+                                    <dxi-validation-rule type="required"></dxi-validation-rule>
+                                </dxi-column>
+                                <dxi-column dataField="ConsumedLeaves" caption="Consumed Leaves">
+                                    <dxi-validation-rule type="required"></dxi-validation-rule>
+                                </dxi-column>
+                                <dxi-column dataField="EncashedLeaves" [allowEditing]="false" caption="Encashed Leaves">
+                                    <dxi-validation-rule type="required"></dxi-validation-rule>
+                                </dxi-column>
+                                <dxi-column dataField="NewEncashedLeaves" caption="New Encashed Leaves">
+                                    <dxi-validation-rule type="required"></dxi-validation-rule>
+                                    <dxi-validation-rule type="custom" [validationCallback]="checkEncashedLeaves"
+                                        message="You can utilize with in the total leaves and must be hold 15 leaves">
+                                    </dxi-validation-rule>
+                                </dxi-column>
+                                <dxi-column type="buttons" caption="Actions" cellTemplate="Action">
+                                </dxi-column>
+                                <div *dxTemplate="let d of 'Action'" class="text-left">
+                                    <a href="javascript:void(0)" *ngIf="d.data.EmployeeLeaveEntitlementId > 0"
+                                        (click)="deleteRow(d)" title="Delete" class="me-2 text-danger">
+                                        <i class="ri ri-delete-bin-line fs-17"></i>
+                                    </a>
+                                </div>
+                            </dx-data-grid>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

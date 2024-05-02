@@ -1,0 +1,114 @@
+<!-- BreadCrumb add for Help Documents-->
+<app-breadcrumbs title="Help Documents" [breadcrumbItems]="breadCrumbItems"></app-breadcrumbs>
+<div>
+    <div class="position-relative mx-n4 mt-n4">
+        <div class="profile-wid-bg profile-setting-img">
+            <img src="assets/images/profile-bg.jpg" class="profile-wid-img" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <!-- Displaying Employee Information in left side card -->
+        <div class="col-lg-3">
+            <app-employee-card [showTaxCalculations]="false"></app-employee-card>
+        </div>
+        <!-- Displaying Help docukents with download buttons -->
+        <div class="col-lg-9">
+            <div class="card mt-lg-n5">
+                <div class="card-header">
+                    <ul ngbNav #customNav="ngbNav" [activeId]="1"
+                        class="nav nav-tabs-custom rounded card-header-tabs border-bottom-0" role="tablist">
+                        <li [ngbNavItem]="1" class="nav-item">
+                            <a ngbNavLink class="nav-link" data-bs-toggle="tab" role="tab">
+                                <i class="fas fa-home"></i>
+                                Help Documents
+                            </a>
+                            <ng-template ngbNavContent>
+                                <div class="table-responsive table-card mt-3 mb-1">
+                                    <table class="table">
+                                        <thead>
+                                            <tr class="bg-light text-muted">
+                                                <th class="sort" data-sort="email">#</th>
+                                                <th class="sort" data-sort="email">Name</th>
+                                                <th class="sort">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr *ngFor="let item of helpDocuments;  let k = index">
+                                                <td><ngb-highlight result="{{k+1}}"></ngb-highlight></td>
+                                                <td><ngb-highlight [result]="item.FileDisplayName"></ngb-highlight></td>
+                                                <td>
+                                                    <div class="d-flex gap-2">
+                                                        <div class="remove">
+                                                            <button
+                                                                class="btn btn-danger btn-icon waves-effect"
+                                                                (click)="downloadDocument(item)"
+                                                                *ngIf="item?.CanDownload"><i
+                                                                    class="ri-download-2-fill"></i></button>
+                                                            <button
+                                                                class="btn btn-light btn-icon waves-effect"
+                                                                (click)="previewDocument(item,true)"
+                                                                *ngIf="item?.CanPreview"><i
+                                                                    class="ri-book-read-line"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </ng-template>
+                        </li>
+                        <li [ngbNavItem]="2" class="nav-item">
+                            <a ngbNavLink class="nav-link" data-bs-toggle="tab" role="tab">
+                                <i class="fas fa-home"></i>
+                                Help Videos
+                            </a>
+                            <ng-template ngbNavContent>
+                                <div class="table-responsive table-card mt-3 mb-1">
+                                    <table class="table">
+                                        <thead>
+                                            <tr class="bg-light text-muted">
+                                                <th class="sort" data-sort="email">#</th>
+                                                <th class="sort" data-sort="email">Name</th>
+                                                <th class="sort">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr *ngFor="let item of helpVideos;  let k = index">
+                                                <td><ngb-highlight result="{{k+1}}"></ngb-highlight></td>
+                                                <td><ngb-highlight [result]="item.FileDisplayName"></ngb-highlight></td>
+                                                <td>
+                                                    <div class="d-flex gap-2">
+                                                        <div class="remove">
+                                                            <button
+                                                                class="btn btn-danger btn-icon waves-effect"
+                                                                (click)="downloadDocument(item)"
+                                                                *ngIf="item?.CanDownload"><i
+                                                                    class="ri-download-2-fill"></i></button>
+                                                            <button
+                                                                class="btn btn-light btn-icon waves-effect"
+                                                                (click)="playVideo(item)"
+                                                                *ngIf="item?.CanPreview"><i
+                                                                    class="ri-play-fill"></i></button>
+                                                                    
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </ng-template>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body p-4">
+                    <div class="tab-content">
+                        <div [ngbNavOutlet]="customNav"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

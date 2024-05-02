@@ -1,0 +1,4 @@
+﻿F:\Work\Office\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.AspNetCore\Attributes\AuthorizationAttribute.cs
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.AspNetCore\Extensions\ApplicationBuilderExtensions.cs
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.AspNetCore\Extensions\ServiceCollectionExtensions.cs
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.AspNetCore\Properties\launchSettings.json

@@ -1,0 +1,63 @@
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h6 class="card-title mb-0 head-padding">Upload House Rent Allowance (HRA) Documents</h6>
+                    </div>
+                    <div class="col-md-4 text-right"><button type="button" class="btn-close close-dialog-button "
+                            aria-hidden="true" (click)="activeModal.dismiss('Cross click')"></button></div>
+                </div>
+            </div>
+            <form [formGroup]="uploadForm" (ngSubmit)="onSubmit()">
+                <div class="row py-3" *ngIf="canUpload">
+                    <div class="col-md-4 choose-align">
+                        <dx-file-uploader selectButtonText="Upload File" labelText="or drop here" accept =".pdf"
+                            uploadMode="useButtons" formControlName="file" [allowCanceling]="true" [maxFileSize]="4000000"
+                            (onValueChanged)="onFileChange($event)">
+                        </dx-file-uploader>
+                        <div *ngIf="f['file'].invalid && (f['file'].dirty || f['file'].touched)"
+                            class="invalid-feedback fileError ">Please select
+                            file.
+                        </div>
+                    </div>
+                    <div class="col-md-8 py-3">
+                        <button type="button" class="btn btn-light"
+                            (click)="activeModal.close('Close click')">Cancel</button>
+                        &nbsp;&nbsp;<button type="submit" class="btn btn-primary" *ngIf="!isSubmitted && canUpload"
+                            [disabled]="this.uploadForm.invalid">Upload
+                        </button>
+                        <button type="button" class="btn btn-primary btn-label waves-effect waves-light btn-load"
+                            *ngIf="isSubmitted">
+                            <span class="d-flex align-items-center">
+                                <span class="spinner-border flex-shrink-0" role="status">
+                                    <span class="visually-hidden">Uploading...</span>
+                                </span>
+                                <span class="flex-grow-1 ms-2">
+                                    Uploading...
+                                </span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row datalist">
+        <dx-data-grid id="gridContainer" [dataSource]="hraFiles" keyExpr="TdsHRAFileSLNo" [showBorders]="true"
+            [columnHidingEnabled]="false" (onRowRemoving)="deleteHraFile($event)">
+            <dxo-load-panel [enabled]="true"></dxo-load-panel>
+            <dxo-editing mode="row" [allowUpdating]="false" [allowDeleting]="true" [useIcons]="true">
+            </dxo-editing>
+            <dxo-paging [enabled]="true" [pageSize]="10"></dxo-paging>
+            <dxi-column dataField="FileName" caption="File Name"></dxi-column>
+            <dxi-column dataField="FileName_Original" caption="Original File Name"></dxi-column>
+            <dxi-column type="buttons" caption="Actions">
+                <dxi-button icon="ri-delete-bin-6-line text-danger" name="delete">
+                </dxi-button>
+                <dxi-button name="download" hint="Download File" icon="download" [onClick]="downloadFile"></dxi-button>
+            </dxi-column>
+        </dx-data-grid>
+    </div>
+</div>

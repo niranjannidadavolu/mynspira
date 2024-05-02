@@ -1,0 +1,105 @@
+.cancelled {
+    color: #04e2ff;
+}
+
+.approved {
+    color: #02ff02;
+}
+
+.rejected {
+    color: #ff0101;
+}
+
+.pending-for-approval {
+    color: #0105ff;
+}
+
+.dropdown-menu.show li {
+    padding: 5px;
+    font-weight: 500 !important;
+    font-size: 20px !important;
+}
+
+.dropdown-menu.show li a {
+    font-size: 13px !important;
+    font-weight: 500 !important;
+}
+
+// ::ng-deep .dx-icon-pending-icon
+// {
+//     background-image: url('../../../../../assets/icons/approve.PNG');
+//     width: 32px;
+//     height: 32px;
+//     background-repeat: no-repeat;
+// }
+// ::ng-deep .dx-icon-approve-icon
+// {
+//     background-image: url('../../../../../assets/icons/approve.PNG');
+//     width: 32px;
+//     height: 32px;
+//     background-repeat: no-repeat;
+// }
+// ::ng-deep .dx-icon-reject-icon
+// {
+//     background-image: url('../../../../../assets/icons/reject.PNG');
+//     width: 32px;
+//     height: 32px;
+//     background-repeat: no-repeat;
+// }
+
+.dx-icon-pending-icon {
+    background-image: url('../../../../../assets/icons/pending.PNG');
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+}
+
+.dx-icon-approve-icon {
+    background-image: url('../../../../../assets/icons/approve.PNG');
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+}
+
+.dx-icon-cancelled-icon {
+    background-image: url('../../../../../assets/icons/cancelled.PNG');
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+}
+
+.dx-icon-reject-icon {
+    background-image: url('../../../../../assets/icons/reject.PNG');
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+}
+
+.dx-icon-manager-approve-icon {
+    background-image: url('../../../../../assets/icons/manager-approve.PNG');
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+}
+
+.dx-icon-manager-reject-icon {
+    background-image: url('../../../../../assets/icons/manager-reject.PNG');
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+}
+
+.dx-icon-view-icon {
+    background-image: url('../../../../../assets/icons/view-details.PNG');
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+}
+
+.text-left {
+    text-align: left;
+}
+
+// .min-height{
+//     min-height: 200px;
+// }

@@ -1,0 +1,124 @@
+<div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="exampleModalgridLabel">
+            View Employee Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+            (click)="activeModal.dismiss()"></button>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="card ribbon-box border shadow-none mb-lg-0">
+                <div class="card-body">
+                    <div class="ribbon ribbon-primary ribbon-shape">Aadhar Details</div>
+                    <div class="ribbon-content text-muted mt-4 row">
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <dt>AadharNo :</dt>
+                                <dd>{{employeeData?.Employee?.AadharNo}}</dd>
+                            </div>
+                            <div class="d-flex">
+                                <dt>Name :</dt>
+                                <dd>{{employeeData?.Employee?.EmployeeName}}</dd>
+                            </div>
+
+                            <div class="d-flex">
+                                <dt>DOB :</dt>
+                                <dd>{{employeeData?.Employee?.DOB | date: 'dd-MMM-YYYY'}}</dd>
+                            </div>
+
+                            <div class="d-flex">
+                                <dt>Gender :</dt>
+                                <dd>{{employeeData?.Employee?.Gender}}</dd>
+                            </div>
+                            <div class="form-check form-switch form-switch-right form-switch-md" [formGroup]="approveForm">
+                                <label for="switches-showcode" class="form-label text-muted">Lock Bank Details</label>
+                                <input class="form-check-input code-switcher" type="checkbox" id="switches-showcode" formControlName="lockBankDetails" (click)="onLockBankDetails($event)">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="aadhar-view col-3">
+                                <img [src]="employeeData?.AadharPath" (click)="open()" class="addhar-img img-fluid"
+                                    *ngIf="employeeData?.AadharPath" alt="" srcset="">
+                                <img src="assets/images/no_aadhar.png" class="addhar-img img-fluid"
+                                    *ngIf="!employeeData?.AadharPath" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="mb-3" *ngIf="pdfSrc">
+                <pdf-viewer [src]="pdfSrc" [render-text]="true" [original-size]="false"
+                    style="width: 100%; height: 390px"></pdf-viewer>
+                <!-- <a [href]="employeeData?.id_verification_report" class="btn btn-primary my-4" target="_blank"
+                        rel="noopener noreferrer">Download PDF</a> -->
+            </div>
+            <div class="mb-3" *ngIf="!pdfSrc">
+                <div class="py-4">
+                    <p>No Data Found</p>
+                </div>
+            </div>
+
+            <div class="col-lg-12" *ngIf="pdfSrc">
+                <div class="mb-3">
+                    <div class="form-group" [formGroup]="approveForm">
+                        <textarea name="" class="form-control" formControlName="approvedRemarks" id="" cols="4" rows="2"
+                            placeholder="Please Enter Rearks"
+                            [ngClass]="{ 'is-invalid': f['approvedRemarks'].invalid && (f['approvedRemarks'].dirty || f['approvedRemarks'].touched) && f['approvedRemarks'].errors }"></textarea>
+                        <div *ngIf="f['approvedRemarks'].invalid && (f['approvedRemarks'].dirty || f['approvedRemarks'].touched) &&  f['approvedRemarks'].errors"
+                            class="invalid-feedback">
+                            <div *ngIf="f['approvedRemarks'].errors['required']">Please enter approver remarks.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hstack gap-2 justify-content-end">
+                    <div>
+                        <button type="button" class="btn btn-primary" (click)="approve()"
+                        *ngIf="!isApproveSubmitted && (!isRejectSubmitted && !isHoldSubmitted)">Approve</button>
+                        <button type="button" class="btn btn-primary btn-label waves-effect waves-light btn-load"
+                            *ngIf="isApproveSubmitted">
+                            <span class="d-flex align-items-center">
+                                <span class="spinner-border flex-shrink-0" role="status">
+                                    <span class="visually-hidden">Approving...</span>
+                                </span>
+                                <span class="flex-grow-1 ms-2">
+                                    Approving...
+                                </span>
+                            </span>
+                        </button>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-danger" (click)="reject()"
+                        *ngIf="!isRejectSubmitted && (!isApproveSubmitted && !isHoldSubmitted)">Reject</button>
+                        <button type="button" class="btn btn-danger btn-label waves-effect waves-light btn-load"
+                            *ngIf="isRejectSubmitted">
+                            <span class="d-flex align-items-center">
+                                <span class="spinner-border flex-shrink-0" role="status">
+                                    <span class="visually-hidden">Rejecting...</span>
+                                </span>
+                                <span class="flex-grow-1 ms-2">
+                                    Rejecting...
+                                </span>
+                            </span>
+                        </button>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-secondary" (click)="hold()"
+                        *ngIf="!isHoldSubmitted && (!isApproveSubmitted &&  !isRejectSubmitted)">Hold</button>
+                        <button type="button" class="btn btn-secondary btn-label waves-effect waves-light btn-load"
+                            *ngIf="isHoldSubmitted">
+                            <span class="d-flex align-items-center">
+                                <span class="spinner-border flex-shrink-0" role="status">
+                                    <span class="visually-hidden">Holding...</span>
+                                </span>
+                                <span class="flex-grow-1 ms-2">
+                                    Holdving...
+                                </span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

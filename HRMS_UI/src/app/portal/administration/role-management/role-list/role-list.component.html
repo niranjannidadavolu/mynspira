@@ -1,0 +1,43 @@
+<app-breadcrumbs title="Role Management" [breadcrumbItems]="breadCrumbItems"></app-breadcrumbs>
+<div class="row">
+    <div class="card">
+        <div class="card-header border-0 align-items-center ">
+            <h4 class="card-title mb-0  flex-grow-1">Manage Roles</h4>
+            <div class="card-title table-responsive mt-0">
+                <button class="btn btn-sm btn-info btn-add " (click)="AddRole()"><i class="las la-plus"></i> Add Role</button>
+            </div>
+        </div>
+        <!-- <div  class="card-body" >
+            <button class="btn btn-sm btn-info btn-add " (click)="AddRole()"><i class="las la-plus"></i> Add Role</button>
+        </div> -->
+        <div class="card-body table-responsive ">
+            <ejs-grid #rolesDataGrid [dataSource]='roles' [allowSorting]='true' [enableHover]='false'
+            [enableHeaderFocus]='true' [filterSettings]='filterSettings' [allowSorting]='true'
+            [allowFiltering]='true' gridLines='Both' allowPaging='true' [pageSettings]='pageSettings'>
+            <e-columns>
+                <e-column field='RoleName' headerText='Role Name' width='120'  ></e-column>
+                <e-column field='Description' headerText='Description'   width='120'  ></e-column>
+                <e-column field='CreatedDate' headerText='Created Date' width='120' format="dd-MMM-yyyy" type="date"  ></e-column>
+                <e-column field='Status' headerText='Status' width='120'  ></e-column>
+                <e-column field="IsAdmin" headerText="IsAdmin" width="120" [allowEditing]="false" editType="booleanedit">
+                    <ng-template #template let-data>
+                        <ejs-checkbox [checked]="data.IsAdmin" [disabled]="!data.IsAdmin"></ejs-checkbox>
+                    </ng-template>
+                </e-column>
+                <e-column [allowFiltering]='false' headerText='Actions' width='100'>
+                    <ng-template #template let-data>
+                        <div class="d-flex align-items-center">
+                            <button type="button" class="btn btn-light position-relative p-0 avatar-xs rounded-circle"
+                                (click)="EditRole(data)" title="Apply Leave">
+                                <span class="avatar-title bg-transparent text-reset">
+                                    <i class="ri-pencil-fill text-success fs-15"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </ng-template>
+                </e-column>
+            </e-columns>
+        </ejs-grid>
+        </div>
+    </div>
+</div>

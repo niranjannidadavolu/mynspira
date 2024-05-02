@@ -1,0 +1,83 @@
+<app-breadcrumbs title="Security Module" [breadcrumbItems]="breadCrumbItems"></app-breadcrumbs>
+<div class="row">
+    <div class="card">
+        <div class="card-header border-0 align-items-center d-flex">
+            <h4 class="card-title mb-0 flex-grow-1">Manage Users</h4>
+        </div>
+        <div class="card-body table-responsive">
+            <form (ngSubmit)="SavePermissions()" novalidate>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="row">
+                            
+                            <dx-tab-panel #tabPanel [items]="companies">
+                                <dxi-item title="Role">
+                                    <dx-list #roleList [dataSource]="activeRoles" [height]="400"
+                                        [selectionMode]="selectionModeValue" [selectAllMode]="selectAllModeVlaue"
+                                        [showSelectionControls]="true" [selectedItemKeys]="selectedRoles"
+                                        (onSelectionChanged)="roleSelected($event)"
+                                        [searchEnabled]="true" searchExpr="RoleName" searchMode="contains"
+                                        name="RoleId" class="list-style-none" keyExpr="RoleId" displayExpr="RoleName">
+                                    </dx-list>
+                                </dxi-item>
+                                <dxi-item title="Users">
+                                    <dx-list #userList [dataSource]="activeUsers" [height]="400"
+                                        [selectionMode]="selectionModeValue" [selectAllMode]="selectAllModeVlaue"
+                                        [showSelectionControls]="true" [selectedItemKeys]="selectedUsers"
+                                        itemTemplate="data" (onSelectionChanged)="roleSelected($event)"
+                                        [searchEnabled]="true" searchExpr="UserName" searchMode="contains"
+                                        name="UserId">
+                                        <div *dxTemplate="let item of 'data'">
+                                            <div>{{item.UserName}}</div>
+                                        </div>
+                                    </dx-list>
+                                </dxi-item>
+                            </dx-tab-panel>
+
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <dx-tab-panel #tabPanel [items]="companies">
+                            <dxi-item title="Role">
+                                <div class="col-lg-8 list-margins">
+                                    <dx-tree-view id="simple-treeview" [items]="activeModules" dataStructure="plain"
+                                        parentIdExpr="ParentId" keyExpr="Id" displayExpr="Name"
+                                        [showCheckBoxesMode]="showCheckBoxesMode" [selectionMode]="selectionMode"
+                                        [selectNodesRecursive]="selectNodesRecursive" [searchEnabled]="true"
+                                        searchMode="contains" (onSelectionChanged)="treeViewSelectionChanged($event)"
+                                        (onContentReady)="treeViewContentReady($event)" selectedExpr="RolePermission">
+                                    </dx-tree-view>
+                                </div>
+                            </dxi-item>
+                            <dxi-item title="Users"> 222 </dxi-item>
+                        </dx-tab-panel>
+                    </div>
+                </div>
+                <div class="btn-right">
+                    <div class="btn-right">
+
+                        <button *ngIf="!isSubmitted" type="submit"
+                            class="btn btn-primary btn-label waves-effect waves-light  m-2" [disabled]="selectedPermissions.length<=0"><i
+                                class=" ri-save-3-line label-icon align-middle  fs-16 me-2"></i>
+                            Save Permissions</button>
+                        <button *ngIf="isSubmitted" type="button"
+                            class="btn btn-load btn-primary btn-label waves-effect waves-light  m-2"><i
+                                class=" ri-save-3-line label-icon align-middle  fs-16 me-2"></i>
+                            <span class="d-flex align-items-center">
+                                <span class="spinner-border flex-shrink-0" role="status">
+                                    <span class="visually-hidden">Saving Permissions...</span>
+                                </span>
+                                <span class="flex-grow-1 ms-2">
+                                    Saving Permissions...
+                                </span>
+                            </span>
+                        </button>
+                        <button type="button" class="btn btn-danger btn-label waves-effect waves-light  "><i
+                                class="ri-error-warning-line label-icon align-middle  fs-16 me-2"></i>
+                            Cancel</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

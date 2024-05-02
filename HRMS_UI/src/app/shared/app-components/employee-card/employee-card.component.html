@@ -1,0 +1,97 @@
+<div class="col-md-12">
+    <div class="card ribbon-box border shadow-none mb-lg-0" [ngClass]="{'mt-n5': showTaxCalculations === true}">
+        <div class="card-body p-4">
+            <div class="ribbon-two ribbon-two-primary" [ngClass]="{'professional': profile.Category=='PROFESSIONAL'}"><span>{{profile.Category}}</span></div>
+            <div class="text-center">
+                <div class="profile-user position-relative d-inline-block mx-auto  mb-4">
+                    <img src="{{profile.PhotoPath}}" class="rounded-circle avatar-xl img-thumbnail user-profile-image"
+                        alt="user-profile-image">
+                    <div class="avatar-xs p-0 rounded-circle profile-photo-edit">
+                        <input id="profile-img-file-input" type="file" class="profile-img-file-input">
+                        <label for="profile-img-file-input" class="profile-photo-edit avatar-xs">
+                            <span class="avatar-title rounded-circle bg-light text-body">
+                                <i class="ri-camera-fill"></i>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                <h5 class="mb-1">{{profile.EmployeeName}}</h5>
+                <p class="text-muted mb-0">{{profile.EmpId}}</p>
+                <p class="text-muted mb-0">{{profile.Designation}}</p>
+                <p class="text-muted mb-0">{{profile.BranchName}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="card" *ngIf="!showTaxCalculations">
+        <div class="card-header">
+            <h6 class="card-title"><i class="ri-user-3-fill align-middle text-muted"></i>
+                Employee Details</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-borderless mb-0 fs-12">
+                    <tbody>
+                        <tr>
+                            <th class="ps-0" scope="row">Department : </th>
+                            <td class="text-muted">{{profile.Department}}</td>
+                        </tr>
+                        <tr>
+                            <th class="ps-0" scope="row">Date Of Joining :</th>
+                            <td class="text-muted">{{profile.Doj | date: 'dd-MMM-YYYY'}}</td>
+                        </tr>
+                        <tr>
+                            <th class="ps-0" scope="row">Date Of Birth :</th>
+                            <td class="text-muted">{{profile.Dob | date: 'dd-MMM-YYYY'}}</td>
+                        </tr>
+                        <tr>
+                            <th class="ps-0" scope="row">Mobile :</th>
+                            <td class="text-muted">{{profile.Mobile}}</td>
+                        </tr>
+                        <tr>
+                            <th class="ps-0" scope="row">Personal Email :</th>
+                            <td class="text-muted email-text">{{profile.PersonalEmail}}
+                                <span class="edit-icon" (click)="editPersonalEmail()"><i class="ri-edit-box-line"></i></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="ps-0" scope="row">Work Email :</th>
+                            <td class="text-muted email-text">{{profile.WorkEmail}}
+                                <span class="edit-icon" (click)="editWorkEmail()"><i class="ri-edit-box-line" ></i></span>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="card" *ngIf="showTaxCalculations">
+        <div class="card-header">
+            <h5 class="mb-1">Tax Details For FY-2023-24</h5>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-borderless mb-0" *ngIf="taxDetails">
+                    <tbody>
+                        <tr>
+                            <th class="ps-0" scope="row">Total Deductions  : </th>
+                            <td class="text-muted text-end">{{taxDetails.TdsForFinYear | indianCurrency}}</td>
+                        </tr>
+                        <tr>
+                            <th class="ps-0" scope="row">Deducted Till Now :</th>
+                            <td class="text-muted text-end">{{taxDetails.TdsDeductedTillNow | indianCurrency}}</td>
+                        </tr>
+                        <tr>
+                            <th class="ps-0" scope="row">Balance Tax :</th>
+                            <td class="text-muted text-end">{{taxDetails.BalanceTds | indianCurrency}}</td>
+                        </tr>
+                        <tr>
+                            <th class="ps-0" scope="row">Tax Per Month :</th>
+                            <td class="text-muted text-end">{{taxDetails.BalanceTdsPerMonth | indianCurrency}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

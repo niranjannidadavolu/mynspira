@@ -1,0 +1,54 @@
+<div class="row">
+    <div class="w-100 ">
+        <div class="row" [formGroup]="teamAttendanceForm">
+            <div class="col-lg-3">
+                <label for="" class="form-label">Report For <span class="text-danger">*</span> </label>
+                <select class="form-select" aria-label=".form-select-sm example" (change)="onReportTypeChange($event)"
+                    formControlName="ReportFor"
+                    [ngClass]="{ 'is-invalid': f['ReportFor'].invalid && (f['ReportFor'].dirty || f['ReportFor'].touched) && f['ReportFor'].errors}">
+                    <option selected disabled value="">Please Select</option>
+                    <option [value]="item?.Slno" *ngFor="let item of reportForList">{{item?.Name}}</option>
+                </select>
+                <div *ngIf="f['ReportFor'].invalid && (f['ReportFor'].dirty || f['ReportFor'].touched) &&  f['ReportFor'].errors"
+                    class="invalid-feedback">
+                    <div *ngIf="f['ReportFor'].errors['required']">Please provide reportFor.
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3" *ngIf="teamAttendanceForm.value.ReportFor == '8'">
+                <label for="" class="form-label">Date <span class="text-danger">*</span></label>
+                <input id="StartDate" class="form-control flatpickr-input active" type="text" mwlFlatpickr
+                    formControlName="StartDate" placeholder="Select Date*" [altInput]="false" [convertModelValue]="true"
+                    (flatpickrChange)='onDateChange($event)' altFormat="d-M-Y" dateFormat="d-M-Y"
+                    [ngClass]="{ 'is-invalid': f['StartDate'].invalid && (f['StartDate'].dirty || f['StartDate'].touched) && f['StartDate'].errors}" />
+                <div *ngIf="f['StartDate'].invalid && (f['StartDate'].dirty || f['StartDate'].touched) &&  f['StartDate'].errors"
+                    class="invalid-feedback">
+                    <div *ngIf="f['StartDate'].errors['required']">Please provide date.
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <button type="button" [disabled]="teamAttendanceForm.invalid"
+                    class="btn btn-primary waves-effect waves-light mt-1_5"
+                    (click)="getEmployeeTimeSheet()">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div class="card-body table-responsive">
+        <ejs-grid [dataSource]='attendance' [allowSorting]='true' [enableHover]='false' [enableHeaderFocus]='true'
+            [filterSettings]='filterSettings' [allowSorting]='true' [allowFiltering]='true' gridLines='Both'
+            allowPaging='true' [pageSettings]='pageSettings'>
+            <e-columns>
+                <e-column field='EmployeeId' headerText='Employee Id' width='120'></e-column>
+                <e-column field='Employee_Name' headerText='Employee Name' width='120'></e-column>
+                <e-column field='DisplayAttendanceDate' headerText='Date' width='120' format="dd-MMM-yyyy" type="Date"></e-column>
+                <e-column field='WeekDay' headerText='Day' width='120' textAlign='center'></e-column>
+                <e-column field='DisplayStartTime' headerText='In Time' width='120'></e-column>
+                <e-column field='DisplayEndTime' headerText='Out Time' width='120'></e-column>
+                <e-column field='TotalTime' headerText='Total Time' width='120'></e-column>
+                <e-column field='First_Half' headerText='1st Half' width='120'></e-column>
+                <e-column field='Second_Half' headerText='2nd Half' width='120' format="yMd"></e-column>
+            </e-columns>
+        </ejs-grid>
+    </div>
+</div>

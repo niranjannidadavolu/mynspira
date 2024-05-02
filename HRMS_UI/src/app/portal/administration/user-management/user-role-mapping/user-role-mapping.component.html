@@ -1,0 +1,68 @@
+<form name="form">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title mb-0">Roles List</h4>
+                </div>
+                <div class="card-body">
+                    <div id="customerList">
+                        <div class="table-responsive table-card mt-3 mb-1">
+                            <table class="table">
+                                <thead>
+                                    <tr class="bg-light text-muted">
+                                        <th scope="col" style="width: 50px;">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="checkAll"
+                                                    value="option">
+                                            </div>
+                                        </th>
+                                        <th class="sort" data-sort="customer_name">Role Id</th>
+                                        <th class="sort" data-sort="email">Role Name</th>
+                                        <th class="sort" data-sort="phone">IsAdmin</th>
+                                        <th class="sort" data-sort="date">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let data of roles">
+                                        <th scope="row">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" name="checkAll"
+                                                    value="option1">
+                                            </div>
+                                        </th>
+                                        <td>
+                                            <ngb-highlight [result]="data.RoleSlno" [term]="searchTerm">
+                                            </ngb-highlight>
+                                        </td>
+                                        <td>
+                                            <ngb-highlight [result]="data.Name" [term]="searchTerm">
+                                            </ngb-highlight>
+                                        </td>
+                                        <td>
+                                            <ngb-highlight [result]="data.IsAdmin" [term]="searchTerm">
+                                            </ngb-highlight>
+                                        </td>
+                                        <td>
+                                            <ngb-highlight [result]="data.Description" [term]="searchTerm">
+                                            </ngb-highlight>
+                                        </td>
+                                        <td class="status"><span class="badge badge-soft-{{data.StatusName}} text-uppercase">{{data.StatusName}}</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer text-end">
+                    <div>
+                        <button class="btn btn-primary waves-effect waves-light" type="submit" *ngIf="!isSubmitted">Validate
+                            OTP</button>
+                        <button class="btn btn-primary waves-effect waves-light" *ngIf="isSubmitted">Validating... <i
+                                class="fa fa-spinner fa-spin"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

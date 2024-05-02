@@ -1,0 +1,61 @@
+<div class="row justify-content-center">
+    <ejs-grid [dataSource]='agreementBills' [allowSorting]='true' [enableHover]='false' [enableHeaderFocus]='true'
+        [filterSettings]='filterSettings' [allowSorting]='true' [allowFiltering]='true' gridLines='Both'
+        allowPaging='true' [pageSettings]='pageSettings'>
+        <e-columns>
+            <e-column field='MonthName' headerText='Month' editType='datepickeredit'></e-column>
+            <e-column width="150" field='Salary_Voucher' headerText='Salary/Voucher'></e-column>
+            <e-column width="150" field='ToBePaid' format="C2" textAlign='right'
+                headerText='Eligible Amount'></e-column>
+            <e-column field='Paid' headerText='Paid' format="C2" textAlign='right'></e-column>
+            <e-column field='Balance' headerText='Balance' format="C2" textAlign='right'></e-column>
+            <e-column field='BillNo' headerText='Bill No'></e-column>
+            <e-column field='BillDate' headerText='Bill Date' editType='datepickeredit' type='date' format="dd-MM-yyyy"
+                textAlign='center'></e-column>
+            <!-- <e-column field='BillCopy' headerText='Bill Copy' editType='datepickeredit'></e-column> -->
+            <e-column width="180" field='ApprovalStatus' headerText='Approval Status'></e-column>
+            <e-column [allowFiltering]='false' headerText='Actions' width='100'>
+                <ng-template #template let-data>
+                    <div class="d-flex align-items-center">
+                        <button type="button" class="btn btn-light position-relative p-0 avatar-xs rounded-circle"
+                            (click)="uploadAgreementBill(data)" title="Upload Bills">
+                            <span class="avatar-title bg-transparent text-reset">
+                                <i class="ri ri-pencil-fill  text-info fs-15"></i>
+                            </span>
+                        </button>
+                        <div *ngIf="data.BillCopy!='' && data.BillCopy!=null">
+                            <button type="button" class="btn btn-light position-relative p-0 avatar-xs rounded-circle"
+                                (click)="downloadFile(data)" title="Download File">
+                                <span class="avatar-title bg-transparent text-reset">
+                                    <i class="dx-icon-download text-danger fs-15"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </ng-template>
+            </e-column>
+        </e-columns>
+    </ejs-grid>
+
+
+    <!-- <div class="col-md-12 text-end">
+        <button *ngIf="!isSubmitted" class="btn btn-primary btn-label waves-effect waves-light m-2"
+            (click)="saveData()"><i class=" ri-save-3-line label-icon align-middle fs-16 me-2"></i>
+            Save All Agreement Bills</button>
+        <button *ngIf="isSubmitted" type="button"
+            class="btn btn-load btn-primary btn-label waves-effect waves-light m-2"><i
+                class=" ri-save-3-line label-icon align-middle fs-16 me-2"></i>
+            <span class="d-flex align-items-center">
+                <span class="spinner-border flex-shrink-0" role="status">
+                    <span class="visually-hidden">Saving Details...</span>
+                </span>
+                <span class="flex-grow-1 ms-2">
+                    Saving Details...
+                </span>
+            </span>
+        </button>
+        <button type="button" class="btn btn-danger btn-label waves-effect waves-light " (click)="cancelData()"><i
+                class="ri-error-warning-line label-icon align-middle fs-16 me-2"></i>
+            Cancel</button>
+    </div> -->
+</div>

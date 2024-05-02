@@ -1,0 +1,304 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Projects\\Nspira\\Portal\\HRMS_API\\4-Infrastructure\\Dapper\\Phoenix.Infrastructure.Dapper.csproj": {}
+  },
+  "projects": {
+    "D:\\Projects\\Nspira\\Portal\\HRMS_API\\4-Infrastructure\\Dapper\\Phoenix.Infrastructure.Dapper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\Nspira\\Portal\\HRMS_API\\4-Infrastructure\\Dapper\\Phoenix.Infrastructure.Dapper.csproj",
+        "projectName": "Phoenix.Infrastructure.Dapper",
+        "projectPath": "D:\\Projects\\Nspira\\Portal\\HRMS_API\\4-Infrastructure\\Dapper\\Phoenix.Infrastructure.Dapper.csproj",
+        "packagesPath": "C:\\Users\\SeshuKumar\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Nspira\\Portal\\HRMS_API\\4-Infrastructure\\Dapper\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SeshuKumar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Projects\\Nspira\\Portal\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Enumerations\\Phoenix.CrossCutting.Enumerations.csproj": {
+                "projectPath": "D:\\Projects\\Nspira\\Portal\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Enumerations\\Phoenix.CrossCutting.Enumerations.csproj"
+              },
+              "D:\\Projects\\Nspira\\Portal\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Helper\\Phoenix.CrossCutting.Helper.csproj": {
+                "projectPath": "D:\\Projects\\Nspira\\Portal\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Helper\\Phoenix.CrossCutting.Helper.csproj"
+              },
+              "D:\\Projects\\Nspira\\Portal\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Logging\\Phoenix.CrossCutting.Logging.csproj": {
+                "projectPath": "D:\\Projects\\Nspira\\Portal\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Logging\\Phoenix.CrossCutting.Logging.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
+            "Dapper.Oracle": {
+              "target": "Package",
+              "version": "[2.0.3, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Oracle.ManagedDataAccess.Core": {
+              "target": "Package",
+              "version": "[3.21.50, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projects\\Nspira\\Portal\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Enumerations\\Phoenix.CrossCutting.Enumerations.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\Nspira\\Portal\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Enumerations\\Phoenix.CrossCutting.Enumerations.csproj",
+        "projectName": "Phoenix.CrossCutting.Enumerations",
+        "projectPath": "D:\\Projects\\Nspira\\Portal\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Enumerations\\Phoenix.CrossCutting.Enumerations.csproj",
+        "packagesPath": "C:\\Users\\SeshuKumar\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Nspira\\Portal\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Enumerations\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SeshuKumar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "SonarAnalyzer.CSharp": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.35.0.42613, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projects\\Nspira\\Portal\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Helper\\Phoenix.CrossCutting.Helper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\Nspira\\Portal\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Helper\\Phoenix.CrossCutting.Helper.csproj",
+        "projectName": "Phoenix.CrossCutting.Helper",
+        "projectPath": "D:\\Projects\\Nspira\\Portal\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Helper\\Phoenix.CrossCutting.Helper.csproj",
+        "packagesPath": "C:\\Users\\SeshuKumar\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Nspira\\Portal\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Helper\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SeshuKumar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Azure.Storage.Blobs": {
+              "target": "Package",
+              "version": "[12.9.1, )"
+            },
+            "SonarAnalyzer.CSharp": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.35.0.42613, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projects\\Nspira\\Portal\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Logging\\Phoenix.CrossCutting.Logging.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\Nspira\\Portal\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Logging\\Phoenix.CrossCutting.Logging.csproj",
+        "projectName": "Phoenix.CrossCutting.Logging",
+        "projectPath": "D:\\Projects\\Nspira\\Portal\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Logging\\Phoenix.CrossCutting.Logging.csproj",
+        "packagesPath": "C:\\Users\\SeshuKumar\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Nspira\\Portal\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Logging\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SeshuKumar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "NLog": {
+              "target": "Package",
+              "version": "[4.7.10, )"
+            },
+            "SonarAnalyzer.CSharp": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.35.0.42613, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

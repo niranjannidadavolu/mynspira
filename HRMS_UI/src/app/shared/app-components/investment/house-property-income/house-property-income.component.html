@@ -1,0 +1,66 @@
+<form [formGroup]="housePropertyForm">
+    <div formArrayName="HousePropertyIncomeDetails" class="table-responsive">
+        <div class="col-lg-12">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Particulars</th>
+                        <th>Amount</th>
+                        <th>Lender PAN </th>
+                        <th>Proposed Amount</th>
+                        <th>Remarks</th>
+                        <th *ngIf="canUpload">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let caserow of HousePropertyIncomeDetails.controls; let index=index"
+                        [formGroupName]="index">
+                        <td class="col-md-3">
+                            <input class="form-control" type="text" formControlName="Description"
+                                placeholder="Particulars" id="hparticulars_{{index}}" readonly
+                                name="hparticulars_{{index}}">
+                        </td>
+                        <td class="col-md-1">
+                            <input class="form-control" maxlength="10" type="text" placeholder="Amount"
+                                formControlName="Amount" id="hamount_{{index}}" name="hamount_{{index}}"
+                                (keypress)="numberOnly($event)">
+                        </td>
+                        <td class="col-md-1">
+                            <input class="form-control" maxlength="12" type="text" placeholder="Lender Pan"
+                                formControlName="PanNumber" id="lpan_{{index}}" name="lpan_{{index}}">
+                        </td>
+                        <td>
+                            <input maxlength="10" class="form-control" type="text" [disabled]="true"
+                                id="VerifiedAmount_{{index}}" name="VerifiedAmount_{{index}}"
+                                formControlName="VerifiedAmount">
+                        </td>
+                        <td>
+                            <input class="form-control col-md-4" type="text" id="VerifiedRemarks_{{index}}"
+                                name="VerifiedRemarks_{{index}}" [disabled]="true" formControlName="VerifiedRemarks">
+                        </td>
+                        <td class="col-md-1">
+                            <button  *ngIf="canUpload" type="button" id="page-header-cart-dropdown"
+                                (click)="uploadHousePropertyFiles(caserow)"
+                                class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle">
+                                <i _ngcontent-fsy-c552="" class="las la-paperclip fs-22"></i>
+                                <span *ngIf="caserow.get('FileCount')?.value>0"
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+                                    {{caserow.get('FileCount')?.value}}
+                                </span>
+                            </button>
+                            <button type="button" id="page-header-cart-dropdown"
+                                class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle ml-1"
+                                (click)="viewAttachments(caserow)">
+                                <i _ngcontent-fsy-c552="" class="las la-eye fs-22"></i>
+                                <span *ngIf="caserow.get('FileCount')?.value>0"
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+                                    {{caserow.get('FileCount')?.value}}
+                                </span>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</form>

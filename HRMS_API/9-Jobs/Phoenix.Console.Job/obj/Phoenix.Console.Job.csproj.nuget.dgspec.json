@@ -1,0 +1,1761 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\9-Jobs\\Phoenix.Console.Job\\Phoenix.Console.Job.csproj": {}
+  },
+  "projects": {
+    "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\2-Application\\Phoenix.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\2-Application\\Phoenix.Application.csproj",
+        "projectName": "Phoenix.Application",
+        "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\2-Application\\Phoenix.Application.csproj",
+        "packagesPath": "C:\\Users\\seshu\\.nuget\\packages\\",
+        "outputPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\2-Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seshu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\3-Domain\\Phoenix.Domain.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\3-Domain\\Phoenix.Domain.csproj"
+              },
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Security\\Phoenix.CrossCutting.Security.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Security\\Phoenix.CrossCutting.Security.csproj"
+              },
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\6-Model\\Phoenix.Model.Business.SearchCriteria\\Phoenix.Model.Business.SearchCriteria.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\6-Model\\Phoenix.Model.Business.SearchCriteria\\Phoenix.Model.Business.SearchCriteria.csproj"
+              },
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\6-Model\\Phonix.Model.Business\\Phoenix.Model.Business.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\6-Model\\Phonix.Model.Business\\Phoenix.Model.Business.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.0, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.9.0, )"
+            },
+            "SonarAnalyzer.CSharp": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.35.0.42613, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\3-Domain\\Phoenix.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\3-Domain\\Phoenix.Domain.csproj",
+        "projectName": "Phoenix.Domain",
+        "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\3-Domain\\Phoenix.Domain.csproj",
+        "packagesPath": "C:\\Users\\seshu\\.nuget\\packages\\",
+        "outputPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\3-Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seshu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Security\\Phoenix.CrossCutting.Security.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Security\\Phoenix.CrossCutting.Security.csproj"
+              },
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\6-Model\\Phoenix.Model.Business.SearchCriteria\\Phoenix.Model.Business.SearchCriteria.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\6-Model\\Phoenix.Model.Business.SearchCriteria\\Phoenix.Model.Business.SearchCriteria.csproj"
+              },
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\6-Model\\Phonix.Model.Business\\Phoenix.Model.Business.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\6-Model\\Phonix.Model.Business\\Phoenix.Model.Business.csproj"
+              },
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\8-Database\\Phoenix.Database.Repository.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\8-Database\\Phoenix.Database.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "SonarAnalyzer.CSharp": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.35.0.42613, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\4-Infrastructure\\BusinessModel\\Phoenix.Infrastructure.BusinessModel.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\4-Infrastructure\\BusinessModel\\Phoenix.Infrastructure.BusinessModel.csproj",
+        "projectName": "Phoenix.Infrastructure.BusinessModel",
+        "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\4-Infrastructure\\BusinessModel\\Phoenix.Infrastructure.BusinessModel.csproj",
+        "packagesPath": "C:\\Users\\seshu\\.nuget\\packages\\",
+        "outputPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\4-Infrastructure\\BusinessModel\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seshu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Extension\\Phoenix.CrossCutting.Extension.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Extension\\Phoenix.CrossCutting.Extension.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "SonarAnalyzer.CSharp": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.35.0.42613, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\4-Infrastructure\\Dapper\\Phoenix.Infrastructure.Dapper\\Phoenix.Infrastructure.Dapper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\4-Infrastructure\\Dapper\\Phoenix.Infrastructure.Dapper\\Phoenix.Infrastructure.Dapper.csproj",
+        "projectName": "Phoenix.Infrastructure.Dapper",
+        "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\4-Infrastructure\\Dapper\\Phoenix.Infrastructure.Dapper\\Phoenix.Infrastructure.Dapper.csproj",
+        "packagesPath": "C:\\Users\\seshu\\.nuget\\packages\\",
+        "outputPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\4-Infrastructure\\Dapper\\Phoenix.Infrastructure.Dapper\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seshu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Enumerations\\Phoenix.CrossCutting.Enumerations.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Enumerations\\Phoenix.CrossCutting.Enumerations.csproj"
+              },
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Helper\\Phoenix.CrossCutting.Helper.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Helper\\Phoenix.CrossCutting.Helper.csproj"
+              },
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Logging\\Phoenix.CrossCutting.Logging.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Logging\\Phoenix.CrossCutting.Logging.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
+            "Dapper.Oracle": {
+              "target": "Package",
+              "version": "[2.0.3, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Oracle.ManagedDataAccess.Core": {
+              "target": "Package",
+              "version": "[3.21.100, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\4-Infrastructure\\Database\\Phoenix.Infrastructure.Database.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\4-Infrastructure\\Database\\Phoenix.Infrastructure.Database.csproj",
+        "projectName": "Phoenix.Infrastructure.Database",
+        "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\4-Infrastructure\\Database\\Phoenix.Infrastructure.Database.csproj",
+        "packagesPath": "C:\\Users\\seshu\\.nuget\\packages\\",
+        "outputPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\4-Infrastructure\\Database\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seshu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Extension\\Phoenix.CrossCutting.Extension.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Extension\\Phoenix.CrossCutting.Extension.csproj"
+              },
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Helper\\Phoenix.CrossCutting.Helper.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Helper\\Phoenix.CrossCutting.Helper.csproj"
+              },
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Logging\\Phoenix.CrossCutting.Logging.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Logging\\Phoenix.CrossCutting.Logging.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
+            "SonarAnalyzer.CSharp": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.35.0.42613, )"
+            },
+            "System.Linq": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\4-Infrastructure\\Phoenix.Infrastructure.BusinessSearchCriteria\\Phoenix.Infrastructure.BusinessSearchCriteria.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\4-Infrastructure\\Phoenix.Infrastructure.BusinessSearchCriteria\\Phoenix.Infrastructure.BusinessSearchCriteria.csproj",
+        "projectName": "Phoenix.Infrastructure.BusinessSearchCriteria",
+        "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\4-Infrastructure\\Phoenix.Infrastructure.BusinessSearchCriteria\\Phoenix.Infrastructure.BusinessSearchCriteria.csproj",
+        "packagesPath": "C:\\Users\\seshu\\.nuget\\packages\\",
+        "outputPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\4-Infrastructure\\Phoenix.Infrastructure.BusinessSearchCriteria\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seshu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.DateTimeLibrary\\Phoenix.CrossCutting.DateTimeLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.DateTimeLibrary\\Phoenix.CrossCutting.DateTimeLibrary.csproj",
+        "projectName": "Phoenix.CrossCutting.DateTimeLibrary",
+        "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.DateTimeLibrary\\Phoenix.CrossCutting.DateTimeLibrary.csproj",
+        "packagesPath": "C:\\Users\\seshu\\.nuget\\packages\\",
+        "outputPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.DateTimeLibrary\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seshu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Enumerations\\Phoenix.CrossCutting.Enumerations.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Enumerations\\Phoenix.CrossCutting.Enumerations.csproj",
+        "projectName": "Phoenix.CrossCutting.Enumerations",
+        "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Enumerations\\Phoenix.CrossCutting.Enumerations.csproj",
+        "packagesPath": "C:\\Users\\seshu\\.nuget\\packages\\",
+        "outputPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Enumerations\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seshu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Helper\\Phoenix.CrossCutting.Helper.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Helper\\Phoenix.CrossCutting.Helper.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "SonarAnalyzer.CSharp": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.35.0.42613, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Extension\\Phoenix.CrossCutting.Extension.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Extension\\Phoenix.CrossCutting.Extension.csproj",
+        "projectName": "Phoenix.CrossCutting.Extension",
+        "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Extension\\Phoenix.CrossCutting.Extension.csproj",
+        "packagesPath": "C:\\Users\\seshu\\.nuget\\packages\\",
+        "outputPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Extension\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seshu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "SonarAnalyzer.CSharp": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.35.0.42613, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Helper\\Phoenix.CrossCutting.Helper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Helper\\Phoenix.CrossCutting.Helper.csproj",
+        "projectName": "Phoenix.CrossCutting.Helper",
+        "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Helper\\Phoenix.CrossCutting.Helper.csproj",
+        "packagesPath": "C:\\Users\\seshu\\.nuget\\packages\\",
+        "outputPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Helper\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seshu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Extension\\Phoenix.CrossCutting.Extension.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Extension\\Phoenix.CrossCutting.Extension.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "SonarAnalyzer.CSharp": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.35.0.42613, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.JwtGenerator\\Phoenix.CrossCutting.JwtGenerator.csproj": {
+      "version": "5.1.0",
+      "restore": {
+        "projectUniqueName": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.JwtGenerator\\Phoenix.CrossCutting.JwtGenerator.csproj",
+        "projectName": "Phoenix.CrossCutting.JwtGenerator",
+        "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.JwtGenerator\\Phoenix.CrossCutting.JwtGenerator.csproj",
+        "packagesPath": "C:\\Users\\seshu\\.nuget\\packages\\",
+        "outputPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.JwtGenerator\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seshu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.DataProtection": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.30.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.30.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Jwt\\Phoenix.CrossCutting.Jwt.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Jwt\\Phoenix.CrossCutting.Jwt.csproj",
+        "projectName": "Phoenix.CrossCutting.Jwt",
+        "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Jwt\\Phoenix.CrossCutting.Jwt.csproj",
+        "packagesPath": "C:\\Users\\seshu\\.nuget\\packages\\",
+        "outputPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Jwt\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seshu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.30.1, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.30.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Logging\\Phoenix.CrossCutting.Logging.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Logging\\Phoenix.CrossCutting.Logging.csproj",
+        "projectName": "Phoenix.CrossCutting.Logging",
+        "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Logging\\Phoenix.CrossCutting.Logging.csproj",
+        "packagesPath": "C:\\Users\\seshu\\.nuget\\packages\\",
+        "outputPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Logging\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seshu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "NLog": {
+              "target": "Package",
+              "version": "[4.7.10, )"
+            },
+            "SonarAnalyzer.CSharp": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.35.0.42613, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Resources\\Phoenix.CrossCutting.Resources.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Resources\\Phoenix.CrossCutting.Resources.csproj",
+        "projectName": "Phoenix.CrossCutting.Resources",
+        "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Resources\\Phoenix.CrossCutting.Resources.csproj",
+        "packagesPath": "C:\\Users\\seshu\\.nuget\\packages\\",
+        "outputPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Resources\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seshu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "SonarAnalyzer.CSharp": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.35.0.42613, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Security\\Phoenix.CrossCutting.Security.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Security\\Phoenix.CrossCutting.Security.csproj",
+        "projectName": "Phoenix.CrossCutting.Security",
+        "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Security\\Phoenix.CrossCutting.Security.csproj",
+        "packagesPath": "C:\\Users\\seshu\\.nuget\\packages\\",
+        "outputPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Security\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seshu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.30.1, )"
+            },
+            "SonarAnalyzer.CSharp": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.35.0.42613, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.30.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.TimePeriod\\Phoenix.CrossCutting.TimePeriod.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.TimePeriod\\Phoenix.CrossCutting.TimePeriod.csproj",
+        "projectName": "Phoenix.CrossCutting.TimePeriod",
+        "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.TimePeriod\\Phoenix.CrossCutting.TimePeriod.csproj",
+        "packagesPath": "C:\\Users\\seshu\\.nuget\\packages\\",
+        "outputPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.TimePeriod\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seshu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Utils\\Phoenix.CrossCutting.Utils.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Utils\\Phoenix.CrossCutting.Utils.csproj",
+        "projectName": "Phoenix.CrossCutting.Utils",
+        "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Utils\\Phoenix.CrossCutting.Utils.csproj",
+        "packagesPath": "C:\\Users\\seshu\\.nuget\\packages\\",
+        "outputPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Utils\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seshu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Extension\\Phoenix.CrossCutting.Extension.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Extension\\Phoenix.CrossCutting.Extension.csproj"
+              },
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Helper\\Phoenix.CrossCutting.Helper.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Helper\\Phoenix.CrossCutting.Helper.csproj"
+              },
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\6-Model\\Phonix.Model.Business\\Phoenix.Model.Business.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\6-Model\\Phonix.Model.Business\\Phoenix.Model.Business.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "SonarAnalyzer.CSharp": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.35.0.42613, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.30.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\6-Model\\Phoenix.Model.Business.SearchCriteria\\Phoenix.Model.Business.SearchCriteria.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\6-Model\\Phoenix.Model.Business.SearchCriteria\\Phoenix.Model.Business.SearchCriteria.csproj",
+        "projectName": "Phoenix.Model.Business.SearchCriteria",
+        "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\6-Model\\Phoenix.Model.Business.SearchCriteria\\Phoenix.Model.Business.SearchCriteria.csproj",
+        "packagesPath": "C:\\Users\\seshu\\.nuget\\packages\\",
+        "outputPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\6-Model\\Phoenix.Model.Business.SearchCriteria\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seshu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\4-Infrastructure\\Phoenix.Infrastructure.BusinessSearchCriteria\\Phoenix.Infrastructure.BusinessSearchCriteria.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\4-Infrastructure\\Phoenix.Infrastructure.BusinessSearchCriteria\\Phoenix.Infrastructure.BusinessSearchCriteria.csproj"
+              },
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Extension\\Phoenix.CrossCutting.Extension.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Extension\\Phoenix.CrossCutting.Extension.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\6-Model\\Phoenix.Model.Database\\Phoenix.Model.Database.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\6-Model\\Phoenix.Model.Database\\Phoenix.Model.Database.csproj",
+        "projectName": "Phoenix.Model.Database",
+        "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\6-Model\\Phoenix.Model.Database\\Phoenix.Model.Database.csproj",
+        "packagesPath": "C:\\Users\\seshu\\.nuget\\packages\\",
+        "outputPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\6-Model\\Phoenix.Model.Database\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seshu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\6-Model\\Phonix.Model.Business\\Phoenix.Model.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\6-Model\\Phonix.Model.Business\\Phoenix.Model.Business.csproj",
+        "projectName": "Phoenix.Model.Business",
+        "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\6-Model\\Phonix.Model.Business\\Phoenix.Model.Business.csproj",
+        "packagesPath": "C:\\Users\\seshu\\.nuget\\packages\\",
+        "outputPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\6-Model\\Phonix.Model.Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seshu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\4-Infrastructure\\BusinessModel\\Phoenix.Infrastructure.BusinessModel.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\4-Infrastructure\\BusinessModel\\Phoenix.Infrastructure.BusinessModel.csproj"
+              },
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Enumerations\\Phoenix.CrossCutting.Enumerations.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Enumerations\\Phoenix.CrossCutting.Enumerations.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\8-Database\\Phoenix.Database.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\8-Database\\Phoenix.Database.Repository.csproj",
+        "projectName": "Phoenix.Database.Repository",
+        "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\8-Database\\Phoenix.Database.Repository.csproj",
+        "packagesPath": "C:\\Users\\seshu\\.nuget\\packages\\",
+        "outputPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\8-Database\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seshu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\4-Infrastructure\\BusinessModel\\Phoenix.Infrastructure.BusinessModel.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\4-Infrastructure\\BusinessModel\\Phoenix.Infrastructure.BusinessModel.csproj"
+              },
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\4-Infrastructure\\Dapper\\Phoenix.Infrastructure.Dapper\\Phoenix.Infrastructure.Dapper.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\4-Infrastructure\\Dapper\\Phoenix.Infrastructure.Dapper\\Phoenix.Infrastructure.Dapper.csproj"
+              },
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\4-Infrastructure\\Database\\Phoenix.Infrastructure.Database.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\4-Infrastructure\\Database\\Phoenix.Infrastructure.Database.csproj"
+              },
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.DateTimeLibrary\\Phoenix.CrossCutting.DateTimeLibrary.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.DateTimeLibrary\\Phoenix.CrossCutting.DateTimeLibrary.csproj"
+              },
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Extension\\Phoenix.CrossCutting.Extension.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Extension\\Phoenix.CrossCutting.Extension.csproj"
+              },
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.JwtGenerator\\Phoenix.CrossCutting.JwtGenerator.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.JwtGenerator\\Phoenix.CrossCutting.JwtGenerator.csproj"
+              },
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Jwt\\Phoenix.CrossCutting.Jwt.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Jwt\\Phoenix.CrossCutting.Jwt.csproj"
+              },
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Resources\\Phoenix.CrossCutting.Resources.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Resources\\Phoenix.CrossCutting.Resources.csproj"
+              },
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Security\\Phoenix.CrossCutting.Security.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Security\\Phoenix.CrossCutting.Security.csproj"
+              },
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.TimePeriod\\Phoenix.CrossCutting.TimePeriod.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.TimePeriod\\Phoenix.CrossCutting.TimePeriod.csproj"
+              },
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Utils\\Phoenix.CrossCutting.Utils.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Utils\\Phoenix.CrossCutting.Utils.csproj"
+              },
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\6-Model\\Phoenix.Model.Business.SearchCriteria\\Phoenix.Model.Business.SearchCriteria.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\6-Model\\Phoenix.Model.Business.SearchCriteria\\Phoenix.Model.Business.SearchCriteria.csproj"
+              },
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\6-Model\\Phoenix.Model.Database\\Phoenix.Model.Database.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\6-Model\\Phoenix.Model.Database\\Phoenix.Model.Database.csproj"
+              },
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\6-Model\\Phonix.Model.Business\\Phoenix.Model.Business.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\6-Model\\Phonix.Model.Business\\Phoenix.Model.Business.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Otp.NET": {
+              "target": "Package",
+              "version": "[1.2.2, )"
+            },
+            "ReportViewerCore.NETCore": {
+              "target": "Package",
+              "version": "[15.1.16, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[107.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\9-Jobs\\Phoenix.Console.Job\\Phoenix.Console.Job.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\9-Jobs\\Phoenix.Console.Job\\Phoenix.Console.Job.csproj",
+        "projectName": "Phoenix.Console.Job",
+        "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\9-Jobs\\Phoenix.Console.Job\\Phoenix.Console.Job.csproj",
+        "packagesPath": "C:\\Users\\seshu\\.nuget\\packages\\",
+        "outputPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\9-Jobs\\Phoenix.Console.Job\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seshu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\2-Application\\Phoenix.Application.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\2-Application\\Phoenix.Application.csproj"
+              },
+              "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\6-Model\\Phonix.Model.Business\\Phoenix.Model.Business.csproj": {
+                "projectPath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\6-Model\\Phonix.Model.Business\\Phoenix.Model.Business.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.Extensions.Caching.Redis": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<div class="widget-container">
+    <dx-calendar
+      #calendar
+      id="calendar-container"
+      [firstDayOfWeek]="firstDay"
+      [disabled]="false"
+      [value]="currentValue"
+      [zoomLevel]="zoomLevels[0]"
+      [cellTemplate]="cellTemplate"
+    >
+      <span
+        *dxTemplate="let cell of 'cellTemplate'"
+        [ngClass]="getCellCssClass(cell)"
+      >
+        {{ cell.text  }}
+      </span>
+    </dx-calendar>
+  </div>

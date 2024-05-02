@@ -1,0 +1,3758 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "4.6.0.0",
+        "fileVersion": "4.6.0-3.23259.8 (c3cc1d0c)",
+        "semanticVersion": "4.6.0",
+        "language": "en-US"
+      },
+      "results": [
+        {
+          "ruleId": "SYSLIB0021",
+          "level": "warning",
+          "message": "'SHA1CryptoServiceProvider' is obsolete: 'Derived cryptographic types are obsolete. Use the Create method on the base type instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Hash/SHA/Obsolete/SHA1.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 33,
+                  "endLine": 8,
+                  "endColumn": 58
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "SYSLIB0021",
+          "level": "warning",
+          "message": "'SHA256CryptoServiceProvider' is obsolete: 'Derived cryptographic types are obsolete. Use the Create method on the base type instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Hash/SHA/Obsolete/SHA256.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 35,
+                  "endLine": 8,
+                  "endColumn": 62
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "SYSLIB0021",
+          "level": "warning",
+          "message": "'SHA384CryptoServiceProvider' is obsolete: 'Derived cryptographic types are obsolete. Use the Create method on the base type instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Hash/SHA/Obsolete/SHA384.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 35,
+                  "endLine": 8,
+                  "endColumn": 62
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "SYSLIB0021",
+          "level": "warning",
+          "message": "'SHA512CryptoServiceProvider' is obsolete: 'Derived cryptographic types are obsolete. Use the Create method on the base type instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Hash/SHA/Obsolete/SHA512.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 35,
+                  "endLine": 8,
+                  "endColumn": 62
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "SYSLIB0021",
+          "level": "warning",
+          "message": "'AesCryptoServiceProvider' is obsolete: 'Derived cryptographic types are obsolete. Use the Create method on the base type instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/AES.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 38,
+                  "endLine": 15,
+                  "endColumn": 62
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "SYSLIB0021",
+          "level": "warning",
+          "message": "'DESCryptoServiceProvider' is obsolete: 'Derived cryptographic types are obsolete. Use the Create method on the base type instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/DES.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 38,
+                  "endLine": 10,
+                  "endColumn": 62
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "SYSLIB0022",
+          "level": "warning",
+          "message": "'RijndaelManaged' is obsolete: 'The Rijndael and RijndaelManaged types are obsolete. Use Aes instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/Rijndael.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 43,
+                  "endLine": 12,
+                  "endColumn": 58
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "SYSLIB0021",
+          "level": "warning",
+          "message": "'TripleDESCryptoServiceProvider' is obsolete: 'Derived cryptographic types are obsolete. Use the Create method on the base type instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/TripleDES.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 44,
+                  "endLine": 12,
+                  "endColumn": 74
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "SYSLIB0023",
+          "level": "warning",
+          "message": "'RNGCryptoServiceProvider' is obsolete: 'RNGCryptoServiceProvider is obsolete. To generate a random number, use one of the RandomNumberGenerator static methods instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Util/RandomGenerator.cs",
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 20,
+                  "endLine": 40,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "SYSLIB0023",
+          "level": "warning",
+          "message": "'RNGCryptoServiceProvider' is obsolete: 'RNGCryptoServiceProvider is obsolete. To generate a random number, use one of the RandomNumberGenerator static methods instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Util/RandomGenerator.cs",
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 60,
+                  "endLine": 40,
+                  "endColumn": 84
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "SYSLIB0021",
+          "level": "warning",
+          "message": "'SHA512Managed' is obsolete: 'Derived cryptographic types are obsolete. Use the Create method on the base type instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/Hash/Hash.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 39,
+                  "endLine": 16,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "SYSLIB0028",
+          "level": "warning",
+          "message": "'X509Certificate2.PrivateKey' is obsolete: 'X509Certificate2.PrivateKey is obsolete. Use the appropriate method to get the private key, such as GetRSAPrivateKey, or use the CopyWithPrivateKey method to create a new instance with a private key.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSA.cs",
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 20,
+                  "endLine": 50,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "SYSLIB0027",
+          "level": "warning",
+          "message": "'PublicKey.Key' is obsolete: 'PublicKey.Key is obsolete. Use the appropriate method to get the public key, such as GetRSAPublicKey.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSA.cs",
+                "region": {
+                  "startLine": 62,
+                  "startColumn": 20,
+                  "endLine": 62,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "SYSLIB0021",
+          "level": "warning",
+          "message": "'SHA1CryptoServiceProvider' is obsolete: 'Derived cryptographic types are obsolete. Use the Create method on the base type instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Hash/SHA/SHA.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 50,
+                  "endLine": 27,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "SYSLIB0021",
+          "level": "warning",
+          "message": "'SHA256CryptoServiceProvider' is obsolete: 'Derived cryptographic types are obsolete. Use the Create method on the base type instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Hash/SHA/SHA.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 50,
+                  "endLine": 29,
+                  "endColumn": 77
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "SYSLIB0021",
+          "level": "warning",
+          "message": "'SHA384CryptoServiceProvider' is obsolete: 'Derived cryptographic types are obsolete. Use the Create method on the base type instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Hash/SHA/SHA.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 50,
+                  "endLine": 31,
+                  "endColumn": 77
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "SYSLIB0021",
+          "level": "warning",
+          "message": "'SHA512CryptoServiceProvider' is obsolete: 'Derived cryptographic types are obsolete. Use the Create method on the base type instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Hash/SHA/SHA.cs",
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 50,
+                  "endLine": 33,
+                  "endColumn": 77
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "SYSLIB0021",
+          "level": "warning",
+          "message": "'MD5CryptoServiceProvider' is obsolete: 'Derived cryptographic types are obsolete. Use the Create method on the base type instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Hash/MD5/MD5.cs",
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 20,
+                  "endLine": 85,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "SYSLIB0021",
+          "level": "warning",
+          "message": "'MD5CryptoServiceProvider' is obsolete: 'Derived cryptographic types are obsolete. Use the Create method on the base type instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Hash/MD5/MD5.cs",
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 60,
+                  "endLine": 85,
+                  "endColumn": 84
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "S3261",
+          "level": "warning",
+          "message": "Remove this empty namespace.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Hash/HMAC/Obsolete/HMACRIPEMD160.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 11,
+                  "endColumn": 2
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'RSA' to match pascal case naming rules, consider using 'Rsa'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSA.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 25,
+                  "endLine": 12,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'RSAOpenSslSingletonContainer' to match pascal case naming rules, consider using 'RsaOpenSslSingletonContainer'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSAOpenSsl.cs",
+                "region": {
+                  "startLine": 323,
+                  "startColumn": 27,
+                  "endLine": 323,
+                  "endColumn": 55
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2342",
+          "level": "warning",
+          "message": "Rename this enumeration to match the regular expression: '^([A-Z]{1,3}[a-z0-9]+)*([A-Z]{2})?$'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSASizeTypes.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 17,
+                  "endLine": 9,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2223",
+          "level": "warning",
+          "message": "Change the visibility of 'Instance' or make it 'const' or 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSAOpenSsl.cs",
+                "region": {
+                  "startLine": 325,
+                  "startColumn": 36,
+                  "endLine": 325,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'RSAOpenSsl' to match pascal case naming rules, consider using 'RsaOpenSsl'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSAOpenSsl.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 25,
+                  "endLine": 16,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1118",
+          "level": "warning",
+          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Base64.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 18,
+                  "endLine": 9,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2342",
+          "level": "warning",
+          "message": "Rename this enumeration to match the regular expression: '^([A-Z]{1,3}[a-z0-9]+)*([A-Z]{2})?$'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Hash/HMAC/Enum/HMACAlgorithmTypes.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 17,
+                  "endLine": 9,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2211",
+          "level": "note",
+          "message": "Non-constant fields should not be visible",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Check/CRC/Abstraction/CrcHashAlgorithm.cs",
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 55,
+                  "endLine": 19,
+                  "endColumn": 61
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2223",
+          "level": "warning",
+          "message": "Change the visibility of 'Paramters' or make it 'const' or 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Check/CRC/Abstraction/CrcHashAlgorithm.cs",
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 65,
+                  "endLine": 24,
+                  "endColumn": 74
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1118",
+          "level": "warning",
+          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Hash/HMAC/HMAC.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 18,
+                  "endLine": 13,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2257",
+          "level": "warning",
+          "message": "Make sure using a non-standard cryptographic algorithm is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Check/CRC/Abstraction/CrcHashAlgorithm.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 27,
+                  "endLine": 14,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1118",
+          "level": "warning",
+          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Hash/MD5/MD5.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 18,
+                  "endLine": 12,
+                  "endColumn": 21
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'HMAC' to match pascal case naming rules, consider using 'Hmac'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Hash/HMAC/HMAC.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 18,
+                  "endLine": 13,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'HMACMD5' to match pascal case naming rules, consider using 'Hmacmd5'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Hash/HMAC/Obsolete/HMACMD5.cs",
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 18,
+                  "endLine": 6,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'HMACBase' to match pascal case naming rules, consider using 'HmacBase'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Hash/HMAC/Obsolete/HMACBase.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 27,
+                  "endLine": 9,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'HMACSHA1' to match pascal case naming rules, consider using 'Hmacsha1'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Hash/HMAC/Obsolete/HMACSHA1.cs",
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 18,
+                  "endLine": 6,
+                  "endColumn": 26
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1118",
+          "level": "warning",
+          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Check/CRC/Abstraction/CrcHashAlgorithmHelper.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 20,
+                  "endLine": 5,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2223",
+          "level": "warning",
+          "message": "Change the visibility of 'Tables' or make it 'const' or 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Check/CRC/Abstraction/CrcHashAlgorithm.cs",
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 55,
+                  "endLine": 19,
+                  "endColumn": 61
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'SHA1' to match pascal case naming rules, consider using 'Sha1'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Hash/SHA/Obsolete/SHA1.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 18,
+                  "endLine": 8,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'SHA256' to match pascal case naming rules, consider using 'Sha256'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Hash/SHA/Obsolete/SHA256.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 18,
+                  "endLine": 8,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'SHA384' to match pascal case naming rules, consider using 'Sha384'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Hash/SHA/Obsolete/SHA384.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 18,
+                  "endLine": 8,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'HMACSHA384' to match pascal case naming rules, consider using 'Hmacsha384'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Hash/HMAC/Obsolete/HMACSHA384.cs",
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 18,
+                  "endLine": 6,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'HMACSHA512' to match pascal case naming rules, consider using 'Hmacsha512'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Hash/HMAC/Obsolete/HMACSHA512.cs",
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 18,
+                  "endLine": 6,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'SHA512' to match pascal case naming rules, consider using 'Sha512'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Hash/SHA/Obsolete/SHA512.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 18,
+                  "endLine": 8,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1118",
+          "level": "warning",
+          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Hash/SHA/SHA.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 18,
+                  "endLine": 13,
+                  "endColumn": 21
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'SHABase' to match pascal case naming rules, consider using 'ShaBase'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Hash/SHA/Obsolete/SHABase.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 27,
+                  "endLine": 9,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2342",
+          "level": "warning",
+          "message": "Rename this enumeration to match the regular expression: '^([A-Z]{1,3}[a-z0-9]+)*([A-Z]{2})?$'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Hash/SHA/Enum/SHAAlgorithmTypes.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 17,
+                  "endLine": 9,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'SHA' to match pascal case naming rules, consider using 'Sha'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Hash/SHA/SHA.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 18,
+                  "endLine": 13,
+                  "endColumn": 21
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'HMACSHA256' to match pascal case naming rules, consider using 'Hmacsha256'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Hash/HMAC/Obsolete/HMACSHA256.cs",
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 18,
+                  "endLine": 6,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2342",
+          "level": "warning",
+          "message": "Rename this enumeration to match the regular expression: '^([A-Z]{1,3}[a-z0-9]+)*([A-Z]{2})?$'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Check/CRC/CRCTypes.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 17,
+                  "endLine": 9,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1118",
+          "level": "warning",
+          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Util/ArgumentValidator.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 20,
+                  "endLine": 8,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'AES' to match pascal case naming rules, consider using 'Aes'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/AES.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 18,
+                  "endLine": 15,
+                  "endColumn": 21
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'DES' to match pascal case naming rules, consider using 'Des'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/DES.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 18,
+                  "endLine": 10,
+                  "endColumn": 21
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1118",
+          "level": "warning",
+          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Check/Xor.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 18,
+                  "endLine": 9,
+                  "endColumn": 21
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2344",
+          "level": "warning",
+          "message": "Rename this enumeration to remove the 'Flags' suffix.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/Enum/AESKeySizeFlags.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 17,
+                  "endLine": 9,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2342",
+          "level": "warning",
+          "message": "Rename this enumeration to match the regular expression: '^([A-Z]{1,3}[a-z0-9]+)*([A-Z]{2})?$'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/Enum/AESKeySizeFlags.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 17,
+                  "endLine": 9,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'CRC64' to match pascal case naming rules, consider using 'Crc64'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Check/CRC/Implement/CRC64.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 25,
+                  "endLine": 10,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'CRC32' to match pascal case naming rules, consider using 'Crc32'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Check/CRC/Implement/CRC32.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 25,
+                  "endLine": 10,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2344",
+          "level": "warning",
+          "message": "Rename this enumeration to remove the 'Flags' suffix.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/Enum/TripleDESKeySizeFlags.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 17,
+                  "endLine": 9,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2342",
+          "level": "warning",
+          "message": "Rename this enumeration to match the regular expression: '^([A-Z]{1,3}[a-z0-9]+)*([A-Z]{2})?$'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/Enum/TripleDESKeySizeFlags.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 17,
+                  "endLine": 9,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'CRC8' to match pascal case naming rules, consider using 'Crc8'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Check/CRC/Implement/CRC8.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 25,
+                  "endLine": 10,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2257",
+          "level": "warning",
+          "message": "Make sure using a non-standard cryptographic algorithm is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Check/CRC/Implement/CRC64.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 25,
+                  "endLine": 10,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'CRC16' to match pascal case naming rules, consider using 'Crc16'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Check/CRC/Implement/CRC16.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 25,
+                  "endLine": 10,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2257",
+          "level": "warning",
+          "message": "Make sure using a non-standard cryptographic algorithm is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Check/CRC/Implement/CRC32.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 25,
+                  "endLine": 10,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2257",
+          "level": "warning",
+          "message": "Make sure using a non-standard cryptographic algorithm is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Check/CRC/Implement/CRC8.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 25,
+                  "endLine": 10,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2257",
+          "level": "warning",
+          "message": "Make sure using a non-standard cryptographic algorithm is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Check/CRC/Implement/CRC16.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 25,
+                  "endLine": 10,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'TripleDES' to match pascal case naming rules, consider using 'TripleDes'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/TripleDES.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 18,
+                  "endLine": 12,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2245",
+          "level": "warning",
+          "message": "Make sure that using this pseudorandom number generator is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Util/RandomGenerator.cs",
+                "region": {
+                  "startLine": 46,
+                  "startColumn": 29,
+                  "endLine": 46,
+                  "endColumn": 67
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1846",
+          "level": "note",
+          "message": "Prefer 'AsSpan' over 'Substring' when span-based overloads are available",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Util/RandomGenerator.cs",
+                "region": {
+                  "startLine": 71,
+                  "startColumn": 17,
+                  "endLine": 71,
+                  "endColumn": 73
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3928",
+          "level": "warning",
+          "message": "The parameter name 'item' is not declared in the argument list.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Util/ArgumentValidator.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 41,
+                  "endLine": 21,
+                  "endColumn": 80
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2234",
+          "level": "warning",
+          "message": "Parameters to 'EncryptOrDecryptString' have the same names but not the same order as the method arguments.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/TripleDES.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 20,
+                  "endLine": 29,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/SymmetricBase.cs",
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 32,
+                  "endLine": 30,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2234",
+          "level": "warning",
+          "message": "Parameters to 'EncryptOrDecryptString' have the same names but not the same order as the method arguments.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/TripleDES.cs",
+                "region": {
+                  "startLine": 47,
+                  "startColumn": 20,
+                  "endLine": 47,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/SymmetricBase.cs",
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 32,
+                  "endLine": 30,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2208",
+          "level": "note",
+          "message": "Method Validate passes 'item' as the paramName argument to a ArgumentNullException constructor. Replace this argument with one of the method's parameter names. Note that the provided parameter name should have the exact casing as declared on the method.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Util/ArgumentValidator.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 41,
+                  "endLine": 21,
+                  "endColumn": 80
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2234",
+          "level": "warning",
+          "message": "Parameters to 'EncryptOrDecryptBytes' have the same names but not the same order as the method arguments.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/TripleDES.cs",
+                "region": {
+                  "startLine": 65,
+                  "startColumn": 20,
+                  "endLine": 65,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/SymmetricBase.cs",
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 32,
+                  "endLine": 60,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1116",
+          "level": "warning",
+          "message": "Remove this empty statement.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSAOpenSsl.cs",
+                "region": {
+                  "startLine": 83,
+                  "startColumn": 62,
+                  "endLine": 83,
+                  "endColumn": 63
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2234",
+          "level": "warning",
+          "message": "Parameters to 'EncryptOrDecryptBytes' have the same names but not the same order as the method arguments.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/TripleDES.cs",
+                "region": {
+                  "startLine": 83,
+                  "startColumn": 20,
+                  "endLine": 83,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/SymmetricBase.cs",
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 32,
+                  "endLine": 60,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S107",
+          "level": "warning",
+          "message": "Method has 9 parameters, which is greater than the 7 authorized.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/TripleDES.cs",
+                "region": {
+                  "startLine": 81,
+                  "startColumn": 42,
+                  "endLine": 81,
+                  "endColumn": 298
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S107",
+          "level": "warning",
+          "message": "Method has 9 parameters, which is greater than the 7 authorized.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/TripleDES.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 37,
+                  "endLine": 27,
+                  "endColumn": 293
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S107",
+          "level": "warning",
+          "message": "Method has 9 parameters, which is greater than the 7 authorized.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/TripleDES.cs",
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 37,
+                  "endLine": 45,
+                  "endColumn": 293
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S107",
+          "level": "warning",
+          "message": "Method has 9 parameters, which is greater than the 7 authorized.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/TripleDES.cs",
+                "region": {
+                  "startLine": 63,
+                  "startColumn": 42,
+                  "endLine": 63,
+                  "endColumn": 298
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4426",
+          "level": "warning",
+          "message": "Use a key length of at least 2048 bits for RSA cipher algorithm.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSA.cs",
+                "region": {
+                  "startLine": 102,
+                  "startColumn": 51,
+                  "endLine": 102,
+                  "endColumn": 81
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S5542",
+          "level": "warning",
+          "message": "Use secure mode and padding scheme.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSA.cs",
+                "region": {
+                  "startLine": 105,
+                  "startColumn": 32,
+                  "endLine": 105,
+                  "endColumn": 61
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S5542",
+          "level": "warning",
+          "message": "Use secure mode and padding scheme.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSAOpenSsl.cs",
+                "region": {
+                  "startLine": 117,
+                  "startColumn": 47,
+                  "endLine": 117,
+                  "endColumn": 90
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4426",
+          "level": "warning",
+          "message": "Use a key length of at least 2048 bits for RSA cipher algorithm.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSA.cs",
+                "region": {
+                  "startLine": 133,
+                  "startColumn": 51,
+                  "endLine": 133,
+                  "endColumn": 81
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S107",
+          "level": "warning",
+          "message": "Method has 11 parameters, which is greater than the 7 authorized.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/SymmetricBase.cs",
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 54,
+                  "endLine": 30,
+                  "endColumn": 312
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1168",
+          "level": "warning",
+          "message": "Return an empty collection instead of null.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/SymmetricBase.cs",
+                "region": {
+                  "startLine": 106,
+                  "startColumn": 40,
+                  "endLine": 106,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S107",
+          "level": "warning",
+          "message": "Method has 11 parameters, which is greater than the 7 authorized.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/SymmetricBase.cs",
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 53,
+                  "endLine": 60,
+                  "endColumn": 311
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2234",
+          "level": "warning",
+          "message": "Parameters to 'EncryptOrDecryptString' have the same names but not the same order as the method arguments.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/Rijndael.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 20,
+                  "endLine": 29,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/SymmetricBase.cs",
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 32,
+                  "endLine": 30,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2234",
+          "level": "warning",
+          "message": "Parameters to 'EncryptOrDecryptString' have the same names but not the same order as the method arguments.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/Rijndael.cs",
+                "region": {
+                  "startLine": 47,
+                  "startColumn": 20,
+                  "endLine": 47,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/SymmetricBase.cs",
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 32,
+                  "endLine": 30,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2234",
+          "level": "warning",
+          "message": "Parameters to 'EncryptOrDecryptBytes' have the same names but not the same order as the method arguments.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/Rijndael.cs",
+                "region": {
+                  "startLine": 65,
+                  "startColumn": 20,
+                  "endLine": 65,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/SymmetricBase.cs",
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 32,
+                  "endLine": 60,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2234",
+          "level": "warning",
+          "message": "Parameters to 'EncryptOrDecryptBytes' have the same names but not the same order as the method arguments.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/Rijndael.cs",
+                "region": {
+                  "startLine": 83,
+                  "startColumn": 20,
+                  "endLine": 83,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/SymmetricBase.cs",
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 32,
+                  "endLine": 60,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2234",
+          "level": "warning",
+          "message": "Parameters to 'EncryptOrDecryptString' have the same names but not the same order as the method arguments.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/DES.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 20,
+                  "endLine": 26,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/SymmetricBase.cs",
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 32,
+                  "endLine": 30,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2234",
+          "level": "warning",
+          "message": "Parameters to 'EncryptOrDecryptString' have the same names but not the same order as the method arguments.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/DES.cs",
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 20,
+                  "endLine": 43,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/SymmetricBase.cs",
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 32,
+                  "endLine": 30,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2234",
+          "level": "warning",
+          "message": "Parameters to 'EncryptOrDecryptBytes' have the same names but not the same order as the method arguments.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/DES.cs",
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 20,
+                  "endLine": 60,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/SymmetricBase.cs",
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 32,
+                  "endLine": 60,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2234",
+          "level": "warning",
+          "message": "Parameters to 'EncryptOrDecryptBytes' have the same names but not the same order as the method arguments.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/DES.cs",
+                "region": {
+                  "startLine": 77,
+                  "startColumn": 20,
+                  "endLine": 77,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/SymmetricBase.cs",
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 32,
+                  "endLine": 60,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4426",
+          "level": "warning",
+          "message": "Use a key length of at least 2048 bits for RSA cipher algorithm.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSAOpenSsl.cs",
+                "region": {
+                  "startLine": 171,
+                  "startColumn": 51,
+                  "endLine": 171,
+                  "endColumn": 81
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2997",
+          "level": "warning",
+          "message": "Remove the 'using' statement; it will cause automatic disposal of 'rsa'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSAOpenSsl.cs",
+                "region": {
+                  "startLine": 171,
+                  "startColumn": 13,
+                  "endLine": 171,
+                  "endColumn": 18
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S107",
+          "level": "warning",
+          "message": "Method has 9 parameters, which is greater than the 7 authorized.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/Rijndael.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 37,
+                  "endLine": 27,
+                  "endColumn": 281
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2234",
+          "level": "warning",
+          "message": "Parameters to 'EncryptOrDecryptString' have the same names but not the same order as the method arguments.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/AES.cs",
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 20,
+                  "endLine": 28,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/SymmetricBase.cs",
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 32,
+                  "endLine": 30,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S107",
+          "level": "warning",
+          "message": "Method has 9 parameters, which is greater than the 7 authorized.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/Rijndael.cs",
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 37,
+                  "endLine": 45,
+                  "endColumn": 281
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S107",
+          "level": "warning",
+          "message": "Method has 9 parameters, which is greater than the 7 authorized.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/Rijndael.cs",
+                "region": {
+                  "startLine": 63,
+                  "startColumn": 42,
+                  "endLine": 63,
+                  "endColumn": 286
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2234",
+          "level": "warning",
+          "message": "Parameters to 'EncryptOrDecryptString' have the same names but not the same order as the method arguments.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/AES.cs",
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 20,
+                  "endLine": 42,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/SymmetricBase.cs",
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 32,
+                  "endLine": 30,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S107",
+          "level": "warning",
+          "message": "Method has 9 parameters, which is greater than the 7 authorized.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/Rijndael.cs",
+                "region": {
+                  "startLine": 81,
+                  "startColumn": 42,
+                  "endLine": 81,
+                  "endColumn": 286
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2234",
+          "level": "warning",
+          "message": "Parameters to 'EncryptOrDecryptBytes' have the same names but not the same order as the method arguments.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/AES.cs",
+                "region": {
+                  "startLine": 70,
+                  "startColumn": 20,
+                  "endLine": 70,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/SymmetricBase.cs",
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 32,
+                  "endLine": 60,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2234",
+          "level": "warning",
+          "message": "Parameters to 'EncryptOrDecryptBytes' have the same names but not the same order as the method arguments.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/AES.cs",
+                "region": {
+                  "startLine": 56,
+                  "startColumn": 20,
+                  "endLine": 56,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/SymmetricBase.cs",
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 32,
+                  "endLine": 60,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S107",
+          "level": "warning",
+          "message": "Method has 8 parameters, which is greater than the 7 authorized.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/DES.cs",
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 37,
+                  "endLine": 24,
+                  "endColumn": 233
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S107",
+          "level": "warning",
+          "message": "Method has 8 parameters, which is greater than the 7 authorized.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/DES.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 37,
+                  "endLine": 41,
+                  "endColumn": 233
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S107",
+          "level": "warning",
+          "message": "Method has 8 parameters, which is greater than the 7 authorized.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/DES.cs",
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 42,
+                  "endLine": 58,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S107",
+          "level": "warning",
+          "message": "Method has 8 parameters, which is greater than the 7 authorized.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/DES.cs",
+                "region": {
+                  "startLine": 75,
+                  "startColumn": 42,
+                  "endLine": 75,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3776",
+          "level": "warning",
+          "message": "Refactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSAOpenSsl.cs",
+                "region": {
+                  "startLine": 213,
+                  "startColumn": 42,
+                  "endLine": 213,
+                  "endColumn": 72
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSAOpenSsl.cs",
+                "region": {
+                  "startLine": 233,
+                  "startColumn": 21,
+                  "endLine": 233,
+                  "endColumn": 23
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSAOpenSsl.cs",
+                "region": {
+                  "startLine": 235,
+                  "startColumn": 21,
+                  "endLine": 235,
+                  "endColumn": 25
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSAOpenSsl.cs",
+                "region": {
+                  "startLine": 237,
+                  "startColumn": 21,
+                  "endLine": 237,
+                  "endColumn": 25
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSAOpenSsl.cs",
+                "region": {
+                  "startLine": 241,
+                  "startColumn": 21,
+                  "endLine": 241,
+                  "endColumn": 23
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSAOpenSsl.cs",
+                "region": {
+                  "startLine": 245,
+                  "startColumn": 21,
+                  "endLine": 245,
+                  "endColumn": 23
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSAOpenSsl.cs",
+                "region": {
+                  "startLine": 247,
+                  "startColumn": 21,
+                  "endLine": 247,
+                  "endColumn": 25
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSAOpenSsl.cs",
+                "region": {
+                  "startLine": 249,
+                  "startColumn": 21,
+                  "endLine": 249,
+                  "endColumn": 25
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSAOpenSsl.cs",
+                "region": {
+                  "startLine": 253,
+                  "startColumn": 21,
+                  "endLine": 253,
+                  "endColumn": 23
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSAOpenSsl.cs",
+                "region": {
+                  "startLine": 257,
+                  "startColumn": 21,
+                  "endLine": 257,
+                  "endColumn": 23
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSAOpenSsl.cs",
+                "region": {
+                  "startLine": 259,
+                  "startColumn": 21,
+                  "endLine": 259,
+                  "endColumn": 25
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSAOpenSsl.cs",
+                "region": {
+                  "startLine": 261,
+                  "startColumn": 21,
+                  "endLine": 261,
+                  "endColumn": 25
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSAOpenSsl.cs",
+                "region": {
+                  "startLine": 268,
+                  "startColumn": 21,
+                  "endLine": 268,
+                  "endColumn": 23
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSAOpenSsl.cs",
+                "region": {
+                  "startLine": 270,
+                  "startColumn": 21,
+                  "endLine": 270,
+                  "endColumn": 25
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSAOpenSsl.cs",
+                "region": {
+                  "startLine": 275,
+                  "startColumn": 21,
+                  "endLine": 275,
+                  "endColumn": 25
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSAOpenSsl.cs",
+                "region": {
+                  "startLine": 281,
+                  "startColumn": 21,
+                  "endLine": 281,
+                  "endColumn": 23
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSAOpenSsl.cs",
+                "region": {
+                  "startLine": 289,
+                  "startColumn": 21,
+                  "endLine": 289,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "+1",
+              "1": "+1",
+              "10": "+1",
+              "11": "+1",
+              "12": "+1",
+              "13": "+1",
+              "14": "+1",
+              "15": "+1",
+              "2": "+1",
+              "3": "+1",
+              "4": "+1",
+              "5": "+1",
+              "6": "+1",
+              "7": "+1",
+              "8": "+1",
+              "9": "+1"
+            }
+          }
+        },
+        {
+          "ruleId": "S4426",
+          "level": "warning",
+          "message": "Use a key length of at least 2048 bits for RSA cipher algorithm.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSAOpenSsl.cs",
+                "region": {
+                  "startLine": 295,
+                  "startColumn": 59,
+                  "endLine": 295,
+                  "endColumn": 89
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1854",
+          "level": "warning",
+          "message": "Remove this useless assignment to local variable 'x509size'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSAOpenSsl.cs",
+                "region": {
+                  "startLine": 222,
+                  "startColumn": 13,
+                  "endLine": 222,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1854",
+          "level": "warning",
+          "message": "Remove this useless assignment to local variable 'seq'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSAOpenSsl.cs",
+                "region": {
+                  "startLine": 218,
+                  "startColumn": 20,
+                  "endLine": 218,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2997",
+          "level": "warning",
+          "message": "Remove the 'using' statement; it will cause automatic disposal of 'RSA'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSAOpenSsl.cs",
+                "region": {
+                  "startLine": 295,
+                  "startColumn": 21,
+                  "endLine": 295,
+                  "endColumn": 26
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S107",
+          "level": "warning",
+          "message": "Method has 9 parameters, which is greater than the 7 authorized.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/AES.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 37,
+                  "endLine": 26,
+                  "endColumn": 51
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S107",
+          "level": "warning",
+          "message": "Method has 9 parameters, which is greater than the 7 authorized.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/AES.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 37,
+                  "endLine": 40,
+                  "endColumn": 51
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3928",
+          "level": "warning",
+          "message": "The parameter name 'index & length' is not declared in the argument list.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Check/Xor.cs",
+                "region": {
+                  "startLine": 56,
+                  "startColumn": 49,
+                  "endLine": 56,
+                  "endColumn": 119
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S107",
+          "level": "warning",
+          "message": "Method has 9 parameters, which is greater than the 7 authorized.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/AES.cs",
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 42,
+                  "endLine": 68,
+                  "endColumn": 51
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S107",
+          "level": "warning",
+          "message": "Method has 9 parameters, which is greater than the 7 authorized.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Symmetric/AES.cs",
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 42,
+                  "endLine": 54,
+                  "endColumn": 51
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2208",
+          "level": "note",
+          "message": "Method Compute passes 'index & length' as the paramName argument to a ArgumentOutOfRangeException constructor. Replace this argument with one of the method's parameter names. Note that the provided parameter name should have the exact casing as declared on the method.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Check/Xor.cs",
+                "region": {
+                  "startLine": 56,
+                  "startColumn": 49,
+                  "endLine": 56,
+                  "endColumn": 119
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSAOpenSsl.cs",
+                "region": {
+                  "startLine": 153,
+                  "startColumn": 28,
+                  "endLine": 153,
+                  "endColumn": 84
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSAOpenSsl.cs",
+                "region": {
+                  "startLine": 156,
+                  "startColumn": 47,
+                  "endLine": 156,
+                  "endColumn": 82
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSAOpenSsl.cs",
+                "region": {
+                  "startLine": 159,
+                  "startColumn": 39,
+                  "endLine": 159,
+                  "endColumn": 93
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'CompareByteArrays' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSAOpenSsl.cs",
+                "region": {
+                  "startLine": 308,
+                  "startColumn": 22,
+                  "endLine": 308,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4790",
+          "level": "warning",
+          "message": "Make sure this weak hash algorithm is not used in a sensitive context here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Hash/MD5/MD5.cs",
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 56,
+                  "endLine": 85,
+                  "endColumn": 86
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'GetIntegerSize' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Asymmetric/RSAOpenSsl.cs",
+                "region": {
+                  "startLine": 178,
+                  "startColumn": 21,
+                  "endLine": 178,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3442",
+          "level": "warning",
+          "message": "Change the visibility of this constructor to 'protected'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Check/CRC/Abstraction/CrcHashAlgorithm.cs",
+                "region": {
+                  "startLine": 73,
+                  "startColumn": 9,
+                  "endLine": 73,
+                  "endColumn": 15
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3928",
+          "level": "warning",
+          "message": "The parameter name 'Not exist description attribute.' is not declared in the argument list.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Check/CRC/Abstraction/CrcHashAlgorithm.cs",
+                "region": {
+                  "startLine": 77,
+                  "startColumn": 34,
+                  "endLine": 77,
+                  "endColumn": 95
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3928",
+          "level": "warning",
+          "message": "Use a constructor overloads that allows a more meaningful exception message to be provided.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Check/CRC/Abstraction/CrcHashAlgorithm.cs",
+                "region": {
+                  "startLine": 81,
+                  "startColumn": 56,
+                  "endLine": 81,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S927",
+          "level": "warning",
+          "message": "Rename parameter 'offset' to 'ibStart' to match the base class declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Check/CRC/Abstraction/CrcHashAlgorithm.cs",
+                "region": {
+                  "startLine": 103,
+                  "startColumn": 60,
+                  "endLine": 103,
+                  "endColumn": 66
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S927",
+          "level": "warning",
+          "message": "Rename parameter 'length' to 'cbSize' to match the base class declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Check/CRC/Abstraction/CrcHashAlgorithm.cs",
+                "region": {
+                  "startLine": 103,
+                  "startColumn": 72,
+                  "endLine": 103,
+                  "endColumn": 78
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2208",
+          "level": "note",
+          "message": "Method .ctor passes 'Not exist description attribute.' as the paramName argument to a ArgumentNullException constructor. Replace this argument with one of the method's parameter names. Note that the provided parameter name should have the exact casing as declared on the method.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Check/CRC/Abstraction/CrcHashAlgorithm.cs",
+                "region": {
+                  "startLine": 77,
+                  "startColumn": 34,
+                  "endLine": 77,
+                  "endColumn": 95
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2208",
+          "level": "note",
+          "message": "Call the ArgumentException constructor that contains a message and/or paramName parameter",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Check/CRC/Abstraction/CrcHashAlgorithm.cs",
+                "region": {
+                  "startLine": 81,
+                  "startColumn": 56,
+                  "endLine": 81,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3949",
+          "level": "warning",
+          "message": "This calculation is likely to overflow the maximum value of '255'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Work/Office/Projects/Nspira/Portal/HRMS_API/5-CrossCutting/Phoenix.CrossCutting.Security/PhonixCryptography/Check/CRC/Abstraction/CrcHashAlgorithmHelper.cs",
+                "region": {
+                  "startLine": 44,
+                  "startColumn": 40,
+                  "endLine": 44,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "CA1822": {
+          "id": "CA1822",
+          "shortDescription": "Mark members as static",
+          "fullDescription": "Members that do not access instance data or call instance methods can be marked as static. After you mark the methods as static, the compiler will emit nonvirtual call sites to these members. This can give you a measurable performance gain for performance-sensitive code.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1822",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true,
+            "tags": [
+              "PortedFromFxCop",
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CA1846": {
+          "id": "CA1846",
+          "shortDescription": "Prefer 'AsSpan' over 'Substring'",
+          "fullDescription": "'AsSpan' is more efficient then 'Substring'. 'Substring' performs an O(n) string copy, while 'AsSpan' does not and has a constant cost.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1846",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CA2208": {
+          "id": "CA2208",
+          "shortDescription": "Instantiate argument exceptions correctly",
+          "fullDescription": "A call is made to the default (parameterless) constructor of an exception type that is or derives from ArgumentException, or an incorrect string argument is passed to a parameterized constructor of an exception type that is or derives from ArgumentException.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca2208",
+          "properties": {
+            "category": "Usage",
+            "isEnabledByDefault": true,
+            "tags": [
+              "PortedFromFxCop",
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CA2211": {
+          "id": "CA2211",
+          "shortDescription": "Non-constant fields should not be visible",
+          "fullDescription": "Static fields that are neither constants nor read-only are not thread-safe. Access to such a field must be carefully controlled and requires advanced programming techniques to synchronize access to the class object.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca2211",
+          "properties": {
+            "category": "Usage",
+            "isEnabledByDefault": true,
+            "tags": [
+              "PortedFromFxCop",
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "S101": {
+          "id": "S101",
+          "shortDescription": "Types should be named in PascalCase",
+          "fullDescription": "Shared naming conventions allow teams to collaborate efficiently. This rule checks whether or not type names are using PascalCase. To reduce noise, two consecutive upper case characters are allowed unless they form the whole type name. So, MyXClass is compliant, but XC on its own is not.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-101",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S107": {
+          "id": "S107",
+          "shortDescription": "Methods should not have too many parameters",
+          "fullDescription": "A long parameter list can indicate that a new structure should be created to wrap the numerous parameters or that the function is doing too many things.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-107",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S1116": {
+          "id": "S1116",
+          "shortDescription": "Empty statements should be removed",
+          "fullDescription": "Empty statements, i.e. ;, are usually introduced by mistake, for example because:",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1116",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S1118": {
+          "id": "S1118",
+          "shortDescription": "Utility classes should not have public constructors",
+          "fullDescription": "Utility classes, which are collections of static members, are not meant to be instantiated.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1118",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S112": {
+          "id": "S112",
+          "shortDescription": "General exceptions should never be thrown",
+          "fullDescription": "Throwing such general exceptions as Exception, SystemException, ApplicationException, IndexOutOfRangeException, NullReferenceException, OutOfMemoryException and ExecutionEngineException prevents calling methods from handling true, system-generated exceptions differently than application-generated errors.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-112",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S1168": {
+          "id": "S1168",
+          "shortDescription": "Empty arrays and collections should be returned instead of null",
+          "fullDescription": "Returning null or default instead of an actual collection forces the method callers to explicitly test for null, making the code more complex and less readable.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1168",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S1854": {
+          "id": "S1854",
+          "shortDescription": "Unused assignments should be removed",
+          "fullDescription": "A dead store happens when a local variable is assigned a value that is not read by any subsequent instruction. Calculating or retrieving a value only to then overwrite it or throw it away, could indicate a serious error in the code. Even if it’s not an error, it is at best a waste of resources. Therefore all calculated values should be used.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1854",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2223": {
+          "id": "S2223",
+          "shortDescription": "Non-constant static fields should not be visible",
+          "fullDescription": "Non-private static fields that are neither const nor readonly can lead to errors and unpredictable behavior.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2223",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2234": {
+          "id": "S2234",
+          "shortDescription": "Parameters should be passed in the correct order",
+          "fullDescription": "When the names of parameters in a method call match the names of the method arguments, it contributes to clearer, more readable code. However, when the names match, but are passed in a different order than the method arguments, it indicates a mistake in the parameter order which will likely lead to unexpected results.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2234",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2245": {
+          "id": "S2245",
+          "shortDescription": "Using pseudorandom number generators (PRNGs) is security-sensitive",
+          "fullDescription": "Using pseudorandom number generators (PRNGs) is security-sensitive. For example, it has led in the past to the following vulnerabilities:",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2245",
+          "properties": {
+            "category": "Critical Security Hotspot",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2257": {
+          "id": "S2257",
+          "shortDescription": "Using non-standard cryptographic algorithms is security-sensitive",
+          "fullDescription": "The use of a non-standard algorithm is dangerous because a determined attacker may be able to break the algorithm and compromise whatever data has been protected. Standard algorithms like AES, RSA, SHA, …​ should be used instead.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2257",
+          "properties": {
+            "category": "Critical Security Hotspot",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2342": {
+          "id": "S2342",
+          "shortDescription": "Enumeration types should comply with a naming convention",
+          "fullDescription": "Shared naming conventions allow teams to collaborate efficiently. This rule checks that all enum names match a provided regular expression.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2342",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2344": {
+          "id": "S2344",
+          "shortDescription": "Enumeration type names should not have \"Flags\" or \"Enum\" suffixes",
+          "fullDescription": "The information that an enumeration type is actually an enumeration or a set of flags should not be duplicated in its name.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2344",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2997": {
+          "id": "S2997",
+          "shortDescription": "\"IDisposables\" created in a \"using\" statement should not be returned",
+          "fullDescription": "Typically you want to use using to create a local IDisposable variable; it will trigger disposal of the object when control passes out of the block’s scope. The exception to this rule is when your method returns that IDisposable. In that case using disposes of the object before the caller can make use of it, likely causing exceptions at runtime. So you should either remove using or avoid returning the IDisposable.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2997",
+          "properties": {
+            "category": "Major Bug",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S3261": {
+          "id": "S3261",
+          "shortDescription": "Namespaces should not be empty",
+          "fullDescription": "Namespaces with no lines of code clutter a project and should be removed.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3261",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S3442": {
+          "id": "S3442",
+          "shortDescription": "\"abstract\" classes should not have \"public\" constructors",
+          "fullDescription": "Since abstract classes can’t be instantiated, there’s no point in their having public or internal constructors. If there is basic initialization logic that should run when an extending class instance is created, you can by all means put it in a constructor, but make that constructor private, private protected or protected.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3442",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S3776": {
+          "id": "S3776",
+          "shortDescription": "Cognitive Complexity of methods should not be too high",
+          "fullDescription": "Cognitive Complexity is a measure of how hard the control flow of a method is to understand. Methods with high Cognitive Complexity will be difficult to maintain.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3776",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S3928": {
+          "id": "S3928",
+          "shortDescription": "Parameter names used into ArgumentException constructors should match an existing one ",
+          "fullDescription": "Some constructors of the ArgumentException, ArgumentNullException, ArgumentOutOfRangeException and DuplicateWaitObjectException classes must be fed with a valid parameter name. This rule raises an issue in two cases:",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3928",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S3949": {
+          "id": "S3949",
+          "shortDescription": "Calculations should not overflow",
+          "fullDescription": "Numbers are infinite, but the types that hold them are not. Each numeric type has hard upper and lower bounds. Try to calculate or assign numbers beyond those bounds, and the result will be a value that has silently wrapped around from the expected positive value to a negative one, or vice versa.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3949",
+          "properties": {
+            "category": "Major Bug",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S4426": {
+          "id": "S4426",
+          "shortDescription": "Cryptographic keys should be robust",
+          "fullDescription": "Most of cryptographic systems require a sufficient key size to be robust against brute-force attacks.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-4426",
+          "properties": {
+            "category": "Critical Vulnerability",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S4790": {
+          "id": "S4790",
+          "shortDescription": "Using weak hashing algorithms is security-sensitive",
+          "fullDescription": "Cryptographic hash algorithms such as MD2, MD4, MD5, MD6, HAVAL-128, HMAC-MD5, DSA (which uses SHA-1), RIPEMD, RIPEMD-128, RIPEMD-160, HMACRIPEMD160 and SHA-1 are no longer considered secure, because it is possible to have collisions (little computational effort is enough to find two or more different inputs that produce the same hash).",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-4790",
+          "properties": {
+            "category": "Critical Security Hotspot",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S5542": {
+          "id": "S5542",
+          "shortDescription": "Encryption algorithms should be used with secure mode and padding scheme",
+          "fullDescription": "Encryption algorithms should use secure modes and padding schemes where appropriate to guarantee data confidentiality and integrity.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-5542",
+          "properties": {
+            "category": "Critical Vulnerability",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S927": {
+          "id": "S927",
+          "shortDescription": "Parameter names should match base declaration and other partial definitions",
+          "fullDescription": "The name of a parameter in an externally visible. This rule raises an issue when method override does not match the name of the parameter in the base declaration of the method, or the name of the parameter in the interface declaration of the method or the name of any other partial definition.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-927",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "SYSLIB0021": {
+          "id": "SYSLIB0021",
+          "shortDescription": "Type or member is obsolete",
+          "defaultLevel": "warning",
+          "helpUri": "https://aka.ms/dotnet-warnings/SYSLIB0021",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry",
+              "CustomObsolete"
+            ]
+          }
+        },
+        "SYSLIB0022": {
+          "id": "SYSLIB0022",
+          "shortDescription": "Type or member is obsolete",
+          "defaultLevel": "warning",
+          "helpUri": "https://aka.ms/dotnet-warnings/SYSLIB0022",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry",
+              "CustomObsolete"
+            ]
+          }
+        },
+        "SYSLIB0023": {
+          "id": "SYSLIB0023",
+          "shortDescription": "Type or member is obsolete",
+          "defaultLevel": "warning",
+          "helpUri": "https://aka.ms/dotnet-warnings/SYSLIB0023",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry",
+              "CustomObsolete"
+            ]
+          }
+        },
+        "SYSLIB0027": {
+          "id": "SYSLIB0027",
+          "shortDescription": "Type or member is obsolete",
+          "defaultLevel": "warning",
+          "helpUri": "https://aka.ms/dotnet-warnings/SYSLIB0027",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry",
+              "CustomObsolete"
+            ]
+          }
+        },
+        "SYSLIB0028": {
+          "id": "SYSLIB0028",
+          "shortDescription": "Type or member is obsolete",
+          "defaultLevel": "warning",
+          "helpUri": "https://aka.ms/dotnet-warnings/SYSLIB0028",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry",
+              "CustomObsolete"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

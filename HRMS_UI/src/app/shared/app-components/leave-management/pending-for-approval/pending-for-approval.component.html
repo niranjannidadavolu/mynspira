@@ -1,0 +1,30 @@
+<div class="col-xl-12">
+    <div class="card">
+        <div class="card-body">
+            <div class="live-preview">
+                <dx-data-grid id="gridContainer" [dataSource]="pendingLeaves" keyExpr="LeaveId" [showBorders]="true"  [columnAutoWidth]="true">
+                    <dxo-load-panel [enabled]="true">
+                    </dxo-load-panel>
+                    <dxo-paging [enabled]="true" [pageSize]="5"></dxo-paging> 
+                    <dxi-column type="buttons" width="50"  caption="Actions" cellTemplate="approveLeave">
+                        <dxi-button icon="ri ri-delete-bin-line text-danger" name="delete" hint="Cancel Leave">
+                        </dxi-button>
+                    </dxi-column>
+                    <dxi-column dataField="EmployeeName" caption="Employee Name"></dxi-column>
+                    <dxi-column dataField="LeaveFrom" caption="From Date" dataType="date"
+                        format="dd-MMM-yyyy"></dxi-column>
+                    <dxi-column dataField="LeaveTo" caption="To Date" dataType="date" format="dd-MMM-yyyy">
+                    </dxi-column>
+                    <dxi-column dataField="TotalDaysTaken" caption="Total Days"></dxi-column>
+                    <div *dxTemplate="let d of 'approveLeave'">
+                        <div *ngIf="d.data!='' && d.data!=null">
+                            <a href="javascript:void(0)" (click)="approveLeave(d)">
+                                <i class=" las la-edit text-success" stylingMode="contained" type="normal">
+                                </i>
+                            </a>
+                        </div>
+                    </div>
+                </dx-data-grid>
+            </div>
+        </div>
+    </div>

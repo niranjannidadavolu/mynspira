@@ -1,0 +1,95 @@
+<div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="exampleModalgridLabel">Apply Session Break Leave</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+            (click)="activeModal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+        <form [formGroup]="leaveForm" (ngSubmit)="applyLeaveRequest()">
+            <div class="row g-3">
+                <div class="row pt-3">
+                    <div class="col-md-6">
+                        <label for="LeaveType" class="form-label">Leave Type <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" readonly formControlName="LeaveTypeName" readonly>
+                        <div *ngIf="f['LeaveType'].invalid && (f['LeaveType'].dirty || f['LeaveType'].touched) &&  f['LeaveType'].errors"
+                            class="invalid-feedback">
+                            <div *ngIf="f['LeaveType'].errors['required']">Please provide leave type.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="LeaveBalance" class="form-label">Leave Balance</label>
+                        <input type="text" class="form-control" readonly formControlName="LeaveBalance"
+                            [readonly]="leaveType?.ShowInDashboard">
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col-md-6">
+                        <label for="exampleInputdate" class="form-label">From Date <span
+                                class="text-danger">*</span></label>
+                        <div class="input-group mb-3">
+                            <ejs-datepicker #fromDate id="fromDate" placeholder='Enter date' class="form-control"
+                                (focus)='onFromDateFocus($event)' (renderDayCell)='onRenderCell($event)'
+                                formControlName="LeaveFrom" (change)="changeFromDate($event)"
+                                [ngClass]="{ 'is-invalid': f['LeaveFrom'].invalid && (f['LeaveFrom'].dirty || f['LeaveFrom'].touched) && f['LeaveFrom'].errors}"
+                                strictMode='true' format='dd-MMM-yyyy' [min]='minDate' [max]='maxDate'></ejs-datepicker>
+                        </div>
+                        <div *ngIf="f['LeaveFrom'].invalid && (f['LeaveFrom'].dirty || f['LeaveFrom'].touched) &&  f['LeaveFrom'].errors"
+                            class="invalid-feedback">
+                            <div *ngIf="f['LeaveFrom'].errors['required']">Please provide from date.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="exampleInputdate" class="form-label">To Date <span
+                                class="text-danger">*</span></label>
+                        <div class="input-group mb-3">
+                            <ejs-datepicker #toDate id="toDate" placeholder='Enter date' class="form-control" (focus)='onToDateFocus($event)'
+                                (renderDayCell)='onRenderCell($event)' formControlName="LeaveTo"
+                                [ngClass]="{ 'is-invalid': f['LeaveTo'].invalid && (f['LeaveTo'].dirty || f['LeaveTo'].touched) && f['LeaveTo'].errors}"
+                                strictMode='true' format='dd-MMM-yyyy' [min]='toMinDate' [max]='maxDate'></ejs-datepicker>
+                        </div>
+                        <div *ngIf="f['LeaveTo'].invalid && (f['LeaveTo'].dirty || f['LeaveTo'].touched) &&  f['LeaveTo'].errors"
+                            class="invalid-feedback">
+                            <div *ngIf="f['LeaveTo'].errors['required']">Please provide to date.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div>
+                        <label for="exampleFormControlTextarea5" class="form-label">Remarks <span
+                                class="text-danger">*</span></label>
+                        <textarea class="form-control" formControlName="Remarks" id="Remarks" rows="3"
+                            [ngClass]="{ 'is-invalid': f['Remarks'].invalid && (f['Remarks'].dirty || f['Remarks'].touched) && f['Remarks'].errors }"></textarea>
+                    </div>
+                    <div *ngIf="f['Remarks'].invalid && (f['Remarks'].dirty || f['Remarks'].touched) &&  f['Remarks'].errors"
+                        class="invalid-feedback">
+                        <div *ngIf="f['Remarks'].errors['required']">Please enter remarks.
+                        </div>
+                        <div *ngIf="f['Remarks'].errors['pattern']">Only spaces not allowed.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="hstack gap-2 justify-content-end">
+                        <button type="submit" class="btn btn-primary" *ngIf="!isSubmitted"
+                            [disabled]="this.leaveForm.invalid">Submit</button>
+                        <button type="button" class="btn btn-primary btn-label waves-effect waves-light btn-load"
+                            *ngIf="isSubmitted">
+                            <span class="d-flex align-items-center">
+                                <span class="spinner-border flex-shrink-0" role="status">
+                                    <span class="visually-hidden">Submitting...</span>
+                                </span>
+                                <span class="flex-grow-1 ms-2">
+                                    Submitting...
+                                </span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

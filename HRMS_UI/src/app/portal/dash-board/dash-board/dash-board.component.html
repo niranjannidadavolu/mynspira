@@ -1,0 +1,249 @@
+<!-- BreadCrumb add for dashboard-->
+<app-breadcrumbs title="DASHBOARD" [breadcrumbItems]="breadCrumbItems"></app-breadcrumbs>
+
+<!-- Displaying Employee Reporting Structure and HR details START -->
+<div class="row my-2">
+    <div class="col-md-4">
+        <div class="card ribbon-box border shadow-none mb-lg-0">
+            <div class="card-body">
+                <div class="ribbon-content text-muted">
+                    <div class="flex-grow-1">
+                        <h4 class="fs-16 mb-1">{{greeting}}, {{employeeProfile.EmployeeName}}!</h4>
+                        <p class="text-muted mb-3">Here's what's happening with your portal today.</p>
+                        <div *ngIf="employeeProfile.ReportingManagerId  > 0">
+                            <p class="mb-1">Your Reporting Manager: <b>{{employeeProfile.ReportingManagerName}}</b> </p>
+                            <small class='text-danger fw-400'>if not correct,
+                                contact your HR
+                                to get correct Reporting Manager assigned.</small>
+                        </div>
+                        <div *ngIf="employeeProfile.ReportingManagerId === 0">
+                            <small class='text-danger fw-400'>Reporting Manager not assigned. Please contact HR to get
+                                it
+                                mapped.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <div class="row">
+            <div [ngClass]="employeeProfile.OfficeTypeSlno === 32 ? 'col-md-4' : 'col-md-6'">
+                <div class="card ribbon-box border shadow-none mb-lg-0">
+                    <div class="card-body">
+                        <div class="ribbon ribbon-primary ribbon-shape">Reporting Structure</div>
+                        <div class="ribbon-content text-muted  mt-4">
+                            <div class="flex-grow-1">
+                                <div class="dropdown-item text-wrap"
+                                    *ngFor="let item of employeeProfile?.ReportingStructure">
+                                    <div class=""> Level {{item?.DisplayOrder}} &nbsp; :
+                                        <span
+                                            [ngClass]="item?.ReportingEmployeeSlno == 0 ? 'text-danger' : 'text-muted'">
+                                            {{item?.ReportingEmployeeName}} </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div [ngClass]="employeeProfile.OfficeTypeSlno === 32 ? 'col-md-4' : 'col-md-6'">
+                <div class="card ribbon-box border shadow-none mb-lg-0">
+                    <div class="card-body">
+                        <div class="ribbon ribbon-primary ribbon-shape">HR Details</div>
+                        <div class="ribbon-content text-muted mt-4">
+                            <div class="flex-grow-1"
+                                *ngIf="employeeProfile?.HrDetails === undefined || employeeProfile?.HrDetails === null">
+                                <div class="dropdown-item text-wrap">
+                                    <i class="ri-user-line   fs-16"> </i><span class=" text-muted"> HR Not
+                                        assigned</span>
+                                </div>
+                                <div class="dropdown-item text-wrap">
+                                    <i class="ri-phone-line   fs-16"> </i><span class="text-muted"> N/A</span>
+                                </div>
+                                <div class="dropdown-item text-wrap">
+                                    <i class="ri-mail-line   fs-16"></i> <span class="text-muted"> N/A</span>
+                                </div>
+                            </div>
+                            <div class="flex-grow-1"
+                                *ngIf="employeeProfile?.HrDetails !== undefined && employeeProfile?.HrDetails !== null">
+                                <div class="dropdown-item text-wrap">
+                                    <i class="ri-user-line   fs-16"></i> <span class=" text-muted">
+                                        {{employeeProfile?.HrDetails?.EmployeeName}}</span>
+                                </div>
+                                <div class="dropdown-item text-wrap">
+                                    <i class="ri-phone-line   fs-16"></i> <span class="text-muted">
+                                        {{employeeProfile?.HrDetails?.Mobile}}</span>
+                                </div>
+                                <div class="dropdown-item text-wrap">
+                                    <i class="ri-mail-line   fs-16"></i> <span class="text-muted">
+                                        {{employeeProfile?.HrDetails?.WorkEmail}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" *ngIf="employeeProfile.OfficeTypeSlno === 32">
+                <div class="card ribbon-box border shadow-none mb-lg-0">
+                    <div class="card-body">
+                        <div class="ribbon ribbon-primary ribbon-shape">Employee Support Desk</div>
+                        <div class="ribbon-content text-muted mt-4">
+                            <div class="flex-grow-1">
+                                <p class="fs-16 mt-2">Vijay Kumar - National Training Head<br />
+                                    9810111797<br />
+                                    trainingteam@narayanagroup.com<br />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Displaying Employee Reporting Structure and HR details END -->
+
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="d-flex align-items-lg-center flex-lg-row flex-column">
+            <div class="mt-3 mt-lg-0" style="display: none;">
+                <form action="javascript:void(0);">
+                    <div class="row g-3 mb-0 align-items-center">
+                        <div class="col-auto">
+                            <button type="button"
+                                class="btn btn-soft-info btn-icon waves-effect waves-light layout-rightside-btn"
+                                (click)="toggleActivity()"><i class="ri-pulse-line"></i>sss</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Displaying Common LeaveTypes apply button (Sick,Casual,Privilege) -->
+        <div class="row">
+            <app-leave-types-dashboard (countEmit)="minHeight($event)" *ngIf="canApplyLeave"
+                [holidays]="holidays"></app-leave-types-dashboard>
+        </div>
+
+        <!-- Displaying Special LeaveTypes apply button and My Leaves, Leave For Approval, My Team Leaves -->
+        <div class="card " [ngClass]="{'min-height': !minheight}">
+            <app-dashboard-leaves [refreshData]="refreshData" [holidays]="holidays" [isMinheight]="minheight"
+                [canApplyLeave]="canApplyLeave" (canApplyCompOff)="canApplyCompOff = $event"
+                (canApplyEarlyLogOut)="canApplyEarlyLogOut = $event"></app-dashboard-leaves>
+        </div>
+
+        <!-- Displaying Employee Time sheet START -->
+        <div class="card p-0 pt-2" [ngClass]="{'min-height': !minheight}">
+            <div class="card-header border-0 align-items-center d-flex">
+                <h4 class="card-title mb-0 flex-grow-1">Time Management</h4>
+                <span class="text-end text-uppercase pb-2 text-note">***Today's First Half and Second
+                    Half
+                    Status will be updated by tomorrow.</span>
+            </div>
+            <div class="card-body p-0 pb-2" [ngClass]="{'max-height': minheight}">
+                <dx-data-grid id="gridContainer" [dataSource]="attendance" keyExpr="DisplayAttendanceDate"
+                    [showBorders]="false" [repaintChangesOnly]="true" [showColumnLines]="true" [showRowLines]="true"
+                    [showBorders]="true" [rowAlternationEnabled]="true" (onCellPrepared)="onCellPrepared($event)"
+                    [columnHidingEnabled]="true" [columnAutoWidth]="true">
+                    <dxo-paging [enabled]="true" [pageSize]="6"></dxo-paging>
+                    <dxo-sorting mode="none">
+                    </dxo-sorting>
+                    <dxi-column dataField="DisplayAttendanceDate" caption="Date">
+                    </dxi-column>
+                    <dxi-column dataField="WeekDay" alignment="center" caption="Day" [hidingPriority]="0"></dxi-column>
+                    <dxi-column dataField="DisplayStartTime" alignment="center" caption="In Time">
+                    </dxi-column>
+                    <dxi-column dataField="DisplayEndTime" alignment="center" caption="Out Time">
+                    </dxi-column>
+                    <dxi-column dataField="TotalTime" alignment="center"></dxi-column>
+                    <dxi-column dataField="First_Half" caption="1st Half" dataType="string" [hidingPriority]="1">
+                    </dxi-column>
+                    <dxi-column dataField="Second_Half" caption="2nd Half" dataType="string" [hidingPriority]="2">
+                    </dxi-column>
+                    <dxi-column type="buttons" caption="Actions" cellTemplate="leave">
+                    </dxi-column>
+                    <div *dxTemplate="let d of 'leave'">
+                        <!-- && canApplyLeave -->
+                        <a href="javascript:void(0)" (click)="compOffLeave(d)"
+                            *ngIf="d.data.CanApplyCompOff && canApplyCompOff  &&  checkTotalTime(d.data)"
+                            title="Apply Compensatory Off" class="me-2">
+                            <i class="ri ri-add-box-line"></i>
+                        </a>
+                        <a href="javascript:void(0)" (click)="earlyLogOut(d)"
+                            *ngIf="!d.data.CanNotApplyEarlyLogOutTime && checkEarlyLogOut(d.data) && canApplyEarlyLogOut && canApplyLeave && false"
+                            title="Apply For Early LogOut" class="me-2">
+                            <i class="ri ri-time-line"></i>
+                        </a>
+                    </div>
+                </dx-data-grid>
+            </div>
+        </div>
+        <!-- Displaying Employee Time sheet END -->
+    </div>
+
+    <div class="col-md-4">
+        <div class="card" [ngClass]="{'min-height': !minheight}">
+            <div class="card-body pt-3">
+                <!-- Displaying Dashboard calender -->
+                <div>
+                    <input type="text" id="inline-cal" class="form-control d-none" mwlFlatpickr [altInput]="true"
+                        [convertModelValue]="true" [inline]="true">
+                </div>
+                <hr>
+                <!-- Displaying Dashboard calender labels-->
+                <div class="d-lg-flex d-md-block d-sm-block justify-content-center">
+                    <!-- <div class="d-flex align-items-center p-l-10 cls-text"><span
+                            class="label-foo today"></span>&nbsp;Today </div> -->
+                    <div class="d-flex align-items-center p-l-10 cls-text"><span
+                            class="label-foo present"></span>&nbsp;Present </div>
+                    <div class="d-flex align-items-center p-l-10 cls-text"><span
+                            class="label-foo absent"></span>&nbsp;Absent </div>
+                    <div class="d-flex align-items-center p-l-10 cls-text"><span
+                            class="label-foo holiday"></span>&nbsp;Holiday </div>
+                    <div class="d-flex align-items-center p-l-10 cls-text"><span
+                            class="label-foo leave"></span>&nbsp;Leave </div>
+                    <div class="d-flex align-items-center p-l-10 cls-text"><span
+                            class="label-foo onduty"></span>&nbsp;On Duty </div>
+                </div>
+
+                <!-- Displaying Dashboard Upcoming top 3 holidays START-->
+                <h6 class="text-uppercase fw-semibold mt-4 mb-3 text-muted">Upcoming Holidays:</h6>
+                <ng-template ngFor let-item [ngForOf]="holidays" let-i="index">
+                    <div class="mini-stats-wid d-flex align-items-center mt-3 mb-3" *ngIf="i<3">
+                        <div class="flex-shrink-0 avatar-sm">
+                            <span
+                                class="mini-stat-icon avatar-title rounded-circle text-success bg-soft-success fs-4 upcoming">
+                                {{item.Day}}
+                                <h6>{{item.MonthName}}</h6>
+                            </span>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h6 class="mb-1">{{item.HolidayName}}</h6>
+                        </div>
+                    </div>
+                </ng-template>
+                <!-- Displaying Dashboard Upcoming top 3 holidays END-->
+
+                <div class="view-all text-right">
+                    <a href="javascript:void(0)" *ngIf="holidays.length" (click)="viewHolidays()">View All</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-auto layout-rightside-col" style="display: none">
+        <div (click)="SidebarHide()" style="display: none"></div>
+        <div class="layout-rightside">
+            <div class="card h-100 rounded-0">
+                <div class="card-body p-0">
+                    <div class="p-3">
+                        <h6 class="text-muted mb-0 text-uppercase fw-semibold">Recent Activity</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

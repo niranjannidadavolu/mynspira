@@ -1,0 +1,88 @@
+<div class="app-menu navbar-menu">
+  <div class="navbar-brand-box">
+    <a routerLink="/" class="logo logo-dark">
+      <span class="logo-sm">
+        <img src="assets/images/logo-sm.png" alt="" height="22">
+      </span>
+      <span class="logo-lg">
+        <img src="assets/images/logo-dark.png" alt="" height="45">
+      </span>
+    </a>
+    <a routerLink="/portal/dashboard" class="logo logo-light">
+      <span class="logo-sm">
+        <img src="assets/images/logo-sm.png" alt="" height="22">
+      </span>
+      <span class="logo-lg">
+        <img src="assets/images/logo-light.png" alt="" height="45">
+      </span>
+    </a>
+    <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover" id="vertical-hover">
+      <i class="ri-record-circle-line"></i>
+    </button>
+  </div>
+  <div id="scrollbar">
+    <div class="container-fluid">
+
+      <div id="two-column-menu">
+      </div>
+      <ngx-simplebar class="sidebar-menu-scroll" style="max-height: 100vh">
+        <ul class="metismenu list-unstyled navbar-nav" id="navbar-nav">
+
+          <ng-container *ngFor="let item of menuItems">
+            <li class="menu-title" *ngIf="item.IsTitle"><span data-key="t-menu">{{ item.ScreenName | translate }}</span>
+            </li>
+
+            <li class="nav-item" *ngIf="!item.IsTitle && !item.IsLayout">
+              <a *ngIf="hasItems(item)" href="javascript:void(0);" class="is-parent nav-link menu-link"
+                [ngClass]="{'has-arrow': !item.Badge, 'has-dropdown': item.Badge}" data-bs-toggle="collapse"
+                aria-expanded="false" (click)="toggleItem($event)">
+                <i class="{{ item.Icon }} icon nav-icon" class=""></i>
+                <span class=""> {{ item.ScreenName | translate }}</span>
+                <span class="Badge Badge-pill {{item.Badge.variant}}" *ngIf="item.Badge">{{item.Badge.text
+                  | translate}}</span>
+              </a>
+
+              <a [routerLink]="item.ScreenRoute" *ngIf="!hasItems(item)" class="side-nav-link-ref nav-link menu-link"
+                routerLinkActive="active">
+                <i class="bx {{ item.Icon }} icon nav-icon" *ngIf="item.Icon" class=""></i>
+                <span class=""> {{ item.ScreenName | translate }}</span>
+                <span class="Badge {{item.Badge.variant}} float-end" *ngIf="item.Badge">{{item.Badge.text |
+                  translate}}</span>
+              </a>
+
+              <div class="collapse menu-dropdown" *ngIf="hasItems(item)">
+                <ul *ngIf="hasItems(item)" class="nav nav-sm flex-column" aria-expanded="false">
+                  <li *ngFor="let subitem of item.SubItems" class="nav-item">
+                    <a [routerLink]="subitem.ScreenRoute" *ngIf="!hasItems(subitem)" class="nav-link"
+                      [attr.data-parent]="subitem.parentId" routerLinkActive="active" (click)="updateActive($event)">
+                      {{ subitem.ScreenName | translate}}
+                    </a>
+                    <a *ngIf="hasItems(subitem)" class="nav-link" href="javascript:void(0);"
+                      [attr.data-parent]="subitem.parentId" data-bs-toggle="collapse" aria-expanded="false"
+                      (click)="toggleSubItem($event)">
+                      {{ subitem.ScreenName | translate}}
+                    </a>
+                    <div class="collapse menu-dropdown" *ngIf="hasItems(subitem)">
+                      <ul *ngIf="hasItems(subitem)" class="nav nav-sm flex-column" aria-expanded="false">
+                        <li *ngFor="let subSubitem of subitem.SubItems" class="nav-item">
+                          <a [attr.data-parent]="subSubitem.parentId" [routerLink]="subSubitem.ScreenRoute"
+                            routerLinkActive="active" class="nav-link" (click)="updateActive($event)">
+                            {{ subSubitem.ScreenName | translate }}
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ng-container>
+        </ul>
+      </ngx-simplebar>
+    </div>
+  </div>
+  <div class="visitor-count" *ngIf="showVistorCount">
+    Visitor Count : {{VisitoCount}}
+  </div>
+</div>
+<div class="vertical-overlay" (click)="SidebarHide()"></div>

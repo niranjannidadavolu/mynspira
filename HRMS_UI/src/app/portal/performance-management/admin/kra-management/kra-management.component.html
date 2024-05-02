@@ -1,0 +1,59 @@
+<app-breadcrumbs title="KRA Management" [breadcrumbItems]="breadCrumbItems"></app-breadcrumbs>
+<div class="card">
+    <div class="card-header">
+        <div class="d-flex align-items-center">
+            <div class="flex-grow-1">
+                <h6 class="card-title mb-0">Key Result Areas</h6>
+            </div>
+            <div class="flex-shrink-0">
+                <button class="btn btn-primary btn-add ml-2 px-2" (click)="addKraInformation()"><i
+                        class="las la-plus"></i>
+                    &nbsp;Add KRA
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="card-body collapse show" id="collapseExample3">
+        <ejs-grid #overviewgrid id='overviewgrid' [dataSource]='kraInformations' [allowSorting]='true'
+            [enableHover]='false' [enableHeaderFocus]='true' [filterSettings]='filterSettings' [allowSorting]='true'
+            [allowFiltering]='true' gridLines='Both' allowPaging='true' [pageSettings]='pageSettings'
+            [loadingIndicator]='loadingIndicator'>
+            <e-columns>
+                <e-column field='KraSlno' [isPrimaryKey] = "true" [visible]="false"></e-column>
+                <e-column field='KraName' headerText='KRA Title'></e-column>
+                <e-column field='Description' headerText='KRA Description'></e-column>
+                <e-column field='KpiCount' headerText='Mapped KPP Count'></e-column>
+                <e-column [allowFiltering]='false' headerText='Actions' width='140'>
+                    <ng-template #template let-data>
+                        <div class="d-flex align-items-center">
+                            <button type="button" class="btn btn-light position-relative p-0 avatar-xs rounded-circle"
+                                (click)="onViewClick(data)">
+                                <span class="avatar-title bg-transparent text-reset">
+                                    <i class="bx bx-info-circle text-info fs-18"></i>
+                                </span>
+                            </button> 
+                            <button type="button" class="btn btn-light position-relative p-0 avatar-xs rounded-circle"
+                                (click)="onEditClick(data)">
+                                <span class="avatar-title bg-transparent text-reset">
+                                    <i class="bx bx bx-edit-alt text-success fs-18"></i>
+                                </span>
+                            </button>
+                            <button type="button" class="btn btn-light position-relative p-0 avatar-xs rounded-circle"
+                                (click)="onKpiMapClick(data)">
+                                <span class="avatar-title bg-transparent text-reset">
+                                    <i class="bx bx-sitemap text-info fs-18" data-bs-toggle="tooltip" data-bs-placement="top" title="Map Kpi Information" alt="Map Kpi Information"></i>
+                                </span>
+                            </button>
+                            <button type="button" class="btn btn-light position-relative p-0 avatar-xs rounded-circle"
+                                (click)="onDeleteClick(data)" [disabled]="data.KpiCount > 0">
+                                <span class="avatar-title bg-transparent text-reset">
+                                    <i class="bx bx-trash text-danger fs-18"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </ng-template>
+                </e-column>
+            </e-columns>
+        </ejs-grid>
+    </div>
+</div>

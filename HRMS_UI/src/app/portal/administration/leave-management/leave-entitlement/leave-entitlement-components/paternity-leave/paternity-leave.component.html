@@ -1,0 +1,29 @@
+<dx-data-grid #myLeavesDataGrid id="myLeavesDataGrid" [dataSource]="entitlements" [showBorders]="true"
+    [columnAutoWidth]="true" [height]="650" (onSaved)="updateRow($event)" keyExpr="EmployeeSlno">
+    <dxo-editing mode="cell" [allowUpdating]="true" [allowDeleting]="true">
+    </dxo-editing>
+    <dxo-selection [selectAllMode]="allMode" [showCheckBoxesMode]="checkBoxesMode" mode="multiple"></dxo-selection>
+    <dxo-filter-row [visible]="true"></dxo-filter-row>
+    <dxo-paging [enabled]="true" [pageSize]="14"></dxo-paging>
+    <dxi-column dataField="EmpNo" [allowEditing]="false" caption="Employee No">
+    </dxi-column>
+    <dxi-column dataField="EmpId" [allowEditing]="false" caption="Employee Id">
+    </dxi-column>
+    <dxi-column dataField="EmployeeName" [allowEditing]="false"></dxi-column>
+    <dxi-column dataField="BranchName" [allowEditing]="false"></dxi-column>
+    <dxi-column dataField="LeaveYear" caption="Leave Year">
+        <dxi-validation-rule type="required"></dxi-validation-rule>
+    </dxi-column>
+    <dxi-column dataField="DateValidFrom" dataType="date" format="dd-MMM-yyyy" caption="Date Valid From">
+        <dxi-validation-rule type="required"></dxi-validation-rule>
+    </dxi-column>
+    <dxi-column dataField="DateValidUntil" dataType="date" format="dd-MMM-yyyy" caption="Date Valid Until">
+        <dxi-validation-rule type="required"></dxi-validation-rule>
+    </dxi-column>
+    <dxi-column dataField="TotalLeaves" caption="Total Leaves">
+        <dxi-validation-rule type="required"></dxi-validation-rule>
+    </dxi-column>
+    <dxi-column dataField="ConsumedLeaves" [allowEditing]="false" caption="Consumed Leaves">
+        <dxi-validation-rule type="required"></dxi-validation-rule>
+    </dxi-column>
+</dx-data-grid>

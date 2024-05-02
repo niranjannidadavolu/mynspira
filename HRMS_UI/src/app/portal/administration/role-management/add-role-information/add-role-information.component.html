@@ -1,0 +1,53 @@
+<form name="form" [formGroup]="roleForm" (submit)="SaveRoleInformation()">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title mb-0">Add Role Information</h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <div class="mb-3">
+                            <label for="employeeName" class="form-label">Role Name</label>
+                            <input type="text" class="form-control" id="roleName" formControlName="RoleName"
+                                placeholder="Enter role name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Description</label>
+                            <textarea class="form-control" id="description" rows="3" placeholder="Enter your message"
+                                formControlName="Description"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="autoSizingCheck2"
+                                    formControlName="IsAdmin">
+                                <label class="form-check-label" for="autoSizingCheck2">
+                                    Is Admin
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer text-end">
+                    <div>
+                        <button type="button" class="btn btn-danger waves-effect waves-light me-2"
+                            (click)="CloseModal()">Cancel</button>
+                        <button type="submit"  class="btn btn-primary btn-label waves-effect waves-light"  *ngIf="!isSubmitted"><i
+                                class=" ri-save-3-line label-icon align-middle fs-16 me-2"></i> Save
+                                Changes</button>
+                        <button type="button" class="btn btn-primary btn-label waves-effect waves-light btn-load" *ngIf="isSubmitted">
+                            <span class="d-flex align-items-center">
+                                <span class="spinner-border flex-shrink-0" role="status">
+                                    <span class="visually-hidden">Saving changes...</span>
+                                </span>
+                                <span class="flex-grow-1 ms-2">
+                                    Saving changes...
+                                </span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

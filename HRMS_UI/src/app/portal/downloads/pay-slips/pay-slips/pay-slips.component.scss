@@ -1,0 +1,29 @@
+.hol_color {
+    color: var(--vz-secondary);
+}
+
+.abs_color {
+    color: rgb(255, 0, 0);
+}
+.fileError{
+    display: block;
+    text-align: left;
+    padding-left: 17px;
+    margin-top: -15px;
+}
+.head-padding{
+    padding-top: 7px
+}
+::ng-deep .dx-fileuploader-content > .dx-fileuploader-upload-button {
+display: none !important;
+}
+::ng-deep .dx-fileuploader-button-container:nth-last-child(2) {
+    display: none !important;
+  }
+
+::ng-deep .dx-button-mode-contained .dx-icon {
+    color: var(--vz-red) !important;
+}
+::ng-deep .dx-fileuploader-content > .dx-fileuploader-files-container{
+    padding-top: 0px;
+}

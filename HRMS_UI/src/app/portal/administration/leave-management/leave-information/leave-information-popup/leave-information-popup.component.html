@@ -1,0 +1,84 @@
+<div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="exampleModalgridLabel"> Create Leave Information </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+            (click)="activeModal.dismiss('Cross click')"></button>
+    </div>
+
+    <div class="modal-body">
+        <!-- {{this.leaveForm.value | json}} -->
+        <form [formGroup]="leaveForm" (ngSubmit)="leaveInformationRequest()">
+            <div class="row g-3">
+                <div class="row pt-3">
+                    <div class="col-md-6">
+                        <label for="LeaveInformationName" class="form-label">Leave Information <span
+                                class="text-danger">*</span></label>
+                        <input type="text" id="LeaveInformationName" class="form-control"
+                            formControlName="LeaveInformationName" />
+
+                        <div *ngIf="f['LeaveInformationName'].invalid && (f['LeaveInformationName'].dirty || f['LeaveInformationName'].touched) &&  f['LeaveInformationName'].errors"
+                            class="invalid-feedback">
+                            <div *ngIf="f['LeaveInformationName'].errors['required']">Please provide Leave Information
+                                Name.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">    
+                        <label for="LeaveType" class="form-label">Leave Type <span class="text-danger">*</span></label>
+                        <ng-select [items]="leaveTypes" bindLabel="LeaveTypeName" bindValue="LeaveTypeId" (change)="onLeaveTypeChange($event)"
+                            [ngClass]="{ 'is-invalid': f['LeaveTypeId'].invalid && (f['LeaveTypeId'].dirty || f['LeaveTypeId'].touched) && f['LeaveTypeId'].errors }"
+                            formControlName="LeaveTypeId">
+                        </ng-select>
+                        <div *ngIf="f['LeaveTypeId'].invalid && (f['LeaveTypeId'].dirty || f['LeaveTypeId'].touched) &&  f['LeaveTypeId'].errors"
+                            class="invalid-feedback">
+                            <div *ngIf="f['LeaveTypeId'].errors['required']">Please provide leave type.
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="col-md-6">    
+                        <label for="Policy" class="form-label"> Policy <span class="text-danger">*</span></label>
+                        <ng-select [items]="policies" bindLabel="PolicyName" bindValue="LeavePolicyID" (change)="onLeaveTypeChange($event)"
+                            [ngClass]="{ 'is-invalid': f['LeavePolicyID'].invalid && (f['LeavePolicyID'].dirty || f['LeavePolicyID'].touched) && f['LeavePolicyID'].errors }"
+                            formControlName="LeavePolicyID">
+                        </ng-select>
+                        <div *ngIf="f['LeavePolicyID'].invalid && (f['LeavePolicyID'].dirty || f['LeavePolicyID'].touched) &&  f['LeavePolicyID'].errors"
+                            class="invalid-feedback">
+                            <div *ngIf="f['LeavePolicyID'].errors['required']">Please provide leave type.
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="col-md-6">
+                        <label for="officeTypeSlno" class="form-label">Office Type </label>
+                        <ng-select [items]="officeTypeList" formControlName="OfficeTypeSlno"
+                            bindLabel="OfficeTypeName" bindValue="OfficeTypeSlno"
+                            (change)="onChangeOfficeType($event)">
+                        </ng-select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="pBranchSlno" class="form-label">Branch </label>
+                        <ng-select [items]="branchLIst" formControlName="PBranchSlno"
+                            bindLabel="BranchName" bindValue="PBranchSLNo">
+                        </ng-select>
+                    </div>                                                                                   
+                </div>
+                <div class="row pt-3">
+                    <div class="hstack gap-2 justify-content-end">
+                        <button type="submit" class="btn btn-primary" *ngIf="!isSubmitted"
+                            [disabled]="this.leaveForm.invalid">Submit</button>
+                        <button type="button" class="btn btn-primary btn-label waves-effect waves-light btn-load"
+                            *ngIf="isSubmitted">
+                            <span class="d-flex align-items-center">
+                                <span class="spinner-border flex-shrink-0" role="status">
+                                    <span class="visually-hidden">Submitting...</span>
+                                </span>
+                                <span class="flex-grow-1 ms-2">
+                                    Submitting...
+                                </span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

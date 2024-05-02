@@ -1,0 +1,2 @@
+﻿F:\Work\Office\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Resources\DatabaseProcedures.resx
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Resources\Texts.resx

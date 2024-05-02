@@ -1,0 +1,183 @@
+<div class="row">
+    <!-- card -->
+    <!-- <div class="card card-animate {{bg_color}}">
+        <div class="card-body">
+            <div class="d-flex align-items-center">
+                <div class="flex-grow-1 overflow-hidden">
+                    <p class="text-uppercase fw-bold text-white text-truncate mb-0">{{title}}</p>
+                </div>
+                
+            </div>
+            <div class="d-flex align-items-end justify-content-between mt-4">
+                <div>
+                     <h4 class="fs-22 fw-bold ff-secondary text-white mb-4"><span *ngIf="title == 'TOTAL EARNINGS' || title == 'MY BALANCE'">$</span><span [CountTo]="value" class="counter-value" [from]="0" [duration]="1"></span><span *ngIf="title == 'TOTAL EARNINGS' || title == 'MY BALANCE'">K</span><span *ngIf="title == 'CUSTOMERS'">M</span></h4>
+                </div>
+                <div class=" flex-shrink-0">
+                    <span class="avatar-title rounded fs-3 bg-soft-light">
+                        <button class="btn btn-white text-white">Apply</button>
+                    </span>
+                </div>
+            </div> 
+        </div>
+    </div> -->
+
+    <div class="col-xl-4">
+        <div class="card card-animate">
+            <div class="card-body">
+                <div class="d-flex align-items-center">
+                    <div class="avatar-sm flex-shrink-0">
+                        <span class="avatar-title bg-soft-info text-info rounded-2 fs-2">
+                            <span class="avatar-title bg-soft-info text-info rounded-2 fs-2">
+                                <img src="assets/images/privilage-leave.png" class="img2">
+                            </span>
+                        </span>
+                    </div>
+                    <div class="flex-grow-1 overflow-hidden ms-3">
+                        <p class="text-uppercase fw-medium text-muted text-truncate mb-3">privilege leaves</p>
+                        <div class="d-flex align-items-center mb-3">
+                            <h4 class="fs-4 flex-grow-1 mb-0"><span class="counter-value" data-target="168">25</span></h4>
+                            <span class="badge badge-soft-danger fs-12"><a href="" style="color: #f06548;" data-bs-toggle="modal" data-bs-target="#exampleModalgrid" (click)="LunchModal(LunchDataModal)"><i class="ri-add-circle-line fs-13 align-middle me-1"></i>Apply</a></span>
+                        </div>
+                        <a href="#">View Details</a>
+                    </div>
+                </div>
+            </div><!-- end card body -->
+        </div>
+    </div>
+
+    <!-- Lunch Modal -->
+<ng-template #LunchDataModal let-modal>
+    <div class="modal-content">
+      <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="exampleModalgridLabel">Leave Apply</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+      </div>
+      <div class="modal-body">
+          <form action="javascript:void(0);">
+              <div class="row g-3">
+                  <div class="col-xxl-6">
+                      <div>
+                        <label for="LeaveType" class="form-label">Leave Type</label>
+                        <select id="LeaveType" class="form-select" data-choices data-choices-sorting="true" >
+                            <option selected>Casual Leave</option>
+                            <option>Privilege Leave</option>
+                            <option>Sick Leave</option>
+                        </select>
+                      </div>
+                  </div><!--end col-->
+                  
+                  <div class="row pt-3">
+                    <div class="col-md-6">
+                        <label for="exampleInputdate" class="form-label">From Date</label>
+                        <input type="date" class="form-control" id="exampleInputdate">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="LeaveType" class="form-label">Selecet Day</label>
+                        <select id="LeaveType" class="form-select" data-choices data-choices-sorting="true" >
+                            <option selected>Choose---</option>
+                        </select>
+                    </div>
+                  </div><!--end col-->
+                  <div class="row pt-3">
+                    <div class="col-md-6">
+                        <label for="exampleInputdate" class="form-label">To Date</label>
+                        <input type="date" class="form-control" id="exampleInputdate">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="LeaveType" class="form-label">Selecet Day</label>
+                        <select id="LeaveType" class="form-select" data-choices data-choices-sorting="true" >
+                            <option selected>Choose---</option>
+                        </select>
+                    </div>
+                  </div><!--end col-->
+                <div class="col-lg-12">
+                <div>
+                    <label for="exampleFormControlTextarea5" class="form-label">Remarks</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea5" rows="3"></textarea>
+                </div>
+                </div>
+
+                <!--<div class="col-lg-12">
+                      <label class="form-label">Gender</label>
+                      <div>
+                          <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                              <label class="form-check-label" for="inlineRadio1">Male</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                              <label class="form-check-label" for="inlineRadio2">Female</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                              <label class="form-check-label" for="inlineRadio3">Others</label>
+                          </div>
+                      </div>
+                  </div>--end col-->
+                 <!-- <div class="col-xxl-6">
+                      <label for="emailInput" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="emailInput" placeholder="Enter your email">
+                  </div>end col-->
+                 <!-- <div class="col-xxl-6">
+                      <label for="passwordInput" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="passwordInput" value="451326546">
+                  </div>end col-->
+                  <div class="col-lg-12">
+                      <div class="hstack gap-2 justify-content-end">
+                          <button type="button" class="btn btn-light" data-bs-dismiss="modal" (click)="modal.close('Close click')">Close</button>
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                      </div>
+                  </div><!--end col-->
+              </div><!--end row-->
+          </form>
+      </div>
+    </div>
+  </ng-template>
+
+    <div class="col-xl-4">
+        <div class="card card-animate">
+            <div class="card-body">
+                <div class="d-flex align-items-center">
+                    <div class="avatar-sm flex-shrink-0">
+                        <span class="avatar-title bg-soft-info text-info rounded-2 fs-2">
+                            <span class="avatar-title bg-soft-info text-info rounded-2 fs-2">
+                                <img src="assets/images/casual-leave.png" class="img">
+                            </span>
+                        </span>
+                    </div>
+                    <div class="flex-grow-1 overflow-hidden ms-3">
+                        <p class="text-uppercase fw-medium text-muted text-truncate mb-3">casual leaves</p>
+                        <div class="d-flex align-items-center mb-3">
+                            <h4 class="fs-4 flex-grow-1 mb-0"><span class="counter-value" data-target="168">52</span></h4>
+                            <span class="badge badge-soft-danger fs-12"><a href="" style="color: #f06548;" data-bs-toggle="modal" data-bs-target="#exampleModalgrid" (click)="LunchModal(LunchDataModal)"><i class="ri-add-circle-line fs-13 align-middle me-1"></i>Apply</a></span>
+                        </div>
+                        <a href="#">View Details</a>
+                    </div>
+                </div>
+            </div><!-- end card body -->
+        </div>
+    </div>
+
+    <div class="col-xl-4">
+        <div class="card card-animate">
+            <div class="card-body">
+                <div class="d-flex align-items-center">
+                    <div class="avatar-sm flex-shrink-0">
+                        <span class="avatar-title bg-soft-info text-info rounded-2 fs-2">
+                            <span class="avatar-title bg-soft-info text-info rounded-2 fs-2">
+                                <img src="assets/images/sick-leave.png" class="img1">
+                            </span>
+                        </span>
+                    </div>
+                    <div class="flex-grow-1 overflow-hidden ms-3">
+                        <p class="text-uppercase fw-medium text-muted text-truncate mb-3">sick leaves</p>
+                        <div class="d-flex align-items-center mb-3">
+                            <h4 class="fs-4 flex-grow-1 mb-0"><span class="counter-value" data-target="168">31</span></h4>
+                            <span class="badge badge-soft-danger fs-12"><a href="" style="color: #f06548;" data-bs-toggle="modal" data-bs-target="#exampleModalgrid" (click)="LunchModal(LunchDataModal)"><i class="ri-add-circle-line fs-13 align-middle me-1"></i>Apply</a></span>
+                        </div>
+                        <a href="#">View Details</a>
+                    </div>
+                </div>
+            </div><!-- end card body -->
+        </div><!-- end card -->
+</div><!-- end col -->   

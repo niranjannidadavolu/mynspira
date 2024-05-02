@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\4-Infrastructure\Phoenix.Infrastructure.BusinessSearchCriteria\Phoenix.Infrastructure.BusinessSearchCriteria.csproj" />
+    <ProjectReference Include="..\..\5-CrossCutting\Phoenix.CrossCutting.Extension\Phoenix.CrossCutting.Extension.csproj" />
+  </ItemGroup>
+
+</Project>

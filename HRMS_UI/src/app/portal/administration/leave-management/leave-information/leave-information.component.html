@@ -1,0 +1,97 @@
+<div class="row">
+    <div class="col-md-12">
+        <h5 class="mb-3">Leave Information</h5>
+        <div class="card">
+            <div class="card-body">
+                <ul ngbNav #Border="ngbNav" [activeId]="1" class="nav nav-tabs nav-border-top nav-border-top-primary">
+                    <li [ngbNavItem]="1">
+                        <ng-template ngbNavContent>
+                            <dx-data-grid id="gridContainer" [dataSource]="leaveInformation"
+                                [columnHidingEnabled]="false" keyExpr="LeaveInformationID" [showBorders]="true"
+                                [columnAutoWidth]="true" [rowAlternationEnabled]="true" [showColumnLines]="true"
+                                [showRowLines]="true">
+                                <dxo-paging [enabled]="true" [pageSize]="17"></dxo-paging>
+                                <dxo-filter-row [visible]="showFilterRow"
+                                    [applyFilter]="currentFilter"></dxo-filter-row>
+                                <dxo-sorting mode="multiple">
+                                </dxo-sorting>
+                                <dxo-paging [enabled]="true" [pageSize]="17"></dxo-paging>
+
+                                <!-- <dxo-filter-builder-popup  [position]="popupPosition"   [(visible)]="popupVisible" > </dxo-filter-builder-popup>
+                        <dxo-header-filter  [visible]="true" ></dxo-header-filter> -->
+
+                                <dxi-column dataField="LeaveInformationName" caption="Leave Information Name" dataType="string" [allowHeaderFiltering]="false">
+                                </dxi-column>
+                                <dxi-column dataField="LeaveTypeName" caption="Leave Type " dataType="string">
+                                    <dxo-lookup  [dataSource]="filterLeaveType" valueExpr="value" displayExpr="value">
+                                    </dxo-lookup>
+                                </dxi-column>
+                                <dxi-column dataField="PolicyName" caption="Policy Name" dataType="string"
+                                    width="250px">
+                                    <dxo-lookup [dataSource]="filterPolicyName" valueExpr="value"
+                                        displayExpr="value">
+                                    </dxo-lookup>
+                                </dxi-column>
+                                <dxi-column dataField="OfficeTypeName" caption="Office Type " dataType="string">
+                                    <dxo-lookup  [dataSource]="filterOfficeType" valueExpr="value"
+                                        displayExpr="value"></dxo-lookup>
+                                </dxi-column>
+                                <!--  <dxi-column dataField="BranchName" caption="Branch " dataType="string">
+                                </dxi-column>
+                              <dxi-column dataField="StatusID" caption="Status ID">
+                                </dxi-column> -->
+                                
+                                <dxi-column type="buttons" caption="Actions"  cellTemplate="Action" >
+                                </dxi-column>
+
+                                <!-- <div *dxTemplate="let cell of 'statusTemplate'">
+                                    <span [ngClass]="cell.data.LeaveStatusStyle">{{cell.data.LeaveStatusName }}</span>
+                                </div> -->
+                                
+                                <div *dxTemplate="let d of 'Action'" class="text-left">
+                                    <a href="javascript:void(0)" title="Actiavte" *ngIf="d.data.StatusID === 1"
+                                    class="me-2 text-primary" (click)="onStatusChange(d)">
+                                        <i class="ri-checkbox-circle-fill text-success fs-17"></i>
+                                    </a>
+                                    <a href="javascript:void(0)" (click)="onStatusChange(d)" title="De-Activate"
+                                    class="me-2 text-primary" *ngIf="d.data.StatusID !== 1">
+                                        <i class="ri-indeterminate-circle-fill text-danger fs-17"></i>
+                                    </a>
+                                    <a href="javascript:void(0)" (click)="applyLeaveInformationPolicy(d)"
+                                        title="Edit" class="me-2 text-primary">
+                                        <i class="ri-pencil-fill  fs-17 "></i>
+                                    </a>
+                                    <a href="javascript:void(0)" (click)="deleteRow(d)" title="Delete"
+                                         class="me-2 text-danger">
+                                        <i class="ri ri-delete-bin-line fs-17"></i>
+                                    </a>
+                                </div>
+                                <div *dxTemplate="let d of 'active'" class="text-left">
+                                    <div class="form-check form-switch form-switch-right form-switch-md me-2">
+                                        <label for="switches-color-showcode"
+                                            [title]="(d.data.StatusID == 1)?'Active':'InActivate'"
+                                            class="form-label text-muted"></label>
+                                        <input class="form-check-input code-switcher"
+                                            [checked]="(d.data.StatusID == 1)? true: false" type="checkbox"
+                                            id="switches-color-showcode" (click)="onStatusChange(d)">
+                                    </div>
+                                </div>
+                                <dxo-toolbar>
+                                    <dxi-item location="after">
+                                        <div *dxTemplate>
+                                            <dx-button icon="add" (click)="applyLeaveInformationPolicy()">
+                                            </dx-button>
+                                        </div>
+                                    </dxi-item>
+                                </dxo-toolbar>
+                            </dx-data-grid>
+                        </ng-template>
+                    </li>
+                </ul>
+                <div class="tab-content text-muted">
+                    <div [ngbNavOutlet]="Border"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

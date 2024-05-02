@@ -1,0 +1,138 @@
+<div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="exampleModalgridLabel">{{entitlementData.isUpdateForm ? 'Update': 'Create'}} Leave Entitlement</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+            (click)="activeModal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+        <form [formGroup]="entitlementForm" (ngSubmit)="onSubmit()">
+            <div class="row g-3">
+                <div class="col-md-6" *ngIf="entitlementData.isUpdateForm" >
+                    <label for="EmployeeName" class="form-label">Employee Name</label>
+                    <input type="text" class="form-control" readonly formControlName="EmployeeName">
+                </div>
+                <div class="col-md-6" *ngIf="!entitlementData.isUpdateForm">
+                    <label for="OfficeTypeSlno" class="form-label">Office Type <span class="text-danger">*</span></label>
+                    <ng-select  [items]="officeTypeList" formControlName="OfficeTypeSlno" bindLabel="OfficeTypeName" bindValue="OfficeTypeSlno" (change)="onChangeOfficeType($event)"
+                    [ngClass]="{ 'is-invalid': f['OfficeTypeSlno'].invalid && (f['OfficeTypeSlno'].dirty || f['OfficeTypeSlno'].touched) && f['OfficeTypeSlno'].errors }"
+                   >
+                </ng-select>
+
+                    <div *ngIf="f['OfficeTypeSlno'].invalid && (f['OfficeTypeSlno'].dirty || f['OfficeTypeSlno'].touched) &&  f['OfficeTypeSlno'].errors"
+                        class="invalid-feedback">
+                        <div *ngIf="f['OfficeTypeSlno'].errors['required']">Please provide office type.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" *ngIf="!entitlementData.isUpdateForm">
+                    <label for="PBranchSlno" class="form-label">Brach <span class="text-danger">*</span></label>
+                    <ng-select [items]="branchLIst" formControlName="PBranchSlno" bindLabel="BranchName" bindValue="PBranchSLNo"
+                    [ngClass]="{ 'is-invalid': f['PBranchSlno'].invalid && (f['PBranchSlno'].dirty || f['PBranchSlno'].touched) && f['PBranchSlno'].errors }"
+                   >
+                </ng-select>
+
+                    <div *ngIf="f['PBranchSlno'].invalid && (f['PBranchSlno'].dirty || f['PBranchSlno'].touched) &&  f['PBranchSlno'].errors"
+                        class="invalid-feedback">
+                        <div *ngIf="f['PBranchSlno'].errors['required']">Please provide branch.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="LeaveInformationId" class="form-label">Leave Information <span class="text-danger">*</span></label>
+                    <ng-select *ngIf="!entitlementData.isUpdateForm" [items]="leaveTypeList" bindLabel="LeaveTypeName" bindValue="LeaveInformationId" (change)="onChangeLeaveType($event)"
+                    [ngClass]="{ 'is-invalid': f['LeaveInformationId'].invalid && (f['LeaveInformationId'].dirty || f['LeaveInformationId'].touched) && f['LeaveInformationId'].errors }"
+                    formControlName="LeaveInformationId">
+                </ng-select>
+                <input type="text" *ngIf="entitlementData.isUpdateForm" class="form-control" readonly formControlName="LeaveInformationName">
+
+                    <div *ngIf="f['LeaveInformationId'].invalid && (f['LeaveInformationId'].dirty || f['LeaveInformationId'].touched) &&  f['LeaveInformationId'].errors"
+                        class="invalid-feedback">
+                        <div *ngIf="f['LeaveInformationId'].errors['required']">Please provide leave information.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="YearOfLeave" class="form-label">Year Of Leave <span class="text-danger">*</span></label>
+                    <input type="number" class="form-control"  readonly formControlName="YearOfLeave" 
+                    [ngClass]="{ 'is-invalid': f['YearOfLeave'].invalid && (f['YearOfLeave'].dirty || f['YearOfLeave'].touched) && f['YearOfLeave'].errors }">
+                    <div *ngIf="f['YearOfLeave'].invalid && (f['YearOfLeave'].dirty || f['YearOfLeave'].touched) &&  f['YearOfLeave'].errors"
+                        class="invalid-feedback">
+                        <div *ngIf="f['YearOfLeave'].errors['required']">Please provide year of leave.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="exampleInputdate" class="form-label">Date Valid From<span
+                            class="text-danger">*</span></label>
+                    <div class="input-group mb-3">
+                        <input id="fromDate" class="form-control flatpickr-input active" type="text" mwlFlatpickr
+                            formControlName="DateValidFrom" [altInput]="false" [convertModelValue]="true"
+                            (flatpickrChange)='changeFromDate($event)' altFormat="d-M-Y" dateFormat="d-M-Y"
+                            [ngClass]="{ 'is-invalid': f['DateValidFrom'].invalid && (f['DateValidFrom'].dirty || f['DateValidFrom'].touched) && f['DateValidFrom'].errors}" />
+                    </div>
+                    <div *ngIf="f['DateValidFrom'].invalid && (f['DateValidFrom'].dirty || f['DateValidFrom'].touched) &&  f['DateValidFrom'].errors"
+                        class="invalid-feedback">
+                        <div *ngIf="f['DateValidFrom'].errors['required']">Please provide date valid from.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="exampleInputdate" class="form-label">Date Valid Until <span
+                            class="text-danger">*</span></label>
+                    <div class="input-group mb-3" >
+                        <input id="DateValidUntil" class="form-control flatpickr-input active" type="text" mwlFlatpickr
+                            formControlName="DateValidUntil" [altInput]="false" altFormat="d-M-Y" dateFormat="d-M-Y"
+                            [convertModelValue]="true" [ngClass]="{ 'is-invalid': f['DateValidUntil'].invalid && (f['DateValidUntil'].dirty || f['DateValidUntil'].touched) && f['DateValidUntil'].errors}"   />
+                    </div>
+                    <div *ngIf="f['DateValidUntil'].invalid && (f['DateValidUntil'].dirty || f['DateValidUntil'].touched) &&  f['DateValidUntil'].errors"
+                        class="invalid-feedback">
+                        <div *ngIf="f['DateValidUntil'].errors['required']">Please provide date valid until.
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6" *ngIf="entitlementData.isUpdateForm">
+                    <label for="TotalLeaves" class="form-label">Total Leaves <span class="text-danger">*</span></label>
+                    <input type="number" class="form-control"  [readonly]="!entitlementData.isUpdateForm" formControlName="TotalLeaves" [ngClass]="{ 'is-invalid': f['TotalLeaves'].invalid && (f['TotalLeaves'].dirty || f['TotalLeaves'].touched) && f['TotalLeaves'].errors }">
+                    <div *ngIf="f['TotalLeaves'].invalid && (f['TotalLeaves'].dirty || f['TotalLeaves'].touched) &&  f['TotalLeaves'].errors"
+                        class="invalid-feedback">
+                        <div *ngIf="f['TotalLeaves'].errors['required']">Please provide total leaves.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" *ngIf="entitlementData.isUpdateForm">
+                    <label for="ConsumedLeaves" class="form-label">Consumed Leaves <span class="text-danger">*</span></label>
+                    <input type="number" class="form-control" [readonly]="!entitlementData.isUpdateForm"  formControlName="ConsumedLeaves"
+                    [ngClass]="{ 'is-invalid': f['ConsumedLeaves'].invalid && (f['ConsumedLeaves'].dirty || f['ConsumedLeaves'].touched) && f['ConsumedLeaves'].errors }">
+                    <div *ngIf="f['ConsumedLeaves'].invalid && (f['ConsumedLeaves'].dirty || f['ConsumedLeaves'].touched) &&  f['ConsumedLeaves'].errors"
+                        class="invalid-feedback">
+                        <div *ngIf="f['ConsumedLeaves'].errors['required']">Please provide consumed leaves.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" *ngIf="false">
+                    <label for="OriTotalLeaves" class="form-label">ORI Total Leaves</label>
+                    <input type="number" class="form-control" readonly formControlName="OriTotalLeaves">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="hstack gap-2 justify-content-end">
+                    <button type="submit" class="btn btn-primary" *ngIf="!isSubmitted"
+                        [disabled]="this.entitlementForm.invalid">Submit</button>
+                    <button type="button" class="btn btn-primary btn-label waves-effect waves-light btn-load"
+                        *ngIf="isSubmitted">
+                        <span class="d-flex align-items-center">
+                            <span class="spinner-border flex-shrink-0" role="status">
+                                <span class="visually-hidden">Submitting...</span>
+                            </span>
+                            <span class="flex-grow-1 ms-2">
+                                Submitting...
+                            </span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

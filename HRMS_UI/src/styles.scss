@@ -1,0 +1,141 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '../node_modules/@syncfusion/ej2-base/styles/fabric.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/fabric.css';
+@import '../node_modules/@syncfusion/ej2-dropdowns/styles/fabric.css';
+@import '../node_modules/@syncfusion/ej2-inputs/styles/fabric.css';
+@import '../node_modules/@syncfusion/ej2-navigations/styles/fabric.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/fabric.css';
+@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/fabric.css';
+@import '../node_modules/@syncfusion/ej2-pdfviewer/styles/fabric.css';
+@import '../node_modules/@syncfusion/ej2-notifications/styles/fabric.css';
+
+
+.page-content{
+    background-color: #f3f3f9 !important;
+    // height: 100vh;
+}
+.pre-loader {
+    width: 200px;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #ff0000;
+    left: 15%;
+    transform-origin: 50%;
+    animation: circle .5s alternate infinite ease;
+}
+
+@keyframes circle {
+    0% {
+        top: 60px;
+        height: 5px;
+        border-radius: 50px 50px 25px 25px;
+        transform: scaleX(1.7);
+    }
+
+    40% {
+        height: 20px;
+        border-radius: 50%;
+        transform: scaleX(1);
+    }
+
+    100% {
+        top: 0%;
+    }
+}
+
+.circle:nth-child(2) {
+    left: 45%;
+    animation-delay: .2s;
+}
+
+.circle:nth-child(3) {
+    left: auto;
+    right: 15%;
+    animation-delay: .3s;
+}
+
+.shadow {
+    width: 20px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 62px;
+    transform-origin: 50%;
+    z-index: -1;
+    left: 15%;
+    filter: blur(1px);
+    animation: shadow .5s alternate infinite ease;
+}
+
+@keyframes shadow {
+    0% {
+        transform: scaleX(1.5);
+    }
+
+    40% {
+        transform: scaleX(1);
+        opacity: .7;
+    }
+
+    100% {
+        transform: scaleX(.2);
+        opacity: .4;
+    }
+}
+
+.shadow:nth-child(4) {
+    left: 45%;
+    animation-delay: .2s
+}
+
+.shadow:nth-child(5) {
+    left: auto;
+    right: 15%;
+    animation-delay: .3s;
+}
+
+.pre-loader span {
+    position: absolute;
+    top: 75px;
+    font-family: 'Lato';
+    font-size: 20px;
+    letter-spacing: 12px;
+    color: rgb(8, 8, 8);
+    left: 15%;
+}
+// .card {
+//     margin-bottom: 1.2rem !important;
+//     box-shadow: 0 3px 13px 3px rgb(56 65 74 / 15%) !important;
+// }
+.dx-datagrid-headers {
+    background-color: #fafafa;
+    color:rgb(7, 7, 7); 
+    font-size: 12px;
+}
+.dx-row {
+    border:none;
+}
+.dx-pager .dx-page-sizes .dx-selection, .dx-pager .dx-pages .dx-selection {
+    background-color: #fafafa;
+}
+// .dx-datagrid-rowsview .dx-row.dx-row-lines:first-child, 
+// .dx-datagrid-rowsview .dx-row.dx-row-lines:first-child>td, 
+// .dx-datagrid-rowsview .dx-row.dx-row-lines:first-child>tr>td {
+//     font-size: 12px;
+// }
+
+sup{
+    color:#f06548;
+}

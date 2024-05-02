@@ -1,0 +1,80 @@
+<form novalidate role="form" [formGroup]="section8GForm">
+    <div class="col-lg-12">
+        <div class="mb-3">
+            <div formArrayName="Section80GDetails" class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Organization Name</th>
+                            <th>Organization PAN</th>
+                            <th>Amount</th>
+                            <th>Proposed Amount</th>
+                            <th>Is Verified</th>
+                            <th>Verfied PAN</th>
+                            <th>Verified Name</th>
+                            <th>Remarks</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let itemrow of Section80GDetails.controls; let index = index;"
+                            [formGroupName]="index">
+                            <td width="20%">
+                                <input class="form-control" maxlength="150" type="text" placeholder="Organizationme"
+                                    id="ORG_NAME_{{index}}" name="ORG_NAME_{{index}}" formControlName="ORG_NAME">
+                            </td>
+                            <td width="15%">
+                                <div class="input-group">
+                                    <input class="form-control" maxlength="10" type="text"
+                                        placeholder="Organization PAN" id="ORG_PAN_{{index}}" name="ORG_PAN_{{index}}"
+                                        formControlName="ORG_PAN">
+                                    <!-- Buttons with Label -->
+                                    <button type="button" class="btn btn-primary waves-effect waves-light"
+                                        (click)="verifyPanCard(index, itemrow)" *ngIf="isVerify">Verify</button>
+                                </div>
+
+                            </td>
+                            <td width="10%">
+                                <input class="form-control" maxlength="10" type="text" placeholder="Amount Donated"
+                                    id="rentpaid_{{index}}" name="rentpaid_{{index}}" formControlName="Amount"
+                                    (keypress)="numberOnly($event)">
+                            </td>
+                            <td width="10%">
+                                <input class="form-control" type="text" id="Amount_{{index}}" name="Amount_{{index}}"
+                                    formControlName="VerifiedAmount" (keypress)="numberOnly($event)">
+                            </td>
+                            <td width="10%">
+                                <input class="form-control col-md-4" type="text" id="IsPanVerified_{{index}}"
+                                    name="IsPanVerified_{{index}}" formControlName="IsPanVerified">
+                            </td>
+                            <td width="10%">
+                                <input class="form-control col-md-4" type="text" id="VerifiedPan_{{index}}"
+                                    name="VerifiedPan_{{index}}" formControlName="VerifiedPan">
+                            </td>
+
+                            <td width="10%">
+                                <input class="form-control col-md-4" type="text" id="VerifiedName_{{index}}"
+                                    name="VerifiedName_{{index}}" formControlName="VerifiedName">
+                            </td>
+                            <td width="10%">
+                                <input class="form-control col-md-4" type="text" id="remarks_{{index}}"
+                                    name="remarks_{{index}}" formControlName="VerifiedRemarks">
+                            </td>
+                            <td *ngIf="isVerify">
+                                <button type="button" id="page-header-cart-dropdown"
+                                    class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle ml-1"
+                                    (click)="viewAttachments(itemrow)">
+                                    <i _ngcontent-fsy-c552="" class="las la-eye fs-22"></i>
+                                    <span *ngIf="itemrow.get('FileCount')?.value>0"
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+                                        {{itemrow.get('FileCount')?.value}}
+                                    </span>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,46 @@
+<!-- BreadCrumb add for dashboard-->
+<app-breadcrumbs title="Employee Reporting Structure" [breadcrumbItems]="breadCrumbItems"></app-breadcrumbs>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card-header align-items-center col-12">
+            <div class="row pt-3" [formGroup]="filterReportForm">
+                <div class="col-md-5">
+                    <label for="exampleInputdate" class="form-label">Branch <span class="text-danger">*</span></label>
+                    <ejs-multiselect id='multiselect-filtering' [dataSource]='branches' [fields]='fields'
+                        (filtering)='onFiltering($event)' [allowFiltering]='true' [placeholder]='watermarks'
+                        [mode]='mode' [popupHeight]='popHeight' [showDropDownIcon]='true' showSelectAll='true'
+                        [filterBarPlaceholder]='filterPlaceholder' formControlName="Branches"></ejs-multiselect>
+                </div>
+                <div class="col-md-2">
+                    <label for="" class="form-label">&nbsp;</label>
+                    <button type="button" class="btn btn-primary mt-4"
+                        (click)="getLeaveBalancesReport()">Submit</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <ejs-grid #grid id='grid' [dataSource]="leaveBalancesReport" [allowPaging]="true" [allowSorting]="true"
+            [allowFiltering]="true" [allowResizing]="true" [filterSettings]='filterOptions' width='100%'
+            allowExcelExport='true' [allowExcelExport]='true' [allowPdfExport]='true' [toolbar]='toolbar'
+            (toolbarClick)='toolbarClick($event)'>
+            <e-columns>
+                <e-column field='EmployeeId' headerText='Employee Id' width='120' textAlign="Left"
+                    minWidth=10></e-column>
+                <e-column field='EmployeeNumber' headerText='Employee Number' width='120' textAlign="Left"
+                    minWidth=10></e-column>
+                <e-column field='EmployeeName' headerText='Employee Name' width='120' textAlign="Left"
+                    minWidth=10></e-column>
+                <e-column field='BranchName' headerText='BranchName' width='120' textAlign="Left"
+                    minWidth=10></e-column>
+                <e-column field='OfficeTypeName' headerText='Office Type' width='120' textAlign="Left"
+                    minWidth=10></e-column>
+                <e-column headerText='Level 1' [columns]='level1'></e-column>
+                <e-column headerText='Level 2' [columns]='level2'></e-column>
+                <e-column headerText='Level 3' [columns]='level3'></e-column>
+            </e-columns>
+        </ejs-grid>
+    </div>
+</div>

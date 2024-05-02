@@ -1,0 +1,48 @@
+/* my-loader.component.css */
+/* .loading-spinner{    
+    background-color: #0000001f;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+} */
+
+.loading-spinner img {
+    align-self: end;
+}
+
+.loading-message {
+    text-align: center;
+    align-self: start;
+}
+
+/* Absolute Center Spinner */
+.loading-spinner {
+    position: fixed;
+    z-index: 999;
+    height: 2em;
+    width: 2em;
+    overflow: show;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+/* Transparent Overlay */
+.loading-spinner:before {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(rgba(20, 20, 20, .5), rgba(0, 0, 0, 0.5));
+    background: -webkit-radial-gradient(rgba(20, 20, 20, .5), rgba(0, 0, 0, .5));
+}

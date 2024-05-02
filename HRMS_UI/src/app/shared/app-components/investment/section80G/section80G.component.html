@@ -1,0 +1,67 @@
+<form novalidate role="form" [formGroup]="section8GForm">
+    <div class="col-lg-12">
+        <div class="mb-3">
+            <div formArrayName="Section80GDetails" class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Organization Name</th>
+                            <th>Organization PAN</th>
+                            <th>Amount</th>
+                            <th>Proposed Amount</th>
+                            <th>Remarks</th>
+                            <th *ngIf="canUpload">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let itemrow of Section80GDetails.controls; let index = index;"
+                            [formGroupName]="index">
+                            <td class="col-md-3">
+                                <input class="form-control" maxlength="150" type="text" placeholder="Organizationme"
+                                    id="ORG_NAME_{{index}}" name="ORG_NAME_{{index}}" formControlName="ORG_NAME">
+                            </td>
+                            <td class="col-md-3">
+                                <input class="form-control" maxlength="10" type="text" placeholder="Organization PAN"
+                                    id="ORG_PAN_{{index}}" name="ORG_PAN_{{index}}" formControlName="ORG_PAN">
+                            </td>
+                            <td class="col-md-1">
+                                <input class="form-control" maxlength="10" type="text" placeholder="Amount Donated"
+                                    id="rentpaid_{{index}}" name="rentpaid_{{index}}" formControlName="Amount"
+                                    (keypress)="numberOnly($event)">
+                            </td>
+                            <td class="col-md-1">
+                                <input maxlength="10" class="form-control" type="text" [disabled]="true"
+                                    id="VerifiedAmount_{{index}}" name="VerifiedAmount_{{index}}"
+                                    formControlName="VerifiedAmount">
+                            </td>
+                            <td class="col-md-3">
+                                <input class="form-control col-md-4" type="text" id="VerifiedRemarks_{{index}}"
+                                    name="VerifiedRemarks_{{index}}" [disabled]="true"
+                                    formControlName="VerifiedRemarks">
+                            </td>
+                            <td  class="col-md-1">
+                                <button *ngIf="canUpload" type="button" id="page-header-cart-dropdown"
+                                    (click)="uploadOtherIncomeFiles(itemrow)"
+                                    class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle">
+                                    <i _ngcontent-fsy-c552="" class="las la-paperclip fs-22"></i>
+                                    <span *ngIf="itemrow.get('FileCount')?.value>0"
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">{{itemrow.get('FileCount')?.value}}
+                                    </span>
+                                </button>
+                                <button type="button" id="page-header-cart-dropdown"
+                                    class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle ml-1"
+                                    (click)="viewAttachments(itemrow)">
+                                    <i _ngcontent-fsy-c552="" class="las la-eye fs-22"></i>
+                                    <span *ngIf="itemrow.get('FileCount')?.value>0"
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+                                        {{itemrow.get('FileCount')?.value}}
+                                    </span>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</form>

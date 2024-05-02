@@ -1,0 +1,51 @@
+Product projects
+---------------------------------------
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.ApplicationEnums\Phoenix.CrossCutting.ApplicationEnums.csproj
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Logging\Phoenix.CrossCutting.Logging.csproj
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.AppException\Phoenix.CrossCutting.AppException.csproj
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Resources\Phoenix.CrossCutting.Resources.csproj
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Security\Phoenix.CrossCutting.Security.csproj
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Helper\Phoenix.CrossCutting.Helper.csproj
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\4-Infrastructure\BusinessModel\Phoenix.Infrastructure.BusinessModel.csproj
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\6-Model\Phoenix.Model.Business.SearchCriteria\Phoenix.Model.Business.SearchCriteria.csproj
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Enumerations\Phoenix.CrossCutting.Enumerations.csproj
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\4-Infrastructure\Dapper\Phoenix.Infrastructure.Dapper\Phoenix.Infrastructure.Dapper.csproj
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\6-Model\Phonix.Model.Business\Phoenix.Model.Business.csproj
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Helper.Cron\Phoenix.CrossCutting.Helper.Cron.csproj
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Utils\Phoenix.CrossCutting.Utils.csproj
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\8-Database\Phoenix.Database.Repository.csproj
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\3-Domain\Phoenix.Domain.csproj
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\2-Application\Phoenix.Application.csproj
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.DependencyInjection\Phoenix.CrossCutting.DependencyInjection.csproj
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Session\Phoenix.CrossCutting.Session.csproj
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.AspNetCore\Phoenix.CrossCutting.AspNetCore.csproj
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\1-Web\Phoenix.Web.Service\Phoenix.Web.Service.csproj
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Extension\Phoenix.CrossCutting.Extension.csproj
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Mapping\Phoenix.CrossCutting.Mapping.csproj
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.JwtGenerator\Phoenix.CrossCutting.JwtGenerator.csproj
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.TimePeriod\Phoenix.CrossCutting.TimePeriod.csproj
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\4-Infrastructure\Business\Phoenix.Infrastructure.Business.csproj
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\4-Infrastructure\Phoenix.Infrastructure.BusinessSearchCriteria\Phoenix.Infrastructure.BusinessSearchCriteria.csproj
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\6-Model\Phoenix.FileProviders\Phoenix.FileProviders.csproj
+
+
+Test projects
+---------------------------------------
+
+
+Invalid projects
+---------------------------------------
+{none}
+
+
+Skipped projects
+---------------------------------------
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\4-Infrastructure\Database\Phoenix.Infrastructure.Database.csproj
+F:\Work\Office\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Jwt\Phoenix.CrossCutting.Jwt.csproj
+
+
+Excluded projects
+---------------------------------------
+{none}
+
+

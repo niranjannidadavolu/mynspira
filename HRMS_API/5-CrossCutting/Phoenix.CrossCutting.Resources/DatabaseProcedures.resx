@@ -1,0 +1,745 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DELETE_REIMBURSEMENT" xml:space="preserve">
+    <value>DELETE_REIMBURSEMENT</value>
+  </data>
+  <data name="FORM_16_DOWNLOAD" xml:space="preserve">
+    <value>FORM_16_DOWNLOAD</value>
+  </data>
+  <data name="F_TDSCALC_PORTAL_SELECT" xml:space="preserve">
+    <value>F_TDSCALC_PORTAL_SELECT</value>
+  </data>
+  <data name="GET1_EMP_PAYSLIP1_SELECT" xml:space="preserve">
+    <value>P_GET1_EMP_PAYSLIP1_SELECT</value>
+  </data>
+  <data name="GET_EMPLOYEE_TIME_SHEET" xml:space="preserve">
+    <value>P_GET_EMPLOYEE_TIME_SHEET</value>
+  </data>
+  <data name="GET_EMP_APPROVED_BILLS_COUNT" xml:space="preserve">
+    <value>GET_EMP_APPROVED_BILLS_COUNT</value>
+  </data>
+  <data name="GET_EMP_PENDING_BILLS_COUNT" xml:space="preserve">
+    <value>GET_EMP_PENDING_BILLS_COUNT</value>
+  </data>
+  <data name="GET_EMP_PROFILE_DATA" xml:space="preserve">
+    <value>GET_EMP_PROFILE_DATA</value>
+  </data>
+  <data name="GET_REIM_BAL_PORTAL" xml:space="preserve">
+    <value>GET_REIM_BAL_PORTAL</value>
+  </data>
+  <data name="PAYSLIP_PRINTING" xml:space="preserve">
+    <value>P_PAYSLIPPRINTING_PORTAL</value>
+  </data>
+  <data name="P_GET_EMPLOYEE_SCREENS" xml:space="preserve">
+    <value>P_GET_EMPLOYEE_SCREENS</value>
+  </data>
+  <data name="P_GET_EMP_CL_AGREE_SELECT" xml:space="preserve">
+    <value>P_GET_EMP_CL_AGREE_SELECT</value>
+  </data>
+  <data name="P_GET_PORTAL_HOLIDAYS" xml:space="preserve">
+    <value>P_GET_PORTAL_HOLIDAYS</value>
+  </data>
+  <data name="P_G_EMPLOYEE_TIME_SHEET_COUNT" xml:space="preserve">
+    <value>SELECT COUNT(*) AS RECORD_COUNT FROM ISSUSER.HISTORY WHERE USERID1 = {0}</value>
+  </data>
+  <data name="P_SEARCH_EMPLOYEE_PORTAL" xml:space="preserve">
+    <value>P_SEARCH_EMPLOYEE_PORTAL</value>
+  </data>
+  <data name="REIMBURESMENT_FILE_UPLOAD" xml:space="preserve">
+    <value>REIMBURESMENT_FILE_UPLOAD</value>
+  </data>
+  <data name="SP_EMP_CL_AGRE_BILLS_UPLOAD" xml:space="preserve">
+    <value>SP_EMP_CL_AGRE_BILLS_UPLOAD</value>
+  </data>
+  <data name="SP_TDS_EMP_CHAPTER6_FILEUPLOAD" xml:space="preserve">
+    <value>SP_TDS_EMP_CHAPTER6_FILEUPLOAD</value>
+  </data>
+  <data name="SP_TDS_EMP_DELETE_CHAPTER6FILE" xml:space="preserve">
+    <value>SP_TDS_EMP_DELETE_CHAPTER6FILE</value>
+  </data>
+  <data name="SP_TDS_EMP_DELETE_HINCOMEFILE" xml:space="preserve">
+    <value>SP_TDS_EMP_DELETE_HINCOMEFILE</value>
+  </data>
+  <data name="SP_TDS_EMP_DELETE_HRAFILE" xml:space="preserve">
+    <value>SP_TDS_EMP_DELETE_HRAFILE</value>
+  </data>
+  <data name="SP_TDS_EMP_DELETE_OINCOMEFILE" xml:space="preserve">
+    <value>SP_TDS_EMP_DELETE_OINCOMEFILE</value>
+  </data>
+  <data name="SP_TDS_EMP_HINCOME_FILEUPLOAD" xml:space="preserve">
+    <value>SP_TDS_EMP_HINCOME_FILEUPLOAD</value>
+  </data>
+  <data name="SP_TDS_EMP_HRAFILEUPLOAD" xml:space="preserve">
+    <value>SP_TDS_EMP_HRAFILEUPLOAD</value>
+  </data>
+  <data name="SP_TDS_EMP_OINCOME_FILEUPLOAD" xml:space="preserve">
+    <value>SP_TDS_EMP_OINCOME_FILEUPLOAD</value>
+  </data>
+  <data name="SP_GET_ACTIVE_SCREENS" xml:space="preserve">
+    <value>SP_GET_ACTIVE_SCREENS</value>
+  </data>
+  <data name="SP_GET_ROLE_SCREENS" xml:space="preserve">
+    <value>SP_GET_ROLE_SCREENS</value>
+  </data>
+  <data name="SP_SAVE_PERMISSIONS" xml:space="preserve">
+    <value>SP_SAVE_PERMISSIONS</value>
+  </data>
+  <data name="SP_SAVE_USER_ROLES" xml:space="preserve">
+    <value>SP_SAVE_USER_ROLES</value>
+  </data>
+  <data name="SP_DELETE_EMPEDUCATION_DT" xml:space="preserve">
+    <value>SP_DELETE_EMPEDUCATION_DT</value>
+  </data>
+  <data name="SP_DELETE_EMPEXPERIENCE_DT" xml:space="preserve">
+    <value>SP_DELETE_EMPEXPERIENCE_DT</value>
+  </data>
+  <data name="SP_DELETE_EMPFAMILY_DT" xml:space="preserve">
+    <value>SP_DELETE_EMPFAMILY_DT</value>
+  </data>
+  <data name="SP_EDUCATION_COURCE_MT" xml:space="preserve">
+    <value>SP_EDUCATION_COURCE_MT</value>
+  </data>
+  <data name="SP_EMP_BLOOD_GROUP_MT" xml:space="preserve">
+    <value>SP_EMP_BLOOD_GROUP_MT</value>
+  </data>
+  <data name="SP_FILTEREDUCOURSE_MT" xml:space="preserve">
+    <value>SP_FILTEREDUCOURSE_MT</value>
+  </data>
+  <data name="SP_GET_ADDQUALIFICATION_MT" xml:space="preserve">
+    <value>SP_GET_ADDQUALIFICATION_MT</value>
+  </data>
+  <data name="SP_M_BLOODRELATION_MT" xml:space="preserve">
+    <value>SP_M_BLOODRELATION_MT</value>
+  </data>
+  <data name="SP_M_EDUCATION_MT" xml:space="preserve">
+    <value>SP_M_EDUCATION_MT</value>
+  </data>
+  <data name="SP_UPDATE_EDUCATIONDETAILS" xml:space="preserve">
+    <value>SP_UPDATE_EDUCATIONDETAILS</value>
+  </data>
+  <data name="SP_UPDATE_EXPERIENCEDETAILS" xml:space="preserve">
+    <value>SP_UPDATE_EXPERIENCEDETAILS</value>
+  </data>
+  <data name="SP_UPDATE_FAMILYDETAILS" xml:space="preserve">
+    <value>SP_UPDATE_FAMILYDETAILS</value>
+  </data>
+  <data name="INSERT_EMP_LEAVE" xml:space="preserve">
+    <value>INSERT_EMP_LEAVE</value>
+  </data>
+  <data name="SP_GET_EMP_LEAVE_DETAILS" xml:space="preserve">
+    <value>SP_GET_EMP_LEAVE_DETAILS</value>
+  </data>
+  <data name="SP_GET_EMP_LEAVES_BALANCE" xml:space="preserve">
+    <value>SP_GET_EMP_LEAVES_BALANCE</value>
+  </data>
+  <data name="INSERT_EMP_LEAVE_DETAILS" xml:space="preserve">
+    <value>INSERT_EMP_LEAVE_DETAILS</value>
+  </data>
+  <data name="SP_EMP_UPDATE_CONSUMED_LEAVES" xml:space="preserve">
+    <value>SP_EMP_UPDATE_CONSUMED_LEAVES</value>
+  </data>
+  <data name="SAVE_NOTIFICATION" xml:space="preserve">
+    <value>SAVE_NOTIFICATION</value>
+  </data>
+  <data name="CANCEL_EMPLOYEE_LEAVE" xml:space="preserve">
+    <value>CANCEL_EMPLOYEE_LEAVE</value>
+  </data>
+  <data name="SP_GET_MNGR_APRVL_LEAVE_RECENT" xml:space="preserve">
+    <value>SP_GET_MNGR_APRVL_LEAVE_RECENT</value>
+  </data>
+  <data name="SP_GET_EMPLOYEE_LEAVE_TYPES" xml:space="preserve">
+    <value>SP_GET_EMPLOYEE_LEAVE_TYPES</value>
+  </data>
+  <data name="SP_GET_EMPLOYEE_LEAVES" xml:space="preserve">
+    <value>SP_GET_EMPLOYEE_LEAVES</value>
+  </data>
+  <data name="SP_GET_EMP_LEAVES_AF_TODATE" xml:space="preserve">
+    <value>SP_GET_EMP_LEAVES_AF_TODATE</value>
+  </data>
+  <data name="SP_GET_EMP_LEAVES_BF_STDATE" xml:space="preserve">
+    <value>SP_GET_EMP_LEAVES_BF_STDATE</value>
+  </data>
+  <data name="SP_GET_EMP_LEAVES_BY_TYPE" xml:space="preserve">
+    <value>SP_GET_EMP_LEAVES_BY_TYPE</value>
+  </data>
+  <data name="SP_GET_UTILIZED_ONDUTIES" xml:space="preserve">
+    <value>SP_GET_UTILIZED_ONDUTIES</value>
+  </data>
+  <data name="SP_CHECK_HAS_CHILDREN" xml:space="preserve">
+    <value>SP_CHECK_HAS_CHILDREN</value>
+  </data>
+  <data name="SP_CHECK_MARITAL_STATUS" xml:space="preserve">
+    <value>SP_CHECK_MARITAL_STATUS</value>
+  </data>
+  <data name="SP_GET_TEAM_MEMBERS" xml:space="preserve">
+    <value>SP_GET_TEAM_MEMBERS</value>
+  </data>
+  <data name="GET_TEAM_LEAVES" xml:space="preserve">
+    <value>GET_TEAM_LEAVES</value>
+  </data>
+  <data name="GET_LEAVE_INFORMATION" xml:space="preserve">
+    <value>GET_LEAVE_INFORMATION</value>
+  </data>
+  <data name="GET_LEAVE_POLICY_INFORMATION" xml:space="preserve">
+    <value>GET_LEAVE_POLICY_INFORMATION</value>
+  </data>
+  <data name="SP_EMP_LEAVE_FILEUPLOAD" xml:space="preserve">
+    <value>SP_EMP_LEAVE_FILEUPLOAD</value>
+  </data>
+  <data name="SP_GET_EMP_LEAVE_FILE_DETAILS" xml:space="preserve">
+    <value>SP_GET_EMP_LEAVE_FILE_DETAILS</value>
+  </data>
+  <data name="P_DELETE_EMP_CL_MAINBILL" xml:space="preserve">
+    <value>P_DELETE_EMP_CL_MAINBILL</value>
+  </data>
+  <data name="P_GET_EMP_CL_MAINBILL_SELECT" xml:space="preserve">
+    <value>P_GET_EMP_CL_MAINBILL_SELECT</value>
+  </data>
+  <data name="P_GET_EMP_CL_MAINTE_SELECT" xml:space="preserve">
+    <value>P_GET_EMP_CL_MAINTE_SELECT</value>
+  </data>
+  <data name="SP_EMP_UPLD_CAR_LEASE" xml:space="preserve">
+    <value>SP_EMP_UPLD_CAR_LEASE</value>
+  </data>
+  <data name="SP_EMP_UPLD_CAR_LEASE_DDT" xml:space="preserve">
+    <value>SP_EMP_UPLD_CAR_LEASE_DDT</value>
+  </data>
+  <data name="DOWNLOAD_PAYSLIP" xml:space="preserve">
+    <value>DOWNLOAD_PAYSLIP</value>
+  </data>
+  <data name="GET_EMP_PAYSLIPS" xml:space="preserve">
+    <value>GET_EMP_PAYSLIPS</value>
+  </data>
+  <data name="GET_NOTIFICATIONS" xml:space="preserve">
+    <value>GET_NOTIFICATIONS</value>
+  </data>
+  <data name="GET_EMPLOYEE_WORKFLOW" xml:space="preserve">
+    <value>GET_EMPLOYEE_WORKFLOW</value>
+  </data>
+  <data name="INSERT_LEAVE_WORKFLOW" xml:space="preserve">
+    <value>INSERT_LEAVE_WORKFLOW</value>
+  </data>
+  <data name="PROCESS_LEAVE_WORKFLOW" xml:space="preserve">
+    <value>PROCESS_LEAVE_WORKFLOW</value>
+  </data>
+  <data name="GET_EMPLOYEE_LEVELS" xml:space="preserve">
+    <value>GET_EMPLOYEE_LEVELS</value>
+  </data>
+  <data name="SP_GET_EMP_REPORTING_MANAGERS" xml:space="preserve">
+    <value>SP_GET_EMP_REPORTING_MANAGERS</value>
+  </data>
+  <data name="SP_GET_EMPLOYEE_HR_DETAILS" xml:space="preserve">
+    <value>SP_GET_EMPLOYEE_HR_DETAILS</value>
+  </data>
+  <data name="GET_AUTO_APPROVALS" xml:space="preserve">
+    <value>GET_AUTO_APPROVALS</value>
+  </data>
+  <data name="SP_CHECK_FOR_EXSISTING_LEAVES" xml:space="preserve">
+    <value>SP_CHECK_FOR_EXSISTING_LEAVES</value>
+  </data>
+  <data name="SP_GET_EMP_PROJECT_DETAILS" xml:space="preserve">
+    <value>SP_GET_EMP_PROJECT_DETAILS</value>
+  </data>
+  <data name="INSERT_EMP_EMAIL" xml:space="preserve">
+    <value>INSERT_EMP_EMAIL</value>
+    <comment>For Sending mails.</comment>
+  </data>
+  <data name="GET_SEND_EMAILS" xml:space="preserve">
+    <value>GET_SEND_EMAILS</value>
+    <comment>Get list of records who flag is 0</comment>
+  </data>
+  <data name="SP_UPDATE_MAIL_SENT" xml:space="preserve">
+    <value>SP_UPDATE_MAIL_SENT</value>
+    <comment>Change flag based on the mail sent.</comment>
+  </data>
+  <data name="GET_LEAVES_FOR_APPROVAL" xml:space="preserve">
+    <value>GET_LEAVES_FOR_APPROVAL</value>
+    <comment>Get the leaves for approve.</comment>
+  </data>
+  <data name="INSERT_DOWNLOAD_HISTORY" xml:space="preserve">
+    <value>INSERT_DOWNLOAD_HISTORY</value>
+    <comment>Save the downloaded documents history</comment>
+  </data>
+  <data name="INSERT_EMP_EMAIL1" xml:space="preserve">
+    <value>INSERT_EMP_EMAIL1</value>
+  </data>
+  <data name="SP_GET_EMPLOYEE_PROFILE" xml:space="preserve">
+    <value>SP_GET_EMPLOYEE_PROFILE</value>
+  </data>
+  <data name="SP_GET_NSL_EMPLOYEE_PROFILE" xml:space="preserve">
+    <value>SP_GET_NSL_EMPLOYEE_PROFILE</value>
+  </data>
+  <data name="SP_GET_NSL_EMPLOYEE_PROFILES" xml:space="preserve">
+    <value>SP_GET_NSL_EMPLOYEE_PROFILES</value>
+  </data>
+  <data name="SP_INSERT_LOGIN_TRIES" xml:space="preserve">
+    <value>SP_INSERT_LOGIN_TRIES</value>
+  </data>
+  <data name="P_GET_REPORTEE_TIME_SHEET" xml:space="preserve">
+    <value>P_GET_REPORTEE_TIME_SHEET</value>
+  </data>
+  <data name="SP_LEAVE_DETAILS_BYID" xml:space="preserve">
+    <value>SP_LEAVE_DETAILS_BYID</value>
+    <comment>Get Levae Details by Leave ID</comment>
+  </data>
+  <data name="GET_SITE_NOTIFICATIONS" xml:space="preserve">
+    <value>GET_SITE_NOTIFICATIONS</value>
+  </data>
+  <data name="INSERT_EMP_FEEDBACK" xml:space="preserve">
+    <value>INSERT_EMP_FEEDBACK</value>
+  </data>
+  <data name="SP_POR_UPDATE_EMAIL" xml:space="preserve">
+    <value>SP_POR_UPDATE_EMAIL</value>
+  </data>
+  <data name="SEND_OTP_EMAIL" xml:space="preserve">
+    <value>SEND_OTP_EMAIL</value>
+  </data>
+  <data name="SP_GET_EMAILOTP_VERIFICATION" xml:space="preserve">
+    <value>SP_GET_EMAILOTP_VERIFICATION</value>
+  </data>
+  <data name="SP_GET_HELP_DOCUMENTS" xml:space="preserve">
+    <value>SP_GET_HELP_DOCUMENTS</value>
+  </data>
+  <data name="SP_SENT_EMAILOTP_VERIFICATION" xml:space="preserve">
+    <value>SP_SENT_EMAILOTP_VERIFICATION</value>
+  </data>
+  <data name="SP_UPDATE_OTP_MAIL_SENT" xml:space="preserve">
+    <value>SP_UPDATE_OTP_MAIL_SENT</value>
+  </data>
+  <data name="SP_GET_LEAVE_REASONS" xml:space="preserve">
+    <value>SP_GET_LEAVE_REASONS</value>
+  </data>
+  <data name="SP_CHECK_FOR_LEAVES_BTW_DATES" xml:space="preserve">
+    <value>SP_CHECK_FOR_LEAVES_BTW_DATES</value>
+  </data>
+  <data name="SP_LEAVE_REPORT" xml:space="preserve">
+    <value>SP_LEAVE_REPORT</value>
+  </data>
+  <data name="SP_GET_HR_BRANCHES" xml:space="preserve">
+    <value>SP_GET_HR_BRANCHES</value>
+  </data>
+  <data name="SP_AUTO_APPROVAL_LEAVE_REPORT" xml:space="preserve">
+    <value>SP_AUTO_APPROVAL_LEAVE_REPORT</value>
+  </data>
+  <data name="SP_INSERT_POLICY_INFOMATION" xml:space="preserve">
+    <value>SP_INSERT_POLICY_INFOMATION</value>
+  </data>
+  <data name="SP_UPDATE_POLICY_INFOMATION" xml:space="preserve">
+    <value>SP_UPDATE_POLICY_INFOMATION</value>
+  </data>
+  <data name="SP_UPDATE_LEAVE_INFOMATION" xml:space="preserve">
+    <value>SP_UPDATE_LEAVE_INFOMATION</value>
+  </data>
+  <data name="SP_DELETE_LEAVE_INFOMATION" xml:space="preserve">
+    <value>SP_DELETE_LEAVE_INFOMATION</value>
+  </data>
+  <data name="SP_DELETE_POLICY_INFOMATION" xml:space="preserve">
+    <value>SP_DELETE_POLICY_INFOMATION</value>
+  </data>
+  <data name="SP_INSERT_LEAVE_INFOMATION" xml:space="preserve">
+    <value>SP_INSERT_LEAVE_INFOMATION</value>
+  </data>
+  <data name="SP_GET_BRANCHES_BY_OFFICE_TYPE" xml:space="preserve">
+    <value>SP_GET_BRANCHES_BY_OFFICE_TYPE</value>
+  </data>
+  <data name="SP_GET_LEAVE_TYPES_BY_OFC" xml:space="preserve">
+    <value>SP_GET_LEAVE_TYPES_BY_OFC</value>
+  </data>
+  <data name="SP_GET_LEAVE_ENTITLEMENT" xml:space="preserve">
+    <value>SP_GET_LEAVE_ENTITLEMENT</value>
+  </data>
+  <data name="SP_GET_OFFICE_TYPE" xml:space="preserve">
+    <value>SP_GET_OFFICE_TYPE</value>
+  </data>
+  <data name="INSERT_EMP_LEAVE_ENTITLEMENT" xml:space="preserve">
+    <value>INSERT_EMP_LEAVE_ENTITLEMENT</value>
+  </data>
+  <data name="SP_UPDATE_LEAVE_ENTITLEMENT" xml:space="preserve">
+    <value>SP_UPDATE_LEAVE_ENTITLEMENT</value>
+  </data>
+  <data name="SP_DELETE_LEAVE_ENTITLEMENT" xml:space="preserve">
+    <value>SP_DELETE_LEAVE_ENTITLEMENT</value>
+  </data>
+  <data name="SP_GET_LEAVE_TRANSACTIONS" xml:space="preserve">
+    <value>SP_GET_LEAVE_TRANSACTIONS</value>
+  </data>
+  <data name="SP_GET_PAYROLL_PERIOD" xml:space="preserve">
+    <value>SP_GET_PAYROLL_PERIOD</value>
+  </data>
+  <data name="P_WEB_HS_BRA_BLD_SELECT" xml:space="preserve">
+    <value>P_WEB_HS_BRA_BLD_SELECT</value>
+    <comment>RELATED TO NERP AND SURESH SANDANA</comment>
+  </data>
+  <data name="P_WEB_HS_USER_SELECT" xml:space="preserve">
+    <value>P_WEB_HS_USER_SELECT</value>
+    <comment>RELATED TO NERP AND SURESH SANDANA</comment>
+  </data>
+  <data name="SP_GET_RESIGNED_EMPLOYEES" xml:space="preserve">
+    <value>SP_GET_RESIGNED_EMPLOYEES</value>
+  </data>
+  <data name="SP_GET_LEAVE_ENCASHMENT" xml:space="preserve">
+    <value>SP_GET_LEAVE_ENCASHMENT</value>
+  </data>
+  <data name="GET_EMPLOYEE_TDS_AMOUNT" xml:space="preserve">
+    <value>GET_EMPLOYEE_TDS_AMOUNT</value>
+  </data>
+  <data name="SP_DELETE_LEAVE_ENCASHMENT" xml:space="preserve">
+    <value>SP_DELETE_LEAVE_ENCASHMENT</value>
+  </data>
+  <data name="SP_INSERT_LEAVE_ENCASHMENT" xml:space="preserve">
+    <value>SP_INSERT_LEAVE_ENCASHMENT</value>
+  </data>
+  <data name="GET_LEAVES_ENCASHMENT_APPROVAL" xml:space="preserve">
+    <value>GET_LEAVES_ENCASHMENT_APPROVAL</value>
+  </data>
+  <data name="PROCESS_ENCASHMENT_WORKFLOW" xml:space="preserve">
+    <value>PROCESS_ENCASHMENT_WORKFLOW</value>
+  </data>
+  <data name="GET_SEND_EMAILS2" xml:space="preserve">
+    <value>GET_SEND_EMAILS2</value>
+  </data>
+  <data name="SP_UPDATE_SENT_MAIL_STATUS" xml:space="preserve">
+    <value>SP_UPDATE_SENT_MAIL_STATUS</value>
+  </data>
+  <data name="SP_SAVE_LEAVE_ENTITLEMENT" xml:space="preserve">
+    <value>SP_SAVE_LEAVE_ENTITLEMENT</value>
+  </data>
+  <data name="VALIDATE_USER" xml:space="preserve">
+    <value>VALIDATE_USER</value>
+  </data>
+  <data name="SP_SAVE_EMPLOYEE_AADHAAR" xml:space="preserve">
+    <value>EMPLOYEE_STAGE.SP_SAVE_EMPLOYEE_AADHAAR</value>
+  </data>
+  <data name="SP_SAVE_EMPLOYEE_BANK_ACCOUNT" xml:space="preserve">
+    <value>EMPLOYEE_STAGE.SP_SAVE_EMPLOYEE_BANK_ACCOUNT</value>
+  </data>
+  <data name="SP_SAVE_EMPLOYEE_PAN" xml:space="preserve">
+    <value>EMPLOYEE_STAGE.SP_SAVE_EMPLOYEE_PAN</value>
+  </data>
+  <data name="SP_SAVE_EMP_DRIVING_LICENSE" xml:space="preserve">
+    <value>EMPLOYEE_STAGE.SP_SAVE_EMP_DRIVING_LICENSE</value>
+  </data>
+  <data name="SP_UPDATE_EMP_VERIFY_STATUS" xml:space="preserve">
+    <value>SP_UPDATE_EMP_VERIFY_STATUS</value>
+  </data>
+  <data name="SP_EMP_VERIFICATION_REPORT" xml:space="preserve">
+    <value>SP_EMP_VERIFICATION_REPORT</value>
+  </data>
+  <data name="GET_IDEMPOTENCY_ID" xml:space="preserve">
+    <value>GET_IDEMPOTENCY_ID</value>
+  </data>
+  <data name="SP_SAVE_EMP_VERIFICATION" xml:space="preserve">
+    <value>EMPLOYEE_STAGE.SP_SAVE_EMP_VERIFICATION</value>
+  </data>
+  <data name="SP_UPDATE_EMP_HR_VERIFY_STATUS" xml:space="preserve">
+    <value>SP_UPDATE_EMP_HR_VERIFY_STATUS</value>
+  </data>
+  <data name="GET_EMP_AADHAR_PATH" xml:space="preserve">
+    <value>GET_EMP_AADHAR_PATH</value>
+  </data>
+  <data name="GET_APPOINTMENT_LETTERS" xml:space="preserve">
+    <value>GET_APPOINTMENT_LETTERS</value>
+  </data>
+  <data name="PROCESS_LEAVE_BY_HR" xml:space="preserve">
+    <value>PROCESS_LEAVE_BY_HR</value>
+  </data>
+  <data name="UPDATE_APPT_LETTER_STATUS" xml:space="preserve">
+    <value>UPDATE_APPT_LETTER_STATUS</value>
+  </data>
+  <data name="P_GETEMPDATA_FOR_API" xml:space="preserve">
+    <value>P_GETEMPDATA_FOR_API</value>
+  </data>
+  <data name="SP_GET_ALL_LEAVE_REPORT" xml:space="preserve">
+    <value>SP_GET_ALL_LEAVE_REPORT</value>
+  </data>
+  <data name="SP_GET_HRR_BRANCHES_RMS" xml:space="preserve">
+    <value>SP_GET_HRR_BRANCHES_RMS</value>
+    <comment>RMS HRRecruiters Details</comment>
+  </data>
+  <data name="GET_TEAM_EMP_LEAVES" xml:space="preserve">
+    <value>GET_TEAM_EMP_LEAVES</value>
+  </data>
+  <data name="SP_EMP_ITR_REPORT" xml:space="preserve">
+    <value>SP_EMP_ITR_REPORT</value>
+  </data>
+  <data name="SP_GET_ITR_UPLOADS" xml:space="preserve">
+    <value>SP_GET_ITR_UPLOADS</value>
+  </data>
+  <data name="SP_ITR_EMP_FILEUPLOAD" xml:space="preserve">
+    <value>SP_ITR_EMP_FILEUPLOAD</value>
+  </data>
+  <data name="SP_UPDATE_EMP_ITR_STATUS" xml:space="preserve">
+    <value>SP_UPDATE_EMP_ITR_STATUS</value>
+  </data>
+  <data name="SP_EMP_PAN_REPORT" xml:space="preserve">
+    <value>SP_EMP_PAN_REPORT</value>
+  </data>
+  <data name="SP_PAN_EMP_FILEUPLOAD" xml:space="preserve">
+    <value>SP_PAN_EMP_FILEUPLOAD</value>
+  </data>
+  <data name="SP_UPDATE_EMP_PAN_STATUS" xml:space="preserve">
+    <value>SP_UPDATE_EMP_PAN_STATUS</value>
+  </data>
+  <data name="P_LEGALBRANCH_SELECT" xml:space="preserve">
+    <value>P_LEGALBRANCH_SELECT</value>
+  </data>
+  <data name="P_GET_ALL_DEPARTMENTS" xml:space="preserve">
+    <value>P_GET_ALL_DEPARTMENTS</value>
+  </data>
+  <data name="GET_EMPLOYEES_FOR_TRAVEL" xml:space="preserve">
+    <value>GET_EMPLOYEES_FOR_TRAVEL</value>
+  </data>
+  <data name="GET_FROM_LOCATION" xml:space="preserve">
+    <value>GET_FROM_LOCATION</value>
+  </data>
+  <data name="GET_TO_LOCATION" xml:space="preserve">
+    <value>GET_TO_LOCATION</value>
+  </data>
+  <data name="SP_EMPLOYEE_BRANCH_MAPPING" xml:space="preserve">
+    <value>SP_EMPLOYEE_BRANCH_MAPPING</value>
+  </data>
+  <data name="GET_BRANCH_MAPPING_DETAILS" xml:space="preserve">
+    <value>GET_BRANCH_MAPPING_DETAILS</value>
+  </data>
+  <data name="SP_DELETE_BRANCHMAPPING" xml:space="preserve">
+    <value>SP_DELETE_BRANCHMAPPING</value>
+  </data>
+  <data name="APPROVE_TEAM_LEAVES" xml:space="preserve">
+    <value>APPROVE_TEAM_LEAVES</value>
+    <comment>APPROVE_TEAM_LEAVES</comment>
+  </data>
+  <data name="GET_LEAVES_WAIT_FOR_APPROVAL" xml:space="preserve">
+    <value>GET_LEAVES_WAIT_FOR_APPROVAL</value>
+    <comment>GET_LEAVES_WAIT_FOR_APPROVAL</comment>
+  </data>
+  <data name="GET_EMPLOYEE_LOCATION" xml:space="preserve">
+    <value>GET_EMPLOYEE_LOCATION</value>
+  </data>
+  <data name="INSERT_TRAVEL_PLAN" xml:space="preserve">
+    <value>INSERT_TRAVEL_PLAN</value>
+  </data>
+  <data name="PROCESS_LEAVE_WORKFLOW_1" xml:space="preserve">
+    <value>PROCESS_LEAVE_WORKFLOW_1</value>
+    <comment>PROCESS_LEAVE_WORKFLOW_1</comment>
+  </data>
+  <data name="SP_EMPLOYEE_LEAVE_BALANCE" xml:space="preserve">
+    <value>SP_EMPLOYEE_LEAVE_BALANCE</value>
+    <comment>SP_EMPLOYEE_LEAVE_BALANCE</comment>
+  </data>
+  <data name="SP_EMPLOYEE_REORTING_STRUCTURE" xml:space="preserve">
+    <value>SP_EMPLOYEE_REORTING_STRUCTURE</value>
+    <comment>SP_EMPLOYEE_REORTING_STRUCTURE</comment>
+  </data>
+  <data name="GET_EMPLOYEE_TRAVEL_MT_DETAILS" xml:space="preserve">
+    <value>GET_EMPLOYEE_TRAVEL_MT_DETAILS</value>
+  </data>
+  <data name="SP_DELETE_VISITDETAILS" xml:space="preserve">
+    <value>SP_DELETE_VISITDETAILS</value>
+  </data>
+  <data name="GET_EMPLOYEE_TRAVEL_DT_BYID" xml:space="preserve">
+    <value>GET_EMPLOYEE_TRAVEL_DT_BYID</value>
+  </data>
+  <data name="GET_EMP_APPROVAL_TRAVEL_BYID" xml:space="preserve">
+    <value>GET_EMP_APPROVAL_TRAVEL_BYID</value>
+  </data>
+  <data name="SP_EMPLOYEE_LEAVE_REPORT" xml:space="preserve">
+    <value>SP_EMPLOYEE_LEAVE_REPORT</value>
+    <comment>SP_EMPLOYEE_LEAVE_REPORT</comment>
+  </data>
+  <data name="SP_UPDATE_VISIT_APPROVEDETAILS" xml:space="preserve">
+    <value>SP_UPDATE_VISIT_APPROVEDETAILS</value>
+  </data>
+  <data name="SP_SAVE_KEY_RESULT_AREA" xml:space="preserve">
+    <value>SP_SAVE_KEY_RESULT_AREA</value>
+  </data>
+  <data name="SP_GET_TOLOCATION_MAPPING_MT" xml:space="preserve">
+    <value>SP_GET_TOLOCATION_MAPPING_MT</value>
+    <comment>SP_GET_TOLOCATION_MAPPING_MT</comment>
+  </data>
+  <data name="SP_KRA_INSERT_UPDATE" xml:space="preserve">
+    <value>SP_KRA_INSERT_UPDATE</value>
+  </data>
+  <data name="SP_INS_UPD_KPI_KRA_MAPPING" xml:space="preserve">
+    <value>SP_INS_UPD_KPI_KRA_MAPPING</value>
+  </data>
+  <data name="SP_GET_ALL_DEPARTMENTS_PMS" xml:space="preserve">
+    <value>SP_GET_ALL_DEPARTMENTS_PMS</value>
+  </data>
+  <data name="SP_TDS_EMP_80G_FILEUPLOAD" xml:space="preserve">
+    <value>SP_TDS_EMP_80G_FILEUPLOAD</value>
+    <comment>SP_TDS_EMP_80G_FILEUPLOAD</comment>
+  </data>
+  <data name="SP_GET_ALL_FROM_LOCATIONS" xml:space="preserve">
+    <value>SP_GET_ALL_FROM_LOCATIONS</value>
+    <comment>SP_GET_ALL_FROM_LOCATIONS</comment>
+  </data>
+  <data name="SP_SAVE_FROM_LOCATION" xml:space="preserve">
+    <value>SP_SAVE_FROM_LOCATION</value>
+    <comment>SP_SAVE_FROM_LOCATION</comment>
+  </data>
+  <data name="SP_GET_ALL_LOCATION_MAPPINGS" xml:space="preserve">
+    <value>SP_GET_ALL_LOCATION_MAPPINGS</value>
+    <comment>SP_GET_ALL_LOCATION_MAPPINGS</comment>
+  </data>
+  <data name="SP_GET_FROM_LOCATIONS" xml:space="preserve">
+    <value>SP_GET_FROM_LOCATIONS</value>
+    <comment>SP_GET_FROM_LOCATIONS</comment>
+  </data>
+  <data name="SP_GET_MAPPED_LOCATIONS" xml:space="preserve">
+    <value>SP_GET_MAPPED_LOCATIONS</value>
+    <comment>SP_GET_MAPPED_LOCATIONS</comment>
+  </data>
+  <data name="SP_GET_ALL_ACTIVE_BRANCHES" xml:space="preserve">
+    <value>SP_GET_ALL_ACTIVE_BRANCHES</value>
+    <comment>SP_GET_ALL_ACTIVE_BRANCHES</comment>
+  </data>
+  <data name="SP_SAVE_LOCATION_MAPPINGS" xml:space="preserve">
+    <value>SP_SAVE_LOCATION_MAPPINGS</value>
+    <comment>SP_SAVE_LOCATION_MAPPINGS</comment>
+  </data>
+  <data name="SP_GET_EMPLOYEE_BY_DESIGNATION" xml:space="preserve">
+    <value>SP_GET_EMPLOYEE_BY_DESIGNATION</value>
+    <comment>SP_GET_EMPLOYEE_BY_DESIGNATION</comment>
+  </data>
+  <data name="SP_SAVE_EMPLOYEE_BRANCH" xml:space="preserve">
+    <value>SP_SAVE_EMPLOYEE_BRANCH</value>
+    <comment>SP_SAVE_EMPLOYEE_BRANCH</comment>
+  </data>
+  <data name="GET_TO_LOCATION_MAPPING_MT" xml:space="preserve">
+    <value>GET_TO_LOCATION_MAPPING_MT</value>
+  </data>
+  <data name="SP_GET_FREQUENCIES" xml:space="preserve">
+    <value>SP_GET_FREQUENCIES</value>
+  </data>
+  <data name="SP_EMPLOYEE_LEAVE_ENTITLEMENTS" xml:space="preserve">
+    <value>SP_EMPLOYEE_LEAVE_ENTITLEMENTS</value>
+  </data>
+  <data name="SP_GET_EMPLOYEE_KRA_INFO" xml:space="preserve">
+    <value>SP_GET_EMPLOYEE_KRA_INFO</value>
+  </data>
+  <data name="SP_GET_REVIEWER_PENDING_REVIEW_INFO" xml:space="preserve">
+    <value>SP_GET_REVIEWER_PENDING_REVIEW_INFO</value>
+    <comment>SP_GET_REVIEWER_PENDING_REVIEW_INFO</comment>
+  </data>
+  <data name="SP_GET_PENDING_REVIEW_INFO" xml:space="preserve">
+    <value>SP_GET_PENDING_REVIEW_INFO</value>
+    <comment>SP_GET_PENDING_REVIEW_INFO</comment>
+  </data>
+</root>

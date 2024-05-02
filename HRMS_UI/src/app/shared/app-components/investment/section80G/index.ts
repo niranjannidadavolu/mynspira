@@ -1,0 +1,1 @@
+export * from './section80G.component';

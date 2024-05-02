@@ -1,0 +1,109 @@
+<form [formGroup]="uploadForm" (ngSubmit)="onSubmit()">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header">
+                    <div class="row">
+                    <div class="col-md-8"><h4 class="card-title mb-0">Upload Re-Imbursement Bill</h4></div>
+                    <div class="col-md-4 text-right" ><button type="button" class="btn-close " aria-hidden="true"
+                        (click)="activeModal.dismiss('Cross click')"></button></div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-6 mt-2">
+                            <div class="col-md-12">
+                                <label for="email">Bill Number</label>
+                                <input type="text" class="form-control" id="billNumber" formControlName="billNumber"
+                                    [ngClass]="{ 'is-invalid': f['billNumber'].invalid && (f['billNumber'].dirty || f['billNumber'].touched) && f['billNumber'].errors }"
+                                    placeholder="Enter Bill Number">
+                                <div *ngIf="f['billNumber'].invalid && (f['billNumber'].dirty || f['billNumber'].touched) &&  f['billNumber'].errors"
+                                    class="invalid-feedback">
+                                    <div *ngIf="f['billNumber'].errors['required']">Please provide bill number.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mt-4">
+                                <label for="email">Bill Date</label>
+                                
+                                <!-- <input type="date" class="form-control" id="billDate" formControlName="billDate"
+                                    [ngClass]="{ 'is-invalid': f['billDate'].invalid && (f['billDate'].dirty || f['billDate'].touched) && f['billDate'].errors }"
+                                    placeholder="Enter Bill Number"> -->
+                                    <input id="fromDate" class="form-control flatpickr-input active" type="text"
+                                    mwlFlatpickr [altInput]="false" [convertModelValue]="true"
+                                    formControlName="billDate" [minDate]="minDate" [maxDate]="maxDate" altFormat="d-M-Y"
+                                    dateFormat="d-M-Y" placeholder="Choose Bill Date"
+                                    [ngClass]="{ 'is-invalid': f['billDate'].invalid && (f['billDate'].dirty || f['billDate'].touched) && f['billDate'].errors }" />
+                              
+                                <div *ngIf="f['billDate'].invalid && (f['billDate'].dirty || f['billDate'].touched) &&  f['billDate'].errors"
+                                    class="invalid-feedback">
+                                    <div *ngIf="f['billDate'].errors['required']">Please provide bill date.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mt-4">
+                                <label for="email">Bill Amount</label>
+                                <input type="text" class="form-control" id="amount" formControlName="amount"
+                                    [ngClass]="{ 'is-invalid': f['amount'].invalid && (f['amount'].dirty || f['amount'].touched) && f['amount'].errors }"
+                                    placeholder="Enter Amount">
+                                <div *ngIf="f['amount'].invalid && (f['amount'].dirty || f['amount'].touched) &&  f['amount'].errors"
+                                    class="invalid-feedback">
+                                    <div *ngIf="f['amount'].errors['required']">Please provide bill amount.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-2">
+                            <div class="culture-add-imgs scrollbar-inner">
+                                <div class="card-inner placeholder">
+                                    <div class="card-content">
+                                        <div class="culture-card file-upload-dashed pointer">
+                                            <div class="img-wrapper">
+                                                <div class="img-170 text-center">
+                                                    <img class="img-responsive" [src]="imageSrc" id="profile" alt="" *ngIf="imageSrc">
+                                                </div>
+                                            </div>
+                                            <div class="culture-card text-center pointer pt-5"
+                                                (click)="fileInput.click()">
+                                                <input hidden #fileInput type="file" id="file" formControlName="file"
+                                                    accept="image/png, image/gif, image/jpeg, image/jpg"
+                                                    [ngClass]="{ 'is-invalid': f['file'].invalid && (f['file'].dirty || f['file'].touched) && f['file'].errors }"
+                                                    (change)="onFileChange($event)" />
+                                                    <p class="file-label file-text">Browse and Upload</p>
+                                                <img class="file-upload-icon" src="../../../assets/images/upload-icon.png" style="max-width:22px"
+                                                    alt="icon">
+                                            </div>
+                                            <p class="text-warn">* Upload image format files only</p>
+                                        </div>
+                                        <div *ngIf=" f['file'].invalid && ( f['file'].dirty ||  f['file'].touched) &&  f['file'].errors"
+                                    class="invalid-feedback">
+                                    <div *ngIf="f['file'].errors['required']">Plesae upload bill copy.</div>
+                                </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-lg-12 mt-2">
+                            <div>
+                                <label for="file">Upload Bill Copy.</label>
+                                <input type="file" id="file" name="file" formControlName="file"
+                                    accept="image/png, image/jpeg, image/gif" data-allow-reorder="true"
+                                    data-max-file-size="3MB" (change)="onFileChange($event)"
+                                    [ngClass]="{ 'is-invalid':  f['file'].invalid }">
+                                <div *ngIf=" f['file'].invalid && ( f['file'].dirty ||  f['file'].touched) &&  f['file'].errors"
+                                    class="invalid-feedback">
+                                    <div *ngIf="f['file'].errors['required']">Plesae upload bill copy.</div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-light" (click)="activeModal.close('Close click')">Close</button>
+            <button type="submit" class="btn btn-primary" [disabled]="this.uploadForm.invalid" >Save
+            </button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,57 @@
+<form novalidate role="form" [formGroup]="chapter6Form">
+    <div formArrayName="EmployeeChapter6Details" class="table-responsive">
+        <table class="table table-bordered">
+
+            <thead>
+                <tr>
+                    <th>Section</th>
+                    <th>Particulars</th>
+                    <th>Amount</th>
+                    <th>Proposed Amount</th>
+                    <th>Remarks</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of Chapter6.controls; let index=index" [formGroupName]="index">
+                    <td>
+                        <input class="form-control" type="text" placeholder="Section" id="SectionName_{{index}}"
+                            name="SectionName_{{index}}" formControlName="SectionName">
+                    </td>
+                    <td class="col-md-2">
+                        <input class="form-control" type="text" placeholder="PARTICULARS" id="Particulars_{{index}}"
+                            name="particulars_{{index}}" formControlName="Particulars">
+                    </td>
+                    <td>
+                        <input maxlength="10" class="form-control" type="text" placeholder="Amount"
+                            id="Amount_{{index}}" name="Amount_{{index}}" formControlName="Amount"
+                            (keypress)="numberOnly($event)"
+                            [ngClass]="{ 'is-invalid': item.get('Amount')?.invalid && (item.get('Amount')?.dirty || item.get('Amount')?.touched) }">
+                        <div *ngIf="item.get('Amount')?.invalid && (item.get('Amount')?.dirty
+                    || item.get('Amount')?.touched)  " class="invalid-feedback">Please provide amount.
+                        </div>
+                    </td>
+                    <td>
+                        <input class="form-control" type="text" id="Amount_{{index}}" name="Amount_{{index}}"
+                            formControlName="VerifiedAmount" (keypress)="numberOnly($event)">
+                    </td>
+                    <td>
+                        <input class="form-control col-md-4" type="text" id="remarks_{{index}}" name="remarks_{{index}}"
+                            formControlName="VerifiedRemarks">
+                    </td>
+                    <td width="5%">
+                        <button type="button" id="page-header-cart-dropdown" *ngIf="isVerify"
+                            class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle ml-1"
+                            (click)="viewAttachments(item)">
+                            <i _ngcontent-fsy-c552="" class="las la-eye fs-22"></i>
+                            <span *ngIf="item.get('FileCount')?.value>0"
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+                                {{item.get('FileCount')?.value}}
+                            </span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</form>

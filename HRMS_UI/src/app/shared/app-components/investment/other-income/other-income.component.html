@@ -1,0 +1,70 @@
+<form [formGroup]="otherIncomeForm">
+    <div formArrayName="OtherIncomeDetails">
+        <div class="col-lg-12 table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Particulars</th>
+                        <th>Amount</th>
+                        <th>TDS Amount</th>
+                        <th >Proposed Amount</th>
+                        <th>Remarks</th>
+                        <th *ngIf="canUpload">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let caserow of otherIncomeDetails.controls; let index=index" [formGroupName]="index">
+                        <td><input class="form-control" type="text" formControlName="Description"
+                                placeholder="Particulars" id="Description_{{index}}" name="Description_{{index}}">
+                        </td>
+                        <td>
+                            <input class="form-control" maxlength="12" type="number" formControlName="Amount"
+                                placeholder="Amount" id="Amount_{{index}}" name="Amount_{{index}}"
+                                (keypress)="numberOnly($event)">
+                        </td>
+                        <td>
+                            <input class="form-control" type="text" pattern="\d*" maxlength="6"
+                                formControlName="TdsAmount" placeholder="TDS Amount" id="TdsAmount_{{index}}"
+                                name="TdsAmount_{{index}}" (keypress)="numberOnly($event)">
+                            <input class="form-control" type="hidden" formControlName="OtherIncomeDetailId"
+                                id="OtherIncomeDetailId_{{index}}">
+                            <input class="form-control" type="hidden" formControlName="OthIncomeHeadId"
+                                id="OthIncomeHeadId_{{index}}">
+                        </td>
+                        <td>
+                            <input class="form-control" type="text" formControlName="VerifiedAmount" [disabled]="true">
+                            <input class="form-control" type="hidden" formControlName="OtherIncomeDetailId"
+                                id="OtherIncomeDetailId_{{index}}">
+                            <input class="form-control" type="hidden" formControlName="OthIncomeHeadId"
+                                id="OthIncomeHeadId_{{index}}">
+                        </td>
+                        <td>
+                            <input class="form-control col-md-4" type="text" id="VerifiedRemarks_{{index}}"
+                                name="VerifiedRemarks_{{index}}"
+                                formControlName="VerifiedRemarks" [disabled]="true">
+                        </td>
+                        <td class="col-md-1">
+                            <button  *ngIf="canUpload" type="button" id="page-header-cart-dropdown"
+                                (click)="uploadOtherIncomeFiles(caserow)"
+                                class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle">
+                                <i _ngcontent-fsy-c552="" class="las la-paperclip fs-22"></i>
+                                <span *ngIf="caserow.get('FileCount')?.value>0"
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">{{caserow.get('FileCount')?.value}}
+                                </span>
+                            </button>
+                            <button type="button" id="page-header-cart-dropdown"
+                                class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle ml-1"
+                                (click)="viewAttachments(caserow)">
+                                <i _ngcontent-fsy-c552="" class="las la-eye fs-22"></i>
+                                <span *ngIf="caserow.get('FileCount')?.value>0"
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+                                    {{caserow.get('FileCount')?.value}}
+                                </span>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</form>

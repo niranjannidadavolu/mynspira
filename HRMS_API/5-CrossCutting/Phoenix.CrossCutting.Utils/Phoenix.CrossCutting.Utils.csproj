@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup Label="Globals">
+	  <SccProjectName></SccProjectName>
+	  <SccProvider></SccProvider>
+	  <SccAuxPath></SccAuxPath>
+	  <SccLocalPath></SccLocalPath>
+	</PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+	</PropertyGroup>
+	<ItemGroup>
+	  <Compile Remove="Token\JwtTokenConfig.cs" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Remove="stylecop.json" />
+	</ItemGroup>
+	<ItemGroup>
+	  <AdditionalFiles Include="stylecop.json" />
+	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="5.0.0" />
+	  <PackageReference Include="SonarAnalyzer.CSharp" Version="8.35.0.42613">
+	    <PrivateAssets>all</PrivateAssets>
+	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+	  <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.30.1" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\..\6-Model\Phonix.Model.Business\Phoenix.Model.Business.csproj" />
+	  <ProjectReference Include="..\Phoenix.CrossCutting.Extension\Phoenix.CrossCutting.Extension.csproj" />
+	  <ProjectReference Include="..\Phoenix.CrossCutting.Helper\Phoenix.CrossCutting.Helper.csproj" />
+	</ItemGroup>
+</Project>

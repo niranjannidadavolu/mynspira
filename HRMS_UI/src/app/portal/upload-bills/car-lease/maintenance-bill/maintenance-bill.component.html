@@ -1,0 +1,80 @@
+<div class="row justify-content-center">
+    <div class="row p-0">
+        <div class="col-sm-6 text-start mt-2 fs-0"><strong>Eligible Bill Amount</strong></div>
+        <div class="col-sm-6 text-end">
+            <button class="btn btn-info btn-sm mb-2" (click)="getCarLeaseApprovedBills()">
+                <i class="ri-refresh-line me-2"></i> Refresh
+            </button>
+        </div>
+    </div>
+    <div class="row p-0">
+        <ejs-grid [dataSource]='approvedBills' [allowSorting]='true' [enableHover]='false' [enableHeaderFocus]='true'
+            [filterSettings]='filterSettings' [allowSorting]='true' [allowFiltering]='true' gridLines='Both'
+            allowPaging='true' [pageSettings]='pageSettings'>
+            <e-columns>
+                <e-column field='Salary_Voucher' headerText='Salary/Voucher' width='120'></e-column>
+                <e-column field='Monthname' headerText='Month Name' width='120' textAlign='center'></e-column>
+                <e-column field='ToBePaid' headerText='Eligible Amount' width='120' format="C2" textAlign='right'></e-column>
+                <e-column field='Paid' headerText='Paid Amount' width='120' format='C2' textAlign='right'></e-column>
+                <e-column field='Balance' headerText='Balance Amount' width='120' format='C2' textAlign='right'></e-column>
+            </e-columns>
+        </ejs-grid>
+
+
+    </div>
+</div>
+<div class="row mt-5 justify-content-center">
+    <div class="row p-0">
+        <div class="col-sm-6 text-start mt-2 fs-0"><strong>Upload Bill(s)</strong></div>
+        <div class="col-sm-6 text-end">
+
+            <button class="btn btn-success btn-sm mb-2 me-2" (click)="uploadNewBill()" [disabled]="!isTotalAmount">
+                <i class="ri-bill-line me-2"></i> Upload New Bill
+            </button>
+
+            <button class="btn btn-info btn-sm mb-2" (click)="getPendingBills()">
+                <i class="ri-refresh-line me-2"></i> Refresh
+            </button>
+        </div>
+    </div>
+    <div class="row p-0">
+
+        <ejs-grid [dataSource]='pendingBills' [allowSorting]='true' [enableHover]='false' [enableHeaderFocus]='true'
+            [filterSettings]='filterSettings' [allowSorting]='true' [allowFiltering]='true' gridLines='Both'
+            allowPaging='true' [pageSettings]='pageSettings'>
+            <e-columns>
+                <e-column field='BillType' headerText='Bill Type' width='120'></e-column>
+                <e-column field='BillNo' headerText='Bill No' width='120'></e-column>
+                <e-column field='Amount' headerText='Amount' width='120' format='C2' textAlign='right'></e-column>
+                <e-column field='Status' headerText='Status' width='120'></e-column>
+                <e-column field='Remarks' headerText='Remarks' width='120'></e-column>
+                <e-column field='BillDate' headerText='Bill Date' width='120' type="date"
+                    format="dd-MM-yyyy" textAlign='center'></e-column>
+                <!-- <e-column field='FileName' headerText='File Name' width='120'></e-column> -->
+                <e-column [allowFiltering]='false' headerText='Actions' width='100'>
+                    <ng-template #template let-data>
+                        <div class="d-flex align-items-center">
+                            <button type="button" class="btn btn-light position-relative p-0 avatar-xs rounded-circle"
+                                (click)="deleteSelectedBill(data)" title="Apply Leave">
+                                <span class="avatar-title bg-transparent text-reset">
+                                    <i class="ri-delete-bin-6-line text-danger fs-15"></i>
+                                </span>
+                            </button>
+                            <div *ngIf="data.BillCopy!='' && data.BillCopy!=null">
+                                <button type="button"
+                                    class="btn btn-light position-relative p-0 avatar-xs rounded-circle"
+                                    (click)="downloadFile(data)" title="Employee Profile">
+                                    <span class="avatar-title bg-transparent text-reset">
+                                        <i class="dx-icon-download text-danger fs-15"></i>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </ng-template>
+                </e-column>
+            </e-columns>
+        </ejs-grid>
+
+
+    </div>
+</div>

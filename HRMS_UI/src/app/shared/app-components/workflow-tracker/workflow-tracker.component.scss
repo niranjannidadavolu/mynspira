@@ -1,0 +1,113 @@
+ol.wrkflw {
+    margin: 0;
+    margin-top: -10px;
+    padding: 0;
+    list-style-type : none;
+    line-height: 0em;
+    display: flex;
+  }
+  
+  ol.wrkflw li {
+    display: inline-block;
+    text-align: center;
+    line-height: 0em; //3.5em;
+    padding: 0px 3px;
+    display: flex;
+  }
+
+  ol.wrkflw li.Approved {
+    color: black;
+    border-bottom: 4px solid #0ab39c;
+  }
+  ol.wrkflw li.Disabled {
+    color: silver;
+    border-bottom: 4px solid silver;
+  }
+  ol.wrkflw li.Cancelled {
+    color: deepskyblue;
+    border-bottom: 4px solid deepskyblue;
+  }
+  ol.wrkflw li.PendingForApproval{
+    color: black;
+    border-bottom: 4px solid #f7b84b;
+  }
+  
+  ol.wrkflw li:after {
+    content: "\00a0\00a0";
+  }
+  ol.wrkflw li:before {
+    position: relative;
+    bottom: -10px; //-2.5em;
+    float: left;
+    left: 25%;
+    line-height: 0.2em; // 1em
+  }
+  ol.wrkflw li.Approved:before {
+    content: "\2713";
+    color: white;
+    background-color: #0ab39c;
+    height: 1.2em; //2.2em;
+    width:  1.2em; //2.2em;
+    line-height:  1.2em; //2.2em;
+    border: none;
+    border-radius:  1.2em; //2.2em;
+  }
+  ol.wrkflw li.Disabled:before {
+    content: "\00B0"; // \039F
+    color: silver;
+    background-color: white;
+    // font-size: 2.8em; // 2.2em
+    // bottom: -1.2em;
+    height:  1.2em; //2.2em;
+    width:  1.2em; //2.2em;
+    line-height:  1.2em; //2.2em;
+    border: solid; // none;
+    border-radius:  1.2em; //2.2em;
+  }
+  ol.wrkflw li.Cancelled:before {
+    content: "\0021"; // \039F
+    color: deepskyblue;
+    background-color: white;
+    // font-size: 2.8em; // 2.2em
+    // bottom: -1.2em;
+    height:  1.2em; //2.2em;
+    width:  1.2em; //2.2em;
+    line-height:  1.2em; //2.2em;
+    border: solid; // none;
+    border-radius:  1.2em; //2.2em;
+  }
+  ol.wrkflw li.PendingForApproval:before {
+    color: black;
+    background-color: #f7b84b;
+    content: "\003F";
+    height:  1.2em; //2.2em;
+    width:  1.2em; //2.2em;
+    line-height:  1.2em; //2.2em;
+    border: none;
+    border-radius:  1.2em; //2.2em;
+  }
+  
+  ol.wrkflw li.Rejected {
+    color: black;
+    border-bottom: 4px solid #f06548;
+  }
+  ol.wrkflw li.Rejected:before {
+    content: "\00D7";
+    color: white;
+    background-color: #f06548;
+    height:  1.2em; //2.2em;
+    width:  1.2em; //2.2em;
+    line-height:  1.2em; //2.2em;
+    border: none;
+    border-radius:  1.2em; //2.2em;
+  }
+  dl{
+    text-align: left;
+    max-width: 200px;
+  }
+  dd{
+    overflow-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }

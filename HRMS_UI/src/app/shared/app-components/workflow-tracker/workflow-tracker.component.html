@@ -1,0 +1,78 @@
+<!-- <ejs-stepper [steps]="steps" [orientation]="orientation" [linear]="linear">
+  <e-step [headerText]="step.headerText" [content]="step.content" *ngFor="let step of steps"></e-step>
+</ejs-stepper> -->
+
+
+<ol class="wrkflw ">
+  <li *ngFor="let entity of trackerEntities"
+    [ngClass]="{'PendingForApproval': entity?.LeaveStatusId === leaveStaus.Pending_For_Approval, 'Approved': entity?.LeaveStatusId === leaveStaus.Approved, 'Rejected': entity?.LeaveStatusId === leaveStaus.Rejected, 'Disabled': entity?.LeaveStatusId === leaveStaus.Disabled, 'Cancelled': entity?.LeaveStatusId === leaveStaus.Canceled, 'd-none': !entity?.isVisible }"
+    [id]="'tooltip'+entity.UniqueNumber">
+    <div>
+      <!-- <ejs-tooltip target="#tooltip{{entity.UniqueNumber}}" position="Right" openMode="Hover" content="tooltipContent">
+              <ng-template #tooltipContent let-data>
+                <dl>
+                  <span class="badge badge-label bg-primary" [ngClass]="{
+                    'bg-warning': entity?.LeaveStatusId === leaveStaus.Pending_For_Approval,
+                    'bg-success': entity?.LeaveStatusId === leaveStaus.Approved,
+                    'bg-danger': entity?.LeaveStatusId === leaveStaus.Rejected,
+                    'bg-dark': entity?.LeaveStatusId === leaveStaus.Disabled,
+                    'bg-info': entity?.LeaveStatusId === leaveStaus.Canceled}">
+                    <i class="mdi mdi-circle-medium"></i> {{entity?.LeaveStatusName == null ? 'Not Initiated' : entity?.LeaveStatusName}}
+                  </span>
+                  <dt>Approval Level</dt>
+                  <dd>Level {{entity?.StepMasterId}}</dd>
+                  <dt>Reporting Manager</dt>
+                  <dd>{{entity?.ReportingEmployeeName}}</dd>
+                  <span *ngIf="entity?.LeaveStatusId != leaveStaus.Disabled">
+                    <dt>Assigned Date</dt>
+                    <dd>{{entity?.AssignedDate | date: 'dd-MMM-yyyy'}}</dd>
+                    <dt>Approved Date</dt>
+                    <dd>{{entity?.ApprovedDate | date: 'dd-MMM-yyyy'}}</dd>
+                    <dt>Approver Remarks</dt>
+                    <dd>{{entity?.ApprovedRemarks}}</dd>
+                  </span>
+                </dl>
+              </ng-template>
+            </ejs-tooltip> -->
+      <!-- <dx-tooltip [target]="'#tooltip'+entity.UniqueNumber" position="right" showEvent="dxhoverstart"
+        hideEvent="dxhoverend">
+        <div *dxTemplate="let data of 'content'">
+          <dl>
+            <span class="badge badge-label bg-primary" [ngClass]="{
+                'bg-warning': entity?.LeaveStatusId === leaveStaus.Pending_For_Approval,
+                'bg-success': entity?.LeaveStatusId === leaveStaus.Approved,
+                'bg-danger': entity?.LeaveStatusId === leaveStaus.Rejected,
+                'bg-dark': entity?.LeaveStatusId === leaveStaus.Disabled,
+                'bg-info': entity?.LeaveStatusId === leaveStaus.Canceled}">
+              <i class="mdi mdi-circle-medium"></i> {{entity?.LeaveStatusName == null ? 'Not Initiated':
+              entity?.LeaveStatusName}}
+            </span>
+            <dt>Approval Level</dt>
+            <dd>Level {{entity?.StepMasterId}}</dd>
+            <dt>Reporting Manager</dt>
+            <dd>{{entity?.ReportingEmployeeName}}</dd>
+            <span *ngIf="entity?.LeaveStatusId != leaveStaus.Disabled">
+              <dt>Assigned Date</dt>
+              <dd>{{entity?.AssignedDate | date: 'dd-MMM-yyyy'}}</dd>
+              <dt>Approved Date</dt>
+              <dd>{{entity?.ApprovedDate | date: 'dd-MMM-yyyy'}}
+              <dt>Approver Remarks</dt>
+              <dd>{{entity?.ApprovedRemarks}}
+              </dd>
+            </span>
+          </dl>
+        </div>
+      </dx-tooltip> -->
+    </div>
+  </li>
+</ol>
+<!-- <div class="col text-end dropdown" ngbDropdown>
+  <a href="javascript:void(0);" class="arrow-none" id="dropdownMenuLink14" data-bs-toggle="dropdown" aria-expanded="false" ngbDropdownToggle>
+      <i class="ri-more-fill fs-17"></i>
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink14" ngbDropdownMenu>
+      <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-line me-2 align-middle"></i>View</a></li>
+      <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-star-line me-2 align-middle"></i>Favorites</a></li>
+      <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-line me-2 align-middle"></i>Delete</a></li>
+  </ul>
+</div> -->

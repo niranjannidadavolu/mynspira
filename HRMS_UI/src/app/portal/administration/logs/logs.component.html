@@ -1,0 +1,62 @@
+<!-- BreadCrumb add for Help Documents-->
+<app-breadcrumbs title="Logs" [breadcrumbItems]="breadCrumbItems"></app-breadcrumbs>
+<div>
+    <div class="row">
+        <div class="col-md-12">
+            <ejs-grid id="gridContainer" [dataSource]="helpDocuments" [allowSorting]='true' [enableHover]='false'
+                [enableHeaderFocus]='true' [filterSettings]='filterSettings' [allowSorting]='true'
+                [allowFiltering]='true' gridLines='Both' allowPaging='true' [pageSettings]='pageSettings'>
+                <e-columns>
+                    <e-column field="LastWriteDate" headerText="Log Date" type="date" format="dd-MMM-yyyy">
+                        <ng-template #template let-data>
+                            <span class="badge  badge-border" [title]="data.FolderName | titlecase" [ngClass]="{
+                                            'badge-soft-danger':  data.FolderName === logFolders.ERROR ,
+                                            'badge-soft-info':   data.FolderName === logFolders.INFO,
+                                            'badge-soft-secondary':   data.FolderName === logFolders.DEBUG,
+                                            'badge-soft-primary':   data.FolderName === logFolders.TRACE
+                                        }">{{data.LastWriteDate | date:'dd-MMM-yyyy'}}</span>
+                        </ng-template>
+                    </e-column>
+                    <e-column field="FileName" headerText="Log File Name"></e-column>
+                    <e-column headerText="Download Document" width="160" textAlign="center">
+                        <ng-template #template let-data>
+                            <button class="btn btn-danger btn-icon waves-effect" [title]="data.FileUrl | titlecase"
+                                (click)="downloadDocument(data.FileUrl)">
+                                <i class="ri-download-2-fill fs-15"></i>
+                            </button>
+                        </ng-template>
+                    </e-column>
+                </e-columns>
+            </ejs-grid>
+            <!-- <div class="card-header align-items-center col-12 mt-3">
+                <table class="table">
+                    <thead>
+                        <tr class="bg-light text-muted">
+                            <th class="sort" data-sort="email">SNo</th>
+                            <th class="sort" data-sort="email">Date</th>
+                            <th class="sort" data-sort="email">Name</th>
+                            <th class="sort" data-sort="email">Dowload</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of helpDocuments;  let k = index">
+                            <td><ngb-highlight result="{{k+1}}"></ngb-highlight></td>
+                            <td><ngb-highlight
+                                    [result]="{{ item.LastWriteDate | date: 'dd/MMM/yyyy' }}"></ngb-highlight></td>
+                            <td><ngb-highlight [result]="item.FileName"></ngb-highlight></td>
+                            <td>
+                                <div class="d-flex gap-2">
+                                    <div class="remove">
+                                        <button class="btn btn-danger btn-icon waves-effect"
+                                            (click)="downloadDocument(item.FileUrl)"><i
+                                                class="ri-download-2-fill"></i></button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> -->
+        </div>
+    </div>
+</div>

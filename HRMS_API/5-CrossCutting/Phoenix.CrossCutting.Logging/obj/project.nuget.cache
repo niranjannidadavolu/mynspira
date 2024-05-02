@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "1QN0T69Ysld9uzZ6F6k4Ej3cO3HccO7JJjhSCIVlOPfeDizC4ibe3vCpHKl6mTWLBboTyEOfap1BXXI1yK3/og==",
+  "success": true,
+  "projectFilePath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Logging\\Phoenix.CrossCutting.Logging.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\seshu\\.nuget\\packages\\nlog\\4.7.10\\nlog.4.7.10.nupkg.sha512",
+    "C:\\Users\\seshu\\.nuget\\packages\\sonaranalyzer.csharp\\8.35.0.42613\\sonaranalyzer.csharp.8.35.0.42613.nupkg.sha512"
+  ],
+  "logs": []
+}

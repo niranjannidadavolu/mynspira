@@ -1,0 +1,17 @@
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.TimePeriod\bin\Debug\net7.0\Phoenix.CrossCutting.TimePeriod.deps.json
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.TimePeriod\bin\Debug\net7.0\Phoenix.CrossCutting.TimePeriod.dll
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.TimePeriod\bin\Debug\net7.0\Phoenix.CrossCutting.TimePeriod.pdb
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.TimePeriod\bin\Debug\net7.0\de\Phoenix.CrossCutting.TimePeriod.resources.dll
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.TimePeriod\obj\Debug\net7.0\Phoenix.CrossCutting.TimePeriod.csproj.AssemblyReference.cache
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.TimePeriod\obj\Debug\net7.0\Phoenix.CrossCutting.TimePeriod.Strings.resources
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.TimePeriod\obj\Debug\net7.0\Phoenix.CrossCutting.TimePeriod.Strings.de.resources
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.TimePeriod\obj\Debug\net7.0\Phoenix.CrossCutting.TimePeriod.csproj.GenerateResource.cache
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.TimePeriod\obj\Debug\net7.0\Phoenix.CrossCutting.TimePeriod.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.TimePeriod\obj\Debug\net7.0\Phoenix.CrossCutting.TimePeriod.AssemblyInfoInputs.cache
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.TimePeriod\obj\Debug\net7.0\Phoenix.CrossCutting.TimePeriod.AssemblyInfo.cs
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.TimePeriod\obj\Debug\net7.0\Phoenix.CrossCutting.TimePeriod.csproj.CoreCompileInputs.cache
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.TimePeriod\obj\Debug\net7.0\de\Phoenix.CrossCutting.TimePeriod.resources.dll
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.TimePeriod\obj\Debug\net7.0\Phoenix.CrossCutting.TimePeriod.dll
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.TimePeriod\obj\Debug\net7.0\refint\Phoenix.CrossCutting.TimePeriod.dll
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.TimePeriod\obj\Debug\net7.0\Phoenix.CrossCutting.TimePeriod.pdb
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.TimePeriod\obj\Debug\net7.0\ref\Phoenix.CrossCutting.TimePeriod.dll

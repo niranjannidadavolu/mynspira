@@ -1,0 +1,42 @@
+<div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="exampleModalgridLabel">Leave History</h5>
+        <span class="mx-auto">{{selectedRowData?.EmployeeName}} / {{selectedRowData?.EmpId}}</span>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+            (click)="activeModal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+        <div class="flex-shrink-0 ms-2">
+            <dx-data-grid #leaveHistory id="leaveHistory" [dataSource]="myLeaves" keyExpr="LeaveId" [showBorders]="true"
+                [columnAutoWidth]="true">
+                <dxo-load-panel [enabled]="true">
+                </dxo-load-panel>
+                <dxo-paging [enabled]="true" [pageSize]="5"></dxo-paging>
+
+                <dxi-column dataField="LeaveFrom" caption="From Date" dataType="date" format="dd-MMM-yyyy">
+                </dxi-column>
+                <dxi-column dataField="LeaveTo" caption="To Date" dataType="date" format="dd-MMM-yyyy">
+                </dxi-column>
+                <dxi-column dataField="LeaveTypeName" caption="Leave Type"></dxi-column>
+                <dxi-column dataField="TotalDaysTaken" caption="Total Days" [width]="100"></dxi-column>
+                <dxi-column dataField="LeaveAppliedOn" caption="Applied Date" dataType="date" format="dd-MMM-yyyy">
+                </dxi-column>
+                <dxi-column caption="Status" [alignment]="'center'" dataField="LeaveStatusId"
+                    cellTemplate="statusTemplates" [width]="80">
+                </dxi-column>
+                <div *dxTemplate="let cell of 'statusTemplates'">
+                    <i *ngIf="cell.value == 1" class="dx-icon dx-icon-pending-icon"
+                        title="{{cell.data.LeaveStatusName }}"></i>
+                    <i *ngIf="cell.value == 2" class="dx-icon dx-icon-approve-icon"
+                        title="{{cell.data.LeaveStatusName }}"></i>
+                    <i *ngIf="cell.value == 3" class="dx-icon dx-icon-reject-icon"
+                        title="{{cell.data.LeaveStatusName }}"></i>
+                    <i *ngIf="cell.value == 4" class="dx-icon dx-icon-pending-icon"
+                        title="{{cell.data.LeaveStatusName }}"></i>
+                    <i *ngIf="cell.value == 5" class="dx-icon dx-icon-cancelled-icon"
+                        title="{{cell.data.LeaveStatusName }}"></i>
+                </div>
+            </dx-data-grid>
+        </div>
+    </div>
+</div>

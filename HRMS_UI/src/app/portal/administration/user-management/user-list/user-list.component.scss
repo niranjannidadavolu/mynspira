@@ -1,0 +1,23 @@
+div.dataTables_wrapper div.dataTables_filter {
+    text-align: right;
+    display: none !important;
+}
+
+.dataTables_filter hide-filter {
+    display: none !important;
+}
+
+table#example tbody td div {
+    width: 160px;
+    height: 28px;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.hand-cusrsor { 
+    cursor: pointer;
+  }
+
+  li {
+    cursor: pointer;
+  }

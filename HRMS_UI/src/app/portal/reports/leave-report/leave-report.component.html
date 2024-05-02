@@ -1,0 +1,62 @@
+<!-- BreadCrumb add for dashboard-->
+<app-breadcrumbs title="Employee Leave Report" [breadcrumbItems]="breadCrumbItems"></app-breadcrumbs>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card-header align-items-center col-12">
+            <div class="row pt-3" [formGroup]="filterReportForm">
+                <div class="col-md-4">
+                    <label for="exampleInputdate" class="form-label">Branch <span class="text-danger">*</span></label>
+                    <ejs-multiselect id='multiselect-filtering' [dataSource]='branches' [fields]='fields'
+                        (filtering)='onFiltering($event)' [allowFiltering]='true' [placeholder]='watermarks'
+                        [mode]='mode' [popupHeight]='popHeight' [showDropDownIcon]='true' showSelectAll='true'
+                        [filterBarPlaceholder]='filterPlaceholder' formControlName="BranchSlno"></ejs-multiselect>
+                </div>
+                <div class="col-md-3">
+                    <label for="exampleInputdate" class="form-label">From Date - To Date<span
+                            class="text-danger">*</span></label>
+                    <ejs-daterangepicker placeholder='Select a range' formControlName="ReportRange" format="dd-MM-yyyy">
+                        <e-presets>
+                            <e-preset label="This Week" [start]='weekStart' [end]='weekEnd'></e-preset>
+                            <e-preset label="This Month" [start]='monthStart' [end]='monthEnd'></e-preset>
+                            <e-preset label="Last Month" [start]='lastStart' [end]='lastEnd'></e-preset>
+                            <e-preset label="Last Year" [start]='yearStart' [end]='yearEnd'></e-preset>
+                        </e-presets>
+                    </ejs-daterangepicker>
+                </div>
+                <div class="col-md-2">
+                    <label for="" class="form-label">&nbsp;</label>
+                    <button type="button" class="btn btn-primary mt-4" [disabled]="!filterReportForm.valid"
+                        (click)="getEmployeeLeaveReport()">Submit</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <ejs-grid #grid id='grid' [dataSource]="leaveBalancesReport" [allowPaging]="true" [allowSorting]="true"
+            [allowFiltering]="true" [allowResizing]="true" [filterSettings]='filterOptions' width='100%'
+            [allowExcelExport]='true' [allowPdfExport]='true' [toolbar]='toolbar'
+            (toolbarClick)='toolbarClick($event)' (excelQueryCellInfo)="excelQueryCellInfo($event)">
+            <e-columns>
+                <e-column field='EmployeeId' headerText='Employee Id' width='200' textAlign="Left"></e-column>
+                <e-column field='EmployeeNumber' headerText='Employee Number' width='200' textAlign="Left"></e-column>
+                <e-column field='EmployeeName' headerText='Employee Name' width='200' textAlign="Left"></e-column>
+                <e-column field='BranchName' headerText='BranchName' width='200' textAlign="Left"></e-column>
+                <e-column field='OfficeTypeName' headerText='Office Type' width='200' textAlign="Left"></e-column>
+                <e-column field='LeaveTypeName' headerText='Leave Type' width='200' textAlign="Left"></e-column>
+                <e-column field='AppliedOn' headerText='Applied On' width='200' textAlign="right" type='date'
+                    format="dd-MMM-yyyy"></e-column>
+                <e-column field='FromDate' headerText='From Date' width='200' textAlign="right" type='date'
+                    format="dd-MMM-yyyy"></e-column>
+                <e-column field='ToDate' headerText='To Date' width='200' textAlign="right" type='date'
+                    format="dd-MMM-yyyy"></e-column>
+                <e-column field='TotalDays' headerText='Total Days' width='200' textAlign="right"></e-column>
+                <e-column field='LeaveRemarks' headerText='Employee Remarks' width='200' textAlign="Left"></e-column>
+                <e-column headerText='Level 1' [columns]='level1' width='600'></e-column>
+                <e-column headerText='Level 2' [columns]='level2' width='600'></e-column>
+                <e-column headerText='Level 3' [columns]='level3' width='600'></e-column>
+            </e-columns>
+        </ejs-grid>
+    </div>
+</div>

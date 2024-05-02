@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "OAAmzI7fcVMajN8qFpBPOohKUxDLBHDP8YEeL1CAwSh4WCPJ5WlAMXsfk86K/sSP9IbH9CaIcISRIt3lqkhlrg==",
+  "success": true,
+  "projectFilePath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Helper.Cron\\Phoenix.CrossCutting.Helper.Cron.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\seshu\\.nuget\\packages\\cronos\\0.7.1\\cronos.0.7.1.nupkg.sha512",
+    "C:\\Users\\seshu\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\seshu\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\seshu\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\5.0.0\\microsoft.extensions.fileproviders.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\seshu\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\5.0.0\\microsoft.extensions.hosting.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\seshu\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\seshu\\.nuget\\packages\\sonaranalyzer.csharp\\8.35.0.42613\\sonaranalyzer.csharp.8.35.0.42613.nupkg.sha512"
+  ],
+  "logs": []
+}

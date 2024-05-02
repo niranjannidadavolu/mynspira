@@ -1,0 +1,194 @@
+<div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="exampleModalgridLabel">Apply {{leaveType?.LeaveTypeName | titlecase}}
+            Request</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+            (click)="activeModal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+        <form [formGroup]="leaveForm" (ngSubmit)="applyOnDutyRequest()">
+            <div class="row g-3">
+                <!-- <div class="col-md-6" *ngIf="false">
+                    <div class="col-md-12">
+                        <label for="LeaveType" class="form-label">Apply {{leaveType?.LeaveTypeName | titlecase}}
+                            For</label>
+                    </div>
+                    <div class="col-md-12 mt-2">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="ApplyingFor" id="ApplyingFor1" value="1"
+                                formControlName="ApplyingFor" (change)="changeApplyingFor($event)">
+                            <label class="form-check-label" for="inlineRadio1">Self</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="ApplyingFor" id="ApplyingFor2" value="2"
+                                formControlName="ApplyingFor" (change)="changeApplyingFor($event)">
+                            <label class="form-check-label" for="inlineRadio2">My Team</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="ApplyingFor" id="ApplyingFor3" value="3"
+                                formControlName="ApplyingFor" (change)="changeApplyingFor($event)">
+                            <label class="form-check-label" for="inlineRadio3">Self & My Team</label>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="row pt-3" *ngIf="leaveType?.ShowInDashboard">
+                    <div class="col-md-6">
+                        <label for="LeaveType" class="form-label">Leave Type <span class="text-danger">*</span></label>
+                        <ng-select [readonly]="true" [items]="leaveTypes" bindLabel="LeaveTypeName"
+                            [ngClass]="{ 'is-invalid': f['LeaveType'].invalid && (f['LeaveType'].dirty || f['LeaveType'].touched) && f['LeaveType'].errors }"
+                            formControlName="LeaveType">
+                        </ng-select>
+                        <div *ngIf="f['LeaveType'].invalid && (f['LeaveType'].dirty || f['LeaveType'].touched) &&  f['LeaveType'].errors"
+                            class="invalid-feedback">
+                            <div *ngIf="f['LeaveType'].errors['required']">Please provide leave type.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" *ngIf="leaveType?.ShowInDashboard">
+                        <label for="LeaveBalance" class="form-label">Leave Balance</label>
+                        <input type="text" class="form-control" readonly formControlName="LeaveBalance">
+                    </div>
+                </div>
+                <div class="row pt-3">
+
+                    <div class="col-md-6">
+                        <label for="exampleInputdate" class="form-label">From Date <span
+                                class="text-danger">*</span></label>
+                        <div class="input-group mb-3">
+                            <input id="fromDate" class="form-control flatpickr-input active" type="text" mwlFlatpickr
+                                formControlName="LeaveFrom" [altInput]="false" altFormat="d-M-Y" dateFormat="d-M-Y"
+                                [convertModelValue]="true" [minDate]="minDate" [maxDate]="maxDate"
+                                (flatpickrChange)='changeFromDate($event)' [disable]="[disableHolidays]"
+                                [ngClass]="{ 'is-invalid': f['LeaveFrom'].invalid && (f['LeaveFrom'].dirty || f['LeaveFrom'].touched) && f['LeaveFrom'].errors }" />
+                        </div>
+                        <div *ngIf="f['LeaveFrom'].invalid && (f['LeaveFrom'].dirty || f['LeaveFrom'].touched) &&  f['LeaveFrom'].errors"
+                            class="invalid-feedback">
+                            <div *ngIf="f['LeaveFrom'].errors['required']">Please provide from date.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" *ngIf="leaveType.CanApplyHalfDay">
+                        <div class="col-md-12">
+                                <label for="LeaveType" class="form-label"> From Day Type</label>
+                            </div>
+                        <div class="col-md-12 mt-2">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="FromDateDayTypeId" id="firstHalf1"
+                                    value="1" formControlName="FromDateDayTypeId" >
+                                <label class="form-check-label" for="inlineRadio1">Full Day</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="FromDateDayTypeId" id="firstHalf2" (click)="onchageFromDayType($event)"
+                                    value="2" formControlName="FromDateDayTypeId">
+                                <label class="form-check-label" for="inlineRadio2">First Half</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="FromDateDayTypeId" id="firstHalf3" (click)="onchageFromDayType($event)"
+                                    value="3" formControlName="FromDateDayTypeId">
+                                <label class="form-check-label" for="inlineRadio3">Second Half</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="exampleInputdate" class="form-label">To Date <span
+                                class="text-danger">*</span></label>
+                        <div class="input-group mb-3" *ngIf="!leaveType?.IsDisabled">
+                            <input id="LeaveTo" class="form-control flatpickr-input active" type="text" mwlFlatpickr
+                                formControlName="LeaveTo" [altInput]="false" altFormat="d-M-Y" dateFormat="d-M-Y"
+                                (flatpickrChange)='changeToDate($event)'  [convertModelValue]="true" [minDate]="toMinDate" [maxDate]="maxDate"
+                                [disable]="[disableHolidays]"
+                                [ngClass]="{ 'is-invalid': f['LeaveTo'].invalid && (f['LeaveTo'].dirty || f['LeaveTo'].touched) && f['LeaveTo'].errors }" />
+                        </div>
+                        <div class="input-group mb-3" *ngIf="leaveType?.IsDisabled">
+                            <input  class="form-control" type="text" readonly
+                                [value]="toDisableDate"  />
+                        </div>
+                        <div *ngIf="f['LeaveTo'].invalid && (f['LeaveTo'].dirty || f['LeaveTo'].touched) &&  f['LeaveTo'].errors"
+                            class="invalid-feedback">
+                            <div *ngIf="f['LeaveTo'].errors['required']">Please provide to date.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" *ngIf="!toDateDayTypeHide && leaveType.CanApplyHalfDay">
+                        <div class="col-md-12">
+                                <label for="LeaveType" class="form-label">To Day Type</label>
+                            </div>
+                        <div class="col-md-12 mt-2">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ToDateDayTypeId" id="secondHalf1"
+                                    value="1" formControlName="ToDateDayTypeId">
+                                <label class="form-check-label" for="inlineRadio1">Full Day</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ToDateDayTypeId" id="secondHalf2"
+                                    value="2" formControlName="ToDateDayTypeId">
+                                <label class="form-check-label" for="inlineRadio2">First Half</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ToDateDayTypeId" id="secondHalf3"
+                                    value="3" formControlName="ToDateDayTypeId">
+                                <label class="form-check-label" for="inlineRadio3">Second Half</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+                <!-- <div class="row pt-4" [hidden]="leaveForm.value.ApplyingFor == 1">
+                    <div class="col-lg-12 fw-bold">My Team Members</div>
+                    <dx-data-grid id="grid-container" [dataSource]="teamMembers" keyExpr="EmployeeSlno"
+                        [showBorders]="true" width="100%" [repaintChangesOnly]="true" [showColumnLines]="true"
+                        [showRowLines]="true" [showBorders]="true" [rowAlternationEnabled]="true"
+                        [columnAutoWidth]="true">
+                        <dxo-filter-row [visible]="true"></dxo-filter-row>
+                        <dxo-header-filter [visible]="true"></dxo-header-filter>
+                        <dxo-paging [enabled]="true" [pageSize]="10"></dxo-paging>
+                        <dxo-pager [showNavigationButtons]="true" [showPageSizeSelector]="true"
+                            [allowedPageSizes]="[5, 10, 15, 25, 50, 100]" [showInfo]="true">
+                        </dxo-pager>
+                        <dxo-sorting mode="none"></dxo-sorting>
+                        <dxo-selection [selectAllMode]="allMode" [showCheckBoxesMode]="checkBoxesMode" mode="multiple">
+                        </dxo-selection>
+                        <dxi-column dataField="EmployeeId" caption="Employee Number">
+                        </dxi-column>
+                        <dxi-column dataField="EmployeeName"></dxi-column>
+                        <dxi-column dataField="BranchName"></dxi-column>
+                        <dxi-column dataField="Department" caption="Function">
+                        </dxi-column>
+                        <dxi-column dataField="Designation" caption="Job Title">
+                        </dxi-column>
+                    </dx-data-grid>
+                </div> -->
+                <div class="row">
+                    <div class="pt-3">
+                        <label for="exampleFormControlTextarea5" class="form-label">Remarks <span
+                                class="text-danger">*</span></label>
+                        <textarea class="form-control" formControlName="Remarks" id="Remarks" rows="3"
+                            [ngClass]="{ 'is-invalid': f['Remarks'].invalid && (f['Remarks'].dirty || f['Remarks'].touched) && f['Remarks'].errors }"></textarea>
+                    </div>
+                    <div *ngIf="f['Remarks'].invalid && (f['Remarks'].dirty || f['Remarks'].touched) &&  f['Remarks'].errors"
+                        class="invalid-feedback">
+                        <div *ngIf="f['Remarks'].errors['required']">Please Remarks.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="hstack gap-2 justify-content-end">
+                        <button type="submit" class="btn btn-primary" *ngIf="!isSubmitted"
+                            [disabled]="this.leaveForm.invalid">Submit</button>
+                        <button type="button" class="btn btn-primary btn-label waves-effect waves-light btn-load"
+                            *ngIf="isSubmitted">
+                            <span class="d-flex align-items-center">
+                                <span class="spinner-border flex-shrink-0" role="status">
+                                    <span class="visually-hidden">Applying...</span>
+                                </span>
+                                <span class="flex-grow-1 ms-2">
+                                    Applying...
+                                </span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

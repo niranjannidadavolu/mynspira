@@ -1,0 +1,68 @@
+.cancelled
+{
+    color: #04e2ff;
+}
+
+.approved
+{
+    color: #02ff02;
+}
+
+.rejected
+{
+    color: #ff0101;
+}
+
+.pending-for-approval
+{
+    color: #0105ff;
+}
+
+.dx-icon-pending-icon {
+    background-image: url('../../../../assets/icons/pending.PNG');
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+}
+
+.dx-icon-approve-icon {
+    background-image: url('../../../../assets/icons/approve.PNG');
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+}
+
+.dx-icon-cancelled-icon {
+    background-image: url('../../../../assets/icons/cancelled.PNG');
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+}
+
+.dx-icon-reject-icon {
+    background-image: url('../../../../assets/icons/reject.PNG');
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+}
+
+.dx-icon-manager-approve-icon {
+    background-image: url('../../../../assets/icons/manager-approve.PNG');
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+}
+
+.dx-icon-manager-reject-icon {
+    background-image: url('../../../../assets/icons/manager-reject.PNG');
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+}
+
+.dx-icon-view-icon {
+    background-image: url('../../../../assets/icons/view-details.PNG');
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+}

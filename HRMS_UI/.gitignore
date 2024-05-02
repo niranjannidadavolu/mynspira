@@ -1,0 +1,8 @@
+node_modules
+.angular
+.vs
+dist
+Sonar.bat
+Sonar.txt
+.scannerwork/.sonar_lock
+.scannerwork/report-task.txt

@@ -1,0 +1,15 @@
+<div class="table-responsive">
+    <ejs-grid [dataSource]='employeeAssetDetails' [allowSorting]='true'
+    [enableHover]='false' [enableHeaderFocus]='true' [filterSettings]='filterSettings' [allowSorting]='true'
+    [allowFiltering]='true' gridLines='Both' allowPaging='true' [pageSettings]='pageSettings'>
+        <e-columns>
+            <e-column field='Branch' headerText='Branch Name' width='120'></e-column>
+            <e-column field='AssetName' headerText='Asset Name' width='120'></e-column>
+            <e-column field='Quantity' headerText='Quantity' width='120'></e-column>
+            <e-column field='Amount' headerText='Amount' width='120' format='INR' ></e-column>
+            <e-column field='Configuration' headerText='Configuration' width='120'></e-column>
+            <e-column field='AssetStatus' headerText='Asset Status' width='120'></e-column>
+            <e-column field='ReturnDate' headerText='Return Date' width='120' format="yMd" ></e-column>
+        </e-columns>
+    </ejs-grid>
+</div>

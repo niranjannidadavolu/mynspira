@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "lL/FSvWsQ8lm8LwNEBaurrWKta+Oz5Ye6ZR34hGqsxQy1wke98kt7hNEXqSZdLX0O/1dT38O5wd4hTzUVu3Ubw==",
+  "success": true,
+  "projectFilePath": "E:\\Niranjan\\BITS\\MyNspira\\mynspira\\HRMS_API\\5-CrossCutting\\Phoenix.CrossCutting.Resources\\Phoenix.CrossCutting.Resources.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\seshu\\.nuget\\packages\\sonaranalyzer.csharp\\8.35.0.42613\\sonaranalyzer.csharp.8.35.0.42613.nupkg.sha512"
+  ],
+  "logs": []
+}

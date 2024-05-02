@@ -1,0 +1,1 @@
+Roslyn version: 4.6.0.0Language version: CSharp10!Concurrent execution: enabled±¬File 'F:\Work\Office\Projects\Nspira\Portal\HRMS_API\4-Infrastructure\Database\obj\Debug\net6.0\Phoenix.Infrastructure.Database.AssemblyInfo.cs' was recognized as generated

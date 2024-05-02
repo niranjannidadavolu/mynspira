@@ -1,0 +1,75 @@
+<form [formGroup]="otherIncomeForm">
+    <div formArrayName="OtherIncomeDetails">
+        <div class="table-responsive col-lg-12">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Particulars</th>
+                        <th>Amount</th>
+                        <th>TDS Amount</th>
+                        <th>Proposed Amount</th>
+                        <th>Remarks</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let caserow of otherIncomeDetails.controls; let index=index" [formGroupName]="index">
+                        <td><input class="form-control" type="text" formControlName="Description" [readOnly]="isVerify"
+                                placeholder="Particulars" id="oparticulars_{{index}}" name="oparticulars_{{index}}">
+                        </td>
+                        <td width="13%">
+                            <input class="form-control" maxlength="12" type="number" formControlName="Amount"
+                                placeholder="Amount" id="Amount_{{index}}" name="Amount_{{index}}"
+                                (keypress)="numberOnly($event)" formControlName="Amount" (keypress)="numberOnly($event)"
+                                [ngClass]="{ 'is-invalid': caserow.get('Amount')?.invalid && (caserow.get('Amount')?.dirty 
+                                || caserow.get('Amount')?.touched) }">
+                            <div *ngIf="caserow.get('Amount')?.invalid && (caserow.get('Amount')?.dirty
+                                || caserow.get('Amount')?.touched)  " class="invalid-feedback">Please provide
+                                amount.
+                            </div>
+                        </td>
+                        <td width="13%">
+                            <input class="form-control" type="text" pattern="\d*" maxlength="6"
+                                formControlName="TdsAmount" placeholder="TDS Amount" id="TdsAmount_{{index}}"
+                                name="TdsAmount_{{index}}" (keypress)="numberOnly($event)"
+                                [ngClass]="{ 'is-invalid': caserow.get('TdsAmount')?.invalid && (caserow.get('TdsAmount')?.dirty 
+                                || caserow.get('TdsAmount')?.touched) }">
+                            <div *ngIf="caserow.get('TdsAmount')?.invalid && (caserow.get('TdsAmount')?.dirty
+                                || caserow.get('TdsAmount')?.touched)  " class="invalid-feedback">Please provide
+                                tds amount.
+                            </div>
+                            <input class="form-control" type="hidden" formControlName="OtherIncomeDetailId"
+                                id="OtherIncomeDetailId_{{index}}">
+                            <input class="form-control" type="hidden" formControlName="OthIncomeHeadId"
+                                id="OthIncomeHeadId_{{index}}">
+                        </td>
+                        <td width="10%">
+                            <input class="form-control" type="text" formControlName="VerifiedAmount"
+                                >
+                            <input class="form-control" type="hidden" formControlName="OtherIncomeDetailId"
+                                id="OtherIncomeDetailId_{{index}}">
+                            <input class="form-control" type="hidden" formControlName="OthIncomeHeadId"
+                                id="OthIncomeHeadId_{{index}}">
+                        </td>
+                        <td width="13%">
+                            <input class="form-control col-md-4" type="text" id="VerifiedRemarks_{{index}}"
+                                name="VerifiedRemarks_{{index}}"
+                                formControlName="VerifiedRemarks">
+                        </td>
+                        <td>
+                            <button type="button" id="page-header-cart-dropdown" *ngIf="isVerify"
+                                class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle ml-1"
+                                (click)="viewAttachments(caserow)">
+                                <i _ngcontent-fsy-c552="" class="las la-eye fs-22"></i>
+                                <span *ngIf="caserow.get('FileCount')?.value>0"
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+                                    {{caserow.get('FileCount')?.value}}
+                                </span>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</form>

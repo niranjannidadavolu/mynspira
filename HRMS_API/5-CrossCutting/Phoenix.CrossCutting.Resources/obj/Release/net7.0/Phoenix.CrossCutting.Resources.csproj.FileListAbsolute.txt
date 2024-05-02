@@ -1,0 +1,16 @@
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Resources\bin\Release\net7.0\DatabaseProcedures.resx
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Resources\bin\Release\net7.0\Phoenix.CrossCutting.Resources.deps.json
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Resources\bin\Release\net7.0\Phoenix.CrossCutting.Resources.dll
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Resources\bin\Release\net7.0\Phoenix.CrossCutting.Resources.pdb
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Resources\obj\Release\net7.0\Phoenix.CrossCutting.Resources.csproj.AssemblyReference.cache
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Resources\obj\Release\net7.0\Phoenix.CrossCutting.Resources.DatabaseProcedures.resources
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Resources\obj\Release\net7.0\Phoenix.CrossCutting.Resources.Texts.resources
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Resources\obj\Release\net7.0\Phoenix.CrossCutting.Resources.csproj.GenerateResource.cache
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Resources\obj\Release\net7.0\Phoenix.CrossCutting.Resources.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Resources\obj\Release\net7.0\Phoenix.CrossCutting.Resources.AssemblyInfoInputs.cache
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Resources\obj\Release\net7.0\Phoenix.CrossCutting.Resources.AssemblyInfo.cs
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Resources\obj\Release\net7.0\Phoenix.CrossCutting.Resources.csproj.CoreCompileInputs.cache
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Resources\obj\Release\net7.0\Phoenix.CrossCutting.Resources.dll
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Resources\obj\Release\net7.0\refint\Phoenix.CrossCutting.Resources.dll
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Resources\obj\Release\net7.0\Phoenix.CrossCutting.Resources.pdb
+D:\Projects\Nspira\Portal\HRMS_API\5-CrossCutting\Phoenix.CrossCutting.Resources\obj\Release\net7.0\ref\Phoenix.CrossCutting.Resources.dll

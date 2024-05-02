@@ -1,0 +1,109 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup Label="Globals">
+	  <SccProjectName></SccProjectName>
+	  <SccProvider></SccProvider>
+	  <SccAuxPath></SccAuxPath>
+	  <SccLocalPath></SccLocalPath>
+	</PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+	</PropertyGroup>
+	<ItemGroup>
+	  <None Remove="stylecop.json" />
+	</ItemGroup>
+	<ItemGroup>
+	  <AdditionalFiles Include="stylecop.json" />
+	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="SonarAnalyzer.CSharp" Version="8.35.0.42613">
+	    <PrivateAssets>all</PrivateAssets>
+	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Update="Admin.Designer.cs">
+		  <DesignTime>True</DesignTime>
+		  <AutoGen>True</AutoGen>
+		  <DependentUpon>Admin.resx</DependentUpon>
+		</Compile>
+		<Compile Update="DatabaseProcedures.Designer.cs">
+		  <DesignTime>True</DesignTime>
+		  <AutoGen>True</AutoGen>
+		  <DependentUpon>DatabaseProcedures.resx</DependentUpon>
+		</Compile>
+		<Compile Update="Employee.Designer.cs">
+		  <DesignTime>True</DesignTime>
+		  <AutoGen>True</AutoGen>
+		  <DependentUpon>Employee.resx</DependentUpon>
+		</Compile>
+		<Compile Update="Investment.Designer.cs">
+		  <DesignTime>True</DesignTime>
+		  <AutoGen>True</AutoGen>
+		  <DependentUpon>Investment.resx</DependentUpon>
+		</Compile>
+		<Compile Update="LeaveManagement.Designer.cs">
+		  <DesignTime>True</DesignTime>
+		  <AutoGen>True</AutoGen>
+		  <DependentUpon>LeaveManagement.resx</DependentUpon>
+		</Compile>
+		<Compile Update="Master.Designer.cs">
+		  <DesignTime>True</DesignTime>
+		  <AutoGen>True</AutoGen>
+		  <DependentUpon>Master.resx</DependentUpon>
+		</Compile>
+		<Compile Update="PerformanceManagement.Designer.cs">
+		  <DesignTime>True</DesignTime>
+		  <AutoGen>True</AutoGen>
+		  <DependentUpon>PerformanceManagement.resx</DependentUpon>
+		</Compile>
+		<Compile Update="SMS_WhatsApp.Designer.cs">
+		  <DesignTime>True</DesignTime>
+		  <AutoGen>True</AutoGen>
+		  <DependentUpon>SMS_WhatsApp.resx</DependentUpon>
+		</Compile>
+		<Compile Update="Texts.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Texts.resx</DependentUpon>
+		</Compile>
+	</ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Update="Admin.resx">
+		  <Generator>PublicResXFileCodeGenerator</Generator>
+		  <LastGenOutput>Admin.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+		<EmbeddedResource Update="DatabaseProcedures.resx">
+		  <Generator>PublicResXFileCodeGenerator</Generator>
+		  <LastGenOutput>DatabaseProcedures.Designer.cs</LastGenOutput>
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Employee.resx">
+		  <Generator>PublicResXFileCodeGenerator</Generator>
+		  <LastGenOutput>Employee.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Investment.resx">
+		  <Generator>PublicResXFileCodeGenerator</Generator>
+		  <LastGenOutput>Investment.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+		<EmbeddedResource Update="LeaveManagement.resx">
+		  <Generator>PublicResXFileCodeGenerator</Generator>
+		  <LastGenOutput>LeaveManagement.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Master.resx">
+		  <Generator>PublicResXFileCodeGenerator</Generator>
+		  <LastGenOutput>Master.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+		<EmbeddedResource Update="PerformanceManagement.resx">
+		  <Generator>PublicResXFileCodeGenerator</Generator>
+		  <LastGenOutput>PerformanceManagement.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+		<EmbeddedResource Update="SMS_WhatsApp.resx">
+		  <Generator>PublicResXFileCodeGenerator</Generator>
+		  <LastGenOutput>SMS_WhatsApp.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Texts.resx">
+			<Generator>PublicResXFileCodeGenerator</Generator>
+			<LastGenOutput>Texts.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+	</ItemGroup>
+</Project>
